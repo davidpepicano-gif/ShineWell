@@ -10,7 +10,6 @@ import ContactPage from './pages/ContactPage';
 import BookingPage from './pages/BookingPage';
 import FaqPage from './pages/FaqPage';
 import LocationsPage from './pages/LocationsPage';
-import EstimatePage from './pages/EstimatePage';
 import PaymentPage from './pages/PaymentPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
@@ -30,7 +29,6 @@ export default function App() {
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/locations" element={<LocationsPage />} />
-          <Route path="/estimate" element={<EstimatePage />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:postId" element={<BlogPostPage />} />

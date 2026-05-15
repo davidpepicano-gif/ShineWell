@@ -62,9 +62,10 @@ export default function Home() {
               <div className="flex flex-col gap-8">
                 {/* GHL Booking Widget */}
                 <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-[#e8e5df] relative overflow-hidden max-w-[600px] w-full">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-[#607564]"></div>
-                  <h3 className="text-2xl font-serif text-[#2C302E] mb-4">Request a Free Estimate</h3>
-                  <div className="w-full min-h-[500px] rounded-xl overflow-hidden border border-[#e8e5df] bg-[#F9F8F6] flex items-center justify-center">
+                  <div className="flex justify-between items-center mb-4">
+                    <h3 className="text-2xl font-serif text-[#2C302E]">Book Your Cleaning</h3>
+                  </div>
+                  <div className="w-full min-h-[500px] rounded-xl overflow-hidden border border-[#e8e5df] bg-[#F9F8F6] flex items-center justify-center relative">
                     <iframe
                       src="https://links.somosoverflow.com/widget/form/wCd628Bbw6Kdx6T546Nk"
                       style={{ width: '100%', height: '100%', minHeight: '500px', border: 'none', overflow: 'hidden' }}
@@ -77,11 +78,11 @@ export default function Home() {
                       data-activation-value=""
                       data-deactivation-type="neverDeactivate"
                       data-deactivation-value=""
-                      data-form-name="Request a Free Estimate"
+                      data-form-name="Book Your Cleaning"
                       data-height="500"
                       data-layout-iframe-id="inline-wCd628Bbw6Kdx6T546Nk"
                       data-form-id="wCd628Bbw6Kdx6T546Nk"
-                      title="Request a Free Estimate"
+                      title="Book Your Cleaning"
                     >
                     </iframe>
                     <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
@@ -247,17 +248,20 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="order-2 lg:order-1"
             >
-              <h2 className="text-4xl md:text-5xl font-serif mb-8 text-[#2C302E]">Serving Businesses, Offices, Airbnb Hosts & Homeowners Across Kansas City</h2>
+              <h2 className="text-4xl md:text-5xl font-serif mb-8 text-[#2C302E]">Our Kansas City Story: <span className="italic font-light">More Than Just a Clean.</span></h2>
               <div className="space-y-6 text-lg font-light text-[#2C302E]/80 leading-relaxed mb-10">
                 <p>
-                  I started ShineWell because I believe a clean space isn't just about aesthetics—it's about peace of mind. We're not a faceless franchise. We're a small, dedicated team of perfectionists who genuinely care about the spaces we care for.
+                  I started Shine Well with a simple belief: that a clean environment is the foundation for a peaceful life. What began as a personal passion for helping neighbors in Kansas City reclaim their weekends has grown into the city's most dedicated cleaning team.
+                </p>
+                <p>
+                  We aren't a faceless franchise. We're a local team of perfectionists who genuinely love the satisfaction of a job well done. Whether it's a corporate office or a family home, we treat every space as if it were our own—with honesty, meticulousness, and respect.
                 </p>
               </div>
               <Link 
-                to="/our-story"
+                to="/about"
                 className="inline-flex items-center gap-2 bg-white text-[#8BA192] px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
               >
-                Read Our Story
+                Read Full Story
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
@@ -269,13 +273,14 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="order-1 lg:order-2 relative"
             >
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative group">
                 <img 
-                  src="https://images.unsplash.com/photo-1556911220-e15224bbafb0?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Shine Well professional cleaning team at work in Kansas City" 
-                  className="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop" 
+                  alt="Shine Well professional cleaning team at work" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2C302E]/40 to-transparent"></div>
               </div>
             </motion.div>
           </div>
@@ -474,9 +479,9 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Book Your Free Estimate in 60 Seconds</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Experience the ShineWell Difference</h2>
             <p className="text-lg text-[#5c635f] font-light mb-10 max-w-2xl mx-auto">
-              Ready to experience the ShineWell difference? Get a free, no-obligation estimate today and let us take care of the rest.
+              Ready to reclaim your time? Book your professional cleaning service today and let us take care of the rest.
             </p>
             <Link 
               to="/booking"

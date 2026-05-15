@@ -6,20 +6,32 @@ export default function HowItWorksPage() {
   const steps = [
     {
       step: "01",
-      title: "Reach Out",
-      desc: "Tell us a bit about your space and what you're looking for. No pressure, just a friendly chat. You can call us directly or fill out our online estimate form.",
-      image: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop"
+      title: "Book Online",
+      desc: "Start the process by visiting our secure online booking platform from any device, anytime.",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
     },
     {
       step: "02",
-      title: "Get a Custom Plan",
-      desc: "We'll provide a clear, upfront estimate based on your specific needs. No hidden fees, no surprises. We tailor our checklist to your priorities.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2026&auto=format&fit=crop"
+      title: "Select Your Service",
+      desc: "Choose the cleaning service that fits your needs, whether it's routine housekeeping, a deep dive, or specialized treatment.",
+      image: "https://images.unsplash.com/photo-1581578736666-0db946e96903?q=80&w=2070&auto=format&fit=crop"
     },
     {
       step: "03",
+      title: "Pay Booking Fee",
+      desc: "Secure your appointment with a fast and easy online booking fee. Your date and time are 100% guaranteed.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      step: "04",
+      title: "Get a Custom Plan",
+      desc: "We build a personalized cleaning checklist tailored specifically to your home or office priorities.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2026&auto=format&fit=crop"
+    },
+    {
+      step: "05",
       title: "Enjoy Your Space",
-      desc: "Come home to that 'just cleaned' feeling. We handle the mess, you relax. Our professional team ensures every detail is perfect.",
+      desc: "Sit back and relax. Our professional team handles the meticulously detailed cleaning so you can enjoy a spotless environment.",
       image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
     }
   ];
@@ -92,13 +104,13 @@ export default function HowItWorksPage() {
         >
           <h2 className="text-4xl font-serif mb-6">Ready for a cleaner space?</h2>
           <p className="text-[#e8ede9] font-light text-lg mb-10 max-w-2xl mx-auto">
-            Take the first step towards a spotless home or office. Request your free, no-obligation estimate today.
+            Take the first step towards a spotless home or office. Book your cleaning service today.
           </p>
           <Link 
             to="/booking"
             className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
           >
-            Get Started Now
+            Book Now
             <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>

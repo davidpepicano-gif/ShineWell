@@ -12,12 +12,15 @@ import {
 } from 'lucide-react';
 
 const services = [
-  { name: 'Business Cleaning', path: '/services/commercial-deep-cleaning' },
   { name: 'Routine House Cleaning', path: '/services/routine-housekeeping' },
   { name: 'Deep Cleaning', path: '/services/deep-dives' },
   { name: 'Move In / Move Out', path: '/services/move-in-move-out' },
-  { name: 'Specialized Treatments', path: '/services/specialized-treatments' },
+  { name: 'Commercial Cleaning', path: '/services/commercial-deep-cleaning' },
   { name: 'Post-Construction', path: '/services/post-construction' },
+  { name: 'Hoarder House Clean Up', path: '/services/hoarder-cleanup' },
+  { name: 'Organizing Service', path: '/services/organizing' },
+  { name: 'Specialized Treatments', path: '/services/specialized-treatments' },
+  { name: 'Junk Removal', path: '/services/junk-removal' },
 ];
 
 const Logo = ({ className = "h-10 w-10" }: { className?: string }) => (
@@ -29,30 +32,27 @@ const Logo = ({ className = "h-10 w-10" }: { className?: string }) => (
   >
     {/* Buildings - Dark Green and Light Green */}
     <rect x="70" y="45" width="22" height="75" fill="#36453B" rx="1" />
-    <g fill="#FBBC05" opacity="0.8">
-      <rect x="74" y="55" width="14" height="2" />
-      <rect x="74" y="62" width="14" height="2" />
-      <rect x="74" y="69" width="14" height="2" />
-      <rect x="74" y="76" width="14" height="2" />
-      <rect x="74" y="83" width="14" height="2" />
+    <g fill="#FBBC05" opacity="0.6">
+      <rect x="73" y="52" width="2" height="2" /> <rect x="77" y="52" width="2" height="2" /> <rect x="81" y="52" width="2" height="2" /> <rect x="85" y="52" width="2" height="2" />
+      <rect x="73" y="58" width="2" height="2" /> <rect x="77" y="58" width="2" height="2" /> <rect x="81" y="58" width="2" height="2" /> <rect x="85" y="58" width="2" height="2" />
+      <rect x="73" y="64" width="2" height="2" /> <rect x="77" y="64" width="2" height="2" /> <rect x="81" y="64" width="2" height="2" /> <rect x="85" y="64" width="2" height="2" />
+      <rect x="73" y="70" width="2" height="2" /> <rect x="77" y="70" width="2" height="2" /> <rect x="81" y="70" width="2" height="2" /> <rect x="85" y="70" width="2" height="2" />
     </g>
 
     <rect x="95" y="20" width="28" height="100" fill="#607564" rx="1" />
     <g fill="#FBBC05">
-      <rect x="100" y="30" width="18" height="3" />
-      <rect x="100" y="40" width="18" height="3" />
-      <rect x="100" y="50" width="18" height="3" />
-      <rect x="100" y="60" width="18" height="3" />
-      <rect x="100" y="70" width="18" height="3" />
-      <rect x="100" y="80" width="18" height="3" />
+      <rect x="100" y="30" width="3" height="4" /> <rect x="106" y="30" width="3" height="4" /> <rect x="112" y="30" width="3" height="4" /> <rect x="118" y="30" width="3" height="4" />
+      <rect x="100" y="38" width="3" height="4" /> <rect x="106" y="38" width="3" height="4" /> <rect x="112" y="38" width="3" height="4" /> <rect x="118" y="38" width="3" height="4" />
+      <rect x="100" y="46" width="3" height="4" /> <rect x="106" y="46" width="3" height="4" /> <rect x="112" y="46" width="3" height="4" /> <rect x="118" y="46" width="3" height="4" />
+      <rect x="100" y="54" width="3" height="4" /> <rect x="106" y="54" width="3" height="4" /> <rect x="112" y="54" width="3" height="4" /> <rect x="118" y="54" width="3" height="4" />
+      <rect x="100" y="62" width="3" height="4" /> <rect x="106" y="62" width="3" height="4" /> <rect x="112" y="62" width="3" height="4" /> <rect x="118" y="62" width="3" height="4" />
     </g>
 
     <rect x="127" y="50" width="20" height="70" fill="#36453B" rx="1" />
-    <g fill="#FBBC05" opacity="0.8">
-      <rect x="131" y="60" width="12" height="2" />
-      <rect x="131" y="67" width="12" height="2" />
-      <rect x="131" y="74" width="12" height="2" />
-      <rect x="131" y="81" width="12" height="2" />
+    <g fill="#FBBC05" opacity="0.6">
+      <rect x="130" y="58" width="3" height="3" /> <rect x="136" y="58" width="3" height="3" /> <rect x="142" y="58" width="3" height="3" />
+      <rect x="130" y="66" width="3" height="3" /> <rect x="136" y="66" width="3" height="3" /> <rect x="142" y="66" width="3" height="3" />
+      <rect x="130" y="74" width="3" height="3" /> <rect x="136" y="74" width="3" height="3" /> <rect x="142" y="74" width="3" height="3" />
     </g>
     
     {/* Houses */}
@@ -60,31 +60,27 @@ const Logo = ({ className = "h-10 w-10" }: { className?: string }) => (
     <path d="M35 115 L80 75 L125 115 V135 H35 Z" fill="white" stroke="#607564" strokeWidth="1.5" />
     <path d="M35 115 L80 75 L125 115 Z" fill="#607564" />
     <g fill="#607564" opacity="0.7">
-      <rect x="58" y="115" width="4" height="4" />
-      <rect x="63" y="115" width="4" height="4" />
-      <rect x="58" y="120" width="4" height="4" />
-      <rect x="63" y="120" width="4" height="4" />
+      <rect x="56" y="115" width="5" height="5" /> <rect x="63" y="115" width="5" height="5" />
+      <rect x="56" y="122" width="5" height="5" /> <rect x="63" y="122" width="5" height="5" />
     </g>
     
     {/* House 2 */}
     <path d="M100 115 L145 75 L190 115 V135 H100 Z" fill="white" stroke="#607564" strokeWidth="1.5" />
     <path d="M100 115 L145 75 L190 115 Z" fill="#607564" />
     <g fill="#607564" opacity="0.7">
-      <rect x="123" y="115" width="4" height="4" />
-      <rect x="128" y="115" width="4" height="4" />
-      <rect x="123" y="120" width="4" height="4" />
-      <rect x="128" y="120" width="4" height="4" />
+      <rect x="121" y="115" width="5" height="5" /> <rect x="128" y="115" width="5" height="5" />
+      <rect x="121" y="122" width="5" height="5" /> <rect x="128" y="122" width="5" height="5" />
     </g>
     
     {/* Swoosh Layers */}
-    <path d="M25 140 Q 107 165 190 140" stroke="#36453B" strokeWidth="8" fill="none" strokeLinecap="round" />
-    <path d="M25 140 Q 107 160 190 140" stroke="#FBBC05" strokeWidth="4" fill="none" strokeLinecap="round" />
+    <path d="M25 140 Q 107 168 190 140" stroke="#36453B" strokeWidth="10" fill="none" strokeLinecap="round" />
+    <path d="M25 140 Q 107 162 190 140" stroke="#FBBC05" strokeWidth="5" fill="none" strokeLinecap="round" />
     <path d="M25 140 Q 107 152 190 140" stroke="#607564" strokeWidth="2" fill="none" strokeLinecap="round" />
     
     {/* Shining Stars / Glints */}
     <path d="M48 95 L51 102 L58 105 L51 108 L48 115 L45 108 L38 105 L45 102 Z" fill="#FBBC05" />
+    <path d="M110 80 L115 90 L125 95 L115 100 L110 110 L105 100 L95 95 L105 90 Z" fill="white" />
     <path d="M165 105 L168 112 L175 115 L168 118 L165 125 L162 118 L155 115 L162 112 Z" fill="#FBBC05" />
-    <path d="M105 100 L110 110 L120 115 L110 120 L105 130 L100 120 L90 115 L100 110 Z" fill="white" />
     <path d="M85 85 L87 89 L91 90 L87 91 L85 95 L83 91 L79 90 L83 89 Z" fill="#FBBC05" />
     <path d="M140 85 L142 89 L146 90 L142 91 L140 95 L138 91 L134 90 L138 89 Z" fill="#FBBC05" />
     <path d="M175 90 L177 92 L180 93 L177 94 L175 97 L173 94 L170 93 L173 92 Z" fill="#FBBC05" />
@@ -143,7 +139,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   Shine Well
                 </span>
                 <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1">
-                  Commercial & Home Cleaning Services llc
+                  Commercial & Home Cleaning Services
                 </span>
               </div>
             </Link>
@@ -329,7 +325,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     Shine Well
                   </span>
                   <span className="text-[7px] uppercase tracking-[0.2em] text-[#a3aba6] font-medium leading-none pl-0.5">
-                    Commercial & Home Cleaning Services llc
+                    Commercial & Home Cleaning Services
                   </span>
                 </div>
               </div>
@@ -404,13 +400,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link to="/locations" className="hover:text-white transition-colors">Locations</Link></li>
                 <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                 <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+                <li><Link to="/booking" className="hover:text-white transition-colors font-medium text-[#FBBC05]">Book Now</Link></li>
                 <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>
           
           <div className="pt-8 border-t border-[#3a3f3c] text-sm text-[#a3aba6] font-light flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>&copy; {new Date().getFullYear()} Shine Well Cleaning Services llc. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Shine Well Cleaning Services. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <p className="text-[10px] uppercase tracking-widest opacity-50">
                 Crafted by <a href="https://www.cerrana.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-4">Cerrana</a>

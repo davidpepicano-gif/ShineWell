@@ -30,25 +30,28 @@ export default function ServicesPage() {
       path: "/services/deep-dives"
     },
     {
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
       title: "Move In / Move Out",
       desc: "Start fresh or leave a blank slate. We make transitions seamless with a meticulous, top-to-bottom clean.",
       path: "/services/move-in-move-out"
-    },
+    }
+  ];
+
+  const specializedServices = [
     {
-      image: "https://images.unsplash.com/photo-1558223126-7080e72c813a?q=80&w=2070&auto=format&fit=crop",
+      image: "/src/assets/images/regenerated_image_1778882768223.avif",
       title: "Hoarder House Clean Up",
       desc: "Compassionate, efficient restoration for cluttered environments. We handle the heavy lifting with care and discretion.",
       path: "/services/hoarder-cleanup"
     },
     {
-      image: "https://images.unsplash.com/photo-1603511874281-cb784931a742?q=80&w=2070&auto=format&fit=crop",
+      image: "/src/assets/images/regenerated_image_1778878771115.jpg",
       title: "Organizing Service",
       desc: "Functional systems for your home or office. We help you declutter and create spaces that work for your daily life.",
       path: "/services/organizing"
     },
     {
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
+      image: "/src/assets/images/regenerated_image_1778882738805.avif",
       title: "Specialized Treatments",
       desc: "Targeted care for specific needs, including upholstery, carpet spot treatments, and eco-friendly sanitization for sensitive spaces.",
       path: "/services/specialized-treatments"
@@ -69,7 +72,7 @@ export default function ServicesPage() {
       path: "/services/junk-removal"
     },
     {
-      image: "https://images.unsplash.com/photo-1503387762-592be5a52680?q=80&w=2070&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=2070&auto=format&fit=crop",
       title: "Post-Construction",
       desc: "We clear the dust and debris after your renovation, leaving your newly updated space sparkling and ready to enjoy.",
       path: "/services/post-construction"
@@ -249,11 +252,20 @@ export default function ServicesPage() {
           viewport={{ once: true }}
           className="bg-white rounded-[2rem] shadow-sm border border-[#e8e5df] overflow-hidden mb-24"
         >
-          <div className="p-8 md:p-12 border-b border-[#e8e5df] text-center bg-[#2C302E] text-white">
-            <h2 className="text-3xl md:text-4xl font-serif mb-4">Commercial Cleaning Checklist</h2>
-            <p className="text-[#a3aba6] font-light max-w-2xl mx-auto">
-              A detailed breakdown of our comprehensive commercial and office cleaning services.
-            </p>
+          <div className="relative p-12 md:p-16 text-center text-white overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop" 
+              alt="Commercial cleaning service"
+              className="absolute inset-0 w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-[#2C302E]/70 backdrop-blur-[1px]"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-5xl font-serif mb-4">Commercial Cleaning Checklist</h2>
+              <p className="text-[#a3aba6] font-light max-w-2xl mx-auto text-lg">
+                A detailed breakdown of our comprehensive commercial and office cleaning services.
+              </p>
+            </div>
           </div>
           
           <div className="p-8 md:p-12 bg-[#F9F8F6]">
@@ -284,11 +296,20 @@ export default function ServicesPage() {
           viewport={{ once: true }}
           className="bg-white rounded-[2rem] shadow-sm border border-[#e8e5df] overflow-hidden mb-24"
         >
-          <div className="p-8 md:p-12 border-b border-[#e8e5df] text-center bg-[#CAD4CD] text-white">
-            <h2 className="text-3xl md:text-4xl font-serif mb-4">Post-Construction Checklist</h2>
-            <p className="text-[#e8e5df] font-light max-w-2xl mx-auto">
-              A detailed breakdown of our post-renovation and new construction cleaning services.
-            </p>
+          <div className="relative p-12 md:p-16 text-center text-white overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" 
+              alt="Post-construction cleaning"
+              className="absolute inset-0 w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-[#2C302E]/60 backdrop-blur-[2px]"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-5xl font-serif mb-4">Post-Construction Checklist</h2>
+              <p className="text-[#e8e5df] font-light max-w-2xl mx-auto text-lg">
+                A detailed breakdown of our post-renovation and new construction cleaning services.
+              </p>
+            </div>
           </div>
           
           <div className="p-8 md:p-12 bg-[#F9F8F6]">
@@ -313,13 +334,55 @@ export default function ServicesPage() {
         </motion.div>
 
         {/* Residential Services */}
-        <div className="mb-20">
+        <div className="mb-24">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Residential Cleaning</h2>
             <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {residentialServices.map((service, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1, duration: 0.6 }}
+                className="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-[#e8e5df] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+                <div className="p-8 md:p-10 flex flex-col flex-grow">
+                  <h3 className="text-2xl md:text-3xl font-serif text-[#2C302E] mb-4 group-hover:text-[#C86B53] transition-colors">{service.title}</h3>
+                  <p className="text-[#5c635f] text-lg leading-relaxed font-light mb-8 flex-grow">
+                    {service.desc}
+                  </p>
+                  <Link 
+                    to={service.path}
+                    className="inline-flex items-center text-[#607564] font-medium group-hover:text-[#C86B53] transition-colors mt-auto"
+                  >
+                    View Details <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Specialized Services */}
+        <div className="mb-24">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Specialized Services</h2>
+            <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            {specializedServices.map((service, idx) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, y: 30 }}
@@ -439,7 +502,7 @@ export default function ServicesPage() {
             to="/booking"
             className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
           >
-            Book a Free Estimate
+            Book Now
             <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>
