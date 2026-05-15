@@ -39,7 +39,7 @@ export default function ServicesPage() {
 
   const specializedServices = [
     {
-      image: "/src/assets/images/regenerated_image_1778882768223.avif",
+      image: "/src/assets/images/regenerated_image_1778884089897.jpg",
       title: "Hoarder House Clean Up",
       desc: "Compassionate, efficient restoration for cluttered environments. We handle the heavy lifting with care and discretion.",
       path: "/services/hoarder-cleanup"
@@ -51,7 +51,7 @@ export default function ServicesPage() {
       path: "/services/organizing"
     },
     {
-      image: "/src/assets/images/regenerated_image_1778882738805.avif",
+      image: "/src/assets/images/regenerated_image_1778882149942.webp",
       title: "Specialized Treatments",
       desc: "Targeted care for specific needs, including upholstery, carpet spot treatments, and eco-friendly sanitization for sensitive spaces.",
       path: "/services/specialized-treatments"

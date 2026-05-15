@@ -14,7 +14,7 @@ export default function HowItWorksPage() {
       step: "02",
       title: "Select Your Service",
       desc: "Choose the cleaning service that fits your needs, whether it's routine housekeeping, a deep dive, or specialized treatment.",
-      image: "https://images.unsplash.com/photo-1581578736666-0db946e96903?q=80&w=2070&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=2068&auto=format&fit=crop"
     },
     {
       step: "03",

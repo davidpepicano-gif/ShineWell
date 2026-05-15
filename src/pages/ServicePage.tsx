@@ -212,7 +212,7 @@ const serviceData = {
   'specialized-treatments': {
     title: 'Specialized Cleaning Treatments in Kansas City',
     icon: <Droplets className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: '/src/assets/images/regenerated_image_1778882738805.avif',
+    heroImage: '/src/assets/images/regenerated_image_1778882149942.webp',
     altText: 'Specialized cleaning services Kansas City',
     description: 'Targeted care for specific needs, including upholstery, carpet spot treatments, and eco-friendly sanitization for sensitive spaces.',
     details: 'Sometimes standard cleaning isn\'t enough. Our specialized treatments address specific issues and materials that require extra care and expertise. From reviving tired upholstery to using specialized eco-friendly products for allergy-sensitive households, we have the solutions you need.',
@@ -282,7 +282,7 @@ const serviceData = {
   'hoarder-cleanup': {
     title: 'Compassionate Hoarder House Clean Up in Kansas City',
     icon: <Briefcase className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: '/src/assets/images/regenerated_image_1778882768223.avif',
+    heroImage: '/src/assets/images/regenerated_image_1778884089897.jpg',
     altText: 'Compassionate hoarder house clean up service in Kansas City',
     description: 'Empathetic, efficient restoration for cluttered environments. We handle the heavy lifting with care and discretion.',
     details: 'Facing a hoarding situation requires more than just a cleaning crew; it requires compassion, patience, and a non-judgmental approach. Shine Well provides a safe and supportive environment to help individuals and families navigate the process of decluttering and sanitizing their homes. We work at a pace that feels safe while ensuring significant progress toward a healthy living environment.',
