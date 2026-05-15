@@ -16,7 +16,7 @@ const services = [
   { name: 'Deep Cleaning', path: '/services/deep-dives' },
   { name: 'Move In / Move Out', path: '/services/move-in-move-out' },
   { name: 'Commercial Cleaning', path: '/services/commercial-deep-cleaning' },
-  { name: 'Post-Construction', path: '/services/post-construction' },
+  { name: 'Post Construction', path: '/services/post-construction' },
   { name: 'Hoarder House Clean Up', path: '/services/hoarder-cleanup' },
   { name: 'Organizing Service', path: '/services/organizing' },
   { name: 'Specialized Treatments', path: '/services/specialized-treatments' },
@@ -349,7 +349,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-4 text-[#a3aba6] font-light">
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#607564]" />
-                  <span>+1 913-325-1400</span>
+                  <span>+1 913 325 1400</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#607564]" />

@@ -32,7 +32,7 @@ export default function ServicesPage() {
     {
       image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
       title: "Move In / Move Out",
-      desc: "Start fresh or leave a blank slate. We make transitions seamless with a meticulous, top-to-bottom clean.",
+      desc: "Start fresh or leave a blank slate. We make transitions seamless with a meticulous, top to bottom clean.",
       path: "/services/move-in-move-out"
     }
   ];
@@ -53,7 +53,7 @@ export default function ServicesPage() {
     {
       image: "/src/assets/images/regenerated_image_1778882149942.webp",
       title: "Specialized Treatments",
-      desc: "Targeted care for specific needs, including upholstery, carpet spot treatments, and eco-friendly sanitization for sensitive spaces.",
+      desc: "Targeted care for specific needs, including upholstery, carpet spot treatments, and eco friendly sanitization for sensitive spaces.",
       path: "/services/specialized-treatments"
     }
   ];
@@ -68,12 +68,12 @@ export default function ServicesPage() {
     {
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop",
       title: "Junk Removal with Dumpster",
-      desc: "Full-service removal of unwanted items with dumpster logistics handled. Perfect for office clear-outs or large home projects.",
+      desc: "Full service removal of unwanted items with dumpster logistics handled. Perfect for office clear outs or large home projects.",
       path: "/services/junk-removal"
     },
     {
       image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=2070&auto=format&fit=crop",
-      title: "Post-Construction",
+      title: "Post Construction",
       desc: "We clear the dust and debris after your renovation, leaving your newly updated space sparkling and ready to enjoy.",
       path: "/services/post-construction"
     }
@@ -131,13 +131,13 @@ export default function ServicesPage() {
         "Wiping down reception desk and visitor seating",
         "Organizing magazines and tidying lobby area",
         "Cleaning glass entrance doors and interior windows",
-        "Sanitizing high-touch areas in the waiting room"
+        "Sanitizing high touch areas in the waiting room"
       ]
     },
     {
       section: "Office Areas",
       items: [
-        "Sanitizing all high-touch surfaces (doorknobs, light switches)",
+        "Sanitizing all high touch surfaces (doorknobs, light switches)",
         "Dusting and wiping down all desks and workstations",
         "Emptying all trash and recycling receptacles",
         "Cleaning interior glass and windows"
@@ -155,7 +155,7 @@ export default function ServicesPage() {
       section: "Breakrooms & Floors",
       items: [
         "Cleaning breakrooms and kitchenettes (including inside appliances)",
-        "Vacuuming and spot-treating commercial carpets",
+        "Vacuuming and spot treating commercial carpets",
         "Sweeping and mopping hard floors"
       ]
     }
@@ -199,7 +199,7 @@ export default function ServicesPage() {
         >
           <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6">Our Services</h1>
           <p className="text-lg text-[#5c635f] font-light">
-            No cookie-cutter checklists here. We adapt to your space, your preferences, and your life. Explore our comprehensive cleaning solutions.
+            No cookie cutter checklists here. We adapt to your space, your preferences, and your life. Explore our comprehensive cleaning solutions.
           </p>
         </motion.div>
 
@@ -289,7 +289,7 @@ export default function ServicesPage() {
           </div>
         </motion.div>
 
-        {/* Post-Construction Checklist Section */}
+        {/* Post Construction Checklist Section */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -299,15 +299,15 @@ export default function ServicesPage() {
           <div className="relative p-12 md:p-16 text-center text-white overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" 
-              alt="Post-construction cleaning"
+              alt="Post construction cleaning"
               className="absolute inset-0 w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-[#2C302E]/60 backdrop-blur-[2px]"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-5xl font-serif mb-4">Post-Construction Checklist</h2>
+              <h2 className="text-3xl md:text-5xl font-serif mb-4">Post Construction Checklist</h2>
               <p className="text-[#e8e5df] font-light max-w-2xl mx-auto text-lg">
-                A detailed breakdown of our post-renovation and new construction cleaning services.
+                A detailed breakdown of our post renovation and new construction cleaning services.
               </p>
             </div>
           </div>

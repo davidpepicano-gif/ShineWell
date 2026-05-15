@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import aboutImage from '../assets/images/regenerated_image_1778882241066.webp';
 
 export default function AboutPage() {
   return (
@@ -21,13 +20,13 @@ export default function AboutPage() {
                 Hi, I'm Lina, and I started Shine Well with a simple belief: that a clean environment is the foundation for a peaceful life. 
               </p>
               <p>
-                What began as a small passion for helping neighbors reclaim their weekends has grown into Kansas City's most dedicated cleaning team. We aren't just another cleaning company; we're your partners in maintaining a home that feels as good as it looks.
+                What began as a small passion for helping neighbors reclaim their weekends has grown into Kansas City's most dedicated cleaning team. We aren't just another cleaning company; we're a group of people who genuinely love the satisfaction of a job well done and the smile on a client's face when they walk into a transformed space.
               </p>
               <p>
-                We've built our reputation on three pillars: honesty, meticulousness, and respect. Every home we enter is treated with the same care we'd give our own family's. We understand that your home is your sanctuary, and we treat it accordingly.
+                We've built our reputation on three pillars: **honesty**, **meticulousness**, and **respect**. Every home we enter is treated with the same care we'd give our own family's. We understand that your home is your sanctuary, and your business is your livelihood — and we treat both with the professional integrity they deserve.
               </p>
               <p>
-                Today, our team of background-checked and highly trained professionals serves the entire Kansas City metro area, from commercial office buildings to cozy family homes. We use eco-friendly products, maintain transparent pricing, and never cut corners.
+                Today, our team of background checked and highly trained professionals serves the entire Kansas City metro area, from commercial office buildings to cozy family homes. We use eco friendly products because we care about the health of your family, your pets, and our planet.
               </p>
             </div>
             <div className="mt-12 flex items-center gap-4">
@@ -59,9 +58,10 @@ export default function AboutPage() {
             <div id="about-image-wrapper" className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
               <img 
                 id="about-hero-image"
-                src={aboutImage}
+                src="/src/assets/images/regenerated_image_1778882241066.webp" 
                 alt="Shine Well professional cleaning service story" 
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </motion.div>

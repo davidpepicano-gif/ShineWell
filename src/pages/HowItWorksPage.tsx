@@ -53,7 +53,7 @@ export default function HowItWorksPage() {
             transition={{ delay: 0.1 }}
             className="text-lg text-[#5c635f] font-light"
           >
-            Getting your space cleaned shouldn't be a chore. We've made our process as simple, transparent, and stress-free as possible.
+            Getting your space cleaned shouldn't be a chore. We've made our process as simple, transparent, and stress free as possible.
           </motion.p>
         </div>
 

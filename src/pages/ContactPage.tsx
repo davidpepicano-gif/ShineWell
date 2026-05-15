@@ -29,7 +29,7 @@ export default function ContactPage() {
             </div>
             <h3 className="font-medium text-[#2C302E] mb-2">Phone</h3>
             <p className="text-[#5c635f] font-light">+1 913-325-1400</p>
-            <p className="text-sm text-[#a3aba6] mt-2">Mon-Fri, 8am - 6pm</p>
+            <p className="text-sm text-[#a3aba6] mt-2">Mon to Fri, 8am to 6pm</p>
           </motion.div>
 
           <motion.div 
@@ -70,7 +70,7 @@ export default function ContactPage() {
               <Clock className="w-6 h-6" />
             </div>
             <h3 className="font-medium text-[#2C302E] mb-2">Hours</h3>
-            <p className="text-[#5c635f] font-light">Mon-Sat: 8am - 6pm</p>
+            <p className="text-[#5c635f] font-light">Mon to Sat: 8am to 6pm</p>
             <p className="text-sm text-[#a3aba6] mt-2">Sunday: Closed</p>
           </motion.div>
         </div>

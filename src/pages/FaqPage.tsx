@@ -4,7 +4,7 @@ export default function FaqPage() {
   const faqs = [
     {
       q: "Why should I trust Shine Well?",
-      a: "We’re proud to offer professional housecleaning services and employ residential housekeepers who pride themselves on top-quality services. After undergoing an extensive background check, each member of our team is thoroughly trained on every step of our detailed cleaning plans. We also back all of our work with our satisfaction guarantee. These are just a few of the many reasons why customers trust Shine Well."
+      a: "We’re proud to offer professional housecleaning services and employ residential housekeepers who pride themselves on top quality services. After undergoing an extensive background check, each member of our team is thoroughly trained on every step of our detailed cleaning plans. We also back all of our work with our satisfaction guarantee. These are just a few of the many reasons why customers trust Shine Well."
     },
     {
       q: "Who does Shine Well hire to clean my home?",
@@ -12,7 +12,7 @@ export default function FaqPage() {
     },
     {
       q: "How will our relationship work?",
-      a: "At Shine Well, we recognize the importance of communication, especially when it comes to important valuables in your home and any specific cleaning requests you may have. We value your trust and do everything possible to earn it by performing reliable, affordable, top-notch cleaning services designed to meet your needs and exceed your expectations."
+      a: "At Shine Well, we recognize the importance of communication, especially when it comes to important valuables in your home and any specific cleaning requests you may have. We value your trust and do everything possible to earn it by performing reliable, affordable, top notch cleaning services designed to meet your needs and exceed your expectations."
     },
     {
       q: "What should I do before Shine Well arrives?",
@@ -40,7 +40,7 @@ export default function FaqPage() {
     },
     {
       q: "Am I liable for employment taxes, workers' compensation, or insurance?",
-      a: "Shine Well is proud to be a worry-free housecleaning service solution. This means that we take care of any personal liability with regard to social security taxes and work-related injuries. We’re fully licensed and insured for your peace of mind."
+      a: "Shine Well is proud to be a worry free housecleaning service solution. This means that we take care of any personal liability with regard to social security taxes and work-related injuries. We’re fully licensed and insured for your peace of mind."
     },
     {
       q: "What do you not clean?",
@@ -64,27 +64,27 @@ export default function FaqPage() {
     },
     {
       q: "What do you mean by \"green housecleaning\"?",
-      a: "This method involves the practices and products used by cleaning companies to promote a better environment and a healthier home. Green cleaning solutions don’t contain ozone depleting chemicals or flammable substances that can irritate the skin and cause respiratory illnesses. While most green cleaning products cannot remove all harmful forms of bacteria, Shine Well strives to use the most appropriate methods for each service. In order to protect the environment, we utilize microfiber cloths and pads during our services, rather than paper. Not only is this practice better for the environment, microfiber picks up 99% of bacteria while cotton-based mops only pick up 30%. We strive to be as transparent as possible and are happy to answer any questions you have regarding our eco-friendly practices."
+      a: "This method involves the practices and products used by cleaning companies to promote a better environment and a healthier home. Green cleaning solutions don’t contain ozone depleting chemicals or flammable substances that can irritate the skin and cause respiratory illnesses. While most green cleaning products cannot remove all harmful forms of bacteria, Shine Well strives to use the most appropriate methods for each service. In order to protect the environment, we utilize microfiber cloths and pads during our services, rather than paper. Not only is this practice better for the environment, microfiber picks up 99% of bacteria while cotton based mops only pick up 30%. We strive to be as transparent as possible and are happy to answer any questions you have regarding our eco friendly practices."
     },
     {
       q: "What is \"green washing\"?",
-      a: "Environmentalists use this term to describe companies that falsely advertise green cleaning services. For example, pouring bleach into a recycled container cannot be advertised as an eco-friendly practice because it misleads consumers to think that the contents of the bottle are environmentally friendly when they’re not. Shine Well believes in an honest approach to finding the right balance between green cleaning practices and a safe, healthy home that’s free of harmful bacteria."
+      a: "Environmentalists use this term to describe companies that falsely advertise green cleaning services. For example, pouring bleach into a recycled container cannot be advertised as an eco friendly practice because it misleads consumers to think that the contents of the bottle are environmentally friendly when they’re not. Shine Well believes in an honest approach to finding the right balance between green cleaning practices and a safe, healthy home that’s free of harmful bacteria."
     },
     {
       q: "How can green cleaning services ensure the health and cleanliness of my home?",
-      a: "Shine Well goes above and beyond to use cleaners that are non-acidic and free of ammonia, alcohol, petroleum, and other toxic chemicals. We recommend that you balance the use of green cleaning products and disinfectants in your cleaning plan to ensure that your home is as healthy and clean as possible. Get in touch with our team to learn about the eco-friendly practices we carry out."
+      a: "Shine Well goes above and beyond to use cleaners that are non-acidic and free of ammonia, alcohol, petroleum, and other toxic chemicals. We recommend that you balance the use of green cleaning products and disinfectants in your cleaning plan to ensure that your home is as healthy and clean as possible. Get in touch with our team to learn about the eco friendly practices we carry out."
     },
     {
       q: "What makes you a green cleaning company?",
       a: "Our team strives to meet the community’s need for clean homes and balanced lives. That’s why we use microfiber instead of paper, refill bottles, and protect both our professional housecleaners and customers from unnecessary exposure to toxic chemicals."
     },
     {
-      q: "How soon can I take cleaning off my to-do list?",
-      a: "Contact our team to schedule a free in-home consultation at no-obligation. We’ll take the time to thoroughly inspect your property and discuss your budget, schedule, and cleaning preferences with you before providing a free estimate. Shine Well knows how to accommodate first-time customer requests."
+      q: "How soon can I take cleaning off my to do list?",
+      a: "Contact our team to schedule a free in-home consultation at no obligation. We’ll take the time to thoroughly inspect your property and discuss your budget, schedule, and cleaning preferences with you before providing a free estimate. Shine Well knows how to accommodate first time customer requests."
     },
     {
       q: "How much do your services cost?",
-      a: "We’re proud to be recognized as a provider of affordable, top-quality housecleaning services. Our team works with every homeowner to develop a cleaning plan that’s customized to fit their needs. The costs of our services depend on the size of your home and what you’d like cleaned. We can also add specialty services to your regular cleaning plan as needed, such as: Fridge interior cleaning, Oven interior cleaning, Changing bed linens, Carpet cleaning. At Shine Well, our job is simple: We clean houses. We know how much you value your time and we want to help you enjoy more of it."
+      a: "We’re proud to be recognized as a provider of affordable, top quality housecleaning services. Our team works with every homeowner to develop a cleaning plan that’s customized to fit their needs. The costs of our services depend on the size of your home and what you’d like cleaned. We can also add specialty services to your regular cleaning plan as needed, such as: Fridge interior cleaning, Oven interior cleaning, Changing bed linens, Carpet cleaning. At Shine Well, our job is simple: We clean houses. We know how much you value your time and we want to help you enjoy more of it."
     },
     {
       q: "How can I share my experience with Shine Well?",
@@ -100,7 +100,7 @@ export default function FaqPage() {
     },
     {
       q: "How often can you provide service?",
-      a: "Shine Well is happy to provide service once a week, every other week, or once a month, depending on your cleaning needs. You can also request housecleaning services for special events, as well as move-out and move-in cleaning assistance. Because we work on a no-contract basis, you can update or change your cleaning plan to fit your busy schedule, budget, and cleaning needs."
+      a: "Shine Well is happy to provide service once a week, every other week, or once a month, depending on your cleaning needs. You can also request housecleaning services for special events, as well as move out and move in cleaning assistance. Because we work on a no contract basis, you can update or change your cleaning plan to fit your busy schedule, budget, and cleaning needs."
     },
     {
       q: "Do you offer competitive rates?",
@@ -116,7 +116,7 @@ export default function FaqPage() {
     },
     {
       q: "Are you okay with pets being in the home during a cleaning service?",
-      a: "Yes, we’re proud to be a pet-friendly company. If your pet is aggressive in any way, we recommend that you leave him or her outside or in a gated area to ensure the safety of our professional housecleaners. If you don’t plan on being home when we arrive, please let us know how to appropriately handle cleaning around your pet."
+      a: "Yes, we’re proud to be a pet friendly company. If your pet is aggressive in any way, we recommend that you leave him or her outside or in a gated area to ensure the safety of our professional housecleaners. If you don’t plan on being home when we arrive, please let us know how to appropriately handle cleaning around your pet."
     }
   ];
 

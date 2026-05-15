@@ -56,7 +56,7 @@ export default function Home() {
                 Kansas City's Most Trusted <span className="text-[#607564] italic">Office & Home Cleaning Service</span>
               </h1>
               <p className="text-lg md:text-xl text-[#5c635f] mb-10 max-w-lg leading-relaxed font-light">
-                Shine Well delivers spotless results for homes, apartments, offices, and short-term rentals across Kansas City, MO. Fully insured, background-checked, and eco-friendly — every time.
+                Shine Well delivers spotless results for homes, apartments, offices, and short term rentals across Kansas City, MO. Fully insured, background checked, and eco friendly — every time.
               </p>
               
               <div className="flex flex-col gap-8">
@@ -96,7 +96,7 @@ export default function Home() {
                     className="text-[#607564] hover:text-[#C86B53] font-medium text-lg transition-colors flex items-center gap-2"
                   >
                     <Phone className="w-5 h-5" />
-                    Or call us directly: +1 913-325-1400
+                    Or call us directly: +1 913 325 1400
                   </a>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Professional Cleaning Services Tailored for Kansas City Businesses & Homes</h2>
               <p className="text-lg text-[#5c635f] max-w-2xl font-light">
-                Whether you need a recurring office clean, a one-time deep scrub, or a move-out reset in Kansas City, Shine Well has a plan that fits your schedule and budget.
+                Whether you need a recurring office clean, a one time deep scrub, or a move out reset in Kansas City, Shine Well has a plan that fits your schedule and budget.
               </p>
             </div>
             <Link 
@@ -208,13 +208,13 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">What's Included in Every Shine Well Clean</h2>
             <p className="text-lg text-[#5c635f] font-light max-w-2xl mx-auto">
-              We don't cut corners, we clean them. Every service comes with our commitment to quality, eco-friendly products, and a meticulous attention to detail.
+              We don't cut corners, we clean them. Every service comes with our commitment to quality, eco friendly products, and a meticulous attention to detail.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Vetted Professionals", desc: "Background-checked, trained, and insured cleaners you can trust." },
-              { title: "Eco-Friendly Products", desc: "Safe for your family, pets, and the environment." },
+              { title: "Vetted Professionals", desc: "Background checked, trained, and insured cleaners you can trust." },
+              { title: "Eco Friendly Products", desc: "Safe for your family, pets, and the environment." },
               { title: "Custom Checklists", desc: "We clean according to your specific priorities and needs." },
               { title: "Satisfaction Guarantee", desc: "Not happy? Let us know within 24 hours and we'll make it right." }
             ].map((item, idx) => (
@@ -430,11 +430,11 @@ export default function Home() {
             {[
               {
                 q: "How much does cleaning cost in Kansas City?",
-                a: "The cost vary based on the size of your space, the type of cleaning (routine, deep, move-out), and the frequency of service. Contact us for a free, personalized estimate tailored to your specific commercial or residential needs."
+                a: "The cost vary based on the size of your space, the type of cleaning (routine, deep, move out), and the frequency of service. Contact us for a free, personalized estimate tailored to your specific commercial or residential needs."
               },
               {
-                q: "Do you offer same-day cleaning in Kansas City?",
-                a: "While we recommend booking in advance to secure your preferred time, we do our best to accommodate same-day or last-minute cleaning requests in Kansas City when our schedule allows. Please call us directly for urgent needs."
+                q: "Do you offer same day cleaning in Kansas City?",
+                a: "While we recommend booking in advance to secure your preferred time, we do our best to accommodate same day or last minute cleaning requests in Kansas City when our schedule allows. Please call us directly for urgent needs."
               },
               {
                 q: "Are your cleaners background checked?",
@@ -445,12 +445,12 @@ export default function Home() {
                 a: "Yes! We bring our own professional-grade, eco-friendly cleaning supplies and equipment. If you have specific products you'd prefer us to use on certain surfaces, just let us know."
               },
               {
-                q: "Do you clean Airbnb and short-term rentals in Kansas City?",
-                a: "Yes, we specialize in turnover cleaning for Airbnb and short-term rentals across Kansas City. We ensure your property is spotless, sanitized, and guest-ready between every stay."
+                q: "Do you clean Airbnb and short term rentals in Kansas City?",
+                a: "Yes, we specialize in turnover cleaning for Airbnb and short term rentals across Kansas City. We ensure your property is spotless, sanitized, and guest ready between every stay."
               },
               {
                 q: "What is included in a deep cleaning?",
-                a: "A deep clean is a comprehensive, top-to-bottom service. It includes everything in our standard clean, plus detailed tasks like hand-wiping baseboards, cleaning inside window sills, wiping down ceiling fans, and scrubbing grout lines."
+                a: "A deep clean is a comprehensive, top to bottom service. It includes everything in our standard clean, plus detailed tasks like hand wiping baseboards, cleaning inside window sills, wiping down ceiling fans, and scrubbing grout lines."
               }
             ].map((faq, idx) => (
               <motion.div 
