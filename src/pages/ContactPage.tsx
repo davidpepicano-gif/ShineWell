@@ -1,0 +1,116 @@
+import { motion } from 'motion/react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+
+export default function ContactPage() {
+  return (
+    <div className="pt-32 pb-24 bg-[#F9F8F6] min-h-screen">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
+          <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6">Contact Us</h1>
+          <p className="text-lg text-[#5c635f] font-light">
+            We'd love to hear from you. Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.
+          </p>
+        </motion.div>
+
+        {/* Contact Info Cards */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
+          >
+            <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
+              <Phone className="w-6 h-6" />
+            </div>
+            <h3 className="font-medium text-[#2C302E] mb-2">Phone</h3>
+            <p className="text-[#5c635f] font-light">+1 913-325-1400</p>
+            <p className="text-sm text-[#a3aba6] mt-2">Mon-Fri, 8am - 6pm</p>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
+          >
+            <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
+              <Mail className="w-6 h-6" />
+            </div>
+            <h3 className="font-medium text-[#2C302E] mb-2">Email</h3>
+            <p className="text-[#5c635f] font-light">lina.swcleaning@gmail.com</p>
+            <p className="text-sm text-[#a3aba6] mt-2">24/7 Support</p>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
+          >
+            <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
+              <MapPin className="w-6 h-6" />
+            </div>
+            <h3 className="font-medium text-[#2C302E] mb-2">Office</h3>
+            <p className="text-[#5c635f] font-light">Kansas City, MO</p>
+            <p className="text-sm text-[#a3aba6] mt-2">Serving KC Metro</p>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
+          >
+            <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
+              <Clock className="w-6 h-6" />
+            </div>
+            <h3 className="font-medium text-[#2C302E] mb-2">Hours</h3>
+            <p className="text-[#5c635f] font-light">Mon-Sat: 8am - 6pm</p>
+            <p className="text-sm text-[#a3aba6] mt-2">Sunday: Closed</p>
+          </motion.div>
+        </div>
+
+        {/* Centered GHL Form */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-[#e8e5df]"
+        >
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-serif text-[#2C302E] mb-4">Request a Free Estimate</h2>
+            <p className="text-[#5c635f] font-light">Fill out the form below and we'll get back to you as soon as possible.</p>
+          </div>
+          
+          <div className="w-full min-h-[500px] rounded-2xl overflow-hidden border border-[#e8e5df] bg-white flex items-center justify-center">
+            <iframe
+              src="https://links.somosoverflow.com/widget/form/wCd628Bbw6Kdx6T546Nk"
+              style={{ width: '100%', height: '100%', minHeight: '500px', border: 'none', overflow: 'hidden' }}
+              scrolling="no"
+              id="inline-wCd628Bbw6Kdx6T546Nk_contact" 
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Request a Free Estimate"
+              data-height="500"
+              data-layout-iframe-id="inline-wCd628Bbw6Kdx6T546Nk_contact"
+              data-form-id="wCd628Bbw6Kdx6T546Nk"
+              title="Request a Free Estimate"
+            >
+            </iframe>
+            <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+}
