@@ -12,10 +12,10 @@ import {
 } from 'lucide-react';
 
 const services = [
+  { name: 'Commercial Cleaning', path: '/services/commercial-deep-cleaning' },
   { name: 'Routine House Cleaning', path: '/services/routine-housekeeping' },
   { name: 'Deep Cleaning', path: '/services/deep-dives' },
   { name: 'Move In / Move Out', path: '/services/move-in-move-out' },
-  { name: 'Commercial Cleaning', path: '/services/commercial-deep-cleaning' },
   { name: 'Post Construction', path: '/services/post-construction' },
   { name: 'Hoarder House Clean Up', path: '/services/hoarder-cleanup' },
   { name: 'Organizing Service', path: '/services/organizing' },
