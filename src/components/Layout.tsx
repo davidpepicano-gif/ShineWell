@@ -30,61 +30,113 @@ const Logo = ({ className = "h-10 w-10" }: { className?: string }) => (
     fill="none" 
     xmlns="http://www.w3.org/2000/svg"
   >
-    {/* Buildings - Dark Green and Light Green */}
-    <rect x="70" y="45" width="22" height="75" fill="#36453B" rx="1" />
-    <g fill="#FBBC05" opacity="0.6">
-      <rect x="73" y="52" width="2" height="2" /> <rect x="77" y="52" width="2" height="2" /> <rect x="81" y="52" width="2" height="2" /> <rect x="85" y="52" width="2" height="2" />
-      <rect x="73" y="58" width="2" height="2" /> <rect x="77" y="58" width="2" height="2" /> <rect x="81" y="58" width="2" height="2" /> <rect x="85" y="58" width="2" height="2" />
-      <rect x="73" y="64" width="2" height="2" /> <rect x="77" y="64" width="2" height="2" /> <rect x="81" y="64" width="2" height="2" /> <rect x="85" y="64" width="2" height="2" />
-      <rect x="73" y="70" width="2" height="2" /> <rect x="77" y="70" width="2" height="2" /> <rect x="81" y="70" width="2" height="2" /> <rect x="85" y="70" width="2" height="2" />
+    {/* Left Building - Shaded Green */}
+    <rect x="68" y="47" width="14" height="8" fill="#2C6B13" rx={0.5} />
+    <rect x="71" y="42" width="8" height="5" fill="#2C6B13" rx={0.5} />
+    <rect x="65" y="55" width="20" height="65" fill="#2C6B13" rx={0.5} />
+    <g fill="#FCB116">
+      <rect x="73.5" y="60" width="3" height="1.5" rx={0.3} />
+      <rect x="73.5" y="66" width="3" height="1.5" rx={0.3} />
+      <rect x="73.5" y="72" width="3" height="1.5" rx={0.3} />
+      <rect x="73.5" y="78" width="3" height="1.5" rx={0.3} />
+      <rect x="73.5" y="84" width="3" height="1.5" rx={0.3} />
+      <rect x="73.5" y="90" width="3" height="1.5" rx={0.3} />
     </g>
 
-    <rect x="95" y="20" width="28" height="100" fill="#607564" rx="1" />
-    <g fill="#FBBC05">
-      <rect x="100" y="30" width="3" height="4" /> <rect x="106" y="30" width="3" height="4" /> <rect x="112" y="30" width="3" height="4" /> <rect x="118" y="30" width="3" height="4" />
-      <rect x="100" y="38" width="3" height="4" /> <rect x="106" y="38" width="3" height="4" /> <rect x="112" y="38" width="3" height="4" /> <rect x="118" y="38" width="3" height="4" />
-      <rect x="100" y="46" width="3" height="4" /> <rect x="106" y="46" width="3" height="4" /> <rect x="112" y="46" width="3" height="4" /> <rect x="118" y="46" width="3" height="4" />
-      <rect x="100" y="54" width="3" height="4" /> <rect x="106" y="54" width="3" height="4" /> <rect x="112" y="54" width="3" height="4" /> <rect x="118" y="54" width="3" height="4" />
-      <rect x="100" y="62" width="3" height="4" /> <rect x="106" y="62" width="3" height="4" /> <rect x="112" y="62" width="3" height="4" /> <rect x="118" y="62" width="3" height="4" />
+    {/* Right Building - Shaded Green */}
+    <rect x="126" y="47" width="14" height="8" fill="#2C6B13" rx={0.5} />
+    <rect x="129" y="42" width="8" height="5" fill="#2C6B13" rx={0.5} />
+    <rect x="123" y="55" width="20" height="65" fill="#2C6B13" rx={0.5} />
+    <g fill="#FCB116">
+      <rect x="131.5" y="60" width="3" height="1.5" rx={0.3} />
+      <rect x="131.5" y="66" width="3" height="1.5" rx="0.3" />
+      <rect x="131.5" y="72" width="3" height="1.5" rx="0.3" />
+      <rect x="131.5" y="78" width="3" height="1.5" rx="0.3" />
+      <rect x="131.5" y="84" width="3" height="1.5" rx="0.3" />
+      <rect x="131.5" y="90" width="3" height="1.5" rx="0.3" />
     </g>
 
-    <rect x="127" y="50" width="20" height="70" fill="#36453B" rx="1" />
-    <g fill="#FBBC05" opacity="0.6">
-      <rect x="130" y="58" width="3" height="3" /> <rect x="136" y="58" width="3" height="3" /> <rect x="142" y="58" width="3" height="3" />
-      <rect x="130" y="66" width="3" height="3" /> <rect x="136" y="66" width="3" height="3" /> <rect x="142" y="66" width="3" height="3" />
-      <rect x="130" y="74" width="3" height="3" /> <rect x="136" y="74" width="3" height="3" /> <rect x="142" y="74" width="3" height="3" />
+    {/* Center Building - Bright Vibrant Green */}
+    <rect x="94" y="25" width="20" height="10" fill="#4CB021" rx={0.5} />
+    <rect x="99" y="18" width="10" height="7" fill="#4CB021" rx={0.5} />
+    <rect x="90" y="35" width="28" height="85" fill="#4CB021" rx={0.5} />
+    <g fill="#FCB116">
+      <rect x="95" y="42" width="3" height="1.5" rx={0.3} />
+      <rect x="95" y="48" width="3" height="1.5" rx={0.3} />
+      <rect x="95" y="54" width="3" height="1.5" rx="0.3" />
+      <rect x="95" y="60" width="3" height="1.5" rx="0.3" />
+      <rect x="95" y="66" width="3" height="1.5" rx="0.3" />
+      <rect x="95" y="72" width="3" height="1.5" rx="0.3" />
+      <rect x="95" y="78" width="3" height="1.5" rx="0.3" />
+      <rect x="95" y="84" width="3" height="1.5" rx="0.3" />
+      <rect x="95" y="90" width="3" height="1.5" rx="0.3" />
+      
+      <rect x="110" y="42" width="3" height="1.5" rx={0.3} />
+      <rect x="110" y="48" width="3" height="1.5" rx="0.3" />
+      <rect x="110" y="54" width="3" height="1.5" rx="0.3" />
+      <rect x="110" y="60" width="3" height="1.5" rx="0.3" />
+      <rect x="110" y="66" width="3" height="1.5" rx="0.3" />
+      <rect x="110" y="72" width="3" height="1.5" rx="0.3" />
+      <rect x="110" y="78" width="3" height="1.5" rx="0.3" />
+      <rect x="110" y="84" width="3" height="1.5" rx="0.3" />
+      <rect x="110" y="90" width="3" height="1.5" rx="0.3" />
     </g>
-    
-    {/* Houses */}
-    {/* House 1 */}
-    <path d="M35 115 L80 75 L125 115 V135 H35 Z" fill="white" stroke="#607564" strokeWidth="1.5" />
-    <path d="M35 115 L80 75 L125 115 Z" fill="#607564" />
-    <g fill="#607564" opacity="0.7">
-      <rect x="56" y="115" width="5" height="5" /> <rect x="63" y="115" width="5" height="5" />
-      <rect x="56" y="122" width="5" height="5" /> <rect x="63" y="122" width="5" height="5" />
+
+    {/* Background joining fill for roofs */}
+    <polygon points="72,72 142,72 116,112 98,112" fill="#2C6B13" opacity={0.15} />
+
+    {/* Left House Body */}
+    <path d="M 38 112 L 72 82 L 106 112 V 135 H 38 Z" fill="#ffffff" stroke="#2C6B13" strokeWidth={1.5} />
+    <polygon points="72,72 28,112 116,112" fill="#4CB021" />
+
+    {/* Right House Body */}
+    <path d="M 108 112 L 142 82 L 176 112 V 135 H 108 Z" fill="#ffffff" stroke="#2C6B13" strokeWidth={1.5} />
+    <polygon points="142,72 98,112 186,112" fill="#2C6B13" />
+
+    {/* Windows inside the houses */}
+    <g fill="#4CB021">
+      {/* Left house left window */}
+      <rect x="50" y="120" width="3" height="3" />
+      <rect x="55" y="120" width="3" height="3" />
+      <rect x="50" y="125" width="3" height="3" />
+      <rect x="55" y="125" width="3" height="3" />
+
+      {/* Left house right window */}
+      <rect x="86" y="120" width="3" height="3" />
+      <rect x="91" y="120" width="3" height="3" />
+      <rect x="86" y="125" width="3" height="3" />
+      <rect x="91" y="125" width="3" height="3" />
+
+      {/* Right house left window */}
+      <rect x="120" y="120" width="3" height="3" />
+      <rect x="125" y="120" width="3" height="3" />
+      <rect x="120" y="125" width="3" height="3" />
+      <rect x="125" y="125" width="3" height="3" />
+
+      {/* Right house right window */}
+      <rect x="156" y="120" width="3" height="3" />
+      <rect x="161" y="120" width="3" height="3" />
+      <rect x="156" y="125" width="3" height="3" />
+      <rect x="161" y="125" width="3" height="3" />
     </g>
-    
-    {/* House 2 */}
-    <path d="M100 115 L145 75 L190 115 V135 H100 Z" fill="white" stroke="#607564" strokeWidth="1.5" />
-    <path d="M100 115 L145 75 L190 115 Z" fill="#607564" />
-    <g fill="#607564" opacity="0.7">
-      <rect x="121" y="115" width="5" height="5" /> <rect x="128" y="115" width="5" height="5" />
-      <rect x="121" y="122" width="5" height="5" /> <rect x="128" y="122" width="5" height="5" />
-    </g>
-    
+
     {/* Swoosh Layers */}
-    <path d="M25 140 Q 107 168 190 140" stroke="#36453B" strokeWidth="10" fill="none" strokeLinecap="round" />
-    <path d="M25 140 Q 107 162 190 140" stroke="#FBBC05" strokeWidth="5" fill="none" strokeLinecap="round" />
-    <path d="M25 140 Q 107 152 190 140" stroke="#607564" strokeWidth="2" fill="none" strokeLinecap="round" />
+    <path d="M15 136 Q100 152 185 136 Q100 145 15 136 Z" fill="#4CB021" />
+    <path d="M15 136 Q100 158 185 136 Q100 152 15 136 Z" fill="#FCB116" />
+
+    {/* Stars / Glints */}
+    {/* Left floating gold stars */}
+    <path d="M 25 97 Q 25 105 33 105 Q 25 105 25 113 Q 25 105 17 105 Q 25 105 25 97 Z" fill="#FCB116" />
+    <path d="M 37 91 Q 37 95 41 95 Q 37 95 37 99 Q 37 95 33 95 Q 37 95 37 91 Z" fill="#FCB116" />
     
-    {/* Shining Stars / Glints */}
-    <path d="M48 95 L51 102 L58 105 L51 108 L48 115 L45 108 L38 105 L45 102 Z" fill="#FBBC05" />
-    <path d="M110 80 L115 90 L125 95 L115 100 L110 110 L105 100 L95 95 L105 90 Z" fill="white" />
-    <path d="M165 105 L168 112 L175 115 L168 118 L165 125 L162 118 L155 115 L162 112 Z" fill="#FBBC05" />
-    <path d="M85 85 L87 89 L91 90 L87 91 L85 95 L83 91 L79 90 L83 89 Z" fill="#FBBC05" />
-    <path d="M140 85 L142 89 L146 90 L142 91 L140 95 L138 91 L134 90 L138 89 Z" fill="#FBBC05" />
-    <path d="M175 90 L177 92 L180 93 L177 94 L175 97 L173 94 L170 93 L173 92 Z" fill="#FBBC05" />
-    <path d="M25 100 L27 102 L30 103 L27 104 L25 107 L23 104 L20 103 L23 102 Z" fill="#FBBC05" />
+    {/* Right floating gold stars */}
+    <path d="M 175 97 Q 175 105 183 105 Q 175 105 175 113 Q 175 105 167 105 Q 175 105 175 97 Z" fill="#FCB116" />
+    <path d="M 163 91 Q 163 95 167 95 Q 163 95 163 99 Q 163 95 159 95 Q 163 95 163 91 Z" fill="#FCB116" />
+
+    {/* Roof Shines */}
+    <path d="M 72 92 Q 72 100 80 100 Q 72 100 72 108 Q 72 100 64 100 Q 72 100 72 92 Z" fill="#ffffff" />
+    <path d="M 58 90 Q 58 95 63 95 Q 58 95 58 100 Q 58 95 53 95 Q 58 95 58 90 Z" fill="#FCB116" />
+    <path d="M 142 91 Q 142 96 147 96 Q 142 96 142 101 Q 142 96 137 96 Q 142 96 142 91 Z" fill="#FCB116" />
   </svg>
 );
 
@@ -130,18 +182,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-between items-center">
-            <Link to="/" className="flex items-center gap-3 cursor-pointer group">
-              <div className="group-hover:scale-110 transition-transform duration-300">
-                <Logo className="h-12 w-12" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1">
-                  Shine Well
-                </span>
-                <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1">
-                  Commercial & Home Cleaning Services
-                </span>
-              </div>
+            <Link to="/" className="flex items-center cursor-pointer group">
+              <img 
+                src="/logo.png" 
+                alt="Shine Well Commercial & Home Cleaning Services" 
+                className="h-14 sm:h-16 w-auto mix-blend-multiply object-contain group-hover:scale-105 transition-transform duration-300"
+                referrerPolicy="no-referrer"
+              />
             </Link>
 
             {/* Desktop Menu */}
@@ -319,14 +366,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-3 mb-6">
-                <Logo className="h-10 w-10" />
-                <div className="flex flex-col">
-                  <span className="text-3xl font-script tracking-tight leading-none mb-1">
-                    Shine Well
-                  </span>
-                  <span className="text-[7px] uppercase tracking-[0.2em] text-[#a3aba6] font-medium leading-none pl-0.5">
-                    Commercial & Home Cleaning Services
-                  </span>
+                <div className="bg-white p-2 rounded-2xl shadow-md border border-[#3a3f3c] inline-block">
+                  <img 
+                    src="/logo.png" 
+                    alt="Shine Well Commercial & Home Cleaning Services" 
+                    className="h-20 sm:h-24 w-auto object-contain"
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
               </div>
               <p className="max-w-sm text-[#a3aba6] font-light leading-relaxed mb-8">
