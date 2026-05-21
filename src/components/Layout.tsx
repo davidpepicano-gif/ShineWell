@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '../assets/images/regenerated_image_1779383426142.jpg';
 import { 
   Sparkles, 
   Phone, 
@@ -25,7 +26,7 @@ const services = [
 
 const Logo = ({ className = "h-10 w-10" }: { className?: string }) => (
   <img 
-    src="/src/assets/images/regenerated_image_1779383426142.jpg" 
+    src={logoImg} 
     alt="Shine Well Logo" 
     className={`${className} object-contain rounded-full`}
     id="navbar-logo"
