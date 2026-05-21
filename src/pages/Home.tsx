@@ -1,4 +1,3 @@
-import newLogo from '../assets/images/regenerated_image_1779383426142.jpg';
 import { useRef, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
@@ -109,12 +108,13 @@ export default function Home() {
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
               className="lg:col-span-6 relative"
             >
-             <img
-              src={newLogo}
-              alt="Shine Well Commercial & Home Cleaning Services Logo"
-               className="max-w-[90%] max-h-[90%] w-auto h-auto object-contain transition-transform duration-500 hover:scale-105"
-                referrerPolicy="no-referrer"
-/>
+              <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] md:aspect-square lg:aspect-[4/5] shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+                  alt="Professional house cleaning service in Kansas City MO"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
               
