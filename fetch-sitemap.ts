@@ -1,6 +1,6 @@
 import https from 'https';
 
-https.get('https://www.neatntidy.co/sitemap.xml', (res) => {
+https.get('https://shinewellcleaning.com/sitemap.xml', (res) => {
   let data = '';
   res.on('data', (chunk) => data += chunk);
   res.on('end', () => {
