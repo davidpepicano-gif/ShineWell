@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart } from 'lucide-react';
+import storyImg from '../assets/images/regenerated_image_1778882241066.webp';
 
 export default function AboutPage() {
   return (
@@ -50,7 +51,7 @@ export default function AboutPage() {
             <div id="about-image-wrapper" className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl rotate-1 hover:rotate-0 transition-transform duration-500 bg-[#e8e5df]">
               <img 
                 id="about-hero-image"
-                src="/src/assets/images/regenerated_image_1778882241066.webp" 
+                src={storyImg} 
                 alt="Shine Well founder Lina" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

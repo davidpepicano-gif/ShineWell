@@ -1,5 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
+import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
+import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -212,7 +215,7 @@ const serviceData = {
   'specialized-treatments': {
     title: 'Specialized Cleaning Treatments in Kansas City',
     icon: <Droplets className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: '/src/assets/images/regenerated_image_1778882149942.webp',
+    heroImage: specializedImg,
     altText: 'Specialized cleaning services Kansas City',
     description: 'Targeted care for specific needs, including upholstery, carpet spot treatments, and eco friendly sanitization for sensitive spaces.',
     details: 'Sometimes standard cleaning isn\'t enough. Our specialized treatments address specific issues and materials that require extra care and expertise. From reviving tired upholstery to using specialized eco friendly products for allergy sensitive households, we have the solutions you need.',
@@ -251,7 +254,7 @@ const serviceData = {
   'organizing': {
     title: 'Professional Home & Office Organizing in Kansas City',
     icon: <Sparkles className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: '/src/assets/images/regenerated_image_1778878771115.jpg',
+    heroImage: organizingImg,
     altText: 'Professional organizing service home Kansas City',
     description: 'Functional systems for your home or office. We help you declutter and create spaces that work for your daily life.',
     details: 'Clutter can be overwhelming. Our organizing service goes beyond cleaning to help you reclaim your space and your time. We work with you to declutter, categorize, and create sustainable systems that make maintaining order effortless. Whether it\'s a chaotic pantry, a crowded closet, or a disorganized office, we bring clarity and function back to your environment.',
@@ -282,7 +285,7 @@ const serviceData = {
   'hoarder-cleanup': {
     title: 'Compassionate Hoarder House Clean Up in Kansas City',
     icon: <Briefcase className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: '/src/assets/images/regenerated_image_1778884089897.jpg',
+    heroImage: hoarderImg,
     altText: 'Compassionate hoarder house clean up service in Kansas City',
     description: 'Empathetic, efficient restoration for cluttered environments. We handle the heavy lifting with care and discretion.',
     details: 'Facing a hoarding situation requires more than just a cleaning crew; it requires compassion, patience, and a non judgmental approach. Shine Well provides a safe and supportive environment to help individuals and families navigate the process of decluttering and sanitizing their homes. We work at a pace that feels safe while ensuring significant progress toward a healthy living environment.',

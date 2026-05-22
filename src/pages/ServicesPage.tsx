@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
+import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
+import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -39,19 +42,19 @@ export default function ServicesPage() {
 
   const specializedServices = [
     {
-      image: "/src/assets/images/regenerated_image_1778884089897.jpg",
+      image: hoarderImg,
       title: "Hoarder House Clean Up",
       desc: "Compassionate, efficient restoration for cluttered environments. We handle the heavy lifting with care and discretion.",
       path: "/services/hoarder-cleanup"
     },
     {
-      image: "/src/assets/images/regenerated_image_1778878771115.jpg",
+      image: organizingImg,
       title: "Organizing Service",
       desc: "Functional systems for your home or office. We help you declutter and create spaces that work for your daily life.",
       path: "/services/organizing"
     },
     {
-      image: "/src/assets/images/regenerated_image_1778882149942.webp",
+      image: specializedImg,
       title: "Specialized Treatments",
       desc: "Targeted care for specific needs, including upholstery, carpet spot treatments, and eco friendly sanitization for sensitive spaces.",
       path: "/services/specialized-treatments"
