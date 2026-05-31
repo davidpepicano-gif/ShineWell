@@ -78,7 +78,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center gap-4 cursor-pointer group">
               <div className="group-hover:scale-105 transition-transform duration-300 shrink-0">
-                <Logo className="h-28 w-28 md:h-36 md:w-36" />
+                <Logo className="h-16 w-16 md:h-20 md:w-20" />
               </div>
               <div className="flex flex-col justify-center">
                 <span className="text-4xl md:text-5xl lg:text-6xl font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1 md:mb-2">
@@ -266,7 +266,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-4 mb-6">
                 <div className="shrink-0">
-                  <Logo className="h-24 w-24 md:h-32 md:w-32" />
+                  <Logo className="h-14 w-14 md:h-18 md:w-18" />
                 </div>
                 <div className="flex flex-col justify-center">
                   <span className="text-4xl md:text-5xl lg:text-6xl font-script tracking-tight leading-none mb-1 md:mb-2 text-[#F9F8F6]">
