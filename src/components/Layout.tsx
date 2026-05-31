@@ -71,20 +71,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-500 ${
-          isScrolled ? 'bg-[#F9F8F6]/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+          isScrolled ? 'bg-[#F9F8F6]/95 backdrop-blur-md shadow-sm py-2' : 'bg-[#F9F8F6]/50 backdrop-blur-sm py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-between items-center">
-            <Link to="/" className="flex items-center gap-3 cursor-pointer group">
-              <div className="group-hover:scale-110 transition-transform duration-300">
-                <Logo className="h-12 w-12" />
+            <Link to="/" className="flex items-center gap-4 cursor-pointer group">
+              <div className="group-hover:scale-105 transition-transform duration-300 shrink-0">
+                <Logo className="h-28 w-28 md:h-36 md:w-36" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1">
+              <div className="flex flex-col justify-center">
+                <span className="text-4xl md:text-5xl lg:text-6xl font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1 md:mb-2">
                   Shine Well
                 </span>
-                <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1">
+                <span className="text-[9px] sm:text-[11px] md:text-xs uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1">
                   Commercial & Home Cleaning Services
                 </span>
               </div>
@@ -264,13 +264,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center gap-3 mb-6">
-                <Logo className="h-10 w-10" />
-                <div className="flex flex-col">
-                  <span className="text-3xl font-script tracking-tight leading-none mb-1">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="shrink-0">
+                  <Logo className="h-24 w-24 md:h-32 md:w-32" />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-script tracking-tight leading-none mb-1 md:mb-2 text-[#F9F8F6]">
                     Shine Well
                   </span>
-                  <span className="text-[7px] uppercase tracking-[0.2em] text-[#a3aba6] font-medium leading-none pl-0.5">
+                  <span className="text-[9px] sm:text-[11px] md:text-xs uppercase tracking-[0.2em] text-[#a3aba6] font-medium leading-none pl-0.5">
                     Commercial & Home Cleaning Services
                   </span>
                 </div>
