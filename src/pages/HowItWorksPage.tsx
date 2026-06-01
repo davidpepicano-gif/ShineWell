@@ -37,13 +37,13 @@ export default function HowItWorksPage() {
   ];
 
   return (
-    <div className="pt-32 pb-24 bg-white min-h-screen">
+    <div className="pt-24 pb-14 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6"
+            className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-4"
           >
             How It Works
           </motion.h1>
@@ -57,7 +57,7 @@ export default function HowItWorksPage() {
           </motion.p>
         </div>
 
-        <div className="space-y-24">
+        <div className="space-y-16">
           {steps.map((item, idx) => (
             <div key={idx} className={`flex flex-col ${idx % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 lg:gap-20`}>
               <motion.div 

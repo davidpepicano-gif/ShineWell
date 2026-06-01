@@ -162,7 +162,7 @@ export default function PaymentPage() {
 
   if (isSuccess) {
     return (
-      <div className="min-h-screen bg-[#F9F8F6] pt-32 pb-20 flex items-center justify-center">
+      <div className="min-h-screen bg-[#F9F8F6] pt-24 pb-14 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -187,14 +187,14 @@ export default function PaymentPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F9F8F6] pt-32 pb-20">
+    <div className="min-h-screen bg-[#F9F8F6] pt-24 pb-14">
       <div className="max-w-xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-[#e8e5df]"
         >
-          <div className="text-center mb-10">
+          <div className="text-center mb-6">
             <h1 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Complete Your Booking</h1>
             <p className="text-[#5c635f]">Secure payment for your ShineWell cleaning service.</p>
           </div>

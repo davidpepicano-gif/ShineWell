@@ -36,12 +36,12 @@ export default function LocationsPage() {
   ];
 
   return (
-    <div className="pt-32 pb-24 bg-[#F9F8F6] min-h-screen">
+    <div className="pt-24 pb-14 bg-[#F9F8F6] min-h-screen">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10"
         >
           <h1 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Areas We Serve</h1>
           <p className="text-lg text-[#5c635f] font-light">

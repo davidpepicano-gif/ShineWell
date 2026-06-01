@@ -3,21 +3,21 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function ContactPage() {
   return (
-    <div className="pt-32 pb-24 bg-[#F9F8F6] min-h-screen">
+    <div className="pt-24 pb-14 bg-[#F9F8F6] min-h-screen">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10"
         >
-          <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6">Contact Us</h1>
+          <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-4">Contact Us</h1>
           <p className="text-lg text-[#5c635f] font-light">
             We'd love to hear from you. Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.
           </p>
         </motion.div>
 
         {/* Contact Info Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function ContactPage() {
               <Phone className="w-6 h-6" />
             </div>
             <h3 className="font-medium text-[#2C302E] mb-2">Phone</h3>
-            <p className="text-[#5c635f] font-light">+1 913-325-1400</p>
+            <a href="tel:9133251400" className="text-[#C86B53] hover:underline font-semibold text-lg">913-325-1400</a>
             <p className="text-sm text-[#a3aba6] mt-2">Mon to Fri, 8am to 6pm</p>
           </motion.div>
 
@@ -84,7 +84,13 @@ export default function ContactPage() {
         >
           <div className="text-center mb-10">
             <h2 className="text-3xl font-serif text-[#2C302E] mb-4">Request a Free Estimate</h2>
-            <p className="text-[#5c635f] font-light">Fill out the form below and we'll get back to you as soon as possible.</p>
+            <p className="text-[#5c635f] font-light">
+              Fill out the form below or call us directly at{' '}
+              <a href="tel:9133251400" className="text-[#C86B53] hover:underline font-semibold">
+                913-325-1400
+              </a>{' '}
+              to get a free estimate immediately.
+            </p>
           </div>
           
           <div className="w-full min-h-[500px] rounded-2xl overflow-hidden border border-[#e8e5df] bg-white flex items-center justify-center">

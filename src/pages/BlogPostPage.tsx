@@ -9,9 +9,9 @@ export default function BlogPostPage() {
 
   if (!post) {
     return (
-      <div className="min-h-[60vh] flex flex-col items-center justify-center pt-32 px-6">
+      <div className="min-h-[60vh] flex flex-col items-center justify-center pt-24 px-6">
         <h1 className="text-4xl font-serif text-[#2C302E] mb-4">Post Not Found</h1>
-        <p className="text-[#5c635f] mb-8">We couldn't find the article you're looking for.</p>
+        <p className="text-[#5c635f] mb-6">We couldn't find the article you're looking for.</p>
         <Link to="/blog" className="bg-[#C86B53] text-white px-6 py-3 rounded-full font-medium hover:bg-[#b55e47] transition-colors">
           Return to Blog
         </Link>
@@ -20,11 +20,11 @@ export default function BlogPostPage() {
   }
 
   return (
-    <div className="pt-32 pb-24 bg-[#F9F8F6] min-h-screen">
+    <div className="pt-24 pb-14 bg-[#F9F8F6] min-h-screen">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         <Link 
           to="/blog"
-          className="inline-flex items-center gap-2 text-[#5c635f] hover:text-[#C86B53] transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-[#5c635f] hover:text-[#C86B53] transition-colors mb-5"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Blog

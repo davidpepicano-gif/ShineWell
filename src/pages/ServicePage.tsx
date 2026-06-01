@@ -11,7 +11,8 @@ import {
   Droplets, 
   Paintbrush,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Phone
 } from 'lucide-react';
 
 const serviceData = {
@@ -393,9 +394,9 @@ export default function ServicePage() {
 
   if (!service) {
     return (
-      <div className="min-h-[60vh] flex flex-col items-center justify-center pt-32 px-6">
+      <div className="min-h-[60vh] flex flex-col items-center justify-center pt-24 px-6">
         <h1 className="text-4xl font-serif text-[#2C302E] mb-4">Service Not Found</h1>
-        <p className="text-[#5c635f] mb-8">We couldn't find the service you're looking for.</p>
+        <p className="text-[#5c635f] mb-6">We couldn't find the service you're looking for.</p>
         <Link to="/" className="bg-[#C86B53] text-white px-6 py-3 rounded-full font-medium hover:bg-[#b55e47] transition-colors">
           Return Home
         </Link>
@@ -404,25 +405,25 @@ export default function ServicePage() {
   }
 
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-24 pb-14">
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm mb-8">
+            <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm mb-5">
               {service.icon}
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2C302E] mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2C302E] mb-4 leading-tight">
               {service.title}
             </h1>
-            <div className="inline-block bg-[#F9F8F6] px-4 py-2 rounded-full border border-[#e8e5df] mb-6">
+            <div className="inline-block bg-[#F9F8F6] px-4 py-2 rounded-full border border-[#e8e5df] mb-4">
               <span className="text-[#4A5D4E] font-medium">{service.price}</span>
             </div>
-            <p className="text-lg md:text-xl text-[#5c635f] font-light leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-[#5c635f] font-light leading-relaxed mb-5">
               {service.description}
             </p>
             <Link 
@@ -567,8 +568,9 @@ export default function ServicePage() {
                 </Link>
                 <div className="mt-6 pt-6 border-t border-[#3a3f3c] text-center">
                   <p className="text-sm text-[#a3aba6] mb-2">Or call us directly:</p>
-                  <a href="tel:+19133251400" className="text-xl font-serif text-white hover:text-[#C86B53] transition-colors">
-                    +1 913 325 1400
+                  <a href="tel:9133251400" className="text-xl font-serif text-white hover:text-[#C86B53] transition-colors flex items-center justify-center gap-2">
+                    <Phone className="w-4 h-4 shrink-0 text-[#CAD4CD]" />
+                    <span>913-325-1400</span>
                   </a>
                 </div>
               </div>

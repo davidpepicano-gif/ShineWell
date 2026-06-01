@@ -193,12 +193,12 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="pt-32 pb-24 bg-[#F9F8F6] min-h-screen">
+    <div className="pt-24 pb-14 bg-[#F9F8F6] min-h-screen">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-16 md:mb-24 text-center max-w-3xl mx-auto"
+          className="mb-10 md:mb-14 text-center max-w-3xl mx-auto"
         >
           <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6">Our Services</h1>
           <p className="text-lg text-[#5c635f] font-light">
@@ -207,8 +207,8 @@ export default function ServicesPage() {
         </motion.div>
 
         {/* Commercial Services */}
-        <div className="mb-24">
-          <div className="text-center mb-10">
+        <div className="mb-14">
+          <div className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Office & Commercial Cleaning</h2>
             <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
           </div>
@@ -253,7 +253,7 @@ export default function ServicesPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white rounded-[2rem] shadow-sm border border-[#e8e5df] overflow-hidden mb-24"
+          className="bg-white rounded-[2rem] shadow-sm border border-[#e8e5df] overflow-hidden mb-14"
         >
           <div className="relative p-12 md:p-16 text-center text-white overflow-hidden">
             <img 
@@ -297,7 +297,7 @@ export default function ServicesPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white rounded-[2rem] shadow-sm border border-[#e8e5df] overflow-hidden mb-24"
+          className="bg-white rounded-[2rem] shadow-sm border border-[#e8e5df] overflow-hidden mb-14"
         >
           <div className="relative p-12 md:p-16 text-center text-white overflow-hidden">
             <img 
@@ -337,8 +337,8 @@ export default function ServicesPage() {
         </motion.div>
 
         {/* Residential Services */}
-        <div className="mb-24">
-          <div className="text-center mb-10">
+        <div className="mb-14">
+          <div className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Residential Cleaning</h2>
             <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
           </div>
@@ -379,8 +379,8 @@ export default function ServicesPage() {
         </div>
 
         {/* Specialized Services */}
-        <div className="mb-24">
-          <div className="text-center mb-10">
+        <div className="mb-14">
+          <div className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Specialized Services</h2>
             <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
           </div>
@@ -425,10 +425,10 @@ export default function ServicesPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-24 max-w-5xl mx-auto"
+          className="mb-14 max-w-5xl mx-auto"
         >
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Compare Our Residential Packages</h2>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-3">Compare Our Residential Packages</h2>
             <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full mb-6"></div>
             <p className="text-[#5c635f] font-light max-w-2xl mx-auto">
               See exactly what's included in our most popular residential cleaning services to find the perfect fit for your home.

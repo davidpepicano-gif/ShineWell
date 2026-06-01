@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-14 lg:pt-36 lg:pb-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             <motion.div
@@ -52,16 +52,16 @@ export default function Home() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="lg:col-span-6 z-10"
             >
-              <h1 className="text-5xl md:text-6xl lg:text-[72px] font-serif text-[#2C302E] leading-[1.1] mb-6">
+              <h1 className="text-5xl md:text-6xl lg:text-[72px] font-serif text-[#2C302E] leading-[1.1] mb-4">
                 Kansas City's Most Trusted <span className="text-[#607564] italic">Office & Home Cleaning Service</span>
               </h1>
-              <p className="text-lg md:text-xl text-[#5c635f] mb-10 max-w-lg leading-relaxed font-light">
+              <p className="text-lg md:text-xl text-[#5c635f] mb-6 max-w-lg leading-relaxed font-light">
                 Shine Well delivers spotless results for homes, apartments, offices, and short term rentals across Kansas City, MO. Fully insured, background checked, and eco friendly — every time.
               </p>
               
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-6">
                 {/* GHL Booking Widget */}
-                <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-[#e8e5df] relative overflow-hidden max-w-[600px] w-full">
+                <div className="bg-white p-6 rounded-3xl shadow-xl border border-[#e8e5df] relative overflow-hidden max-w-[600px] w-full">
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="text-2xl font-serif text-[#2C302E]">Book Your Cleaning</h3>
                   </div>
@@ -92,11 +92,11 @@ export default function Home() {
                 {/* Call Now Button */}
                 <div className="flex items-center">
                   <a 
-                    href="tel:+19133251400" 
+                    href="tel:9133251400" 
                     className="text-[#607564] hover:text-[#C86B53] font-medium text-lg transition-colors flex items-center gap-2"
                   >
                     <Phone className="w-5 h-5" />
-                    Or call us directly: +1 913 325 1400
+                    Or call us directly: 913-325-1400
                   </a>
                 </div>
               </div>
@@ -133,16 +133,16 @@ export default function Home() {
       </section>
 
       {/* Services Teaser Section */}
-      <section className="py-24 bg-white">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
+            className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6"
           >
             <div>
-              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Professional Cleaning Services Tailored for Kansas City Businesses & Homes</h2>
+              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">Professional Cleaning Services Tailored for Kansas City Businesses & Homes</h2>
               <p className="text-lg text-[#5c635f] max-w-2xl font-light">
                 Whether you need a recurring office clean, a one time deep scrub, or a move out reset in Kansas City, Shine Well has a plan that fits your schedule and budget.
               </p>
@@ -155,7 +155,7 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
                 icon: <Building2 className="h-7 w-7 text-[#607564]" strokeWidth={1.5} />,
@@ -182,14 +182,14 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.15, duration: 0.6 }}
-                className="bg-[#F9F8F6] rounded-3xl p-10 hover:bg-[#f2f0ea] transition-colors group"
+                className="bg-[#F9F8F6] rounded-3xl p-8 hover:bg-[#f2f0ea] transition-colors group"
               >
                 <Link to={service.path} className="block h-full">
-                  <div className="bg-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-sm mb-8 group-hover:scale-110 transition-transform duration-500">
+                  <div className="bg-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-sm mb-5 group-hover:scale-110 transition-transform duration-500">
                     {service.icon}
                   </div>
-                  <h3 className="text-2xl font-serif text-[#2C302E] mb-4 group-hover:text-[#C86B53] transition-colors">{service.title}</h3>
-                  <p className="text-[#5c635f] leading-relaxed font-light mb-6">
+                  <h3 className="text-2xl font-serif text-[#2C302E] mb-2 group-hover:text-[#C86B53] transition-colors">{service.title}</h3>
+                  <p className="text-[#5c635f] leading-relaxed font-light mb-4">
                     {service.desc}
                   </p>
                   <div className="flex items-center text-[#607564] font-medium text-sm group-hover:text-[#C86B53] transition-colors">
@@ -202,45 +202,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What's Included Section */}
-      <section className="py-24 bg-[#F9F8F6]">
+      {/* Why Choose Shine Well? Section */}
+      <section className="py-14 bg-[#F9F8F6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">What's Included in Every Shine Well Clean</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">Why Choose Shine Well?</h2>
             <p className="text-lg text-[#5c635f] font-light max-w-2xl mx-auto">
-              We don't cut corners, we clean them. Every service comes with our commitment to quality, eco friendly products, and a meticulous attention to detail.
+              With decades of experience and a passion for pristine spaces, we are the premier choice for homes and businesses across Kansas City.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { title: "Vetted Professionals", desc: "Background checked, trained, and insured cleaners you can trust." },
-              { title: "Eco Friendly Products", desc: "Safe for your family, pets, and the environment." },
-              { title: "Custom Checklists", desc: "We clean according to your specific priorities and needs." },
-              { title: "Satisfaction Guarantee", desc: "Not happy? Let us know within 24 hours and we'll make it right." }
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] text-center"
-              >
-                <div className="w-12 h-12 bg-[#607564]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Check className="w-6 h-6 text-[#607564]" />
-                </div>
-                <h3 className="text-xl font-medium text-[#2C302E] mb-3">{item.title}</h3>
-                <p className="text-[#5c635f] font-light text-sm leading-relaxed">{item.desc}</p>
-              </motion.div>
-            ))}
+          <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-[#e8e5df]">
+            <div className="grid sm:grid-cols-2 gap-y-6 gap-x-12">
+              {[
+                "Fully Insured",
+                "Locally Owned",
+                "22+ Years Experience",
+                "Residential & Commercial Cleaning",
+                "Satisfaction Guarantee",
+                "Flexible Scheduling",
+                "Eco-Friendly Products Available",
+                "Free Estimates"
+              ].map((point, idx) => (
+                <motion.div 
+                  key={idx}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.05, duration: 0.4 }}
+                  className="flex items-center gap-4 py-1.5 border-b border-[#e8e5df]/50 last:border-b-0 sm:last:border-b-0"
+                >
+                  <div className="w-8 h-8 rounded-full bg-[#607564]/10 flex items-center justify-center shrink-0">
+                    <Check className="w-5 h-5 text-[#607564] stroke-[2.5]" />
+                  </div>
+                  <span className="text-lg font-medium text-[#2C302E]">{point}</span>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* About / Our Story Teaser */}
-      <section className="py-24 bg-[#8BA192] text-[#2C302E] overflow-hidden">
+      <section className="py-14 bg-[#8BA192] text-[#2C302E] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -248,8 +253,8 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="order-2 lg:order-1"
             >
-              <h2 className="text-4xl md:text-5xl font-serif mb-8 text-[#2C302E]">Our Kansas City Story: <span className="italic font-light">More Than Just a Clean.</span></h2>
-              <div className="space-y-6 text-lg font-light text-[#2C302E]/80 leading-relaxed mb-10">
+              <h2 className="text-4xl md:text-5xl font-serif mb-4 text-[#2C302E]">Our Kansas City Story: <span className="italic font-light">More Than Just a Clean.</span></h2>
+              <div className="space-y-4 text-lg font-light text-[#2C302E]/80 leading-relaxed mb-6">
                 <p>
                   I started Shine Well with a simple belief: that a clean environment is the foundation for a peaceful life. What began as a personal passion for helping neighbors in Kansas City reclaim their weekends has grown into the city's most dedicated cleaning team.
                 </p>
@@ -288,16 +293,16 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section id="reviews" className="py-24 bg-white">
+      <section id="reviews" className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col items-center text-center mb-16 gap-8">
+          <div className="flex flex-col items-center text-center mb-10 gap-4">
             <div className="max-w-2xl flex flex-col items-center">
               {/* Google Badge */}
               <a 
                 href="https://share.google/3oMRqAPyjGZaUcAO6" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 mb-6 bg-[#F9F8F6] px-5 py-2.5 rounded-full border border-[#e8e5df] hover:bg-white hover:shadow-md transition-all cursor-pointer"
+                className="flex items-center gap-3 mb-3 bg-[#F9F8F6] px-5 py-2.5 rounded-full border border-[#e8e5df] hover:bg-white hover:shadow-md transition-all cursor-pointer"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -310,7 +315,7 @@ export default function Home() {
                 </div>
                 <span className="text-sm font-medium text-[#2C302E]">5.0 on Google</span>
               </a>
-              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">What Kansas City Businesses & Homeowners Are Saying</h2>
+              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-3">What Kansas City Businesses & Homeowners Are Saying</h2>
               <p className="text-lg text-[#5c635f] font-light">
                 Don't just take our word for it. Here's what our commercial and residential clients have to say about the ShineWell experience.
               </p>
@@ -325,7 +330,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden pb-12 -mx-6 px-6 lg:-mx-12 lg:px-12" ref={emblaRef}>
+          <div className="overflow-hidden pb-6 -mx-6 px-6 lg:-mx-12 lg:px-12" ref={emblaRef}>
             <div className="flex gap-6 items-stretch">
               {[
                 {
@@ -372,15 +377,15 @@ export default function Home() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
-                    className="h-full bg-[#F9F8F6] p-8 rounded-3xl flex flex-col items-center text-center relative group hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-[#e8e5df]"
+                    className="h-full bg-[#F9F8F6] p-6 rounded-3xl flex flex-col items-center text-center relative group hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-[#e8e5df]"
                   >
-                    <div className="flex items-center justify-center gap-2 mb-6">
+                    <div className="flex items-center justify-center gap-2 mb-4">
                       <div className="flex text-[#FBBC05]">
                         {[...Array(review.rating)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
                       </div>
                     </div>
                     
-                    <p className="text-[#2C302E] mb-8 text-[15px] leading-relaxed flex-grow font-light italic">"{review.text}"</p>
+                    <p className="text-[#2C302E] mb-4 text-[15px] leading-relaxed flex-grow font-light italic">"{review.text}"</p>
                     
                     <div className="flex flex-col items-center gap-3 mt-auto">
                       <div className="w-12 h-12 bg-[#607564] rounded-full flex items-center justify-center text-white font-serif text-xl">
@@ -417,16 +422,16 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-[#8BA192] text-[#2C302E]">
+      <section className="py-14 bg-[#8BA192] text-[#2C302E]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-[#2C302E]">Frequently Asked Questions</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-serif mb-3 text-[#2C302E]">Frequently Asked Questions</h2>
             <p className="text-lg text-[#2C302E]/80 font-light">
               Everything you need to know about our cleaning services in Kansas City.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-4">
             {[
               {
                 q: "How much does cleaning cost in Kansas City?",
@@ -459,9 +464,9 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-[#718876] p-8 rounded-3xl border border-white/20 hover:border-white/40 transition-colors shadow-sm"
+                className="bg-[#718876] p-6 rounded-3xl border border-white/20 hover:border-white/40 transition-colors shadow-sm"
               >
-                <h3 className="text-xl font-medium mb-4 text-white">{faq.q}</h3>
+                <h3 className="text-xl font-medium mb-2 text-white">{faq.q}</h3>
                 <p className="text-white/90 font-light leading-relaxed">
                   {faq.a}
                 </p>
@@ -471,7 +476,7 @@ export default function Home() {
         </div>
       </section>
       {/* CTA Section */}
-      <section className="py-24 bg-[#F9F8F6]">
+      <section className="py-14 bg-[#F9F8F6]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -479,17 +484,26 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Experience the ShineWell Difference</h2>
-            <p className="text-lg text-[#5c635f] font-light mb-10 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-3">Experience the ShineWell Difference</h2>
+            <p className="text-lg text-[#5c635f] font-light mb-6 max-w-2xl mx-auto">
               Ready to reclaim your time? Book your professional cleaning service today and let us take care of the rest.
             </p>
-            <Link 
-              to="/booking"
-              className="inline-flex items-center gap-2 bg-[#607564] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:bg-[#526356] hover:shadow-xl hover:-translate-y-1"
-            >
-              Book Your Cleaning
-              <ArrowRight className="w-5 h-5" />
-            </Link>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <Link 
+                to="/booking"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:bg-[#b55e47] hover:shadow-xl hover:-translate-y-1"
+              >
+                Book Your Cleaning
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a 
+                href="tel:9133251400"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-[#2C302E] border border-[#e8e5df] px-8 py-4 rounded-full font-medium text-lg transition-all hover:bg-[#F9F8F6] hover:shadow-xl hover:-translate-y-1"
+              >
+                <Phone className="w-5 h-5 text-[#607564]" />
+                Call 913-325-1400
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>

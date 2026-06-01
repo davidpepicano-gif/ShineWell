@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
-import logoImg from '../assets/images/regenerated_image_1779383426142.jpg';
+import logoImg from '../assets/images/regenerated_image_1780271530148.png';
 import { 
   Sparkles, 
   Phone, 
@@ -28,7 +28,7 @@ const Logo = ({ className = "h-10 w-10" }: { className?: string }) => (
   <img 
     src={logoImg} 
     alt="Shine Well Logo" 
-    className={`${className} object-contain rounded-full`}
+    className={`${className} object-cover aspect-square rounded-full shadow-md border border-[#e8e5df] bg-white hover:brightness-105 transition-all duration-300`}
     id="navbar-logo"
     referrerPolicy="no-referrer"
   />
@@ -42,7 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 15);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -71,20 +71,28 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-500 ${
-          isScrolled ? 'bg-[#F9F8F6]/95 backdrop-blur-md shadow-sm py-2' : 'bg-[#F9F8F6]/50 backdrop-blur-sm py-4'
+          isScrolled 
+            ? 'bg-[#F9F8F6]/98 backdrop-blur-md shadow-md border-b border-[#e8e5df]/60 py-2' 
+            : 'bg-[#F9F8F6]/60 backdrop-blur-sm border-b border-transparent py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-between items-center">
-            <Link to="/" className="flex items-center gap-4 cursor-pointer group">
+            <Link to="/" className="flex items-center gap-3 cursor-pointer group">
               <div className="group-hover:scale-105 transition-transform duration-300 shrink-0">
-                <Logo className="h-16 w-16 md:h-20 md:w-20" />
+                <Logo className={`transition-all duration-500 ${
+                  isScrolled ? 'h-16 w-16 md:h-[80px] md:w-[80px]' : 'h-24 w-24 md:h-[112px] md:w-[112px]'
+                }`} />
               </div>
               <div className="flex flex-col justify-center">
-                <span className="text-4xl md:text-5xl lg:text-6xl font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1 md:mb-2">
+                <span className={`font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1 transition-all duration-500 ${
+                  isScrolled ? 'text-xl md:text-2xl lg:text-3xl' : 'text-2xl md:text-3xl lg:text-4xl'
+                }`}>
                   Shine Well
                 </span>
-                <span className="text-[9px] sm:text-[11px] md:text-xs uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1">
+                <span className={`uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1 transition-all duration-500 ${
+                  isScrolled ? 'text-[7px] sm:text-[9px] md:text-[10px]' : 'text-[8px] sm:text-[10px] md:text-[11px]'
+                }`}>
                   Commercial & Home Cleaning Services
                 </span>
               </div>
@@ -158,6 +166,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               >
                 Book Now
               </Link>
+              <a 
+                href="tel:9133251400"
+                className="hidden lg:flex items-center gap-2 border border-[#607564] text-[#607564] hover:bg-[#607564] hover:text-white px-5 py-2.5 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 shrink-0"
+              >
+                <Phone className="w-4 h-4 shrink-0" />
+                <span>Call 913-325-1400</span>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -249,6 +264,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               >
                 Book Now
               </Link>
+              <a 
+                href="tel:9133251400"
+                className="bg-[#607564] text-white px-6 py-4 rounded-xl font-medium mt-2 w-full text-center flex items-center justify-center gap-2"
+              >
+                <Phone className="w-5 h-5 shrink-0" />
+                <span>Call 913-325-1400</span>
+              </a>
             </motion.div>
           )}
         </AnimatePresence>
@@ -260,23 +282,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#2C302E] text-[#F9F8F6] py-16 border-t border-[#3a3f3c] mt-auto">
+      <footer className="bg-[#2C302E] text-[#F9F8F6] py-10 md:py-12 border-t border-[#3a3f3c] mt-auto">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="shrink-0">
-                  <Logo className="h-14 w-14 md:h-18 md:w-18" />
+              <Link to="/" className="flex items-center gap-3 mb-6 cursor-pointer group">
+                <div className="group-hover:scale-105 transition-transform duration-300 shrink-0">
+                  <Logo className="h-20 w-20 md:h-24 md:w-24" />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-script tracking-tight leading-none mb-1 md:mb-2 text-[#F9F8F6]">
+                  <span className="text-2xl md:text-3xl lg:text-4xl font-script tracking-tight leading-none mb-1 text-[#F9F8F6]">
                     Shine Well
                   </span>
-                  <span className="text-[9px] sm:text-[11px] md:text-xs uppercase tracking-[0.2em] text-[#a3aba6] font-medium leading-none pl-0.5">
+                  <span className="text-[8px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-[#a3aba6] group-hover:text-white transition-colors font-medium leading-none pl-0.5">
                     Commercial & Home Cleaning Services
                   </span>
                 </div>
-              </div>
+              </Link>
               <p className="max-w-sm text-[#a3aba6] font-light leading-relaxed mb-8">
                 Honest, meticulous cleaning for businesses and homes across Kansas City. We clean so you can live.
               </p>
@@ -297,7 +319,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-4 text-[#a3aba6] font-light">
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#607564]" />
-                  <span>+1 913 325 1400</span>
+                  <a href="tel:9133251400" className="hover:text-white transition-colors">913-325-1400</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#607564]" />
