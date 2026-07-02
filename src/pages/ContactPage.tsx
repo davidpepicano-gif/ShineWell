@@ -47,7 +47,7 @@ export default function ContactPage() {
               <Mail className="w-6 h-6" />
             </div>
             <h3 className="font-medium text-[#2C302E] mb-2">Email</h3>
-            <p className="text-[#5c635f] font-light">lina.swcleaning@gmail.com</p>
+            <a href="mailto:lina.swcleaning@gmail.com" className="text-[#C86B53] hover:underline font-light">lina.swcleaning@gmail.com</a>
             <p className="text-sm text-[#a3aba6] mt-2">24/7 Support</p>
           </motion.div>
 

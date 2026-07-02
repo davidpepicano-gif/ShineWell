@@ -337,7 +337,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#607564]" />
-                  <span>shinewell.com</span>
+                  <a href="mailto:lina.swcleaning@gmail.com" className="hover:text-white transition-colors">lina.swcleaning@gmail.com</a>
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#607564] mt-1 shrink-0" />
@@ -397,8 +397,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Crafted by <a href="https://www.cerrana.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-4">Cerrana</a>
               </p>
               <div className="flex gap-6">
-                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
               </div>
             </div>
           </div>

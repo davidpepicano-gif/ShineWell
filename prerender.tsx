@@ -85,6 +85,8 @@ const routes = [
   '/blog/regular-house-cleaning-kansas-city',
   '/blog/deep-cleaning-kansas-city',
   '/blog/office-cleaning-reception',
+  '/privacy',
+  '/terms',
 ];
 
 const routeMetadata: Record<string, { title: string; description: string }> = {
@@ -179,6 +181,14 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
   "/blog/office-cleaning-reception": {
     title: "How Reception Cleanliness Boosts Client Trust | ShineWell Blog",
     description: "Expert advice on managing the physical first impression of your corporate lobby, reception desks, and waiting rooms to build immediate professional trust.",
+  },
+  "/privacy": {
+    title: "Privacy Policy | ShineWell Commercial & Home Cleaning Services",
+    description: "Read the Privacy Policy of ShineWell Commercial & Home Cleaning Services. Learn how we collect, protect, and handle your personal data and secure Stripe payments.",
+  },
+  "/terms": {
+    title: "Terms of Service | ShineWell Commercial & Home Cleaning Services",
+    description: "Review the Terms of Service for ShineWell Commercial & Home Cleaning Services, including our 24-hour cancellation policy, satisfaction guarantee, and general liabilities.",
   },
 };
 
@@ -290,7 +300,63 @@ function prerender() {
 
       // Dynamic JSON-LD schema generation and injection
       let schemaBlock = '';
-      if (route === '/faq') {
+      if (route === '/') {
+        const homeFaqSchema = {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does cleaning cost in Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cost vary based on the size of your space, the type of cleaning (routine, deep, move out), and the frequency of service. Contact us for a free, personalized estimate tailored to your specific commercial or residential needs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer same day cleaning in Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While we recommend booking in advance to secure your preferred time, we do our best to accommodate same day or last minute cleaning requests in Kansas City when our schedule allows. Please call us directly for urgent needs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are your cleaners background checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, absolutely. Every member of the ShineWell team undergoes a thorough background check before they are hired. We only send trusted, reliable professionals into your property."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you bring your own cleaning supplies?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! We bring our own professional-grade, eco-friendly cleaning supplies and equipment. If you have specific products you'd prefer us to use on certain surfaces, just let us know."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you clean Airbnb and short term rentals in Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialize in turnover cleaning for Airbnb and short term rentals across Kansas City. We ensure your property is spotless, sanitized, and guest ready between every stay."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is included in a deep cleaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A deep clean is a comprehensive, top to bottom service. It includes everything in our standard clean, plus detailed tasks like hand wiping baseboards, cleaning inside window sills, wiping down ceiling fans, and scrubbing grout lines."
+              }
+            }
+          ]
+        };
+        schemaBlock = `\n  <script type="application/ld+json">\n  ${JSON.stringify(homeFaqSchema, null, 2).replace(/\n/g, '\n  ')}\n  </script>`;
+      } else if (route === '/faq') {
         const faqSchema = {
           "@context": "https://schema.org",
           "@type": "FAQPage",
