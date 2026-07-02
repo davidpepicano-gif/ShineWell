@@ -1,0 +1,49 @@
+# Shine Well Cleaning — robots.txt
+# Goal: let search + answer engines crawl and CITE the site. (AEO #29)
+# Upload to the site ROOT so it resolves at https://shinewellcleaning.com/robots.txt
+
+# --- Standard search + AI answer engines (explicitly allowed) ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+# --- Everything else: allowed, but keep admin/checkout out of the index ---
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /cart
+Disallow: /checkout
+Disallow: /*?*utm_
+
+# --- Sitemap (update if your sitemap path differs) ---
+Sitemap: https://shinewellcleaning.com/sitemap.xml
