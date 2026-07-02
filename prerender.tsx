@@ -477,10 +477,10 @@ function prerender() {
             "name": serviceInfo.name,
             "description": serviceInfo.desc,
             "provider": {
-              "@type": "HouseCleaningService",
+              "@type": "LocalBusiness",
               "@id": "https://shinewellcleaning.com/#business",
-              "name": "ShineWell Commercial and Home Cleaning Services",
-              "telephone": "(913) 325-1400",
+              "name": "ShineWell Commercial & Home Cleaning Services",
+              "telephone": "+1-913-325-1400",
               "url": "https://shinewellcleaning.com"
             },
             "areaServed": [

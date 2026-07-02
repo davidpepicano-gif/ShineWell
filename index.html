@@ -43,68 +43,42 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "HouseCleaningService",
+          "@type": "LocalBusiness",
           "@id": "https://shinewellcleaning.com/#business",
-          "name": "ShineWell Commercial and Home Cleaning Services",
+          "name": "ShineWell Commercial & Home Cleaning Services",
           "alternateName": "ShineWell Cleaning Services",
           "url": "https://shinewellcleaning.com",
           "logo": "https://shinewellcleaning.com/logo.png",
-          "image": "https://shinewellcleaning.com/logo.png",
+          "image": "https://shinewellcleaning.com/social-share.jpg",
           "description": "Professional residential and commercial cleaning services. Serving Overland Park & the greater Kansas City metro. Fully insured, eco-friendly, and meticulous attention to detail.",
-          "telephone": "(913) 325-1400",
+          "telephone": "+1-913-325-1400",
           "email": "lina.swcleaning@gmail.com",
           "priceRange": "$$",
+          "knowsLanguage": ["en", "es"],
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-              ],
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
               "opens": "08:00",
               "closes": "18:00"
             }
           ],
           "areaServed": [
-            {
-              "@type": "AdministrativeArea",
-              "name": "Overland Park / KC metro"
-            },
-            {
-              "@type": "City",
-              "name": "Overland Park"
-            },
-            {
-              "@type": "City",
-              "name": "Kansas City"
-            },
-            {
-              "@type": "City",
-              "name": "Brookside"
-            },
-            {
-              "@type": "City",
-              "name": "Prairie Village"
-            },
-            {
-              "@type": "City",
-              "name": "Lee's Summit"
-            }
+            { "@type": "AdministrativeArea", "name": "Overland Park / KC metro" },
+            { "@type": "City", "name": "Overland Park" },
+            { "@type": "City", "name": "Kansas City" },
+            { "@type": "City", "name": "Brookside" },
+            { "@type": "City", "name": "Prairie Village" },
+            { "@type": "City", "name": "Lee's Summit" }
           ]
         },
         {
           "@type": "WebSite",
           "@id": "https://shinewellcleaning.com/#website",
           "url": "https://shinewellcleaning.com",
-          "name": "ShineWell Commercial and Home Cleaning Services",
+          "name": "ShineWell Commercial & Home Cleaning Services",
           "description": "Professional residential and commercial cleaning services. Serving Overland Park & the greater Kansas City metro.",
-          "publisher": {
-            "@id": "https://shinewellcleaning.com/#business"
-          }
+          "publisher": { "@id": "https://shinewellcleaning.com/#business" }
         }
       ]
     }
