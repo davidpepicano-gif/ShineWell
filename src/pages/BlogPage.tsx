@@ -12,9 +12,14 @@ export default function BlogPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center max-w-3xl mx-auto mb-10"
         >
-          <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-4">Cleaning Tips & News</h1>
+          <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6">Cleaning Tips & News</h1>
+          <div className="bg-white p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
+            <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+              <strong>ShineWell</strong> shares expert cleaning tips, localized Kansas City news, and seasonal maintenance advice to help you maintain a beautiful, healthy home or commercial office environment. Written by our experienced, fully insured cleaning experts, our articles outline practical strategies and checklists you can implement between our professional visits.
+            </p>
+          </div>
           <p className="text-lg text-[#5c635f] font-light">
-            Expert advice, local Kansas City updates, and insights from the Shine Well team.
+            Expert advice, local Kansas City updates, and insights from the ShineWell team.
           </p>
         </motion.div>
 

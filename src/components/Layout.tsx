@@ -27,7 +27,7 @@ const services = [
 const Logo = ({ className = "h-10 w-10" }: { className?: string }) => (
   <img 
     src={logoImg} 
-    alt="Shine Well Logo" 
+    alt="ShineWell Logo" 
     className={`${className} object-cover aspect-square rounded-full shadow-md border border-[#e8e5df] bg-white hover:brightness-105 transition-all duration-300`}
     id="navbar-logo"
     referrerPolicy="no-referrer"
@@ -88,7 +88,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <span className={`font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1 transition-all duration-500 ${
                   isScrolled ? 'text-xl md:text-2xl lg:text-3xl' : 'text-2xl md:text-3xl lg:text-4xl'
                 }`}>
-                  Shine Well
+                  ShineWell
                 </span>
                 <span className={`uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1 transition-all duration-500 ${
                   isScrolled ? 'text-[7px] sm:text-[9px] md:text-[10px]' : 'text-[8px] sm:text-[10px] md:text-[11px]'
@@ -164,22 +164,31 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 to="/booking"
                 className="bg-[#C86B53] hover:bg-[#b55e47] text-white px-7 py-3 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5"
               >
-                Book Now
+                Get a Free Estimate
               </Link>
               <a 
                 href="tel:9133251400"
                 className="hidden lg:flex items-center gap-2 border border-[#607564] text-[#607564] hover:bg-[#607564] hover:text-white px-5 py-2.5 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 shrink-0"
               >
                 <Phone className="w-4 h-4 shrink-0" />
-                <span>Call 913-325-1400</span>
+                <span>Call ShineWell: (913) 325-1400</span>
               </a>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center gap-2">
+              <a 
+                href="tel:9133251400"
+                className="flex items-center gap-1.5 bg-[#607564] text-white px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-[#b55e47] transition-all shrink-0"
+                aria-label="Call ShineWell at (913) 325-1400"
+              >
+                <Phone className="w-3.5 h-3.5 shrink-0" />
+                <span>(913) 325-1400</span>
+              </a>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 text-[#2C302E]"
+                className="p-2 text-[#2C302E] shrink-0"
+                aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X className="h-6 w-6" strokeWidth={1.5} /> : <Menu className="h-6 w-6" strokeWidth={1.5} />}
               </button>
@@ -262,14 +271,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 to="/booking"
                 className="bg-[#C86B53] text-white px-6 py-4 rounded-xl font-medium mt-4 w-full text-center block"
               >
-                Book Now
+                Get a Free Estimate
               </Link>
               <a 
                 href="tel:9133251400"
                 className="bg-[#607564] text-white px-6 py-4 rounded-xl font-medium mt-2 w-full text-center flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5 shrink-0" />
-                <span>Call 913-325-1400</span>
+                <span>Call (913) 325-1400</span>
               </a>
             </motion.div>
           )}
@@ -292,16 +301,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
                 <div className="flex flex-col justify-center">
                   <span className="text-2xl md:text-3xl lg:text-4xl font-script tracking-tight leading-none mb-1 text-[#F9F8F6]">
-                    Shine Well
+                    ShineWell
                   </span>
                   <span className="text-[8px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-[#a3aba6] group-hover:text-white transition-colors font-medium leading-none pl-0.5">
                     Commercial & Home Cleaning Services
                   </span>
                 </div>
               </Link>
-              <p className="max-w-sm text-[#a3aba6] font-light leading-relaxed mb-8">
-                Honest, meticulous cleaning for businesses and homes across Kansas City. We clean so you can live.
+              <p className="max-w-sm text-[#a3aba6] font-light leading-relaxed mb-4">
+                Honest, meticulous cleaning for businesses and homes across the Overland Park & KC metro area. We clean so you can live.
               </p>
+              <div className="mb-6 space-y-1 text-sm text-[#a3aba6] font-light">
+                <p className="font-semibold text-[#F9F8F6]">ShineWell Commercial and Home Cleaning Services</p>
+                <p className="text-[#a3aba6]">Serving Overland Park & the greater Kansas City metro</p>
+                <p>Phone: <a href="tel:9133251400" className="hover:text-white transition-colors underline decoration-[#607564] underline-offset-4">(913) 325-1400</a></p>
+              </div>
               <div className="flex gap-4">
                 <a href="https://www.facebook.com/shinewellcleaning/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#3a3f3c] flex items-center justify-center hover:bg-[#C86B53] transition-colors">
                   <span className="sr-only">Facebook</span>
@@ -319,7 +333,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-4 text-[#a3aba6] font-light">
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#607564]" />
-                  <a href="tel:9133251400" className="hover:text-white transition-colors">913-325-1400</a>
+                  <a href="tel:9133251400" className="hover:text-white transition-colors">(913) 325-1400</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#607564]" />
@@ -328,7 +342,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#607564] mt-1 shrink-0" />
                   <div className="w-full">
-                    <span className="block mb-3">Kansas City, MO</span>
+                    <span className="block mb-3">Serving Overland Park & the greater Kansas City metro</span>
                     <div className="w-full h-32 rounded-lg overflow-hidden border border-[#3a3f3c] bg-[#3a3f3c] mb-3">
                       <iframe 
                         width="100%" 
@@ -337,7 +351,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         scrolling="no" 
                         marginHeight={0} 
                         marginWidth={0} 
-                        src="https://maps.google.com/maps?q=Kansas+City&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=Overland+Park,KS&t=&z=10&ie=UTF8&iwloc=&output=embed"
                         title="Service Area Map"
                         className="grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
                       ></iframe>
@@ -370,14 +384,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link to="/locations" className="hover:text-white transition-colors">Locations</Link></li>
                 <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                 <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link to="/booking" className="hover:text-white transition-colors font-medium text-[#FBBC05]">Book Now</Link></li>
+                <li><Link to="/booking" className="hover:text-white transition-colors font-medium text-[#FBBC05]">Get a Free Estimate</Link></li>
                 <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>
           
           <div className="pt-8 border-t border-[#3a3f3c] text-sm text-[#a3aba6] font-light flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>&copy; {new Date().getFullYear()} Shine Well Cleaning Services. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} ShineWell Cleaning Services. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <p className="text-[10px] uppercase tracking-widest opacity-50">
                 Crafted by <a href="https://www.cerrana.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-4">Cerrana</a>
@@ -405,6 +419,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <span className="absolute right-full mr-4 bg-white text-[#2C302E] px-4 py-2 rounded-xl text-sm font-medium shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
           Chat with us!
         </span>
+      </a>
+
+      {/* Sticky Mobile Call Button */}
+      <a
+        href="tel:9133251400"
+        className="fixed bottom-6 left-6 z-50 md:hidden bg-[#C86B53] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center hover:shadow-[#C86B53]/30"
+        aria-label="Call ShineWell"
+      >
+        <Phone className="w-8 h-8 shrink-0" />
       </a>
     </div>
   );

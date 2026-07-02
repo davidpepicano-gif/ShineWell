@@ -201,6 +201,11 @@ export default function ServicesPage() {
           className="mb-10 md:mb-14 text-center max-w-3xl mx-auto"
         >
           <h1 className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6">Our Services</h1>
+          <div className="bg-white p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
+            <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+              <strong>ShineWell</strong> provides a complete suite of professional cleaning services across Kansas City, custom-tailored to suit homes, offices, construction sites, and specialized cluttered spaces. Backed by our 100% satisfaction guarantee, our fully insured and highly trained cleaners handle everything from routine housekeeping to deep restorative commercial sanitization.
+            </p>
+          </div>
           <p className="text-lg text-[#5c635f] font-light">
             No cookie cutter checklists here. We adapt to your space, your preferences, and your life. Explore our comprehensive cleaning solutions.
           </p>
@@ -209,8 +214,11 @@ export default function ServicesPage() {
         {/* Commercial Services */}
         <div className="mb-14">
           <div className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Office & Commercial Cleaning</h2>
-            <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">What commercial cleaning solutions do we offer?</h2>
+            <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full mb-4"></div>
+            <p className="text-lg text-[#5c635f] font-light max-w-3xl mx-auto mb-8">
+              ShineWell offers professional light commercial office cleaning, eco-friendly junk removal, and comprehensive post-construction cleanups for businesses across Overland Park and Kansas City. Our fully insured, background-checked commercial crews work around your operating hours to sanitize workstations, disinfect restrooms, and maintain a highly professional, pristine workspace for employees and clients.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 justify-center">
             {commercialServices.map((service, idx) => (
@@ -264,9 +272,9 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-[#2C302E]/70 backdrop-blur-[1px]"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-5xl font-serif mb-4">Commercial Cleaning Checklist</h2>
-              <p className="text-[#a3aba6] font-light max-w-2xl mx-auto text-lg">
-                A detailed breakdown of our comprehensive commercial and office cleaning services.
+              <h2 className="text-3xl md:text-5xl font-serif mb-4">What is included in our commercial cleaning checklist?</h2>
+              <p className="text-[#a3aba6] font-light max-w-2xl mx-auto text-lg leading-relaxed">
+                Our commercial cleaning checklist delivers detailed sanitization across all high-touch areas in your workplace. We disinfect lobbies and reception counters, sanitize individual desk workstations, deep-clean and restock public restrooms, clean breakroom appliances, and vacuum commercial-grade carpets. Our custom checklists ensure that every area is pristine and aligned with your operational requirements.
               </p>
             </div>
           </div>
@@ -308,9 +316,9 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-[#2C302E]/60 backdrop-blur-[2px]"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-5xl font-serif mb-4">Post Construction Checklist</h2>
-              <p className="text-[#e8e5df] font-light max-w-2xl mx-auto text-lg">
-                A detailed breakdown of our post renovation and new construction cleaning services.
+              <h2 className="text-3xl md:text-5xl font-serif mb-4">What is included in our post-construction checklist?</h2>
+              <p className="text-[#e8e5df] font-light max-w-2xl mx-auto text-lg leading-relaxed">
+                Our post-construction checklist focuses on removing fine drywall dust, paint splatters, and adhesive residues left behind after remodeling projects. Our specialized cleaners utilize HEPA-filter vacuums on all walls, clean interior window tracks, wash baseboards, and polish new kitchen and bathroom fixtures, ensuring that your newly renovated space is safe, clean, and move-in ready.
               </p>
             </div>
           </div>
@@ -339,8 +347,11 @@ export default function ServicesPage() {
         {/* Residential Services */}
         <div className="mb-14">
           <div className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Residential Cleaning</h2>
-            <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">What residential cleaning packages are available?</h2>
+            <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full mb-4"></div>
+            <p className="text-lg text-[#5c635f] font-light max-w-3xl mx-auto mb-8">
+              We provide tailored residential cleaning packages including routine weekly, bi-weekly, or monthly housekeeping, top-to-bottom deep sanitizing, and move-in/out transition cleaning across Overland Park and Kansas City. Our background-checked home cleaning professionals use non-toxic, eco-friendly products to thoroughly sanitize kitchens, disinfect bathrooms, vacuum floors, and dust every corner of your living space.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {residentialServices.map((service, idx) => (
@@ -381,8 +392,11 @@ export default function ServicesPage() {
         {/* Specialized Services */}
         <div className="mb-14">
           <div className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">Specialized Services</h2>
-            <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full"></div>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">What specialized property restoration services do we handle?</h2>
+            <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full mb-4"></div>
+            <p className="text-lg text-[#5c635f] font-light max-w-3xl mx-auto mb-8">
+              Our specialized property services handle challenging restoration tasks including compassionate hoarding and extreme clutter cleanup, custom home organization, and targeted fabric upholstery treatments. We prioritize client confidentiality and safety across Overland Park and Kansas City, sorting personal valuables with care, removing bulk debris, and restoring healthy, comfortable conditions to your living environments.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {specializedServices.map((service, idx) => (
@@ -428,10 +442,10 @@ export default function ServicesPage() {
           className="mb-14 max-w-5xl mx-auto"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-3">Compare Our Residential Packages</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-3">How do our residential cleaning packages compare?</h2>
             <div className="w-24 h-1 bg-[#CAD4CD] mx-auto rounded-full mb-6"></div>
-            <p className="text-[#5c635f] font-light max-w-2xl mx-auto">
-              See exactly what's included in our most popular residential cleaning services to find the perfect fit for your home.
+            <p className="text-[#5c635f] font-light max-w-2xl mx-auto leading-relaxed">
+              Our comparison chart details exactly how our routine housekeeping, deep cleaning, and move-in/out services differ across every room in your home. While routine cleaning maintains basic surface freshness, deep cleaning hand-wipes baseboards and scrubs grout lines, and move-out cleans sanitize the interiors of empty appliances and cabinets for a complete residential reset.
             </p>
           </div>
 
@@ -505,7 +519,7 @@ export default function ServicesPage() {
             to="/booking"
             className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
           >
-            Book Now
+            Get a Free Estimate
             <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>

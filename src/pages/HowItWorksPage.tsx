@@ -43,10 +43,15 @@ export default function HowItWorksPage() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-4"
+            className="text-5xl md:text-6xl font-serif text-[#2C302E] mb-6"
           >
             How It Works
           </motion.h1>
+          <div className="bg-[#F9F8F6] p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
+            <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+              <strong>ShineWell</strong> operates on a straightforward, customer-first model that streamlines your booking and service delivery across Kansas City. Our 5-step process ensures transparency, from selecting your customized cleaning options online to paying your booking fee and receiving an immaculate service backed by our satisfaction guarantee.
+            </p>
+          </div>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -102,15 +107,15 @@ export default function HowItWorksPage() {
           viewport={{ once: true }}
           className="mt-32 text-center bg-[#4A5D4E] rounded-[3rem] p-12 md:p-20 text-white"
         >
-          <h2 className="text-4xl font-serif mb-6">Ready for a cleaner space?</h2>
+          <h2 className="text-4xl font-serif mb-6">Are you ready to experience a cleaner, transformed space?</h2>
           <p className="text-[#e8ede9] font-light text-lg mb-10 max-w-2xl mx-auto">
-            Take the first step towards a spotless home or office. Book your cleaning service today.
+            Take the first step towards a spotless home or office. Request your custom rate today.
           </p>
           <Link 
             to="/booking"
             className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
           >
-            Book Now
+            Get a Free Estimate
             <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>

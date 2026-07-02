@@ -9,7 +9,12 @@ export default function BookingPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-8"
         >
-          <h1 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">Book Your Cleaning</h1>
+          <h1 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Get a Free Estimate</h1>
+          <div className="bg-white p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
+            <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+              <strong>ShineWell</strong> provides a straightforward, transparent online booking platform for selecting professional cleaning services in Kansas City. Simply choose your service, configure your schedule, and complete the form below to receive a customized free estimate and confirm your appointment with our background-checked cleaning professionals.
+            </p>
+          </div>
           <p className="text-lg text-[#5c635f] font-light">
             Select a time that works for you. We'll confirm your appointment shortly.
           </p>

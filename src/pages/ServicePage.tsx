@@ -17,12 +17,13 @@ import {
 
 const serviceData = {
   'routine-housekeeping': {
-    title: 'Professional Standard Home Cleaning in Kansas City, MO',
+    title: 'Professional Standard Home Cleaning in Overland Park & KC Metro',
     icon: <HomeIcon className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
     heroImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop',
-    altText: 'Shine Well cleaner performing standard home cleaning Kansas City',
+    altText: 'ShineWell cleaner performing standard home cleaning Kansas City',
     description: 'Keeping your sanctuary fresh, week after week. We learn your preferences, remember the details that matter to you, and treat your home with the care and respect it deserves — every single visit.',
-    details: 'Life moves fast. Between work, family, and everything in between, keeping your home consistently clean can feel like a job in itself. That\'s where Shine Well comes in.\n\nOur Professional Standard Home Cleaning is designed for homeowners who want to maintain a clean, comfortable space without sacrificing their free time. This isn\'t a one size fits all approach — we take the time to understand your home, your preferences, and your routine, so every visit feels tailored rather than transactional.\n\nWhether you prefer weekly freshness, a bi weekly reset, or a monthly refresh, our team shows up prepared, professional, and ready to work. Over time, we learn what matters most to you — the way you like your bed made, the surfaces you\'re most particular about, the products that work best in your space — and we deliver that consistently, visit after visit.',
+    introAnswer: 'ShineWell provides meticulous, background-checked routine home cleaning and housekeeping services across the greater Kansas City area. Our customized plans ensure that your bathrooms, kitchen, and living areas remain beautifully clean on a weekly, bi-weekly, or monthly schedule, giving you back your valuable free time.',
+    details: 'Our professional routine housekeeping service provides consistent weekly, bi-weekly, or monthly cleanings for homes in Overland Park and the greater KC area. Our vetted cleaners sanitize kitchens, scrub bathrooms, dust all surfaces, and vacuum floors, using eco-friendly products to maintain a healthy, allergen-free environment so you can reclaim your personal weekends.\n\nOur Professional Standard Home Cleaning is designed for homeowners who want to maintain a clean, comfortable space without sacrificing their free time. This isn\'t a one size fits all approach — we take the time to understand your home, your preferences, and your routine, so every visit feels tailored rather than transactional.\n\nWhether you prefer weekly freshness, a bi weekly reset, or a monthly refresh, our team shows up prepared, professional, and ready to work. Over time, we learn what matters most to you — the way you like your bed made, the surfaces you\'re most particular about, the products that work best in your space — and we deliver that consistently, visit after visit.',
     price: 'Starting at $150',
     checklist: [
       {
@@ -88,7 +89,8 @@ const serviceData = {
     heroImage: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop',
     altText: 'Deep cleaning service kitchen Kansas City Missouri',
     description: 'For when things have gotten a little out of hand. We get into the forgotten corners, baseboards, and behind the appliances.',
-    details: 'A deep clean is a comprehensive, top to bottom cleaning of your home. It goes beyond the surface level of routine cleaning to tackle the dirt and grime that accumulates over time in hard to reach places. This service is perfect for spring cleaning, preparing for holidays or special events, or just giving your home a much needed refresh.',
+    introAnswer: 'ShineWell offers comprehensive, top-to-bottom deep cleaning services in Kansas City, Missouri. This premium, detailed package targets hard-to-reach areas, hand-wipes baseboards, sanitizes tile grout, scrubs window sills, and eliminates deep-seated dirt from kitchens and bathrooms to establish an immaculate, fresh, and healthy baseline for your home.',
+    details: 'Our deep home cleaning service delivers a meticulous, restorative top-to-bottom sanitization for residences in Overland Park and Kansas City. Our background-checked professionals focus on neglected areas, hand-wiping baseboards, scrubbing tile grout, sanitizing window sills, and removing built-up grease and grime to establish a pristine, dust-free baseline for your household.',
     price: 'Starting at $300',
     checklist: [
       {
@@ -129,7 +131,8 @@ const serviceData = {
     heroImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
     altText: 'Move out cleaning service apartment Kansas City',
     description: 'Start fresh or leave a blank slate. We make transitions seamless with a meticulous, top to bottom clean.',
-    details: 'Moving is stressful enough without having to worry about cleaning. Our move in / move out cleaning service ensures that your new home is perfectly clean and ready for you to settle in, or that your old home is left in pristine condition for the next occupants or to secure your security deposit.',
+    introAnswer: 'ShineWell delivers meticulous move-in and move-out cleaning services in Kansas City to ensure a seamless residential transition. We handle everything from deep-cleaning empty cabinets and scrubbing appliances to detailing baseboards, helping renters secure their security deposits and homeowners prepare their properties for prospective buyers.',
+    details: 'Our professional move-in and move-out cleaning service prepares empty properties in Overland Park and Kansas City for seamless residential transitions. We deep-clean inside all kitchen cabinets and drawers, sanitize refrigerators and ovens, scrub bathrooms, and wipe down baseboards, helping renters secure their security deposits and buyers move into a pristine home.',
     price: 'Starting at $350',
     checklist: [
       {
@@ -165,12 +168,13 @@ const serviceData = {
     ]
   },
   'commercial-deep-cleaning': {
-    title: 'Light Commercial Cleaning in Kansas City, MO',
+    title: 'Light Commercial Cleaning in Overland Park & KC Metro',
     icon: <Building2 className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
     heroImage: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop',
-    altText: 'Commercial office cleaning Kansas City MO',
+    altText: 'Commercial office cleaning Overland Park & KC Metro',
     description: 'Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.',
-    details: 'A clean workspace is essential for employee productivity, health, and making a great impression on clients. Our commercial cleaning service is tailored to the unique needs of your business, providing a thorough sanitization and refresh of your office, retail space, or facility.',
+    introAnswer: 'ShineWell provides commercial office and business cleaning services across the Kansas City area, tailored to fit your specific corporate schedule. Our fully insured, background-checked cleaners sanitize reception lobbies, desk workstations, restrooms, and breakrooms to maintain a professional, healthy workspace for your employees and clients alike.',
+    details: 'Our light commercial cleaning service provides reliable office and business facility sanitization tailored to your company\'s schedule in Overland Park and Kansas City. Our fully insured team cleans reception lobbies, sanitizes desk workstations, disinfects restrooms, and empties trash, maintaining a healthy, dust-free, and productive environment for your staff and clients.',
     price: 'Custom Quote',
     checklist: [
       {
@@ -219,7 +223,8 @@ const serviceData = {
     heroImage: specializedImg,
     altText: 'Specialized cleaning services Kansas City',
     description: 'Targeted care for specific needs, including upholstery, carpet spot treatments, and eco friendly sanitization for sensitive spaces.',
-    details: 'Sometimes standard cleaning isn\'t enough. Our specialized treatments address specific issues and materials that require extra care and expertise. From reviving tired upholstery to using specialized eco friendly products for allergy sensitive households, we have the solutions you need.',
+    introAnswer: 'ShineWell offers specialized cleaning treatments in Kansas City, including expert upholstery care, leather conditioning, and hardwood floor polishing. We use advanced, eco-friendly sanitization techniques and allergen-safe green products to revive sensitive high-end surfaces, ensuring your home remains beautiful, protected, and healthy without using harsh chemicals.',
+    details: 'Our specialized cleaning treatments offer professional care for high-end upholstery, fine leather, and hardwood surfaces in Overland Park and Kansas City. We utilize non-toxic, allergen-safe green products and specialized sanitization methods to clean deep fabric fibers, condition delicate materials, and restore surface shine without using any harsh chemical compounds.',
     price: 'Custom Quote',
     checklist: [
       {
@@ -258,7 +263,8 @@ const serviceData = {
     heroImage: organizingImg,
     altText: 'Professional organizing service home Kansas City',
     description: 'Functional systems for your home or office. We help you declutter and create spaces that work for your daily life.',
-    details: 'Clutter can be overwhelming. Our organizing service goes beyond cleaning to help you reclaim your space and your time. We work with you to declutter, categorize, and create sustainable systems that make maintaining order effortless. Whether it\'s a chaotic pantry, a crowded closet, or a disorganized office, we bring clarity and function back to your environment.',
+    introAnswer: 'ShineWell delivers professional home and office organization services in Kansas City, designing sustainable systems to keep clutter away. We guide you through sorting, decluttering, and optimizing spaces like closets, pantries, and home offices, helping restore calm, layout function, and physical peace of mind to your surroundings.',
+    details: 'Our professional organizing service designs custom, sustainable storage and layout systems for homes and offices in Overland Park and Kansas City. Our experts guide you through sorting, decluttering, and categorizing belongings in closets, kitchens, and workspaces, helping reduce mental clutter and establishing order that is easy to maintain long-term.',
     price: 'Starting at $75/hr',
     checklist: [
       {
@@ -289,7 +295,8 @@ const serviceData = {
     heroImage: hoarderImg,
     altText: 'Compassionate hoarder house clean up service in Kansas City',
     description: 'Empathetic, efficient restoration for cluttered environments. We handle the heavy lifting with care and discretion.',
-    details: 'Facing a hoarding situation requires more than just a cleaning crew; it requires compassion, patience, and a non judgmental approach. Shine Well provides a safe and supportive environment to help individuals and families navigate the process of decluttering and sanitizing their homes. We work at a pace that feels safe while ensuring significant progress toward a healthy living environment.',
+    introAnswer: 'ShineWell offers compassionate, highly confidential hoarding and extreme clutter cleanup services across Kansas City. Our background-checked team works respectfully alongside families or estate executors, sorting valuables, removing heavy debris, and performing thorough deep sanitization and odor removal to restore safe, comfortable, and healthy living environments.',
+    details: 'Our compassionate hoarder house cleanup service provides respectful, confidential, and comprehensive extreme clutter restoration in Overland Park and Kansas City. Working closely with families or estate executors, our background-checked team handles bulk debris removal, carefully sorts personal valuables, and performs deep sanitization and odor removal to restore safe living conditions.',
     price: 'Custom Quote',
     checklist: [
       {
@@ -320,7 +327,8 @@ const serviceData = {
     heroImage: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop',
     altText: 'Professional junk removal service dumpster Kansas City',
     description: 'Full service removal of unwanted items with dumpster logistics handled. Perfect for office clear outs or large home projects.',
-    details: 'Large scale cleanouts require logistics. We provide full service junk removal, including the heavy lifting, loading, and disposal. If your project requires a dumpster on site, we handle the rental, delivery, and pickup, so you only have to deal with one point of contact. From old furniture and electronics to construction debris, we clear the way for your next chapter.',
+    introAnswer: 'ShineWell manages eco-friendly junk removal and dumpster logistics across Kansas City for residential and commercial clear-outs. From hauling heavy furniture and office equipment to managing dumpster placement permits, we handle all the heavy loading and prioritizing local donation centers or recycling, keeping waste out of landfills.',
+    details: 'Our eco-friendly junk removal and hauling service handles residential and commercial property cleanouts throughout Overland Park and the KC metro. We manage all heavy loading, transport, and dumpster logistics, prioritizing local donation centers and recycling facilities to dispose of old furniture, appliances, and office equipment responsibly and keep waste out of landfills.',
     price: 'Starting at $199',
     checklist: [
       {
@@ -351,7 +359,8 @@ const serviceData = {
     heroImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop',
     altText: 'Post Construction Cleaning Services in Kansas City',
     description: 'We clear the dust and debris after your renovation, leaving your newly updated space sparkling and ready to enjoy.',
-    details: 'Renovations are exciting, but the dust they leave behind is not. Our post construction cleaning service is designed to tackle the fine dust and debris that settles everywhere after a building project. We meticulously clean every surface so you can finally enjoy your newly renovated space without the mess.',
+    introAnswer: 'ShineWell provides thorough post-construction and post-renovation cleaning services across the greater Kansas City metropolitan area. Our cleaners utilize HEPA-filter vacuums to eliminate airborne drywall dust, scrub paint splatters and adhesive residues from new appliances and fixtures, and wash sills and baseboards to make your space move-in ready.',
+    details: 'Our detailed post-construction cleaning service eliminates hazardous fine dust, drywall residue, and adhesive splatters after remodeling projects in Overland Park and Kansas City. Our cleaners use HEPA-filter vacuums on all surfaces, wipe down walls, wash window sills, and scrub newly installed fixtures, ensuring your renovated space is perfectly clean and move-in ready.',
     price: 'Custom Quote',
     checklist: [
       {
@@ -426,11 +435,18 @@ export default function ServicePage() {
             <p className="text-lg md:text-xl text-[#5c635f] font-light leading-relaxed mb-5">
               {service.description}
             </p>
+            {service.introAnswer && (
+              <div className="bg-white p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
+                <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+                  <strong>{service.title.split(':')[0]}</strong>: {service.introAnswer}
+                </p>
+              </div>
+            )}
             <Link 
               to="/booking"
               className="inline-flex items-center gap-2 bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium transition-all hover:bg-[#b55e47] hover:shadow-lg hover:-translate-y-0.5"
             >
-              Book this service
+              Get a Free Estimate
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
@@ -462,13 +478,13 @@ export default function ServicePage() {
               viewport={{ once: true }}
               className="md:col-span-7 lg:col-span-8"
             >
-              <h2 className="text-3xl font-serif text-[#2C302E] mb-6">About this service</h2>
+              <h2 className="text-3xl font-serif text-[#2C302E] mb-6">How does this service work?</h2>
               <p className="text-[#5c635f] leading-relaxed font-light text-lg mb-12 whitespace-pre-wrap">
                 {service.details}
               </p>
               
               <div className="mb-16">
-                <h3 className="text-3xl font-serif text-[#2C302E] mb-8">What's Included</h3>
+                <h3 className="text-3xl font-serif text-[#2C302E] mb-8">What is included in this service?</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {service.checklist.map((section, idx) => (
                     <div key={idx} className="bg-[#F9F8F6] p-8 rounded-3xl border border-[#e8e5df] shadow-sm">
@@ -490,7 +506,7 @@ export default function ServicePage() {
 
               {service.scheduleOptions && (
                 <div className="mb-16">
-                  <h3 className="text-3xl font-serif text-[#2C302E] mb-8">Schedule Options</h3>
+                  <h3 className="text-3xl font-serif text-[#2C302E] mb-8">What schedule options do we offer?</h3>
                   <div className="grid gap-4">
                     {service.scheduleOptions.map((opt: any, idx: number) => (
                       <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm flex flex-col md:flex-row gap-4 items-start">
@@ -506,7 +522,7 @@ export default function ServicePage() {
 
               {service.whyChooseUs && (
                 <div className="mb-16">
-                  <h3 className="text-3xl font-serif text-[#2C302E] mb-8">Why Shine Well</h3>
+                  <h3 className="text-3xl font-serif text-[#2C302E] mb-8">Why choose ShineWell for your space?</h3>
                   <ul className="grid md:grid-cols-2 gap-4">
                     {service.whyChooseUs.map((reason: string, idx: number) => (
                       <li key={idx} className="flex items-start gap-3 bg-[#F9F8F6] p-4 rounded-xl border border-[#e8e5df]">
@@ -520,7 +536,7 @@ export default function ServicePage() {
 
               {service.faqs && service.faqs.length > 0 && (
                 <div className="mt-12">
-                  <h3 className="text-2xl font-serif text-[#2C302E] mb-6">Common Questions</h3>
+                  <h3 className="text-2xl font-serif text-[#2C302E] mb-6">What questions do our clients frequently ask?</h3>
                   <div className="space-y-6">
                     {service.faqs.map((faq: any, idx: number) => (
                       <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm">
@@ -534,9 +550,9 @@ export default function ServicePage() {
 
               {/* Blog Link Section */}
               <div className="mt-16 bg-[#F9F8F6] p-8 rounded-3xl border border-[#e8e5df] text-center">
-                <h3 className="text-2xl font-serif text-[#2C302E] mb-4">Looking for Cleaning Tips?</h3>
+                <h3 className="text-2xl font-serif text-[#2C302E] mb-4">Are you looking for professional cleaning tips?</h3>
                 <p className="text-[#5c635f] font-light mb-6 max-w-lg mx-auto">
-                  Check out our blog for expert advice, local Kansas City updates, and insights from the Shine Well team to help keep your home fresh between visits.
+                  Check out our blog for expert advice, local Kansas City updates, and insights from the ShineWell team to help keep your home fresh between visits.
                 </p>
                 <Link 
                   to="/blog"
@@ -556,7 +572,7 @@ export default function ServicePage() {
               className="md:col-span-5 lg:col-span-4"
             >
               <div className="bg-[#2C302E] text-[#F9F8F6] p-8 rounded-3xl sticky top-32">
-                <h3 className="text-2xl font-serif mb-4">Ready for a spotless space?</h3>
+                <h3 className="text-2xl font-serif mb-4">Are you ready for a spotless space?</h3>
                 <p className="text-[#a3aba6] font-light mb-8">
                   Get a free, no obligation estimate tailored to your specific needs and space.
                 </p>
@@ -564,7 +580,7 @@ export default function ServicePage() {
                   to="/booking"
                   className="block w-full text-center bg-[#C86B53] text-white px-6 py-4 rounded-xl font-medium transition-colors hover:bg-[#b55e47]"
                 >
-                  Book Now
+                  Get a Free Estimate
                 </Link>
                 <div className="mt-6 pt-6 border-t border-[#3a3f3c] text-center">
                   <p className="text-sm text-[#a3aba6] mb-2">Or call us directly:</p>

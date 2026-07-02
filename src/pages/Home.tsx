@@ -56,7 +56,7 @@ export default function Home() {
                 Kansas City's Most Trusted <span className="text-[#607564] italic">Office & Home Cleaning Service</span>
               </h1>
               <p className="text-lg md:text-xl text-[#5c635f] mb-6 max-w-lg leading-relaxed font-light">
-                Shine Well delivers spotless results for homes, apartments, offices, and short term rentals across Kansas City, MO. Fully insured, background checked, and eco friendly — every time.
+                ShineWell provides Kansas City's most reliable commercial and residential cleaning services, delivering pristine results for homes, offices, apartments, and short-term rentals. As a fully insured, locally owned company with over 22 years of experience, we offer eco-friendly products and meticulous attention to detail with our 100% satisfaction guarantee.
               </p>
               
               <div className="flex flex-col gap-6">
@@ -111,7 +111,7 @@ export default function Home() {
               <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] md:aspect-square lg:aspect-[4/5] shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-                  alt="Professional house cleaning service in Kansas City MO"
+                  alt="Professional house cleaning service in Overland Park & KC Metro"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -142,9 +142,9 @@ export default function Home() {
             className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6"
           >
             <div>
-              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">Professional Cleaning Services Tailored for Kansas City Businesses & Homes</h2>
+              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">What professional cleaning services do we provide in Kansas City?</h2>
               <p className="text-lg text-[#5c635f] max-w-2xl font-light">
-                Whether you need a recurring office clean, a one time deep scrub, or a move out reset in Kansas City, Shine Well has a plan that fits your schedule and budget.
+                ShineWell provides a comprehensive range of professional cleaning services in Overland Park and the Kansas City metro area. Our customized options include routine weekly or bi-weekly housekeeping, top-to-bottom deep sanitizing, move-in or move-out transitions, light commercial office cleaning, professional organization, compassionate hoarding cleanup, post-construction detailing, and eco-friendly junk removal.
               </p>
             </div>
             <Link 
@@ -202,13 +202,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Shine Well? Section */}
+      {/* Why Choose ShineWell? Section */}
       <section className="py-14 bg-[#F9F8F6]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">Why Choose Shine Well?</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">Why should you choose ShineWell for your residential and commercial cleaning needs?</h2>
             <p className="text-lg text-[#5c635f] font-light max-w-2xl mx-auto">
-              With decades of experience and a passion for pristine spaces, we are the premier choice for homes and businesses across Kansas City.
+              You should choose ShineWell because we bring 22 years of professional cleaning experience to every Overland Park and Kansas City property. Our fully insured, locally owned family business utilizes highly trained, background-checked crews and eco-friendly supplies to deliver reliable housekeeping, office cleaning, and deep sanitization backed by our 100% satisfaction guarantee.
             </p>
           </div>
           <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-[#e8e5df]">
@@ -253,10 +253,10 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="order-2 lg:order-1"
             >
-              <h2 className="text-4xl md:text-5xl font-serif mb-4 text-[#2C302E]">Our Kansas City Story: <span className="italic font-light">More Than Just a Clean.</span></h2>
+              <h2 className="text-4xl md:text-5xl font-serif mb-4 text-[#2C302E]">How does our story define our commitment to cleaning?</h2>
               <div className="space-y-4 text-lg font-light text-[#2C302E]/80 leading-relaxed mb-6">
                 <p>
-                  I started Shine Well with a simple belief: that a clean environment is the foundation for a peaceful life. What began as a personal passion for helping neighbors in Kansas City reclaim their weekends has grown into the city's most dedicated cleaning team.
+                  Our story began with Lina's personal passion for helping neighbors in Kansas City reclaim their weekends, which has grown into the area's most reliable family-owned cleaning team with over 22 years of experience. We provide meticulous, client-first home and commercial cleaning services designed to restore peace of mind and maintain healthy living spaces.
                 </p>
                 <p>
                   We aren't a faceless franchise. We're a local team of perfectionists who genuinely love the satisfaction of a job well done. Whether it's a corporate office or a family home, we treat every space as if it were our own—with honesty, meticulousness, and respect.
@@ -281,7 +281,7 @@ export default function Home() {
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative group">
                 <img 
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Shine Well professional cleaning team at work" 
+                  alt="ShineWell professional cleaning team at work" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -315,9 +315,9 @@ export default function Home() {
                 </div>
                 <span className="text-sm font-medium text-[#2C302E]">5.0 on Google</span>
               </a>
-              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-3">What Kansas City Businesses & Homeowners Are Saying</h2>
+              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-3">What do our Kansas City commercial and home clients say?</h2>
               <p className="text-lg text-[#5c635f] font-light">
-                Don't just take our word for it. Here's what our commercial and residential clients have to say about the ShineWell experience.
+                Our commercial and residential clients in Overland Park and the Kansas City area rate us 5.0 on Google for our extremely detailed, reliable, and respectful cleaning services. Our vetted, professional cleaners consistently arrive on time, communicate clearly, and treat every home or corporate office with the deep personal care that ensures a sparkling clean result.
               </p>
             </div>
             <div className="flex gap-4">
@@ -341,15 +341,15 @@ export default function Home() {
                 },
                 {
                   name: "David Swaters",
-                  text: "Shine Well Commercial Cleaning Services were top notch ! On time , service and professionalism are second to none! They go out of their way to make sure everything is done right ! Came early and stayed late to get the job done. I couldn’t be happier. Thanks",
+                  text: "ShineWell Commercial Cleaning Services were top notch ! On time , service and professionalism are second to none! They go out of their way to make sure everything is done right ! Came early and stayed late to get the job done. I couldn’t be happier. Thanks",
                   rating: 5,
-                  ownerResponse: "Thank you David! We were Happy to help you cleaning your property! We Appreciate you calling on Shine Well For Your Cleaning Needs!"
+                  ownerResponse: "Thank you David! We were Happy to help you cleaning your property! We Appreciate you calling on ShineWell For Your Cleaning Needs!"
                 },
                 {
                   name: "Ariana Goodridge",
                   text: "I was going on vacation and wanted my house cleaned last minute. They came right out the next day and did absolutely amazing!! My house smelled and looked amazing I will definitely be using their service again!! They cleaned every single detail.",
                   rating: 5,
-                  ownerResponse: "Thank you for Choosing Shine Well Cleaning Services to Serve You! We enjoyed meeting you and we were so happy to get your home cleaned so you can come home to a clean and refreshed home. Enjoy your vacation! - Lina :-)"
+                  ownerResponse: "Thank you for Choosing ShineWell Cleaning Services to Serve You! We enjoyed meeting you and we were so happy to get your home cleaned so you can come home to a clean and refreshed home. Enjoy your vacation! - Lina :-)"
                 },
                 {
                   name: "Jessica Gilmore",
@@ -364,7 +364,7 @@ export default function Home() {
                 },
                 {
                   name: "Robin Albin",
-                  text: "I had Shine Well clean our empty house for the new buyers. They did a fantastic job! They worked so hard to make sure it was spotless. I highly recommend them!",
+                  text: "I had ShineWell clean our empty house for the new buyers. They did a fantastic job! They worked so hard to make sure it was spotless. I highly recommend them!",
                   rating: 5
                 }
               ].map((review, idx) => (
@@ -425,9 +425,9 @@ export default function Home() {
       <section className="py-14 bg-[#8BA192] text-[#2C302E]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-serif mb-3 text-[#2C302E]">Frequently Asked Questions</h2>
-            <p className="text-lg text-[#2C302E]/80 font-light">
-              Everything you need to know about our cleaning services in Kansas City.
+            <h2 className="text-4xl md:text-5xl font-serif mb-3 text-[#2C302E]">What are the most frequently asked questions about ShineWell cleaning services?</h2>
+            <p className="text-lg text-[#2C302E]/90 font-light">
+              We address frequently asked questions regarding our employee background checks, liability insurance, supply provisions, pet guidelines, custom quotes, and service areas in Overland Park and Kansas City. Our family-owned business maintains transparent policies, flexible scheduling, and clear pricing structure to make booking your next cleaning service completely stress-free and straightforward.
             </p>
           </div>
 
@@ -443,7 +443,7 @@ export default function Home() {
               },
               {
                 q: "Are your cleaners background checked?",
-                a: "Yes, absolutely. Every member of the Shine Well team undergoes a thorough background check before they are hired. We only send trusted, reliable professionals into your property."
+                a: "Yes, absolutely. Every member of the ShineWell team undergoes a thorough background check before they are hired. We only send trusted, reliable professionals into your property."
               },
               {
                 q: "Do you bring your own cleaning supplies?",
@@ -484,16 +484,16 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-3">Experience the ShineWell Difference</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-3">How can you experience the ShineWell cleaning difference today?</h2>
             <p className="text-lg text-[#5c635f] font-light mb-6 max-w-2xl mx-auto">
-              Ready to reclaim your time? Book your professional cleaning service today and let us take care of the rest.
+              You can experience the ShineWell difference by calling us at (913) 325-1400 or booking online to request a free estimate. We will coordinate a tailored weekly, bi-weekly, or monthly cleaning plan that restores your free time while keeping your Overland Park or Kansas City property exceptionally fresh and clean.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link 
                 to="/booking"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:bg-[#b55e47] hover:shadow-xl hover:-translate-y-1"
               >
-                Book Your Cleaning
+                Get a Free Estimate
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a 
