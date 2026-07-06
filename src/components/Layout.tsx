@@ -404,23 +404,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </footer>
-
-      {/* WhatsApp Floating Widget */}
-      <a
-        href="https://wa.me/19133251400"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:shadow-[#25D366]/30 transition-all duration-300 flex items-center justify-center group"
-        aria-label="Chat on WhatsApp"
-      >
-        <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
-          <path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.12.553 4.185 1.604 6.008L.26 23.73l5.85-1.534A11.97 11.97 0 0012.031 24c6.646 0 12.03-5.385 12.03-12.03S18.677 0 12.031 0zm0 22.008c-1.785 0-3.535-.48-5.07-1.39l-.364-.216-3.766.987.998-3.672-.237-.377a9.985 9.985 0 01-1.526-5.309c0-5.545 4.512-10.057 10.057-10.057 5.545 0 10.057 4.512 10.057 10.057 0 5.545-4.512 10.057-10.057 10.057zm5.526-7.542c-.303-.152-1.794-.886-2.072-.987-.278-.101-.48-.152-.682.152-.202.303-.783.987-.96 1.189-.177.202-.354.227-.657.076-1.39-.65-2.408-1.15-3.357-2.61-.202-.303.202-.278.48-.833.076-.152.038-.278-.038-.43-.076-.152-.682-1.643-.935-2.25-.253-.607-.505-.53-.682-.53-.177 0-.379-.025-.581-.025-.202 0-.53.076-.808.379-.278.303-1.06 1.036-1.06 2.527 0 1.491 1.086 2.932 1.238 3.134.152.202 2.122 3.235 5.143 4.538 2.022.87 2.73.808 3.235.758.505-.05 1.794-.733 2.047-1.44.253-.708.253-1.314.177-1.44-.076-.126-.278-.202-.581-.354z"/>
-        </svg>
-        <span className="absolute right-full mr-4 bg-white text-[#2C302E] px-4 py-2 rounded-xl text-sm font-medium shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-          Chat with us!
-        </span>
-      </a>
-
       {/* Sticky Mobile Call Button */}
       <a
         href="tel:9133251400"
