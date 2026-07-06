@@ -4,6 +4,8 @@ import { motion } from 'motion/react';
 import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
 import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
 import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
+import junkRemovalImg from '../assets/images/regenerated_image_1783363101031.png';
+import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -63,13 +65,13 @@ export default function ServicesPage() {
 
   const commercialServices = [
     {
-      image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop",
+      image: commercialDeepCleaningImg,
       title: "Light Commercial Cleaning",
       desc: "Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.",
       path: "/services/commercial-deep-cleaning"
     },
     {
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop",
+      image: junkRemovalImg,
       title: "Junk Removal with Dumpster",
       desc: "Full service removal of unwanted items with dumpster logistics handled. Perfect for office clear outs or large home projects.",
       path: "/services/junk-removal"

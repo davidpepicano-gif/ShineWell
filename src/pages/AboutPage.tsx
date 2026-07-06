@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Star, ShieldCheck, CheckCircle, UserCheck, Sparkles } from 'lucide-react';
-import storyImg from '../assets/images/regenerated_image_1778882241066.webp';
+import storyImg from '../assets/images/regenerated_image_1783363212830.png';
 
 export default function AboutPage() {
   const trustBadges = [
