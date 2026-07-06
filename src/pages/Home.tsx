@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 import heroHomeImg from '../assets/images/regenerated_image_1783362481160.png';
-import cleanersWorkImg from '../assets/images/shinewell_cleaners_work_1783362352908.jpg';
+import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919.png';
 import { 
   Sparkles, 
   Home as HomeIcon, 
