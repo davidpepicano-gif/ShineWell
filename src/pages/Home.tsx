@@ -6,8 +6,10 @@ import Autoplay from 'embla-carousel-autoplay';
 
 import heroHomeImgMobile from '../assets/images/regenerated_image_1783362481160_mobile.webp';
 import heroHomeImgDesktop from '../assets/images/regenerated_image_1783362481160_desktop.webp';
+import heroHomeImgFallback from '../assets/images/regenerated_image_1783362481160.png';
 import cleanersWorkImgMobile from '../assets/images/regenerated_image_1783362695919_mobile.webp';
 import cleanersWorkImgDesktop from '../assets/images/regenerated_image_1783362695919_desktop.webp';
+import cleanersWorkImgFallback from '../assets/images/regenerated_image_1783362695919.png';
 import { 
   Sparkles, 
   Home as HomeIcon, 
@@ -119,7 +121,7 @@ export default function Home() {
                   <source media="(max-width: 640px)" srcSet={heroHomeImgMobile} type="image/webp" />
                   <source media="(min-width: 641px)" srcSet={heroHomeImgDesktop} type="image/webp" />
                   <img
-                    src={heroHomeImgDesktop}
+                    src={heroHomeImgFallback}
                     alt="Professional house cleaning service in Overland Park & KC Metro"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -294,7 +296,7 @@ export default function Home() {
                   <source media="(max-width: 480px)" srcSet={cleanersWorkImgMobile} type="image/webp" />
                   <source media="(min-width: 481px)" srcSet={cleanersWorkImgDesktop} type="image/webp" />
                   <img 
-                    src={cleanersWorkImgDesktop} 
+                    src={cleanersWorkImgFallback} 
                     alt="ShineWell professional cleaning team at work" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
