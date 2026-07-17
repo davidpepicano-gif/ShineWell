@@ -269,7 +269,7 @@ export default function ServicesPage() {
                     <source media="(max-width: 640px)" srcSet={service.imageMobile || service.image} type="image/webp" />
                     <source media="(min-width: 641px)" srcSet={service.imageDesktop || service.image} type="image/webp" />
                     <img 
-                      src={service.imageDesktop || service.image} 
+                      src={service.image} 
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -407,7 +407,7 @@ export default function ServicesPage() {
                     <source media="(max-width: 640px)" srcSet={service.imageMobile || service.image} type="image/webp" />
                     <source media="(min-width: 641px)" srcSet={service.imageDesktop || service.image} type="image/webp" />
                     <img 
-                      src={service.imageDesktop || service.image} 
+                      src={service.image} 
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -457,7 +457,7 @@ export default function ServicesPage() {
                     <source media="(max-width: 640px)" srcSet={service.imageMobile || service.image} type="image/webp" />
                     <source media="(min-width: 641px)" srcSet={service.imageDesktop || service.image} type="image/webp" />
                     <img 
-                      src={service.imageDesktop || service.image} 
+                      src={service.image} 
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"

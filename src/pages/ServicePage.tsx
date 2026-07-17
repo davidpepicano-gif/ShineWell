@@ -493,7 +493,7 @@ export default function ServicePage() {
               <source media="(max-width: 640px)" srcSet={service.heroImageMobile || service.heroImage} type="image/webp" />
               <source media="(min-width: 641px)" srcSet={service.heroImageDesktop || service.heroImage} type="image/webp" />
               <img 
-                src={service.heroImageDesktop || service.heroImage} 
+                src={service.heroImage} 
                 alt={service.altText || service.title} 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

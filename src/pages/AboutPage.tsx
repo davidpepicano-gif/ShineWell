@@ -112,7 +112,7 @@ export default function AboutPage() {
                 <source media="(min-width: 641px)" srcSet={storyImgDesktop} type="image/webp" />
                 <img 
                   id="about-hero-image"
-                  src={storyImgDesktop} 
+                  src={storyImgFallback} 
                   alt="ShineWell founder Lina" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
