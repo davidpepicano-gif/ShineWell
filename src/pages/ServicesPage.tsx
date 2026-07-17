@@ -6,6 +6,8 @@ import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg'
 import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
 import junkRemovalImg from '../assets/images/regenerated_image_1783363101031.png';
 import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
+import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
+import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -23,13 +25,13 @@ export default function ServicesPage() {
 
   const residentialServices = [
     {
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
+      image: routineHousekeepingImg,
       title: "Routine House Cleaning",
       desc: "Keeping your sanctuary fresh, week after week. We learn your preferences and treat your home with the utmost respect.",
       path: "/services/routine-housekeeping"
     },
     {
-      image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop",
+      image: deepCleaningImg,
       title: "Deep Cleaning",
       desc: "For when things have gotten a little out of hand. We get into the forgotten corners, baseboards, and behind the appliances.",
       path: "/services/deep-dives"

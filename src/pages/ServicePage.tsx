@@ -3,6 +3,10 @@ import { motion } from 'motion/react';
 import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
 import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
 import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
+import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
+import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
+import junkRemovalImg from '../assets/images/regenerated_image_1783363101031.png';
+import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -19,7 +23,7 @@ const serviceData = {
   'routine-housekeeping': {
     title: 'Professional Standard Home Cleaning in Overland Park & KC Metro',
     icon: <HomeIcon className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop',
+    heroImage: routineHousekeepingImg,
     altText: 'ShineWell cleaner performing standard home cleaning Kansas City',
     description: 'Keeping your sanctuary fresh, week after week. We learn your preferences, remember the details that matter to you, and treat your home with the care and respect it deserves — every single visit.',
     introAnswer: 'ShineWell provides meticulous, background-checked routine home cleaning and housekeeping services across the greater Kansas City area. Our customized plans ensure that your bathrooms, kitchen, and living areas remain beautifully clean on a weekly, bi-weekly, or monthly schedule, giving you back your valuable free time.',
@@ -86,7 +90,7 @@ const serviceData = {
   'deep-dives': {
     title: 'Deep Cleaning Services in Kansas City: Spotless, Top to Bottom',
     icon: <Sparkles className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop',
+    heroImage: deepCleaningImg,
     altText: 'Deep cleaning service kitchen Kansas City Missouri',
     description: 'For when things have gotten a little out of hand. We get into the forgotten corners, baseboards, and behind the appliances.',
     introAnswer: 'ShineWell offers comprehensive, top-to-bottom deep cleaning services in Kansas City, Missouri. This premium, detailed package targets hard-to-reach areas, hand-wipes baseboards, sanitizes tile grout, scrubs window sills, and eliminates deep-seated dirt from kitchens and bathrooms to establish an immaculate, fresh, and healthy baseline for your home.',
@@ -170,7 +174,7 @@ const serviceData = {
   'commercial-deep-cleaning': {
     title: 'Light Commercial Cleaning in Overland Park & KC Metro',
     icon: <Building2 className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop',
+    heroImage: commercialDeepCleaningImg,
     altText: 'Commercial office cleaning Overland Park & KC Metro',
     description: 'Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.',
     introAnswer: 'ShineWell provides commercial office and business cleaning services across the Kansas City area, tailored to fit your specific corporate schedule. Our fully insured, background-checked cleaners sanitize reception lobbies, desk workstations, restrooms, and breakrooms to maintain a professional, healthy workspace for your employees and clients alike.',
@@ -324,7 +328,7 @@ const serviceData = {
   'junk-removal': {
     title: 'Junk Removal & Dumpster Services in Kansas City',
     icon: <Droplets className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop',
+    heroImage: junkRemovalImg,
     altText: 'Professional junk removal service dumpster Kansas City',
     description: 'Full service removal of unwanted items with dumpster logistics handled. Perfect for office clear outs or large home projects.',
     introAnswer: 'ShineWell manages eco-friendly junk removal and dumpster logistics across Kansas City for residential and commercial clear-outs. From hauling heavy furniture and office equipment to managing dumpster placement permits, we handle all the heavy loading and prioritizing local donation centers or recycling, keeping waste out of landfills.',
