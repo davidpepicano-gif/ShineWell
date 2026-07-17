@@ -4,8 +4,10 @@ import { motion } from 'motion/react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
-import heroHomeImg from '../assets/images/regenerated_image_1783362481160.png';
-import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919.png';
+import heroHomeImgMobile from '../assets/images/regenerated_image_1783362481160_mobile.webp';
+import heroHomeImgDesktop from '../assets/images/regenerated_image_1783362481160_desktop.webp';
+import cleanersWorkImgMobile from '../assets/images/regenerated_image_1783362695919_mobile.webp';
+import cleanersWorkImgDesktop from '../assets/images/regenerated_image_1783362695919_desktop.webp';
 import { 
   Sparkles, 
   Home as HomeIcon, 
@@ -59,14 +61,14 @@ export default function Home() {
                 Kansas City's Most Trusted <span className="text-[#607564] italic">Office & Home Cleaning Service</span>
               </h1>
               <p className="text-lg md:text-xl text-[#5c635f] mb-6 max-w-lg leading-relaxed font-light">
-                ShineWell provides Kansas City's most reliable commercial and residential cleaning services, delivering pristine results for homes, offices, apartments, and short-term rentals. As a fully insured, locally owned company with over 22 years of experience, we offer eco-friendly products and meticulous attention to detail with our 100% satisfaction guarantee.
+                ShineWell provides Kansas City's most reliable commercial and residential cleaning services, delivering pristine results for homes, offices, apartments, and short-term rentals. As a fully insured, locally owned company with over 20 years of experience, we offer eco-friendly products and meticulous attention to detail with our 100% satisfaction guarantee.
               </p>
               
               <div className="flex flex-col gap-6">
                 {/* GHL Booking Widget */}
                 <div className="bg-white p-6 rounded-3xl shadow-xl border border-[#e8e5df] relative overflow-hidden max-w-[600px] w-full">
                   <div className="flex justify-between items-center mb-4">
-                    <h3 className="text-2xl font-serif text-[#2C302E]">Book Your Cleaning</h3>
+                    <h2 className="text-2xl font-serif text-[#2C302E]">Book Your Cleaning</h2>
                   </div>
                   <div className="w-full min-h-[500px] rounded-xl overflow-hidden border border-[#e8e5df] bg-[#F9F8F6] flex items-center justify-center relative">
                     <iframe
@@ -86,6 +88,7 @@ export default function Home() {
                       data-layout-iframe-id="inline-wCd628Bbw6Kdx6T546Nk"
                       data-form-id="wCd628Bbw6Kdx6T546Nk"
                       title="Book Your Cleaning"
+                      sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
                     >
                     </iframe>
                     <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
@@ -112,12 +115,17 @@ export default function Home() {
               className="lg:col-span-6 relative"
             >
               <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] md:aspect-square lg:aspect-[4/5] shadow-2xl">
-                <img
-                  src={heroHomeImg}
-                  alt="Professional house cleaning service in Overland Park & KC Metro"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
+                <picture>
+                  <source media="(max-width: 640px)" srcSet={heroHomeImgMobile} type="image/webp" />
+                  <source media="(min-width: 641px)" srcSet={heroHomeImgDesktop} type="image/webp" />
+                  <img
+                    src={heroHomeImgDesktop}
+                    alt="Professional house cleaning service in Overland Park & KC Metro"
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                    fetchPriority="high"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
               
@@ -164,7 +172,7 @@ export default function Home() {
                 icon: <Building2 className="h-7 w-7 text-[#607564]" strokeWidth={1.5} />,
                 title: "Business Cleaning",
                 desc: "Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.",
-                path: "/services/commercial-deep-cleaning"
+                path: "/commercial-cleaning-kansas-city"
               },
               {
                 icon: <Sparkles className="h-7 w-7 text-[#607564]" strokeWidth={1.5} />,
@@ -211,7 +219,7 @@ export default function Home() {
           <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-4">Why should you choose ShineWell for your residential and commercial cleaning needs?</h2>
             <p className="text-lg text-[#5c635f] font-light max-w-2xl mx-auto">
-              You should choose ShineWell because we bring 22 years of professional cleaning experience to every Overland Park and Kansas City property. Our fully insured, locally owned family business utilizes highly trained, background-checked crews and eco-friendly supplies to deliver reliable housekeeping, office cleaning, and deep sanitization backed by our 100% satisfaction guarantee.
+              You should choose ShineWell because we bring over 20 years of professional cleaning experience to every Overland Park and Kansas City property. Our fully insured, locally owned family business utilizes highly trained, background-checked crews and eco-friendly supplies to deliver reliable housekeeping, office cleaning, and deep sanitization backed by our 100% satisfaction guarantee.
             </p>
           </div>
           <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-[#e8e5df]">
@@ -219,7 +227,7 @@ export default function Home() {
               {[
                 "Fully Insured",
                 "Locally Owned",
-                "22+ Years Experience",
+                "Over 20 Years Experience",
                 "Residential & Commercial Cleaning",
                 "Satisfaction Guarantee",
                 "Flexible Scheduling",
@@ -246,7 +254,7 @@ export default function Home() {
       </section>
 
       {/* About / Our Story Teaser */}
-      <section className="py-14 bg-[#8BA192] text-[#2C302E] overflow-hidden">
+      <section className="py-14 bg-[#9BB1A2] text-[#2C302E] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <motion.div
@@ -257,9 +265,9 @@ export default function Home() {
               className="order-2 lg:order-1"
             >
               <h2 className="text-4xl md:text-5xl font-serif mb-4 text-[#2C302E]">How does our story define our commitment to cleaning?</h2>
-              <div className="space-y-4 text-lg font-light text-[#2C302E]/80 leading-relaxed mb-6">
+              <div className="space-y-4 text-lg font-light text-[#2C302E] leading-relaxed mb-6">
                 <p>
-                  Our story began with Lina's personal passion for helping neighbors in Kansas City reclaim their weekends, which has grown into the area's most reliable family-owned cleaning team with over 22 years of experience. We provide meticulous, client-first home and commercial cleaning services designed to restore peace of mind and maintain healthy living spaces.
+                  Our story began with Lina's personal passion for helping neighbors in Kansas City reclaim their weekends, which has grown into the area's most reliable family-owned cleaning team with over 20 years of experience. We provide meticulous, client-first home and commercial cleaning services designed to restore peace of mind and maintain healthy living spaces.
                 </p>
                 <p>
                   We aren't a faceless franchise. We're a local team of perfectionists who genuinely love the satisfaction of a job well done. Whether it's a corporate office or a family home, we treat every space as if it were our own—with honesty, meticulousness, and respect.
@@ -267,7 +275,7 @@ export default function Home() {
               </div>
               <Link 
                 to="/about"
-                className="inline-flex items-center gap-2 bg-white text-[#8BA192] px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
+                className="inline-flex items-center gap-2 bg-white text-[#607564] px-8 py-4 rounded-full font-semibold text-lg transition-all hover:shadow-xl hover:-translate-y-1"
               >
                 Read Full Story
                 <ArrowRight className="w-5 h-5" />
@@ -282,12 +290,17 @@ export default function Home() {
               className="order-1 lg:order-2 relative"
             >
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative group">
-                <img 
-                  src={cleanersWorkImg} 
-                  alt="ShineWell professional cleaning team at work" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
-                />
+                <picture>
+                  <source media="(max-width: 480px)" srcSet={cleanersWorkImgMobile} type="image/webp" />
+                  <source media="(min-width: 481px)" srcSet={cleanersWorkImgDesktop} type="image/webp" />
+                  <img 
+                    src={cleanersWorkImgDesktop} 
+                    alt="ShineWell professional cleaning team at work" 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2C302E]/40 to-transparent"></div>
               </div>
             </motion.div>
@@ -323,12 +336,20 @@ export default function Home() {
                 Our commercial and residential clients in Overland Park and the Kansas City area rate us 5.0 on Google for our extremely detailed, reliable, and respectful cleaning services. Our vetted, professional cleaners consistently arrive on time, communicate clearly, and treat every home or corporate office with the deep personal care that ensures a sparkling clean result.
               </p>
             </div>
-            <div className="flex gap-4">
-              <button onClick={scrollPrev} className="w-12 h-12 rounded-full border border-[#e8e5df] flex items-center justify-center text-[#607564] hover:bg-[#F9F8F6] transition-colors">
-                <ChevronLeft className="w-6 h-6" />
+             <div className="flex gap-4">
+              <button 
+                onClick={scrollPrev} 
+                className="w-12 h-12 rounded-full border border-[#e8e5df] flex items-center justify-center text-[#607564] hover:bg-[#F9F8F6] transition-colors focus-visible:ring-2 focus-visible:ring-[#607564] focus-visible:ring-offset-2 focus:outline-none"
+                aria-label="Previous testimonial"
+              >
+                <ChevronLeft className="w-6 h-6" aria-hidden="true" />
               </button>
-              <button onClick={scrollNext} className="w-12 h-12 rounded-full border border-[#e8e5df] flex items-center justify-center text-[#607564] hover:bg-[#F9F8F6] transition-colors">
-                <ChevronRight className="w-6 h-6" />
+              <button 
+                onClick={scrollNext} 
+                className="w-12 h-12 rounded-full border border-[#e8e5df] flex items-center justify-center text-[#607564] hover:bg-[#F9F8F6] transition-colors focus-visible:ring-2 focus-visible:ring-[#607564] focus-visible:ring-offset-2 focus:outline-none"
+                aria-label="Next testimonial"
+              >
+                <ChevronRight className="w-6 h-6" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -425,11 +446,11 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-14 bg-[#8BA192] text-[#2C302E]">
+      <section className="py-14 bg-[#9BB1A2] text-[#2C302E]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-serif mb-3 text-[#2C302E]">What are the most frequently asked questions about ShineWell cleaning services?</h2>
-            <p className="text-lg text-[#2C302E]/90 font-light">
+            <p className="text-lg text-[#2C302E] font-light">
               We address frequently asked questions regarding our employee background checks, liability insurance, supply provisions, pet guidelines, custom quotes, and service areas in Overland Park and Kansas City. Our family-owned business maintains transparent policies, flexible scheduling, and clear pricing structure to make booking your next cleaning service completely stress-free and straightforward.
             </p>
           </div>
@@ -467,7 +488,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-[#718876] p-6 rounded-3xl border border-white/20 hover:border-white/40 transition-colors shadow-sm"
+                className="bg-[#5A705E] p-6 rounded-3xl border border-white/20 hover:border-white/40 transition-colors shadow-sm"
               >
                 <h3 className="text-xl font-medium mb-2 text-white">{faq.q}</h3>
                 <p className="text-white/90 font-light leading-relaxed">

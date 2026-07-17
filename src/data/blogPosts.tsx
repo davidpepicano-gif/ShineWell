@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
 import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
-import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919.png';
+import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919_desktop.webp';
 
 export interface BlogPost {
   id: string;
@@ -827,7 +827,7 @@ export const blogPosts: BlogPost[] = [
         <div className="border-t border-[#e8e5df] pt-8 mt-12">
           <h3 className="text-xl font-semibold mb-4">About the Author: Lina Silva</h3>
           <p className="text-sm md:text-base text-[#5c635f] leading-relaxed">
-            <strong>Lina Silva</strong> is the owner of <strong>Shine Well Cleaning Services</strong> and brings more than <strong>25 years of professional cleaning expertise</strong> to the industry. For over <strong>15 years</strong>, Lina has personally served homeowners and businesses throughout the <strong>Kansas City metropolitan area</strong>, building her company on a foundation of trust, dependability, exceptional service, and attention to detail.
+            <strong>Lina Silva</strong> is the owner of <strong>Shine Well Cleaning Services</strong> and brings more than <strong>20 years of professional cleaning expertise</strong> to the industry. For over <strong>20 years</strong>, Lina has personally served homeowners and businesses throughout the <strong>Kansas City metropolitan area</strong>, building her company on a foundation of trust, dependability, exceptional service, and attention to detail.
           </p>
           <p className="text-sm md:text-base text-[#5c635f] leading-relaxed mt-4">
             Today, Lina and the Shine Well Cleaning Services team proudly serve <strong>more than 100 satisfied clients throughout the Kansas City Metro area</strong>. Under Lina's leadership, Shine Well Cleaning Services has received <strong>numerous awards and recognition</strong> for its dedication to client satisfaction and service excellence.
@@ -836,6 +836,251 @@ export const blogPosts: BlogPost[] = [
             Lina believes that long-lasting client relationships are built by consistently delivering on your promises, treating every property with care, and surrounding yourself with trusted professionals who share the same commitment to excellence. It is this philosophy that guides both the services Shine Well provides and the professional relationships the company develops throughout the Kansas City community.
           </p>
         </div>
+      </>
+    )
+  },
+  {
+    id: 'how-to-choose-commercial-cleaning-company-kansas-city',
+    title: "How to Choose a Commercial Cleaning Company in Kansas City (What Office Managers Should Look For)",
+    excerpt: "What to look for in a commercial cleaning company in Overland Park or KC: insurance, background checks, scope, and questions to ask before you sign.",
+    date: 'July 17, 2026',
+    author: 'Lina Silva',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop',
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Choose a commercial cleaner that is fully insured and bonded, background-checks its staff, offers flexible after-hours scheduling, gives you a clear written scope, has real local reviews, and stands behind a satisfaction guarantee. Insist on a walkthrough-based quote rather than a number over the phone — for a small Overland Park office, that's the difference between a fair price and a guess.
+          </p>
+        </div>
+
+        <p>
+          Selecting the right partner to maintain your corporate image and team's health is one of the most important operational decisions an office manager can make. From small creative spaces in the Crossroads to large dental facilities in Leawood, a clean workplace speaks volumes before you ever greet a client.
+        </p>
+
+        <div className="my-8 p-6 bg-[#CAD4CD]/10 rounded-2xl border border-[#e8e5df]/60 flex flex-col sm:flex-row gap-4 items-center justify-between text-sm">
+          <span className="font-medium text-[#5c635f]">Looking for professional commercial services in KC?</span>
+          <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E] transition-colors">
+            View Our Commercial Services & Rates
+          </Link>
+        </div>
+
+        <h2>The 7-point checklist</h2>
+        <p>
+          Before you hire anyone to clean your workplace, confirm they have:
+        </p>
+        <ol>
+          <li>
+            <strong>Liability insurance and bonding.</strong> They're working in your space, often after hours. Ask for proof of coverage — a serious company carries it and shows it without hesitation.
+          </li>
+          <li>
+            <strong>Background-checked staff.</strong> You're granting building access. Confirm every cleaner is vetted.
+          </li>
+          <li>
+            <strong>A clear, written scope.</strong> Exactly what's cleaned, how often, and what's extra. Vague scopes are where disputes start.
+          </li>
+          <li>
+            <strong>Flexible, after-hours scheduling.</strong> Good commercial cleaners work around your hours so your team is never interrupted.
+          </li>
+          <li>
+            <strong>Consistency.</strong> Ask whether you'll get the same trained crew, or a rotating cast. Consistency is what keeps quality steady.
+          </li>
+          <li>
+            <strong>Real local reviews and references.</strong> Look for reviews from actual KC-area businesses, and ask for a reference you can call.
+          </li>
+          <li>
+            <strong>A satisfaction guarantee.</strong> The best companies fix any miss, no argument.
+          </li>
+        </ol>
+
+        <h2>Red flags to watch for</h2>
+        <p>
+          Be cautious if a company can't provide proof of insurance, quotes a firm price without seeing your space, has no verifiable local reviews, uses a vague or verbal-only scope, or can't tell you who will actually be in your building. Any one of these is a reason to keep looking.
+        </p>
+
+        <h2>Questions to ask before you sign</h2>
+        <ul>
+          <li>Are you insured and bonded, and can I see proof?</li>
+          <li>Are your cleaners background-checked and employed by you (not subcontracted)?</li>
+          <li>Will I have the same crew each visit?</li>
+          <li>What exactly is included, and what costs extra?</li>
+          <li>How do you handle a missed area or a complaint?</li>
+          <li>Can you work after our business hours?</li>
+        </ul>
+
+        <h2>Small office vs. large facility</h2>
+        <p>
+          A small professional office doesn't need a national chain's overhead — it needs a reliable, insured local team that shows up consistently and communicates well. For small Overland Park and KC offices, a locally owned company is often the better fit: more flexible, more accountable, and easier to reach when something needs adjusting.
+        </p>
+
+        <h2>A local option</h2>
+        <p>
+          ShineWell is a fully insured, family-owned company that has cleaned Overland Park and greater KC metro businesses for over 20 years, with background-checked crews, after-hours scheduling, a 24-hour re-clean guarantee, and a 5.0 Google rating. 
+        </p>
+        <p>
+          If you're comparing options for your office, <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">request a free walkthrough</Link> or read our guide on <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how to keep your office clean and healthy</Link> to learn how often professional cleaning is ideal for your team.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h3 className="text-xl font-semibold mb-4">About the Author: Lina Silva</h3>
+          <p className="text-sm md:text-base text-[#5c635f] leading-relaxed">
+            <strong>Lina Silva</strong> is the owner of <strong>Shine Well Cleaning Services</strong> and brings more than <strong>20 years of professional cleaning expertise</strong> to the industry. For over <strong>20 years</strong>, Lina has personally served homeowners and businesses throughout the <strong>Kansas City metropolitan area</strong>, building her company on a foundation of trust, dependability, exceptional service, and attention to detail.
+          </p>
+        </div>
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What should I look for in a commercial cleaning company?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Full insurance and bonding, background-checked staff, a clear written scope, flexible after-hours scheduling, real local reviews, consistent crews, and a satisfaction guarantee. Get a walkthrough-based quote rather than a price over the phone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should a commercial cleaner quote a price over the phone?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ideally no. A reliable commercial quote comes after a walkthrough of the actual space, based on square footage, scope, and frequency."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is a local company or a national franchise better for a small office?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For small offices, a locally owned company is often more flexible, more accountable, and easier to reach, without the overhead of a national franchise."
+              }
+            }
+          ]
+        }
+        `}} />
+      </>
+    )
+  },
+  {
+    id: 'how-to-keep-your-office-clean-and-healthy',
+    title: "How to Keep Your Office Clean and Healthy (A Guide for Kansas City Businesses)",
+    excerpt: "How to keep your office clean and healthy for staff and clients: high-touch points, restroom and break-room routines, and how often to bring in pros.",
+    date: 'July 17, 2026',
+    author: 'Lina Silva',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Keep your office healthy with daily light upkeep (empty trash, wipe high-touch surfaces, tidy restrooms and break rooms) plus a professional clean one to three times a week, scaled to your size and foot traffic, with periodic deep cleans. The biggest wins for both health and first impressions are high-touch points, restrooms, break rooms, and air quality.
+          </p>
+        </div>
+
+        <p>
+          A clean office isn't just about looks. Shared workspaces spread germs fast through high-touch surfaces, which drives up sick days and drags on productivity. And for any client-facing business, the state of your reception and restrooms shapes the impression a visitor forms before you say a word. Cleanliness quietly affects both your team's health and your reputation.
+        </p>
+
+        <div className="my-8 p-6 bg-[#CAD4CD]/10 rounded-2xl border border-[#e8e5df]/60 flex flex-col sm:flex-row gap-4 items-center justify-between text-sm">
+          <span className="font-medium text-[#5c635f]">Evaluating commercial cleaning companies?</span>
+          <Link to="/blog/how-to-choose-commercial-cleaning-company-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E] transition-colors">
+            Read Our Commercial Buyer's Guide
+          </Link>
+        </div>
+
+        <h2>Why office cleanliness is a business issue, not a chore</h2>
+        <p>
+          Shared workspaces are highly vulnerable to the spread of common winter viruses and allergens. When high-touch areas aren't routinely disinfected, pathogens build up quickly, causing low-level illnesses that reduce overall staff focus and performance. Beyond physical health, physical clutter and grime create sub-conscious stress for employees. Providing a clean, clinical-standard office is an investment in your people.
+        </p>
+
+        <h2>The high-touch points that matter most</h2>
+        <p>
+          These are where germs concentrate, so they deserve daily attention:
+        </p>
+        <ul>
+          <li>Door handles, push plates, and light switches</li>
+          <li>Shared keyboards, phones, copiers, and touchscreens</li>
+          <li>Break-room counters, fridge and microwave handles, coffee machines</li>
+          <li>Restroom fixtures, faucets, and stall latches</li>
+          <li>Elevator buttons and stair rails</li>
+          <li>Reception desk and sign-in surfaces</li>
+        </ul>
+
+        <h2>How often should you clean?</h2>
+        <p>
+          A simple guide by office type:
+        </p>
+        <ul>
+          <li><strong>Small office, low foot traffic:</strong> professional cleaning 1x per week, with staff handling daily light upkeep.</li>
+          <li><strong>Medium office or client-facing:</strong> 2–3x per week, plus daily restroom and break-room attention.</li>
+          <li><strong>High-traffic, medical, or food-adjacent:</strong> daily professional cleaning, with deep cleans on a set schedule.</li>
+        </ul>
+        <p>
+          Layer in a deep clean quarterly (or seasonally) to reach what routine visits don't — carpets, vents, baseboards, and behind equipment.
+        </p>
+
+        <h2>Daily upkeep your team can handle vs. what pros should do</h2>
+        <p>
+          Staff can manage the small stuff: tidying desks, running the dishwasher, taking out trash, and a quick wipe of shared surfaces. Leave the rest to professionals — proper restroom sanitation, floor care, high-touch disinfection, glass, and deep periodic work require the right products and equipment (and free your team to do their actual jobs).
+        </p>
+
+        <h2>The Kansas City seasonal factor</h2>
+        <p>
+          Our climate adds two spikes to plan for. Cold and flu season (late fall through winter) is when high-touch disinfection matters most. And KC's heavy spring pollen finds its way indoors, settling on surfaces and affecting air quality — a good time to increase frequency or add a deep clean.
+        </p>
+
+        <h2>When to bring in a professional service</h2>
+        <p>
+          If your team is spending work hours cleaning, restrooms or break rooms aren't consistently up to standard, or you want a healthier space without the management overhead, it's time to bring in pros. A professional commercial service gives you consistency and one less thing to manage.
+        </p>
+
+        <p>
+          ShineWell provides flexible commercial cleaning across Overland Park and the KC metro, scheduled around your business hours. 
+        </p>
+        <p>
+          Ready to experience the difference? Learn about our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Commercial Cleaning Services in Kansas City</Link> or <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a Free Estimate</Link> walkthrough.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h3 className="text-xl font-semibold mb-4">About the Author: Lina Silva</h3>
+          <p className="text-sm md:text-base text-[#5c635f] leading-relaxed">
+            <strong>Lina Silva</strong> is the owner of <strong>Shine Well Cleaning Services</strong> and brings more than <strong>20 years of professional cleaning expertise</strong> to the industry. For over <strong>20 years</strong>, Lina has personally served homeowners and businesses throughout the <strong>Kansas City metropolitan area</strong>, building her company on a foundation of trust, dependability, exceptional service, and attention to detail.
+          </p>
+        </div>
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How often should an office be professionally cleaned?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on size and foot traffic: about once a week for small low-traffic offices, two to three times a week for client-facing spaces, and daily for high-traffic, medical, or food-adjacent workplaces, plus periodic deep cleans."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the most important things to clean in an office?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "High-touch points such as door handles, light switches, and shared electronics, along with restrooms and break rooms, since these most affect both employee health and the impression clients form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can office staff handle cleaning instead of a service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Staff can manage light daily upkeep, but restroom sanitation, floor care, high-touch disinfection, and deep periodic cleaning are best handled by professionals with the right products and equipment."
+              }
+            }
+          ]
+        }
+        `}} />
       </>
     )
   }

@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      if (window.trustedTypes && !window.trustedTypes.defaultPolicy) {
+        window.trustedTypes.createPolicy('default', {
+          createHTML: function(string) { return string; },
+          createScriptURL: function(string) { return string; },
+          createScript: function(string) { return string; }
+        });
+      }
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18330417032"></script>
     <script>
@@ -86,7 +95,35 @@
   </head>
   <body>
     <div data-chat-widget data-widget-id="6a4bed7e665c2f21034131f0" data-location-id="cw0LTb1KMpv0suzij9FZ"></div>
-    <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a4bed7e665c2f21034131f0"></script>
+    <script>
+      (function() {
+        var initialized = false;
+        function initChatWidget() {
+          if (initialized) return;
+          initialized = true;
+          
+          // Remove event listeners
+          window.removeEventListener('mousemove', initChatWidget);
+          window.removeEventListener('scroll', initChatWidget);
+          window.removeEventListener('touchstart', initChatWidget);
+          window.removeEventListener('keydown', initChatWidget);
+          
+          // Create and inject the chat widget script
+          var script = document.createElement('script');
+          script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+          script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+          script.setAttribute('data-widget-id', '6a4bed7e665c2f21034131f0');
+          script.async = true;
+          document.body.appendChild(script);
+        }
+        
+        // Add event listeners for various user interaction markers
+        window.addEventListener('mousemove', initChatWidget, { passive: true });
+        window.addEventListener('scroll', initChatWidget, { passive: true });
+        window.addEventListener('touchstart', initChatWidget, { passive: true });
+        window.addEventListener('keydown', initChatWidget, { passive: true });
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

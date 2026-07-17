@@ -19,7 +19,9 @@ export default function BlogPostPage() {
         'regular-house-cleaning-kansas-city': "How Often Should You Get Your House Cleaned? | ShineWell",
         'deep-cleaning-kansas-city': "Standard vs. Deep Cleaning: Which One Does Your Home Need?",
         'office-cleaning-reception': "How Reception Cleanliness Boosts Client Trust | ShineWell Blog",
-        'kansas-city-restoration-pros-recommendation': "Trusted Property Restoration in KC | ShineWell Recommends"
+        'kansas-city-restoration-pros-recommendation': "Trusted Property Restoration in KC | ShineWell Recommends",
+        'how-to-choose-commercial-cleaning-company-kansas-city': "How to Choose a Commercial Cleaning Company in KC",
+        'how-to-keep-your-office-clean-and-healthy': "How Keep Your Office Clean and Healthy | KC Guide"
       };
 
       const metaDescriptions: Record<string, string> = {
@@ -30,7 +32,9 @@ export default function BlogPostPage() {
         'regular-house-cleaning-kansas-city': "Determine the ideal recurring cleaning frequency for your Kansas City home. Weekly, biweekly, or monthly — choose the plan that fits your life.",
         'deep-cleaning-kansas-city': "Confused about whether to book a standard maintenance clean or a top-to-bottom deep clean? Here's an honest breakdown of what's included in each.",
         'office-cleaning-reception': "Expert advice on managing the physical first impression of your corporate lobby, reception desks, and waiting rooms to build immediate professional trust.",
-        'kansas-city-restoration-pros-recommendation': "ShineWell Cleaning Services proudly recommends Jason and the team at Kansas City Restoration Pros for water, fire, mold, and storm damage restoration."
+        'kansas-city-restoration-pros-recommendation': "ShineWell Cleaning Services proudly recommends Jason and the team at Kansas City Restoration Pros for water, fire, mold, and storm damage restoration.",
+        'how-to-choose-commercial-cleaning-company-kansas-city': "What to look for in a commercial cleaning company in Overland Park or KC: insurance, background checks, scope, and questions to ask before you sign.",
+        'how-to-keep-your-office-clean-and-healthy': "How to keep your office clean and healthy for staff and clients: high-touch points, restroom and break-room routines, and how often to bring in pros."
       };
 
       document.title = seoTitles[post.id] || `${post.title} | ShineWell Blog`;

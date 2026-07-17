@@ -15,6 +15,32 @@ async function startServer() {
   app.use(cors());
   app.use(express.json());
 
+  // Security Headers Middleware (Fixes Trust & Safety Audits)
+  app.use((req, res, next) => {
+    res.setHeader(
+      "Content-Security-Policy",
+      [
+        "default-src 'self'",
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://widgets.leadconnectorhq.com https://js.stripe.com https://www.google.com https://www.gstatic.com https://links.somosoverflow.com",
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://widgets.leadconnectorhq.com",
+        "img-src 'self' data: https://*.stripe.com https://maps.google.com https://*.google.com https://*.gstatic.com https://widgets.leadconnectorhq.com https://images.unsplash.com",
+        "font-src 'self' data: https://fonts.gstatic.com https://widgets.leadconnectorhq.com",
+        "frame-src 'self' https://widgets.leadconnectorhq.com https://js.stripe.com https://maps.google.com https://www.google.com https://links.somosoverflow.com https://share.google",
+        "connect-src 'self' https://api.stripe.com https://widgets.leadconnectorhq.com https://links.somosoverflow.com",
+        "trusted-types default",
+        "require-trusted-types-for 'script'",
+        "frame-ancestors 'self' https://*.google.com https://ai.studio https://*.run.app https://google-aistudio-build.firebaseapp.com"
+      ].join("; ")
+    );
+
+    res.setHeader("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload");
+    res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+    res.setHeader("X-Frame-Options", "SAMEORIGIN");
+    res.setHeader("X-Content-Type-Options", "nosniff");
+    res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+    next();
+  });
+
   // Stripe initialization (Lazy to avoid crash if key is missing)
   let stripeClient: Stripe | null = null;
   function getStripe(): Stripe {
@@ -145,6 +171,15 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
+
+    // Handle missing assets, source maps, or other static files immediately to prevent falling back to SPA index.html
+    app.use((req, res, next) => {
+      if (req.path.endsWith('.map') || req.path.match(/\.(js|css|png|jpg|jpeg|gif|svg|ico|webp|woff|woff2|ttf|eot)$/i)) {
+        return res.status(404).send('Asset or map not found');
+      }
+      next();
+    });
+
     app.get('*', (req, res) => {
       // Remove trailing slash if present to look up the pre-rendered folder structure
       const cleanPath = req.path.endsWith('/') && req.path !== '/' ? req.path.slice(0, -1) : req.path;

@@ -30,9 +30,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <Phone className="w-6 h-6" />
+              <Phone className="w-6 h-6" aria-hidden="true" />
             </div>
-            <h3 className="font-medium text-[#2C302E] mb-2">Phone</h3>
+            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Phone</h2>
             <a href="tel:9133251400" className="text-[#C86B53] hover:underline font-semibold text-lg">(913) 325-1400</a>
             <p className="text-sm text-[#a3aba6] mt-2">Mon to Sat, 8am to 6pm</p>
           </motion.div>
@@ -44,9 +44,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <Mail className="w-6 h-6" />
+              <Mail className="w-6 h-6" aria-hidden="true" />
             </div>
-            <h3 className="font-medium text-[#2C302E] mb-2">Email</h3>
+            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Email</h2>
             <a href="mailto:lina.swcleaning@gmail.com" className="text-[#C86B53] hover:underline font-light">lina.swcleaning@gmail.com</a>
             <p className="text-sm text-[#a3aba6] mt-2">24/7 Support</p>
           </motion.div>
@@ -58,9 +58,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <MapPin className="w-6 h-6" />
+              <MapPin className="w-6 h-6" aria-hidden="true" />
             </div>
-            <h3 className="font-medium text-[#2C302E] mb-2">Service Area</h3>
+            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Service Area</h2>
             <p className="text-[#5c635f] font-light text-sm">Overland Park & Greater KC Metro</p>
             <p className="text-sm text-[#a3aba6] mt-2">Service-Area Business (No Public Lobby)</p>
           </motion.div>
@@ -72,9 +72,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <Clock className="w-6 h-6" />
+              <Clock className="w-6 h-6" aria-hidden="true" />
             </div>
-            <h3 className="font-medium text-[#2C302E] mb-2">Hours</h3>
+            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Hours</h2>
             <p className="text-[#5c635f] font-light">Mon to Sat: 8am to 6pm</p>
             <p className="text-sm text-[#a3aba6] mt-2">Sunday: Closed</p>
           </motion.div>

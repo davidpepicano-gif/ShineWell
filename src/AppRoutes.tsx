@@ -4,6 +4,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import ServicePage from './pages/ServicePage';
 import ServicesPage from './pages/ServicesPage';
+import CommercialCleaningKansasCity from './pages/CommercialCleaningKansasCity';
 import HowItWorksPage from './pages/HowItWorksPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -25,6 +26,7 @@ export default function AppRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:serviceId" element={<ServicePage />} />
+          <Route path="/commercial-cleaning-kansas-city" element={<CommercialCleaningKansasCity />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />

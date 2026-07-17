@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 const services = [
-  { name: 'Commercial Cleaning', path: '/services/commercial-deep-cleaning' },
+  { name: 'Commercial Cleaning', path: '/commercial-cleaning-kansas-city' },
   { name: 'Routine House Cleaning', path: '/services/routine-housekeeping' },
   { name: 'Deep Cleaning', path: '/services/deep-dives' },
   { name: 'Move In / Move Out', path: '/services/move-in-move-out' },
@@ -68,17 +68,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen bg-[#F9F8F6] font-sans text-[#2C302E] selection:bg-[#CAD4CD] selection:text-white flex flex-col">
-      {/* Navigation */}
-      <nav
+      {/* Navigation Header */}
+      <header
         className={`fixed w-full z-50 transition-all duration-500 ${
           isScrolled 
             ? 'bg-[#F9F8F6]/98 backdrop-blur-md shadow-md border-b border-[#e8e5df]/60 py-2' 
             : 'bg-[#F9F8F6]/60 backdrop-blur-sm border-b border-transparent py-4'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <nav className="max-w-7xl mx-auto px-6 lg:px-12" aria-label="Main Navigation">
           <div className="flex justify-between items-center">
-            <Link to="/" className="flex items-center gap-3 cursor-pointer group">
+            <Link to="/" className="flex items-center gap-3 cursor-pointer group" aria-label="ShineWell Homepage">
               <div className="group-hover:scale-105 transition-transform duration-300 shrink-0">
                 <Logo className={`transition-all duration-500 ${
                   isScrolled ? 'h-16 w-16 md:h-[80px] md:w-[80px]' : 'h-24 w-24 md:h-[112px] md:w-[112px]'
@@ -108,9 +108,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link
                   to="/services"
                   className="flex items-center gap-1 text-[15px] text-[#5c635f] hover:text-[#C86B53] transition-colors font-medium"
+                  aria-haspopup="true"
+                  aria-expanded={isServicesOpen}
                 >
                   Services
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown className="w-4 h-4" aria-hidden="true" />
                 </Link>
                 
                 <AnimatePresence>
@@ -121,12 +123,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
                       className="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-[#e8e5df] py-3 overflow-hidden"
+                      role="menu"
+                      aria-label="Services Submenu"
                     >
                       {services.map((service) => (
                         <Link
                           key={service.path}
                           to={service.path}
                           className="block px-5 py-2.5 text-sm text-[#5c635f] hover:text-[#C86B53] hover:bg-[#F9F8F6] transition-colors"
+                          role="menuitem"
                         >
                           {service.name}
                         </Link>
@@ -170,7 +175,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href="tel:9133251400"
                 className="hidden lg:flex items-center gap-2 border border-[#607564] text-[#607564] hover:bg-[#607564] hover:text-white px-5 py-2.5 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 shrink-0"
               >
-                <Phone className="w-4 h-4 shrink-0" />
+                <Phone className="w-4 h-4 shrink-0" aria-hidden="true" />
                 <span>Call ShineWell: (913) 325-1400</span>
               </a>
             </div>
@@ -182,52 +187,61 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className="flex items-center gap-1.5 bg-[#607564] text-white px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-[#b55e47] transition-all shrink-0"
                 aria-label="Call ShineWell at (913) 325-1400"
               >
-                <Phone className="w-3.5 h-3.5 shrink-0" />
+                <Phone className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                 <span>(913) 325-1400</span>
               </a>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="p-2 text-[#2C302E] shrink-0"
-                aria-label="Toggle menu"
+                aria-label={isMobileMenuOpen ? "Close main menu" : "Open main menu"}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-navigation"
               >
-                {isMobileMenuOpen ? <X className="h-6 w-6" strokeWidth={1.5} /> : <Menu className="h-6 w-6" strokeWidth={1.5} />}
+                {isMobileMenuOpen ? <X className="h-6 w-6" strokeWidth={1.5} aria-hidden="true" /> : <Menu className="h-6 w-6" strokeWidth={1.5} aria-hidden="true" />}
               </button>
             </div>
           </div>
-        </div>
+        </nav>
 
         {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div 
+              id="mobile-navigation"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               className="md:hidden absolute top-full left-0 w-full bg-[#F9F8F6] shadow-xl py-6 px-6 flex flex-col gap-4 border-t border-[#e8e5df] max-h-[80vh] overflow-y-auto"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Mobile Navigation Menu"
             >
               <div className="flex flex-col gap-2">
-                <Link
-                  to="/services"
-                  className="flex items-center justify-between text-left text-[#5c635f] font-medium py-3 border-b border-[#e8e5df]"
-                >
-                  Services
+                <div className="flex items-center justify-between text-left text-[#5c635f] font-medium py-3 border-b border-[#e8e5df]">
+                  <Link to="/services" className="hover:text-[#C86B53]">Services</Link>
                   <button 
                     onClick={(e) => {
                       e.preventDefault();
                       setIsServicesOpen(!isServicesOpen);
                     }}
-                    className="p-1"
+                    className="p-2 -mr-2"
+                    aria-label="Toggle services list"
+                    aria-expanded={isServicesOpen}
+                    aria-controls="mobile-services-submenu"
                   >
-                    <ChevronDown className={`w-5 h-5 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                    <ChevronDown className={`w-5 h-5 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
                   </button>
-                </Link>
+                </div>
                 <AnimatePresence>
                   {isServicesOpen && (
                     <motion.div
+                      id="mobile-services-submenu"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       className="overflow-hidden flex flex-col pl-4 border-b border-[#e8e5df]"
+                      role="group"
+                      aria-label="Services Submenu Links"
                     >
                       {services.map((service) => (
                         <Link
@@ -277,13 +291,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href="tel:9133251400"
                 className="bg-[#607564] text-white px-6 py-4 rounded-xl font-medium mt-2 w-full text-center flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5 shrink-0" />
+                <Phone className="w-5 h-5 shrink-0" aria-hidden="true" />
                 <span>Call (913) 325-1400</span>
               </a>
             </motion.div>
           )}
         </AnimatePresence>
-      </nav>
+      </header>
 
       {/* Main Content */}
       <main className="flex-grow">
@@ -329,7 +343,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
             
             <div>
-              <h4 className="font-medium mb-6 tracking-wide">Contact</h4>
+              <h2 className="text-lg font-medium mb-6 tracking-wide text-[#2C302E]">Contact</h2>
               <ul className="space-y-4 text-[#a3aba6] font-light">
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#607564]" />
@@ -376,7 +390,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
             
             <div>
-              <h4 className="font-medium mb-6 tracking-wide">Links</h4>
+              <h2 className="text-lg font-medium mb-6 tracking-wide text-[#2C302E]">Links</h2>
               <ul className="space-y-3 text-[#a3aba6] font-light">
                 <li><Link to="/services" className="hover:text-white transition-colors">Services</Link></li>
                 <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>

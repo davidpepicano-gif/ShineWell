@@ -70,7 +70,7 @@ export default function ServicesPage() {
       image: commercialDeepCleaningImg,
       title: "Light Commercial Cleaning",
       desc: "Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.",
-      path: "/services/commercial-deep-cleaning"
+      path: "/commercial-cleaning-kansas-city"
     },
     {
       image: junkRemovalImg,

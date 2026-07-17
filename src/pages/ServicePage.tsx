@@ -1,4 +1,5 @@
-import { useParams, Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
 import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
@@ -402,6 +403,13 @@ const serviceData = {
 
 export default function ServicePage() {
   const { serviceId } = useParams<{ serviceId: string }>();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (serviceId === 'commercial-deep-cleaning') {
+      navigate('/commercial-cleaning-kansas-city', { replace: true });
+    }
+  }, [serviceId, navigate]);
   
   const service: any = serviceId ? serviceData[serviceId as keyof typeof serviceData] : null;
 

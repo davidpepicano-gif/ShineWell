@@ -64,10 +64,10 @@
 
   <!-- Service Subpages -->
   <url>
-    <loc>https://shinewellcleaning.com/services/commercial-deep-cleaning</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://shinewellcleaning.com/commercial-cleaning-kansas-city</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://shinewellcleaning.com/services/routine-housekeeping</loc>
@@ -163,6 +163,18 @@
   </url>
   <url>
     <loc>https://shinewellcleaning.com/blog/kansas-city-restoration-pros-recommendation</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shinewellcleaning.com/blog/how-to-choose-commercial-cleaning-company-kansas-city</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shinewellcleaning.com/blog/how-to-keep-your-office-clean-and-healthy</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

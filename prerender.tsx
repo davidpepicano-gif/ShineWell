@@ -89,6 +89,9 @@ const routes = [
   '/blog/is-hiring-a-house-cleaning-service-worth-it',
   '/blog/standard-clean-vs-deep-clean-difference',
   '/blog/kansas-city-restoration-pros-recommendation',
+  '/blog/how-to-choose-commercial-cleaning-company-kansas-city',
+  '/blog/how-to-keep-your-office-clean-and-healthy',
+  '/commercial-cleaning-kansas-city',
   '/privacy',
   '/terms',
 ];
@@ -201,6 +204,18 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
   "/blog/kansas-city-restoration-pros-recommendation": {
     title: "Trusted Property Restoration in KC | ShineWell Recommends",
     description: "ShineWell Cleaning Services proudly recommends Jason and the team at Kansas City Restoration Pros for water, fire, mold, and storm damage restoration.",
+  },
+  "/blog/how-to-choose-commercial-cleaning-company-kansas-city": {
+    title: "How to Choose a Commercial Cleaning Company in KC",
+    description: "What to look for in a commercial cleaning company in Overland Park or KC: insurance, background checks, scope, and questions to ask before you sign.",
+  },
+  "/blog/how-to-keep-your-office-clean-and-healthy": {
+    title: "How Keep Your Office Clean and Healthy | KC Guide",
+    description: "How to keep your office clean and healthy for staff and clients: high-touch points, restroom and break-room routines, and how often to bring in pros.",
+  },
+  "/commercial-cleaning-kansas-city": {
+    title: "Commercial Cleaning Services in Kansas City | ShineWell",
+    description: "Reliable commercial & office cleaning across the Kansas City metro. Fully insured, background-checked crews, flexible schedules, free walkthrough.",
   },
   "/privacy": {
     title: "Privacy Policy | ShineWell Commercial & Home Cleaning Services",
@@ -532,6 +547,55 @@ function prerender() {
           };
           schemaBlock = `\n  <script type="application/ld+json">\n  ${JSON.stringify(serviceSchema, null, 2).replace(/\n/g, '\n  ')}\n  </script>`;
         }
+      } else if (route === '/commercial-cleaning-kansas-city') {
+        const commercialSchema = {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Commercial and office cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "ShineWell Commercial & Home Cleaning Services",
+            "telephone": "+1-913-325-1400",
+            "url": "https://shinewellcleaning.com/commercial-cleaning-kansas-city"
+          },
+          "areaServed": [
+            { "@type": "Place", "name": "Overland Park" },
+            { "@type": "Place", "name": "Kansas City Metro" },
+            { "@type": "Place", "name": "Corporate Woods" },
+            { "@type": "Place", "name": "Crossroads" }
+          ]
+        };
+        const commercialFaq = {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who provides reliable recurring office cleaning in the Kansas City metro?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ShineWell offers recurring commercial and office cleaning across the KC metro — Overland Park, Corporate Woods, the Crossroads, and beyond — with flexible nightly, weekly, or biweekly schedules, fully insured and background-checked crews, and a satisfaction guarantee."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you clean outside of business hours?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Most commercial clients choose after-hours or early-morning cleaning so your team walks into a fresh space and is never disrupted mid-day."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you insured for commercial work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — we carry $2 million in general liability and bonding, and all crews are background-checked."
+              }
+            }
+          ]
+        };
+        schemaBlock = `\n  <script type="application/ld+json">\n  ${JSON.stringify(commercialSchema, null, 2).replace(/\n/g, '\n  ')}\n  </script>\n  <script type="application/ld+json">\n  ${JSON.stringify(commercialFaq, null, 2).replace(/\n/g, '\n  ')}\n  </script>`;
       } else if (route.startsWith('/blog/')) {
         const blogKey = route.split('/').pop() || '';
         let faqSchema: any = null;
@@ -654,6 +718,68 @@ function prerender() {
               "@type": "WebPage",
               "@id": "https://shinewellcleaning.com/blog/kansas-city-restoration-pros-recommendation"
             }
+          };
+        } else if (blogKey === 'how-to-choose-commercial-cleaning-company-kansas-city') {
+          faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What should I look for in a commercial cleaning company?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Full insurance and bonding, background-checked staff, a clear written scope, flexible after-hours scheduling, real local reviews, consistent crews, and a satisfaction guarantee. Get a walkthrough-based quote rather than a price over the phone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should a commercial cleaner quote a price over the phone?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ideally no. A reliable commercial quote comes after a walkthrough of the actual space, based on square footage, scope, and frequency."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is a local company or a national franchise better for a small office?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For small offices, a locally owned company is often more flexible, more accountable, and easier to reach, without the overhead of a national franchise."
+                }
+              }
+            ]
+          };
+        } else if (blogKey === 'how-to-keep-your-office-clean-and-healthy') {
+          faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How often should an office be professionally cleaned?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size and foot traffic: about once a week for small low-traffic offices, two to three times a week for client-facing spaces, and daily for high-traffic, medical, or food-adjacent workplaces, plus periodic deep cleans."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the most important things to clean in an office?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "High-touch points such as door handles, light switches, and shared electronics, along with restrooms and break rooms, since these most affect both employee health and the impression clients form."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can office staff handle cleaning instead of a service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Staff can manage light daily upkeep, but restroom sanitation, floor care, high-touch disinfection, and deep periodic cleaning are best handled by professionals with the right products and equipment."
+                }
+              }
+            ]
           };
         }
 

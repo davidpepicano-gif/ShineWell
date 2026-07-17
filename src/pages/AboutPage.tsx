@@ -66,11 +66,11 @@ export default function AboutPage() {
             The Family Story Behind ShineWell
           </h1>
           <p className="text-lg md:text-xl italic text-[#5c635f] font-light max-w-2xl mx-auto leading-relaxed mb-6">
-            Combining 22 Years of Meticulous Professional Expertise with Brazilian Warmth
+            Combining Over 20 Years of Meticulous Professional Expertise with Brazilian Warmth
           </p>
           <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-[#e8e5df] max-w-3xl mx-auto text-center shadow-sm">
             <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
-              <strong>ShineWell</strong> is a fully insured, local family-owned cleaning business founded by Lina. Over 22 years of dedicated service in Overland Park and the greater Kansas City metropolitan area, we have built a reputation for perfectionism, client trust, and honest care.
+              <strong>ShineWell</strong> is a fully insured, local family-owned cleaning business founded by Lina. Over 20 years of dedicated service in Overland Park and the greater Kansas City metropolitan area, we have built a reputation for perfectionism, client trust, and honest care.
             </p>
           </div>
           <div className="w-12 h-[1px] bg-[#607564] mx-auto mt-8"></div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
               Drawing on the deep cultural warmth of her Brazilian heritage—where the neatness of a home is a beautiful expression of respect and active care (<em>cuidado</em>)—Lina recognized that professional cleaning is a profound form of daily restorative service. She founded ShineWell with a commitment to clinical-level sanitization, honest family work ethics, and meticulously polished living environments.
             </p>
             <p>
-              Today, with <strong>22 years of hands-on expertise</strong>, ShineWell has grown from a personal project helping immediate neighbors in Overland Park into the area's most reliable premium cleaning team. We remain entirely local, family-owned, and devoted to the same fundamental values of trust, reliability, and precision detail.
+              Today, with <strong>over 20 years of hands-on expertise</strong>, ShineWell has grown from a personal project helping immediate neighbors in Overland Park into the area's most reliable premium cleaning team. We remain entirely local, family-owned, and devoted to the same fundamental values of trust, reliability, and precision detail.
             </p>
           </motion.div>
 

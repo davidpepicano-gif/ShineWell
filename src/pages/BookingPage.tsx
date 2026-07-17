@@ -33,6 +33,7 @@ export default function BookingPage() {
               scrolling="auto"
               id="6a07b8ccd950f271fd495202_service_menu"
               title="Book Your Cleaning"
+              sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
             ></iframe>
             <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
           </div>
