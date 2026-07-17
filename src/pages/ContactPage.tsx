@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import DeferredIframe from '../components/DeferredIframe';
 
 export default function ContactPage() {
   return (
@@ -99,9 +100,9 @@ export default function ContactPage() {
           </div>
           
           <div className="w-full min-h-[500px] rounded-2xl overflow-hidden border border-[#e8e5df] bg-white flex items-center justify-center">
-            <iframe
+            <DeferredIframe
               src="https://links.somosoverflow.com/widget/form/wCd628Bbw6Kdx6T546Nk"
-              style={{ width: '100%', height: '100%', minHeight: '500px', border: 'none', overflow: 'hidden' }}
+              minHeight="500px"
               scrolling="no"
               id="inline-wCd628Bbw6Kdx6T546Nk_contact" 
               data-layout="{'id':'INLINE'}"
@@ -116,9 +117,7 @@ export default function ContactPage() {
               data-layout-iframe-id="inline-wCd628Bbw6Kdx6T546Nk_contact"
               data-form-id="wCd628Bbw6Kdx6T546Nk"
               title="Request a Free Estimate"
-            >
-            </iframe>
-            <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
+            />
           </div>
         </motion.div>
       </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Star, ShieldCheck, CheckCircle, UserCheck, Sparkles } from 'lucide-react';
 import storyImgMobile from '../assets/images/regenerated_image_1783363212830_mobile.webp';
 import storyImgDesktop from '../assets/images/regenerated_image_1783363212830_desktop.webp';
-import storyImgFallback from '../assets/images/regenerated_image_1783363212830.png';
+import storyImgFallback from '../assets/images/regenerated_image_1783363212830_desktop.webp';
 
 export default function AboutPage() {
   const trustBadges = [

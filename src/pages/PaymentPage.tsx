@@ -4,10 +4,7 @@ import { Elements, PaymentElement, useStripe, useElements } from "@stripe/react-
 import { motion } from "motion/react";
 import { CheckCircle2 } from "lucide-react";
 
-// Make sure to call loadStripe outside of a component’s render to avoid
-// recreating the Stripe object on every render.
-// This is your test publishable API key.
-const stripePromise = loadStripe((import.meta as any).env?.VITE_STRIPE_PUBLISHABLE_KEY || "pk_test_TYooMQauvdEDq54NiTphI7jx");
+// CheckoutForm is rendered once Stripe is initialized
 
 function CheckoutForm() {
   const stripe = useStripe();
@@ -107,11 +104,15 @@ function CheckoutForm() {
 }
 
 export default function PaymentPage() {
+  const [stripePromise, setStripePromise] = useState<any>(null);
   const [clientSecret, setClientSecret] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
+    // Lazy initialize Stripe only on the client
+    setStripePromise(loadStripe((import.meta as any).env?.VITE_STRIPE_PUBLISHABLE_KEY || "pk_test_TYooMQauvdEDq54NiTphI7jx"));
+
     const clientSecretFromUrl = new URLSearchParams(window.location.search).get(
       "payment_intent_client_secret"
     );

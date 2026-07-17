@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
-import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
+import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272_desktop.webp';
+import deepCleaningImg from '../assets/images/regenerated_image_1783364438283_desktop.webp';
 import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919_desktop.webp';
 
 export interface BlogPost {

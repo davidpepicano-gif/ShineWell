@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
-import logoImg from '../assets/images/regenerated_image_1780271530148.png';
+import logoImg from '../assets/images/regenerated_image_1780271530148_optimized.webp';
 import { 
   Sparkles, 
   Phone, 

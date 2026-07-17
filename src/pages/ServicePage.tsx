@@ -1,25 +1,25 @@
 import { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
-import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
-import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
+import hoarderImg from '../assets/images/regenerated_image_1778884089897_optimized.webp';
+import organizingImg from '../assets/images/regenerated_image_1778878771115_optimized.webp';
+import specializedImg from '../assets/images/specialized_treatment_1779460554949_optimized.webp';
 
 import routineHousekeepingImgMobile from '../assets/images/regenerated_image_1783363824272_mobile.webp';
 import routineHousekeepingImgDesktop from '../assets/images/regenerated_image_1783363824272_desktop.webp';
-import routineHousekeepingImgFallback from '../assets/images/regenerated_image_1783363824272.png';
+import routineHousekeepingImgFallback from '../assets/images/regenerated_image_1783363824272_desktop.webp';
 
 import deepCleaningImgMobile from '../assets/images/regenerated_image_1783364438283_mobile.webp';
 import deepCleaningImgDesktop from '../assets/images/regenerated_image_1783364438283_desktop.webp';
-import deepCleaningImgFallback from '../assets/images/regenerated_image_1783364438283.png';
+import deepCleaningImgFallback from '../assets/images/regenerated_image_1783364438283_desktop.webp';
 
 import junkRemovalImgMobile from '../assets/images/regenerated_image_1783363101031_mobile.webp';
 import junkRemovalImgDesktop from '../assets/images/regenerated_image_1783363101031_desktop.webp';
-import junkRemovalImgFallback from '../assets/images/regenerated_image_1783363101031.png';
+import junkRemovalImgFallback from '../assets/images/regenerated_image_1783363101031_desktop.webp';
 
 import commercialDeepCleaningImgMobile from '../assets/images/regenerated_image_1783363406981_mobile.webp';
 import commercialDeepCleaningImgDesktop from '../assets/images/regenerated_image_1783363406981_desktop.webp';
-import commercialDeepCleaningImgFallback from '../assets/images/regenerated_image_1783363406981.png';
+import commercialDeepCleaningImgFallback from '../assets/images/regenerated_image_1783363406981_desktop.webp';
 import { 
   Home as HomeIcon, 
   Sparkles, 
