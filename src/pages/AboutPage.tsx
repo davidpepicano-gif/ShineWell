@@ -1,7 +1,9 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Star, ShieldCheck, CheckCircle, UserCheck, Sparkles } from 'lucide-react';
-import storyImg from '../assets/images/regenerated_image_1783363212830.png';
+import storyImgMobile from '../assets/images/regenerated_image_1783363212830_mobile.webp';
+import storyImgDesktop from '../assets/images/regenerated_image_1783363212830_desktop.webp';
+import storyImgFallback from '../assets/images/regenerated_image_1783363212830.png';
 
 export default function AboutPage() {
   const trustBadges = [
@@ -105,13 +107,18 @@ export default function AboutPage() {
             className="lg:col-span-5"
           >
             <div id="about-image-wrapper" className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl rotate-1 hover:rotate-0 transition-transform duration-500 bg-[#e8e5df] border-4 border-white">
-              <img 
-                id="about-hero-image"
-                src={storyImg} 
-                alt="ShineWell founder Lina" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
+              <picture>
+                <source media="(max-width: 640px)" srcSet={storyImgMobile} type="image/webp" />
+                <source media="(min-width: 641px)" srcSet={storyImgDesktop} type="image/webp" />
+                <img 
+                  id="about-hero-image"
+                  src={storyImgDesktop} 
+                  alt="ShineWell founder Lina" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                  fetchPriority="high"
+                />
+              </picture>
             </div>
             <p className="text-center text-xs font-mono text-[#607564] mt-4 uppercase tracking-widest">
               Founder Lina &amp; the ShineWell Family

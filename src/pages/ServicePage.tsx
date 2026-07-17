@@ -4,10 +4,22 @@ import { motion } from 'motion/react';
 import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
 import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
 import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
-import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
-import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
-import junkRemovalImg from '../assets/images/regenerated_image_1783363101031.png';
-import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
+
+import routineHousekeepingImgMobile from '../assets/images/regenerated_image_1783363824272_mobile.webp';
+import routineHousekeepingImgDesktop from '../assets/images/regenerated_image_1783363824272_desktop.webp';
+import routineHousekeepingImgFallback from '../assets/images/regenerated_image_1783363824272.png';
+
+import deepCleaningImgMobile from '../assets/images/regenerated_image_1783364438283_mobile.webp';
+import deepCleaningImgDesktop from '../assets/images/regenerated_image_1783364438283_desktop.webp';
+import deepCleaningImgFallback from '../assets/images/regenerated_image_1783364438283.png';
+
+import junkRemovalImgMobile from '../assets/images/regenerated_image_1783363101031_mobile.webp';
+import junkRemovalImgDesktop from '../assets/images/regenerated_image_1783363101031_desktop.webp';
+import junkRemovalImgFallback from '../assets/images/regenerated_image_1783363101031.png';
+
+import commercialDeepCleaningImgMobile from '../assets/images/regenerated_image_1783363406981_mobile.webp';
+import commercialDeepCleaningImgDesktop from '../assets/images/regenerated_image_1783363406981_desktop.webp';
+import commercialDeepCleaningImgFallback from '../assets/images/regenerated_image_1783363406981.png';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -24,7 +36,9 @@ const serviceData = {
   'routine-housekeeping': {
     title: 'Professional Standard Home Cleaning in Overland Park & KC Metro',
     icon: <HomeIcon className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: routineHousekeepingImg,
+    heroImage: routineHousekeepingImgFallback,
+    heroImageMobile: routineHousekeepingImgMobile,
+    heroImageDesktop: routineHousekeepingImgDesktop,
     altText: 'ShineWell cleaner performing standard home cleaning Kansas City',
     description: 'Keeping your sanctuary fresh, week after week. We learn your preferences, remember the details that matter to you, and treat your home with the care and respect it deserves — every single visit.',
     introAnswer: 'ShineWell provides meticulous, background-checked routine home cleaning and housekeeping services across the greater Kansas City area. Our customized plans ensure that your bathrooms, kitchen, and living areas remain beautifully clean on a weekly, bi-weekly, or monthly schedule, giving you back your valuable free time.',
@@ -91,7 +105,9 @@ const serviceData = {
   'deep-dives': {
     title: 'Deep Cleaning Services in Kansas City: Spotless, Top to Bottom',
     icon: <Sparkles className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: deepCleaningImg,
+    heroImage: deepCleaningImgFallback,
+    heroImageMobile: deepCleaningImgMobile,
+    heroImageDesktop: deepCleaningImgDesktop,
     altText: 'Deep cleaning service kitchen Kansas City Missouri',
     description: 'For when things have gotten a little out of hand. We get into the forgotten corners, baseboards, and behind the appliances.',
     introAnswer: 'ShineWell offers comprehensive, top-to-bottom deep cleaning services in Kansas City, Missouri. This premium, detailed package targets hard-to-reach areas, hand-wipes baseboards, sanitizes tile grout, scrubs window sills, and eliminates deep-seated dirt from kitchens and bathrooms to establish an immaculate, fresh, and healthy baseline for your home.',
@@ -175,7 +191,9 @@ const serviceData = {
   'commercial-deep-cleaning': {
     title: 'Light Commercial Cleaning in Overland Park & KC Metro',
     icon: <Building2 className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: commercialDeepCleaningImg,
+    heroImage: commercialDeepCleaningImgFallback,
+    heroImageMobile: commercialDeepCleaningImgMobile,
+    heroImageDesktop: commercialDeepCleaningImgDesktop,
     altText: 'Commercial office cleaning Overland Park & KC Metro',
     description: 'Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.',
     introAnswer: 'ShineWell provides commercial office and business cleaning services across the Kansas City area, tailored to fit your specific corporate schedule. Our fully insured, background-checked cleaners sanitize reception lobbies, desk workstations, restrooms, and breakrooms to maintain a professional, healthy workspace for your employees and clients alike.',
@@ -329,7 +347,9 @@ const serviceData = {
   'junk-removal': {
     title: 'Junk Removal & Dumpster Services in Kansas City',
     icon: <Droplets className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: junkRemovalImg,
+    heroImage: junkRemovalImgFallback,
+    heroImageMobile: junkRemovalImgMobile,
+    heroImageDesktop: junkRemovalImgDesktop,
     altText: 'Professional junk removal service dumpster Kansas City',
     description: 'Full service removal of unwanted items with dumpster logistics handled. Perfect for office clear outs or large home projects.',
     introAnswer: 'ShineWell manages eco-friendly junk removal and dumpster logistics across Kansas City for residential and commercial clear-outs. From hauling heavy furniture and office equipment to managing dumpster placement permits, we handle all the heavy loading and prioritizing local donation centers or recycling, keeping waste out of landfills.',
@@ -469,12 +489,17 @@ export default function ServicePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative rounded-[2rem] overflow-hidden shadow-xl h-[400px] lg:h-[500px]"
           >
-            <img 
-              src={service.heroImage} 
-              alt={service.altText || service.title} 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+            <picture>
+              <source media="(max-width: 640px)" srcSet={service.heroImageMobile || service.heroImage} type="image/webp" />
+              <source media="(min-width: 641px)" srcSet={service.heroImageDesktop || service.heroImage} type="image/webp" />
+              <img 
+                src={service.heroImageDesktop || service.heroImage} 
+                alt={service.altText || service.title} 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+                fetchPriority="high"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
           </motion.div>
         </div>

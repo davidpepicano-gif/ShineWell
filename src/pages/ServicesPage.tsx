@@ -4,10 +4,22 @@ import { motion } from 'motion/react';
 import hoarderImg from '../assets/images/regenerated_image_1778884089897.jpg';
 import organizingImg from '../assets/images/regenerated_image_1778878771115.jpg';
 import specializedImg from '../assets/images/specialized_treatment_1779460554949.png';
-import junkRemovalImg from '../assets/images/regenerated_image_1783363101031.png';
-import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
-import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
-import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
+
+import junkRemovalImgMobile from '../assets/images/regenerated_image_1783363101031_mobile.webp';
+import junkRemovalImgDesktop from '../assets/images/regenerated_image_1783363101031_desktop.webp';
+import junkRemovalImgFallback from '../assets/images/regenerated_image_1783363101031.png';
+
+import commercialDeepCleaningImgMobile from '../assets/images/regenerated_image_1783363406981_mobile.webp';
+import commercialDeepCleaningImgDesktop from '../assets/images/regenerated_image_1783363406981_desktop.webp';
+import commercialDeepCleaningImgFallback from '../assets/images/regenerated_image_1783363406981.png';
+
+import routineHousekeepingImgMobile from '../assets/images/regenerated_image_1783363824272_mobile.webp';
+import routineHousekeepingImgDesktop from '../assets/images/regenerated_image_1783363824272_desktop.webp';
+import routineHousekeepingImgFallback from '../assets/images/regenerated_image_1783363824272.png';
+
+import deepCleaningImgMobile from '../assets/images/regenerated_image_1783364438283_mobile.webp';
+import deepCleaningImgDesktop from '../assets/images/regenerated_image_1783364438283_desktop.webp';
+import deepCleaningImgFallback from '../assets/images/regenerated_image_1783364438283.png';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -25,19 +37,25 @@ export default function ServicesPage() {
 
   const residentialServices = [
     {
-      image: routineHousekeepingImg,
+      image: routineHousekeepingImgFallback,
+      imageMobile: routineHousekeepingImgMobile,
+      imageDesktop: routineHousekeepingImgDesktop,
       title: "Routine House Cleaning",
       desc: "Keeping your sanctuary fresh, week after week. We learn your preferences and treat your home with the utmost respect.",
       path: "/services/routine-housekeeping"
     },
     {
-      image: deepCleaningImg,
+      image: deepCleaningImgFallback,
+      imageMobile: deepCleaningImgMobile,
+      imageDesktop: deepCleaningImgDesktop,
       title: "Deep Cleaning",
       desc: "For when things have gotten a little out of hand. We get into the forgotten corners, baseboards, and behind the appliances.",
       path: "/services/deep-dives"
     },
     {
       image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      imageMobile: "",
+      imageDesktop: "",
       title: "Move In / Move Out",
       desc: "Start fresh or leave a blank slate. We make transitions seamless with a meticulous, top to bottom clean.",
       path: "/services/move-in-move-out"
@@ -47,18 +65,24 @@ export default function ServicesPage() {
   const specializedServices = [
     {
       image: hoarderImg,
+      imageMobile: "",
+      imageDesktop: "",
       title: "Hoarder House Clean Up",
       desc: "Compassionate, efficient restoration for cluttered environments. We handle the heavy lifting with care and discretion.",
       path: "/services/hoarder-cleanup"
     },
     {
       image: organizingImg,
+      imageMobile: "",
+      imageDesktop: "",
       title: "Organizing Service",
       desc: "Functional systems for your home or office. We help you declutter and create spaces that work for your daily life.",
       path: "/services/organizing"
     },
     {
       image: specializedImg,
+      imageMobile: "",
+      imageDesktop: "",
       title: "Specialized Treatments",
       desc: "Targeted care for specific needs, including upholstery, carpet spot treatments, and eco friendly sanitization for sensitive spaces.",
       path: "/services/specialized-treatments"
@@ -67,19 +91,25 @@ export default function ServicesPage() {
 
   const commercialServices = [
     {
-      image: commercialDeepCleaningImg,
+      image: commercialDeepCleaningImgFallback,
+      imageMobile: commercialDeepCleaningImgMobile,
+      imageDesktop: commercialDeepCleaningImgDesktop,
       title: "Light Commercial Cleaning",
       desc: "Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.",
       path: "/commercial-cleaning-kansas-city"
     },
     {
-      image: junkRemovalImg,
+      image: junkRemovalImgFallback,
+      imageMobile: junkRemovalImgMobile,
+      imageDesktop: junkRemovalImgDesktop,
       title: "Junk Removal with Dumpster",
       desc: "Full service removal of unwanted items with dumpster logistics handled. Perfect for office clear outs or large home projects.",
       path: "/services/junk-removal"
     },
     {
       image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=2070&auto=format&fit=crop",
+      imageMobile: "",
+      imageDesktop: "",
       title: "Post Construction",
       desc: "We clear the dust and debris after your renovation, leaving your newly updated space sparkling and ready to enjoy.",
       path: "/services/post-construction"
@@ -235,12 +265,17 @@ export default function ServicesPage() {
                 className="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-[#e8e5df] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
-                  />
+                  <picture>
+                    <source media="(max-width: 640px)" srcSet={service.imageMobile || service.image} type="image/webp" />
+                    <source media="(min-width: 641px)" srcSet={service.imageDesktop || service.image} type="image/webp" />
+                    <img 
+                      src={service.imageDesktop || service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 <div className="p-8 md:p-10 flex flex-col flex-grow">
@@ -368,12 +403,17 @@ export default function ServicesPage() {
                 className="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-[#e8e5df] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
-                  />
+                  <picture>
+                    <source media="(max-width: 640px)" srcSet={service.imageMobile || service.image} type="image/webp" />
+                    <source media="(min-width: 641px)" srcSet={service.imageDesktop || service.image} type="image/webp" />
+                    <img 
+                      src={service.imageDesktop || service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 <div className="p-8 md:p-10 flex flex-col flex-grow">
@@ -413,12 +453,17 @@ export default function ServicesPage() {
                 className="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-[#e8e5df] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
-                  />
+                  <picture>
+                    <source media="(max-width: 640px)" srcSet={service.imageMobile || service.image} type="image/webp" />
+                    <source media="(min-width: 641px)" srcSet={service.imageDesktop || service.image} type="image/webp" />
+                    <img 
+                      src={service.imageDesktop || service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 <div className="p-8 md:p-10 flex flex-col flex-grow">
