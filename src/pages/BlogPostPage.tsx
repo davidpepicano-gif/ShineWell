@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
@@ -6,6 +7,40 @@ import { blogPosts } from '../data/blogPosts';
 export default function BlogPostPage() {
   const { postId } = useParams<{ postId: string }>();
   const post = blogPosts.find(p => p.id === postId);
+
+  useEffect(() => {
+    if (post) {
+      // Mapping for specific SEO Titles and Meta Descriptions matching the prerender/AEO requirements
+      const seoTitles: Record<string, string> = {
+        'how-often-professional-house-cleaning-kansas-city': "How Often Should You Get Your House Cleaned? | KC Guide",
+        'is-hiring-a-house-cleaning-service-worth-it': "Is Hiring a House Cleaning Service Worth It? (KC 2026)",
+        'standard-clean-vs-deep-clean-difference': "Standard Clean vs. Deep Clean: What's the Difference?",
+        'commercial-cleaning-kansas-city': "Why KC Businesses Are Rethinking Office Cleanliness",
+        'regular-house-cleaning-kansas-city': "How Often Should You Get Your House Cleaned? | ShineWell",
+        'deep-cleaning-kansas-city': "Standard vs. Deep Cleaning: Which One Does Your Home Need?",
+        'office-cleaning-reception': "How Reception Cleanliness Boosts Client Trust | ShineWell Blog",
+        'kansas-city-restoration-pros-recommendation': "Trusted Property Restoration in KC | ShineWell Recommends"
+      };
+
+      const metaDescriptions: Record<string, string> = {
+        'how-often-professional-house-cleaning-kansas-city': "How often should you have your house professionally cleaned in Kansas City? Weekly, biweekly, or monthly — here's how to choose the right frequency.",
+        'is-hiring-a-house-cleaning-service-worth-it': "Is a house cleaning service worth the money? Here's an honest look at the cost, time saved, and how to decide — for Kansas City homeowners.",
+        'standard-clean-vs-deep-clean-difference': "Standard clean vs. deep clean — what's the difference, what's included in each, and which one you need? A simple guide for Kansas City homeowners.",
+        'commercial-cleaning-kansas-city': "Learn why Kansas City business owners trust ShineWell for meticulous commercial cleaning that respects their space, team productivity, and professional image.",
+        'regular-house-cleaning-kansas-city': "Determine the ideal recurring cleaning frequency for your Kansas City home. Weekly, biweekly, or monthly — choose the plan that fits your life.",
+        'deep-cleaning-kansas-city': "Confused about whether to book a standard maintenance clean or a top-to-bottom deep clean? Here's an honest breakdown of what's included in each.",
+        'office-cleaning-reception': "Expert advice on managing the physical first impression of your corporate lobby, reception desks, and waiting rooms to build immediate professional trust.",
+        'kansas-city-restoration-pros-recommendation': "ShineWell Cleaning Services proudly recommends Jason and the team at Kansas City Restoration Pros for water, fire, mold, and storm damage restoration."
+      };
+
+      document.title = seoTitles[post.id] || `${post.title} | ShineWell Blog`;
+      
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', metaDescriptions[post.id] || post.excerpt);
+      }
+    }
+  }, [post]);
 
   if (!post) {
     return (

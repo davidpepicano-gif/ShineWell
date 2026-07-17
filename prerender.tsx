@@ -88,6 +88,7 @@ const routes = [
   '/blog/how-often-professional-house-cleaning-kansas-city',
   '/blog/is-hiring-a-house-cleaning-service-worth-it',
   '/blog/standard-clean-vs-deep-clean-difference',
+  '/blog/kansas-city-restoration-pros-recommendation',
   '/privacy',
   '/terms',
 ];
@@ -196,6 +197,10 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
   "/blog/standard-clean-vs-deep-clean-difference": {
     title: "Standard Clean vs. Deep Clean: What's the Difference?",
     description: "Standard clean vs. deep clean — what's the difference, what's included in each, and which one you need? A simple guide for Kansas City homeowners.",
+  },
+  "/blog/kansas-city-restoration-pros-recommendation": {
+    title: "Trusted Property Restoration in KC | ShineWell Recommends",
+    description: "ShineWell Cleaning Services proudly recommends Jason and the team at Kansas City Restoration Pros for water, fire, mold, and storm damage restoration.",
   },
   "/privacy": {
     title: "Privacy Policy | ShineWell Commercial & Home Cleaning Services",
@@ -622,6 +627,33 @@ function prerender() {
                 }
               }
             ]
+          };
+        } else if (blogKey === 'kansas-city-restoration-pros-recommendation') {
+          faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Shine Well Cleaning Services Proudly Recommends Kansas City Restoration Pros",
+            "description": "Lina Silva, Owner of Shine Well Cleaning Services, explains why she proudly recommends Jason and the team at Kansas City Restoration Pros for water, mold, fire, and storm damage restoration.",
+            "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-17",
+            "author": {
+              "@type": "Person",
+              "name": "Lina Silva",
+              "jobTitle": "Owner of Shine Well Cleaning Services"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ShineWell Commercial & Home Cleaning Services",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://shinewellcleaning.com/logo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://shinewellcleaning.com/blog/kansas-city-restoration-pros-recommendation"
+            }
           };
         }
 
