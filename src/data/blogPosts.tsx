@@ -1,4 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
+import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
+import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919.png';
 
 export interface BlogPost {
   id: string;
@@ -352,6 +357,365 @@ export const blogPosts: BlogPost[] = [
         <p>
           Your reception area works harder than any other room in your building. Make sure it looks the part. Contact ShineWell today for a free office cleaning consultation, and let your first impression work for you.
         </p>
+      </>
+    )
+  },
+  {
+    id: 'how-often-professional-house-cleaning-kansas-city',
+    title: 'How Often Should You Have Your House Professionally Cleaned? (A Kansas City Guide)',
+    excerpt: 'How often should you have your house professionally cleaned in Kansas City? Weekly, biweekly, or monthly — here\'s how to choose the right frequency.',
+    date: 'July 17, 2026',
+    author: 'Lina',
+    image: routineHousekeepingImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Most Kansas City households do best with a professional cleaning every two weeks. Choose weekly if you have kids, pets, allergies, or a high-traffic home; monthly if your home is low-traffic and you tidy in between; and a one-time or seasonal deep clean when you just need a reset. The right frequency comes down to your household, not a one-size-fits-all rule.
+          </p>
+        </div>
+
+        <h2>Find your frequency by household type</h2>
+        <ul>
+          <li><strong>Weekly</strong> — Families with young kids, multiple pets, allergy or asthma concerns, or anyone who hosts often. Dust, hair, and mess rebuild fast in a busy home, and weekly service keeps it from ever piling up.</li>
+          <li><strong>Every two weeks (biweekly)</strong> — The most popular choice for a reason. It keeps a home consistently clean without paying for weekly visits, which is why it\'s the sweet spot for most Overland Park and Kansas City homeowners.</li>
+          <li><strong>Monthly</strong> — Great for smaller households, couples, or tidy homes with light foot traffic. You handle day-to-day upkeep, and a monthly visit resets the deeper stuff.</li>
+          <li><strong>One-time or seasonal</strong> — Perfect for spring cleaning, before or after guests, holidays, or a move. Many people book a deep clean a few times a year on top of (or instead of) a routine.</li>
+        </ul>
+
+        <h2>What actually affects how often you need cleaning</h2>
+        <p>Your ideal schedule depends on a handful of real-life factors:</p>
+        <ul>
+          <li><strong>Pets</strong> — Shedding and dander mean more frequent cleaning, especially with carpet.</li>
+          <li><strong>Kids</strong> — More spills, crumbs, and traffic through the house.</li>
+          <li><strong>Allergies or asthma</strong> — Regular dust and dander removal makes a noticeable difference in air quality.</li>
+          <li><strong>Household size and traffic</strong> — More people equals faster buildup.</li>
+          <li><strong>Home size and layout</strong> — Larger homes and open floor plans collect dust across more surfaces.</li>
+          <li><strong>Working from home</strong> — More hours in the house usually means it needs more attention.</li>
+        </ul>
+
+        <h2>The Kansas City seasonal factor</h2>
+        <p>
+          Our metro\'s seasons change what your home needs. Spring brings heavy tree pollen that settles on every surface. Winter tracks in salt, slush, and mud that\'s rough on floors and entryways. Summer humidity can encourage dust and allergens to cling. Many KC homeowners bump up to weekly in spring and fall, then ease back the rest of the year — a flexible plan handles that easily.
+        </p>
+
+        <h2>Where most people land: start with a deep clean, then go recurring</h2>
+        <p>
+          If it\'s been a while since a top-to-bottom cleaning, most cleaning companies (including Shine Well) recommend starting with a one-time <Link to="/services/deep-dives" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">deep clean</Link> to get the home to a true baseline, then maintaining it with biweekly <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">standard visits</Link>. Recurring service also costs less per visit than one-off cleanings, so a steady schedule is usually the better value.
+        </p>
+        <p>
+          Whether you are looking for a regular schedule or preparing for a big move with our specialized <Link to="/services/move-in-move-out" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">move-in or move-out cleaning</Link>, finding your rhythm is key to long-term comfort.
+        </p>
+
+        <p className="mt-8 font-light text-lg">
+          Not sure what\'s right for your home? Shine Well offers flexible weekly, biweekly, and monthly plans across Overland Park and the greater Kansas City metro — and you can change your frequency any time. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a fast, free estimate »</Link>
+        </p>
+
+        <h2 className="mt-12">Frequently asked questions</h2>
+        <div className="space-y-6">
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Is weekly cleaning too much?</h4>
+            <p>Not for busy households with kids, pets, or allergies. If your home stays clean between visits and you\'re mostly maintaining, biweekly or monthly is usually plenty.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Can I change my cleaning frequency later?</h4>
+            <p>Yes. A good recurring plan lets you move between weekly, biweekly, and monthly as your needs and seasons change.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Does recurring cleaning cost less than one-time cleaning?</h4>
+            <p>Generally, yes. Weekly and biweekly visits are typically priced lower per visit than a one-time clean, because the home stays in better condition between visits.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">How long does a cleaning visit take?</h4>
+            <p>It depends on home size and whether it\'s a standard or deep clean, but most routine visits for an average home take a couple of hours with a two-person team.</p>
+          </div>
+        </div>
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How often should you have your house professionally cleaned?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most households do best with a professional cleaning every two weeks. Weekly suits homes with kids, pets, or allergies; monthly works for low-traffic homes; and one-time or seasonal deep cleans handle resets. The right frequency depends on your household, home size, and lifestyle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is weekly house cleaning too much?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not for busy households with kids, pets, or allergy concerns, where dust and mess rebuild quickly. If your home stays clean between visits and you tidy in between, biweekly or monthly is usually enough."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does recurring cleaning cost less than one-time cleaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Generally yes. Weekly and biweekly visits are typically priced lower per visit than a one-time clean, because the home stays in better condition between appointments."
+              }
+            }
+          ]
+        }
+        `}} />
+      </>
+    )
+  },
+  {
+    id: 'is-hiring-a-house-cleaning-service-worth-it',
+    title: 'Is Hiring a House Cleaning Service Worth It? An Honest Look for Kansas City Homeowners',
+    excerpt: 'Is a house cleaning service worth the money? Here\'s an honest look at the cost, time saved, and how to decide — for Kansas City homeowners.',
+    date: 'July 17, 2026',
+    author: 'Lina',
+    image: cleanersWorkImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> For most busy households, yes — hiring a house cleaning service is worth it if you value the time you get back and you choose an insured, background-checked company. It\'s less worth it if you have a small, low-traffic home you can easily maintain yourself and a tight budget. The honest test is simple: what is your time worth, and would you rather spend your weekend cleaning or living?
+          </p>
+        </div>
+
+        <h2>What you\'re actually paying for</h2>
+        <p>A cleaning service isn\'t just "someone else does the chores." You\'re paying for:</p>
+        <ul>
+          <li><strong>Time back</strong> — The hours you\'d spend scrubbing become hours with family, working, resting, or earning. For most people, that\'s the real value.</li>
+          <li><strong>Consistency</strong> — A clean home every single visit, not just when you finally get to it.</li>
+          <li><strong>Expertise and equipment</strong> — Trained cleaners work faster and reach the spots most people skip, with the right products for each surface.</li>
+          <li><strong>Health</strong> — Regular removal of dust, dander, and bathroom/kitchen germs genuinely improves your indoor environment.</li>
+          <li><strong>Mental load</strong> — Not carrying "the house is a mess" around in your head is worth more than most people expect.</li>
+        </ul>
+
+        <h2>What it costs in Kansas City</h2>
+        <p>Here\'s the honest range for the KC metro in 2026, so you can weigh it for yourself:</p>
+        <ul>
+          <li>Standard <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring cleaning</Link>: roughly $120–$250 per visit, depending on home size and frequency.</li>
+          <li>One-time <Link to="/services/deep-dives" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">deep clean</Link>: roughly $200–$450+, since it\'s far more detailed.</li>
+          <li><Link to="/services/move-in-move-out" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Move-in / move-out cleaning</Link>: roughly $250–$700, depending on size and condition.</li>
+          <li>Hourly rates: commonly $25–$50 per cleaner, per hour.</li>
+        </ul>
+        <p>
+          Recurring plans lower your per-visit cost, so an ongoing biweekly clean is usually the best value if you want a consistently clean home.
+        </p>
+
+        <h2>The honest math</h2>
+        <p>
+          Say a biweekly clean runs $150 and a thorough DIY clean of your home takes you four hours. If your time is worth even $30–$40 an hour to you, you\'re roughly breaking even — and you\'re getting a better result without lifting a finger. For most working households and parents, that trade is easily worth it. That\'s the calculation to run for your own situation.
+        </p>
+
+        <h2>When it might not be worth it</h2>
+        <p>
+          We\'d rather be straight with you: a cleaning service is a weaker fit if you live in a small, low-traffic space that stays tidy with minimal effort, you genuinely enjoy cleaning, or your budget is tight and the money is better spent elsewhere right now. In those cases, an occasional one-time <Link to="/services/deep-dives" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">deep clean</Link> a few times a year may be all you need.
+        </p>
+
+        <h2>How to make sure it\'s worth it</h2>
+        <p>The difference between "worth every penny" and "never again" is who you hire. Look for a company that is:</p>
+        <ul>
+          <li>Insured (so you\'re protected if anything is damaged),</li>
+          <li>Background-checked (you\'re letting people into your home),</li>
+          <li>Backed by a satisfaction guarantee (they\'ll make it right if something\'s missed), and</li>
+          <li>Well-reviewed by real local customers.</li>
+        </ul>
+        <p>
+          Shine Well checks all four — a fully insured, family-owned company that has served Overland Park and the greater Kansas City metro for over 20 years, with background-checked cleaners and a 24-hour re-clean guarantee.
+        </p>
+
+        <p className="mt-8 font-light text-lg">
+          See what a clean home would cost you — <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">free estimate »</Link>
+        </p>
+
+        <h2 className="mt-12">Frequently asked questions</h2>
+        <div className="space-y-6">
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">How much does a house cleaning service cost in Kansas City?</h4>
+            <p>In 2026, standard recurring cleans typically run about $120–$250 per visit, one-time deep cleans about $200–$450+, and move-in/move-out cleans about $250–$700, depending on your home\'s size and condition.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Is it cheaper to just clean the house myself?</h4>
+            <p>Out of pocket, yes — but that ignores the value of your time. Once you price your hours, a professional clean is often close to break-even and delivers a better, more consistent result.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Are house cleaning services insured?</h4>
+            <p>Reputable ones are. Always confirm a company is insured and that its cleaners are background-checked before booking.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Do I need to be home during the cleaning?</h4>
+            <p>No. Many customers provide access and go about their day. Do whatever makes you comfortable, especially for the first few visits.</p>
+          </div>
+        </div>
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is hiring a house cleaning service worth it?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For most busy households, yes, if you value the time you get back and choose an insured, background-checked company. It is less worth it for small, low-traffic homes that are easy to maintain yourself on a tight budget. The deciding factor is what your time is worth."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does a house cleaning service cost in Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In 2026, standard recurring cleanings typically run about $120 to $250 per visit, one-time deep cleans about $200 to $450 or more, and move-in or move-out cleans about $250 to $700, depending on home size and condition."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it cheaper to clean the house myself?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Out of pocket it is cheaper, but that ignores the value of your time. Once you factor in the hours a thorough clean takes, a professional service is often close to break-even and delivers a more consistent result."
+              }
+            }
+          ]
+        }
+        `}} />
+      </>
+    )
+  },
+  {
+    id: 'standard-clean-vs-deep-clean-difference',
+    title: 'Standard Clean vs. Deep Clean: What\'s the Difference?',
+    excerpt: 'Standard clean vs. deep clean — what\'s the difference, what\'s included in each, and which one you need? A simple guide for Kansas City homeowners.',
+    date: 'July 17, 2026',
+    author: 'Lina',
+    image: deepCleaningImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> A standard clean maintains an already-clean home — surfaces, floors, bathrooms, kitchen, dusting, and trash. A deep clean is a top-to-bottom reset that reaches built-up grime a standard visit doesn\'t touch — baseboards, inside appliances, grout, vents, and behind or under furniture. Most first-time customers start with a deep clean to set a baseline, then keep it up with recurring standard cleans.
+          </p>
+        </div>
+
+        <h2>What\'s included in each</h2>
+        
+        <div className="overflow-x-auto my-8">
+          <table className="min-w-full border-collapse border border-[#e8e5df] text-left text-sm md:text-base">
+            <thead>
+              <tr className="bg-[#CAD4CD]/20">
+                <th className="border border-[#e8e5df] p-4 font-semibold text-[#2C302E]">Area</th>
+                <th className="border border-[#e8e5df] p-4 font-semibold text-[#2C302E]">Standard clean (maintenance)</th>
+                <th className="border border-[#e8e5df] p-4 font-semibold text-[#2C302E]">Deep clean (reset)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-[#e8e5df] p-4 font-medium text-[#2C302E]">Kitchen</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Counters, sink, stovetop, exterior of appliances, floors</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Everything in standard plus inside oven, inside microwave, inside/behind fridge, backsplash, degreasing</td>
+              </tr>
+              <tr>
+                <td className="border border-[#e8e5df] p-4 font-medium text-[#2C302E]">Bathrooms</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Toilets, sinks, showers, mirrors, floors</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Everything plus grout scrubbing, tile buildup, fixtures descaled</td>
+              </tr>
+              <tr>
+                <td className="border border-[#e8e5df] p-4 font-medium text-[#2C302E]">Bedrooms / living areas</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Dusting, surfaces, floors, tidying</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Everything plus baseboards, door frames, vents, blinds, behind/under furniture</td>
+              </tr>
+              <tr>
+                <td className="border border-[#e8e5df] p-4 font-medium text-[#2C302E]">Whole home</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Vacuum, mop, trash, general dusting</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Detailed dusting head-to-toe, cobweb removal, edges and corners, high-touch detail</td>
+              </tr>
+              <tr className="bg-[#CAD4CD]/5">
+                <td className="border border-[#e8e5df] p-4 font-medium text-[#2C302E]">Best for</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">Keeping a clean home clean</td>
+                <td className="border border-[#e8e5df] p-4 text-[#5c635f]">First cleans, neglected areas, seasonal resets, move-in/out</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Because a deep clean involves far more time and detail, it typically costs 50–100% more than a standard clean. In the Kansas City metro, that usually means a one-time <Link to="/services/deep-dives" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">deep clean</Link> in the range of about $200–$450+, versus roughly $120–$250 for a standard <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring visit</Link>.
+        </p>
+
+        <h2>When you actually need a deep clean</h2>
+        <p>A deep clean makes sense when:</p>
+        <ul>
+          <li>It\'s your first professional cleaning, or it\'s been more than a few months.</li>
+          <li>You\'re moving in or out and want the place spotless (or your deposit back) — perfect for our <Link to="/services/move-in-move-out" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">move-in & move-out services</Link>.</li>
+          <li>You\'re recovering from an illness in the household and want everything sanitized.</li>
+          <li>It\'s a seasonal reset — spring cleaning, or clearing out winter\'s salt and mud.</li>
+          <li>Allergies are flaring and dust, dander, and buildup need a real removal.</li>
+          <li>You\'re hosting a holiday or event and want the home at its best.</li>
+        </ul>
+
+        <h2>Why most people start with a deep clean, then go recurring</h2>
+        <p>
+          Here\'s the logic that saves you money over time: a deep clean gets your home to a true baseline. Once it\'s there, regular standard cleans keep it that way for less per visit — you never let grime rebuild to the point of needing another full reset. That\'s why a first-time deep clean followed by biweekly standard service is the most common and cost-effective path for KC homeowners.
+        </p>
+
+        <p className="mt-8 font-light text-lg">
+          Shine Well offers both, and can recommend the right starting point when you book. Every clean is backed by a 24-hour re-clean guarantee — if any corner is missed, we come back and make it right, free. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get your free estimate »</Link>
+        </p>
+
+        <h2 className="mt-12">Frequently asked questions</h2>
+        <div className="space-y-6">
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">How often do I need a deep clean?</h4>
+            <p>Most homes benefit from a deep clean once or twice a year, in addition to regular standard cleaning — often in spring and fall.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Why does my first cleaning cost more?</h4>
+            <p>The first visit is usually a deep clean to bring the home to a baseline. It takes more time and detail than the standard visits that follow, so it costs more.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">How long does a deep clean take?</h4>
+            <p>Longer than a standard clean — often several hours depending on home size and condition, since it covers detailed, built-up areas a routine visit skips.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-[#2C302E]">Do I still need a deep clean if my house looks clean?</h4>
+            <p>Sometimes. Homes that look tidy can still have buildup in grout, vents, baseboards, and behind appliances. A deep clean reaches what everyday cleaning misses.</p>
+          </div>
+        </div>
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the difference between a standard clean and a deep clean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A standard clean maintains an already-clean home: surfaces, floors, bathrooms, kitchen, dusting, and trash. A deep clean is a top-to-bottom reset that reaches built-up grime, including baseboards, inside appliances, grout, vents, and behind or under furniture. Deep cleans take more time and typically cost 50 to 100 percent more."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often do I need a deep clean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most homes benefit from a deep clean once or twice a year, often in spring and fall, in addition to regular standard cleaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does my first house cleaning cost more?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The first visit is usually a deep clean that brings the home to a baseline. It takes more time and detail than the standard visits that follow, so it costs more."
+              }
+            }
+          ]
+        }
+        `}} />
       </>
     )
   }
