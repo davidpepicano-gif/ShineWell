@@ -1,41 +1,49 @@
 # ShineWell Commercial & Home Cleaning Services
 
-> Overland Park & Greater KC Metro's most reliable locally-owned cleaning service with 22 years of professional experience. Fully insured, eco-friendly, and detail-oriented.
+> Family-owned residential and commercial cleaning company serving Overland Park and the greater Kansas City metro (KS & MO) for over 20 years. Fully insured, background-checked cleaners, and 100% satisfaction guarantee.
 
-## Contact Information (NAP)
-- **Business Name**: ShineWell Commercial and Home Cleaning Services
-- **Phone Number**: (913) 325-1400
-- **Email Address**: lina.swcleaning@gmail.com
-- **Website**: https://shinewellcleaning.com
-- **Service Area**: Overland Park, Kansas City, Brookside, Prairie Village, Lee's Summit, and the greater KC Metro area.
-- **Office Hours**: Monday to Saturday, 8:00 AM – 6:00 PM. Sunday: Closed.
-- **Business Type**: Service-Area Business (No public lobby, on-site services only).
-
-## Core Pages & Final URLs
-- **Homepage**: https://shinewellcleaning.com/ (Overview of 22 years of experience, direct answers to major user queries, customer testimonials, and a direct request-estimate form link)
-- **All Services**: https://shinewellcleaning.com/services (Full breakdown of residential, light commercial, and specialized restoration cleaning services)
-- **Our Process**: https://shinewellcleaning.com/how-it-works (Clear, step-by-step description of how we price, schedule, clean, and back our services)
-- **About Us**: https://shinewellcleaning.com/about (Lina's story, 22 years of family experience, and our core quality and trust values)
-- **Contact Us**: https://shinewellcleaning.com/contact (Direct communication channels, hours, and free estimate request form)
-- **Book Online**: https://shinewellcleaning.com/booking (Fast scheduling and accurate free estimates via our custom online tool)
-- **FAQs**: https://shinewellcleaning.com/faq (Full set of 8+ detailed questions and answers about insurance, cleaning supplies, pets, and scheduling)
-- **Service Locations**: https://shinewellcleaning.com/locations (Detailed view of all zip codes and cities we serve in KS/MO and North Carolina)
-- **Secure Payments**: https://shinewellcleaning.com/payment (PCI-compliant Stripe processing portal for deposits or invoice payments)
-- **Resource Blog**: https://shinewellcleaning.com/blog (Expert guides on housekeeping, commercial sanitization, and seasonal deep cleaning tips)
+## Main Pages
+- [Homepage](https://shinewellcleaning.com/): Meticulous home and office cleaning overview.
+- [About Us](https://shinewellcleaning.com/about): Our story, values, and quality assurance standards.
+- [Our Process](https://shinewellcleaning.com/how-it-works): Step-by-step cleaning methodology and checklist details.
+- [Services Hub](https://shinewellcleaning.com/services): Overview of our standard, deep, and specialty cleaning options.
+- [Locations](https://shinewellcleaning.com/locations): Cities and ZIP codes we serve in the Kansas City metropolitan area.
+- [Frequently Asked Questions](https://shinewellcleaning.com/faq): Answers regarding insurance, pets, supplies, and schedules.
+- [Contact Us](https://shinewellcleaning.com/contact): Direct phone lines, email, and on-site operational details.
+- [Book Online / Get Estimate](https://shinewellcleaning.com/booking): Fast custom estimate calculator and reservation system.
+- [Secure Payments](https://shinewellcleaning.com/payment): Stripe-integrated payment portal.
+- [Resource Blog](https://shinewellcleaning.com/blog): Expert advice on cleaning, organizing, and seasonal tips.
 
 ## Services Directory
-- **Routine Housekeeping** (https://shinewellcleaning.com/services/routine-housekeeping): Weekly, bi-weekly, or monthly home cleaning plans to maintain a healthy, allergen-free environment.
-- **Deep Home Cleaning** (https://shinewellcleaning.com/services/deep-dives): Top-to-bottom meticulous restoration, hand-wiping baseboards, scrubbing tile grout, and sanitizing forgotten areas.
-- **Move-In & Move-Out Cleaning** (https://shinewellcleaning.com/services/move-in-move-out): Detailed move transitions, deep cleaning inside all cabinets, drawers, and sanitizing empty appliances.
-- **Light Commercial Cleaning** (https://shinewellcleaning.com/services/commercial-deep-cleaning): Office, retail, and medical clinic disinfecting scheduled to fit corporate business hours.
-- **Specialized Treatments** (https://shinewellcleaning.com/services/specialized-treatments): Targeted cleaning for high-end upholstery fabrics, delicate leather conditioning, and hardwood floor polishing.
-- **Professional Organizing** (https://shinewellcleaning.com/services/organizing): Organizing and decluttering closets, pantries, and work spaces with sustainable storage design.
-- **Compassionate Hoarder Cleanup** (https://shinewellcleaning.com/services/hoarder-cleanup): Respectful, confidential, and comprehensive extreme clutter cleanup, debris removal, and odor remediation.
-- **Junk Removal & Dumpster Logistics** (https://shinewellcleaning.com/services/junk-removal): Full-service junk hauling and dumpster rentals, prioritizing local donation centers and recycling.
-- **Post-Construction Detailing** (https://shinewellcleaning.com/services/post-construction): Elimination of fine drywall dust using HEPA vacuums, adhesive and paint splatter removal.
+- [Priority Commercial Cleaning Hub](https://shinewellcleaning.com/commercial-cleaning-kansas-city): Meticulous office and janitorial programs for businesses.
+- [Routine Housekeeping](https://shinewellcleaning.com/services/routine-housekeeping): Standard weekly, biweekly, or monthly residential upkeep.
+- [Deep Cleaning](https://shinewellcleaning.com/services/deep-dives): Detailed top-to-bottom restorative house cleaning.
+- [Move-In / Move-Out Cleaning](https://shinewellcleaning.com/services/move-in-move-out): Complete vacant property sanitization.
+- [Light Commercial Cleaning Services](https://shinewellcleaning.com/services/commercial-deep-cleaning): Office and commercial facility disinfected cleanups.
+- [Post-Construction Detailing](https://shinewellcleaning.com/services/post-construction): Elimination of fine remodeling dust and drywall residues.
+- [Compassionate Hoarder Cleanup](https://shinewellcleaning.com/services/hoarder-cleanup): Kind, respectful, and confidential extreme clutter restoration.
+- [Professional Organizing](https://shinewellcleaning.com/services/organizing): Structural decluttering and storage custom layouts.
+- [Specialized Treatments](https://shinewellcleaning.com/services/specialized-treatments): Fabric upholstery conditioning, leather, and wood care.
+- [Junk Hauling & Disposal](https://shinewellcleaning.com/services/junk-removal): Full-service junk cleanouts and hauling logistics.
 
-## Expert Blog Posts
-- **Rethinking Commercial Cleaning in Kansas City** (https://shinewellcleaning.com/blog/commercial-cleaning-kansas-city): Custom janitorial solutions that foster welcoming workspace environments.
-- **The Lifesaving Power of Regular House Cleaning** (https://shinewellcleaning.com/blog/regular-house-cleaning-kansas-city): The physiological and mental benefits of a consistently sanitized living space.
-- **When to Book a Deep Home Clean in Kansas City** (https://shinewellcleaning.com/blog/deep-cleaning-kansas-city): Timing and expectations for detailed restorative housekeeping.
-- **How Reception Cleanliness Boosts Client Trust** (https://shinewellcleaning.com/blog/office-cleaning-reception): The critical business impact of a spotless reception lobby or corporate waiting area.
+## Expert Cleaning & Maintenance Guides
+- [Rethinking Commercial Cleaning in Kansas City](https://shinewellcleaning.com/blog/commercial-cleaning-kansas-city): Custom office janitorial solutions.
+- [The Lifesaving Power of Regular House Cleaning](https://shinewellcleaning.com/blog/regular-house-cleaning-kansas-city): Physiological and mental benefits of clean environments.
+- [When to Book a Deep Home Clean](https://shinewellcleaning.com/blog/deep-cleaning-kansas-city): Timing and baseline expectations for deep home resets.
+- [How Reception Cleanliness Boosts Client Trust](https://shinewellcleaning.com/blog/office-cleaning-reception): The real business value of a pristine lobby area.
+- [How Often to Have Your House Professionally Cleaned](https://shinewellcleaning.com/blog/how-often-professional-house-cleaning-kansas-city): Custom scheduling guide based on your lifestyle.
+- [Is Hiring a House Cleaning Service Worth It?](https://shinewellcleaning.com/blog/is-hiring-a-house-cleaning-service-worth-it): ROI, costs, and value trade-offs of professional service.
+- [Standard Clean vs. Deep Clean Difference](https://shinewellcleaning.com/blog/standard-clean-vs-deep-clean-difference): Clear definitions of what is included in standard versus deep cycles.
+- [Kansas City Restoration Recommendations](https://shinewellcleaning.com/blog/kansas-city-restoration-pros-recommendation): Restoring property after tough water or smoke residue.
+- [Choosing a Commercial Cleaning Company](https://shinewellcleaning.com/blog/how-to-choose-commercial-cleaning-company-kansas-city): Vital credentials to verify before hiring local janitors.
+- [Keeping Your Office Clean and Healthy](https://shinewellcleaning.com/blog/how-to-keep-your-office-clean-and-healthy): Hygiene checklist to lower workplace downtime and allergy symptoms.
+
+## Service Area
+Overland Park, Leawood, Prairie Village, Lee's Summit, Brookside, the Crossroads, and the greater Kansas City metropolitan area (both Kansas and Missouri sides).
+
+## Contact Information
+- **Phone**: (913) 325-1400
+- **Email**: lina.swcleaning@gmail.com
+- **Hours**: Monday to Saturday, 8:00 AM – 6:00 PM
+- **Address**: Overland Park, KS
+- **Google Maps**: [ShineWell Cleaning Services Profile](https://share.google/3oMRqAPyjGZaUcAO6)

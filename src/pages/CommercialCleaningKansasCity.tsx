@@ -176,7 +176,7 @@ export default function CommercialCleaningKansasCity() {
                 className="bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#b55e47] transition-all text-center flex items-center justify-center gap-2 hover:shadow-lg"
               >
                 Request a Free Walkthrough
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight aria-hidden="true" focusable="false" className="w-5 h-5" />
               </Link>
               <a 
                 href="tel:9133251400" 
@@ -414,11 +414,12 @@ export default function CommercialCleaningKansasCity() {
                   <button
                     onClick={() => toggleFaq(idx)}
                     className="w-full text-left p-6 md:p-8 flex justify-between items-center gap-4 focus:outline-none"
+                    aria-expanded={isOpen}
                   >
                     <span className="font-serif text-lg md:text-xl text-[#2C302E] font-medium leading-snug">
                       {faq.q}
                     </span>
-                    <ChevronDown className={`w-5 h-5 text-[#5c635f] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#C86B53]' : ''}`} />
+                    <ChevronDown aria-hidden="true" focusable="false" className={`w-5 h-5 text-[#5c635f] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#C86B53]' : ''}`} />
                   </button>
                   <AnimatePresence initial={false}>
                     {isOpen && (
