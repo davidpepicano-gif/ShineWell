@@ -1,11 +1,23 @@
 import { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 
 export default function BlogPostPage() {
   const { postId } = useParams<{ postId: string }>();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (postId === 'commercial-cleaning-kansas-city') {
+      navigate('/commercial-cleaning-kansas-city', { replace: true });
+    } else if (postId === 'deep-cleaning-kansas-city') {
+      navigate('/services/deep-dives', { replace: true });
+    } else if (postId === 'regular-house-cleaning-kansas-city') {
+      navigate('/services/routine-housekeeping', { replace: true });
+    }
+  }, [postId, navigate]);
+
   const post = blogPosts.find(p => p.id === postId);
 
   useEffect(() => {

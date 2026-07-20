@@ -68,8 +68,6 @@ async function startServer() {
     "/commercial-cleaning/": "/services/commercial-deep-cleaning",
     "/institutional": "/services/commercial-deep-cleaning",
     "/institutional/": "/services/commercial-deep-cleaning",
-    "/commercial-cleaning-kansas-city": "/services/commercial-deep-cleaning",
-    "/commercial-cleaning-kansas-city/": "/services/commercial-deep-cleaning",
     "/regular-house-cleaning": "/services/routine-housekeeping",
     "/regular-house-cleaning/": "/services/routine-housekeeping",
     "/house-cleaning": "/services/routine-housekeeping",
@@ -78,6 +76,12 @@ async function startServer() {
     "/deep-cleaning/": "/services/deep-dives",
     "/move-in-out": "/services/move-in-move-out",
     "/move-in-out/": "/services/move-in-move-out",
+    "/blog/commercial-cleaning-kansas-city": "/commercial-cleaning-kansas-city",
+    "/blog/commercial-cleaning-kansas-city/": "/commercial-cleaning-kansas-city",
+    "/blog/deep-cleaning-kansas-city": "/services/deep-dives",
+    "/blog/deep-cleaning-kansas-city/": "/services/deep-dives",
+    "/blog/regular-house-cleaning-kansas-city": "/services/routine-housekeeping",
+    "/blog/regular-house-cleaning-kansas-city/": "/services/routine-housekeeping",
   };
 
   app.use((req, res, next) => {
@@ -133,6 +137,19 @@ async function startServer() {
     }
 
     next();
+  });
+
+  // Explicitly serve sitemap.xml as application/xml
+  app.get("/sitemap.xml", (req, res) => {
+    const sitemapPath = process.env.NODE_ENV === "production" 
+      ? path.join(process.cwd(), "dist", "sitemap.xml")
+      : path.join(process.cwd(), "public", "sitemap.xml");
+
+    if (fs.existsSync(sitemapPath)) {
+      res.header("Content-Type", "application/xml");
+      return res.sendFile(sitemapPath);
+    }
+    res.status(404).send("Sitemap not found");
   });
 
   // Vite middleware for development

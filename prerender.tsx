@@ -91,9 +91,6 @@ const routes = [
   '/locations',
   '/payment',
   '/blog',
-  '/blog/commercial-cleaning-kansas-city',
-  '/blog/regular-house-cleaning-kansas-city',
-  '/blog/deep-cleaning-kansas-city',
   '/blog/office-cleaning-reception',
   '/blog/how-often-professional-house-cleaning-kansas-city',
   '/blog/is-hiring-a-house-cleaning-service-worth-it',
@@ -128,8 +125,8 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
     description: "Comprehensive moving cleaning services in Overland Park & KC Metro. Get your security deposit back or prepare your new home for a fresh start with our move-out experts.",
   },
   "/services/commercial-deep-cleaning": {
-    title: "Commercial & Office Cleaning Services | ShineWell",
-    description: "Custom-tailored commercial office cleaning contracts across Overland Park & KC Metro. Pristine retail, corporate, and medical facility cleaning from Crossroads to Leawood.",
+    title: "Commercial Deep Cleaning and Heavy-Duty Office Sanitization | ShineWell",
+    description: "Professional commercial deep cleaning services in Overland Park & Kansas City. Heavy-duty sanitization of offices, clinics, retail spaces, restrooms, and breakrooms.",
   },
   "/services/specialized-treatments": {
     title: "Specialized Property & Restoration Cleaning | ShineWell",
@@ -182,18 +179,6 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
   "/blog": {
     title: "Expert Cleaning Tips, News & Local Updates | ShineWell Blog",
     description: "Professional cleaning advice, localized Overland Park and KC maintenance tips, and guides from our expert team to keep your space healthy and spotless.",
-  },
-  "/blog/commercial-cleaning-kansas-city": {
-    title: "Rethinking Commercial Cleaning in Overland Park & KC Metro | ShineWell Blog",
-    description: "Why local businesses are looking beyond standard janitorial services to create warm, pristine, welcoming environments that inspire confidence.",
-  },
-  "/blog/regular-house-cleaning-kansas-city": {
-    title: "The Lifesaving Power of Regular House Cleaning | ShineWell Blog",
-    description: "How weekly or bi-weekly routine cleaning rescues your personal time, improves family respiratory health, and preserves the long-term value of your home.",
-  },
-  "/blog/deep-cleaning-kansas-city": {
-    title: "When to Book a Deep Home Clean in Overland Park & KC Metro | ShineWell Blog",
-    description: "The differences between routine housekeeping and deep restorative cleaning, and when your home needs a top-to-bottom reset of high-touch surfaces.",
   },
   "/blog/office-cleaning-reception": {
     title: "How Reception Cleanliness Boosts Client Trust | ShineWell Blog",
@@ -818,6 +803,69 @@ function prerender() {
   }
 
   console.log('--- Pre-rendering completed successfully! ---');
+
+  // Automatically generate sitemap.xml
+  try {
+    console.log('--- Generating sitemap.xml dynamically... ---');
+    const lastmod = new Date().toISOString().split('T')[0];
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+    for (const r of routes) {
+      // Determine priority and changefreq
+      let priority = '0.5';
+      let changefreq = 'monthly';
+
+      if (r === '/') {
+        priority = '1.0';
+        changefreq = 'weekly';
+      } else if (r === '/booking') {
+        priority = '0.9';
+        changefreq = 'monthly';
+      } else if (r === '/commercial-cleaning-kansas-city') {
+        priority = '0.9';
+        changefreq = 'monthly';
+      } else if (r === '/services') {
+        priority = '0.8';
+        changefreq = 'monthly';
+      } else if (r.startsWith('/services/')) {
+        priority = '0.8';
+        changefreq = 'monthly';
+      } else if (r === '/blog') {
+        priority = '0.7';
+        changefreq = 'weekly';
+      } else if (r.startsWith('/blog/')) {
+        priority = '0.7';
+        changefreq = 'monthly';
+      } else if (r === '/privacy' || r === '/terms') {
+        priority = '0.3';
+        changefreq = 'monthly';
+      } else if (r === '/payment') {
+        priority = '0.5';
+        changefreq = 'monthly';
+      } else {
+        priority = '0.7';
+        changefreq = 'monthly';
+      }
+
+      xml += '  <url>\n';
+      xml += `    <loc>https://shinewellcleaning.com${r === '/' ? '' : r}</loc>\n`;
+      xml += `    <lastmod>${lastmod}</lastmod>\n`;
+      xml += `    <changefreq>${changefreq}</changefreq>\n`;
+      xml += `    <priority>${priority}</priority>\n`;
+      xml += '  </url>\n';
+    }
+
+    xml += '</urlset>\n';
+
+    // Save to public directory (committed/source)
+    fs.writeFileSync(path.join(process.cwd(), 'public', 'sitemap.xml'), xml, 'utf-8');
+    // Save to dist directory (production output)
+    fs.writeFileSync(path.join(distDir, 'sitemap.xml'), xml, 'utf-8');
+    console.log('--- sitemap.xml generated successfully in public/ and dist/ ---');
+  } catch (sitemapErr) {
+    console.error('Error generating sitemap.xml:', sitemapErr);
+  }
 }
 
 prerender();

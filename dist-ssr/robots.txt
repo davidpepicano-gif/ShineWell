@@ -1,17 +1,36 @@
-# Shine Well Cleaning — robots.txt
-# Goal: let search + answer engines crawl and CITE the site. (AEO #29)
-# Upload to the site ROOT so it resolves at https://shinewellcleaning.com/robots.txt
+# robots.txt for shinewellcleaning.com
+# ShineWell Cleaning Services — Overland Park & Kansas City Metro
 
-# --- Standard search + AI answer engines (explicitly allowed) ---
+# ---------------------------------------------------------------
+# Default: allow all standard crawlers full access
+# ---------------------------------------------------------------
+User-agent: *
+Allow: /
+
+# ---------------------------------------------------------------
+# Search engine crawlers (explicit allow)
+# ---------------------------------------------------------------
 User-agent: Googlebot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ---------------------------------------------------------------
+# AI / answer-engine crawlers — REQUIRED for AEO citation
+# Blocking these makes the site invisible to ChatGPT, Perplexity, etc.
+# ---------------------------------------------------------------
+
+# OpenAI (ChatGPT)
 User-agent: GPTBot
 Allow: /
 
@@ -21,29 +40,74 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: PerplexityBot
+# Google AI Overviews / Gemini
+User-agent: Google-Extended
 Allow: /
 
-User-agent: Perplexity-User
-Allow: /
-
+# Anthropic (Claude)
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-User-agent: Applebot
+User-agent: anthropic-ai
 Allow: /
 
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Apple Intelligence
 User-agent: Applebot-Extended
-# --- Everything else: allowed, but keep admin/checkout out of the index ---
-User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /cart
-Disallow: /checkout
-Disallow: /*?*utm_
 
-# --- Sitemap (update if your sitemap path differs) ---
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Common Crawl (feeds many AI training sets)
+User-agent: CCBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# You.com / Bytespider / Cohere
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ---------------------------------------------------------------
+# Social / preview crawlers (link previews on FB, X, LinkedIn)
+# ---------------------------------------------------------------
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# ---------------------------------------------------------------
+# Block only genuinely useless paths (keep this list minimal —
+# do NOT block /assets, CSS, or JS, or Google can't render pages)
+# ---------------------------------------------------------------
+User-agent: *
+Disallow: /*?*utm_
+Disallow: /*?*fbclid
+Disallow: /*?*gclid
+Disallow: /thank-you
+Disallow: /404
+
+# ---------------------------------------------------------------
+# Sitemap
+# ---------------------------------------------------------------
 Sitemap: https://shinewellcleaning.com/sitemap.xml

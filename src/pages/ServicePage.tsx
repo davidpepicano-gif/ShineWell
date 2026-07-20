@@ -173,13 +173,13 @@ const serviceData = {
     ]
   },
   'commercial-deep-cleaning': {
-    title: 'Light Commercial Cleaning in Overland Park & KC Metro',
+    title: 'Commercial Deep Cleaning Services in Overland Park & KC Metro',
     icon: <Building2 className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
     heroImage: commercialDeepCleaningImg,
-    altText: 'Commercial office cleaning Overland Park & KC Metro',
-    description: 'Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.',
-    introAnswer: 'ShineWell provides commercial office and business cleaning services across the Kansas City area, tailored to fit your specific corporate schedule. Our fully insured, background-checked cleaners sanitize reception lobbies, desk workstations, restrooms, and breakrooms to maintain a professional, healthy workspace for your employees and clients alike.',
-    details: 'Our light commercial cleaning service provides reliable office and business facility sanitization tailored to your company\'s schedule in Overland Park and Kansas City. Our fully insured team cleans reception lobbies, sanitizes desk workstations, disinfects restrooms, and empties trash, maintaining a healthy, dust-free, and productive environment for your staff and clients.',
+    altText: 'Commercial deep cleaning Overland Park & KC Metro',
+    description: 'Deep, heavy-duty commercial cleaning and thorough workspace sanitation. We clean forgotten spaces, restrooms, breakrooms, and corporate facilities with clinical precision.',
+    introAnswer: 'ShineWell provides professional, comprehensive commercial deep cleaning services across the Kansas City area, tailored to fit your specific corporate or business needs. Our fully insured, background-checked cleaners sanitize reception lobbies, desk workstations, restrooms, and breakrooms to maintain a deeply sterilized, professional, and healthy workspace.',
+    details: 'Our commercial deep cleaning service delivers a thorough, heavy-duty sanitization of office and business facilities in Overland Park and Kansas City. Our fully insured team sanitizes high-touch points, deep-cleans restrooms, disinfects breakrooms, vacuums commercial carpets, and scrubs hard floor surfaces to establish a spotless and hygienic environment.\n\nThis deep-level cleaning is perfect for companies preparing for audits, inspections, company events, or seasonal resets. While our routine commercial plans keep your office clean day-to-day, our deep commercial package tackles the deeper layers of dust, grime, and build-up that standard cleanings don\'t cover.',
     price: 'Custom Quote',
     checklist: [
       {
@@ -406,10 +406,39 @@ export default function ServicePage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (serviceId === 'commercial-deep-cleaning') {
-      navigate('/commercial-cleaning-kansas-city', { replace: true });
+    if (serviceId) {
+      const seoTitles: Record<string, string> = {
+        'routine-housekeeping': "Routine Home Cleaning & Housekeeping | ShineWell",
+        'deep-dives': "Deep Home Cleaning & Restorative Sanitization | ShineWell",
+        'move-in-move-out': "Move-In & Move-Out Cleaning Services | ShineWell",
+        'commercial-deep-cleaning': "Commercial Deep Cleaning and Heavy-Duty Office Sanitization | ShineWell",
+        'specialized-treatments': "Specialized Property & Restoration Cleaning | ShineWell",
+        'organizing': "Professional Home & Office Organization | ShineWell",
+        'hoarder-cleanup': "Compassionate Hoarding & Cluttered Space Cleanup | ShineWell",
+        'junk-removal': "Eco-Friendly Junk Removal & Hauling | ShineWell",
+        'post-construction': "Post-Renovation & Construction Cleaning | ShineWell"
+      };
+
+      const metaDescriptions: Record<string, string> = {
+        'routine-housekeeping': "Meticulous weekly, bi-weekly, or monthly home cleaning in Overland Park & KC Metro. Keep your living spaces fresh and healthy with our insured, eco-friendly professionals.",
+        'deep-dives': "Detailed top-to-bottom deep cleaning for Overland Park and Kansas City homes. Hand wiping baseboards, detailed scrubbing, and intensive sanitizing of your entire living space.",
+        'move-in-move-out': "Comprehensive moving cleaning services in Overland Park & KC Metro. Get your security deposit back or prepare your new home for a fresh start with our move-out experts.",
+        'commercial-deep-cleaning': "Professional commercial deep cleaning services in Overland Park & Kansas City. Heavy-duty sanitization of offices, clinics, retail spaces, restrooms, and breakrooms.",
+        'specialized-treatments': "Expert cleaning and restoration services for challenging spaces in Overland Park & KC Metro. Insured, highly confidential, and meticulously thorough specialty cleaning.",
+        'organizing': "De-clutter and structure your living or work environment in Overland Park & KC Metro. Professional organization services to maximize efficiency and restore physical peace of mind.",
+        'hoarder-cleanup': "Dignified, confidential, and comprehensive extreme clutter cleanup services in Overland Park & KC Metro. Our experienced team restores properties safely and respectfully.",
+        'junk-removal': "Fast, reliable hauling and disposal services for homes and businesses in Overland Park & KC Metro. We prioritize donation and recycling for eco-friendly junk disposal.",
+        'post-construction': "Detailed post-renovation and new construction cleanup in Overland Park & KC Metro. Remove fine sheetrock dust, adhesive residues, and debris to prepare your new space for move-in."
+      };
+
+      document.title = seoTitles[serviceId] || "Professional Cleaning Services | ShineWell";
+      
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', metaDescriptions[serviceId] || "ShineWell provides professional commercial and residential cleaning services.");
+      }
     }
-  }, [serviceId, navigate]);
+  }, [serviceId]);
   
   const service: any = serviceId ? serviceData[serviceId as keyof typeof serviceData] : null;
 
@@ -494,6 +523,23 @@ export default function ServicePage() {
               <p className="text-[#5c635f] leading-relaxed font-light text-lg mb-12 whitespace-pre-wrap">
                 {service.details}
               </p>
+
+              {serviceId === 'commercial-deep-cleaning' && (
+                <div className="mb-12 p-8 bg-[#F0EDE6] border border-[#CAD4CD] rounded-3xl flex flex-col sm:flex-row gap-6 justify-between items-center shadow-sm">
+                  <div className="space-y-1">
+                    <h3 className="font-serif text-xl text-[#2C302E]">Looking for recurring office cleaning instead?</h3>
+                    <p className="text-sm text-[#5c635f] font-light leading-relaxed">
+                      We offer fully customized weekly, bi-weekly, or monthly office cleaning contracts. Visit our main commercial landing page for schedules and free walkthrough options.
+                    </p>
+                  </div>
+                  <Link 
+                    to="/commercial-cleaning-kansas-city" 
+                    className="bg-[#607564] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#4A5D4E] transition-colors shrink-0 shadow-sm"
+                  >
+                    View Commercial Cleaning KC
+                  </Link>
+                </div>
+              )}
               
               <div className="mb-16">
                 <h2 className="text-3xl font-serif text-[#2C302E] mb-8">What is included in this service?</h2>
