@@ -1188,185 +1188,195 @@ const BlogPage = lazy(() => import("./assets/BlogPage-DnvIBEd9.js"));
 const BlogPostPage = lazy(() => import("./assets/BlogPostPage-CN_Muzpv.js"));
 const PrivacyPage = lazy(() => import("./assets/PrivacyPage-BRqm1I6t.js"));
 const TermsPage = lazy(() => import("./assets/TermsPage-D5Hbp-x6.js"));
+const NotFoundPage = lazy(() => import("./assets/NotFoundPage-Bp0Tc7F8.js"));
 const PageLoader = () => /* @__PURE__ */ jsxDEV("div", { className: "min-h-screen bg-[#F9F8F6] flex flex-col justify-center items-center gap-4 pt-24", id: "page-loader", children: [
   /* @__PURE__ */ jsxDEV("div", { className: "animate-spin rounded-full h-8 w-8 border-b-2 border-[#CAD4CD]" }, void 0, false, {
     fileName: "/app/applet/src/AppRoutes.tsx",
-    lineNumber: 25,
+    lineNumber: 26,
     columnNumber: 5
   }, void 0),
   /* @__PURE__ */ jsxDEV("p", { className: "text-[#5c635f] text-sm font-serif", children: "Loading page..." }, void 0, false, {
     fileName: "/app/applet/src/AppRoutes.tsx",
-    lineNumber: 26,
+    lineNumber: 27,
     columnNumber: 5
   }, void 0)
 ] }, void 0, true, {
   fileName: "/app/applet/src/AppRoutes.tsx",
-  lineNumber: 24,
+  lineNumber: 25,
   columnNumber: 3
 }, void 0);
 function AppRoutes() {
   return /* @__PURE__ */ jsxDEV(Fragment, { children: [
     /* @__PURE__ */ jsxDEV(ScrollToTop, {}, void 0, false, {
       fileName: "/app/applet/src/AppRoutes.tsx",
-      lineNumber: 33,
+      lineNumber: 34,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV(Layout, { children: /* @__PURE__ */ jsxDEV(Suspense, { fallback: /* @__PURE__ */ jsxDEV(PageLoader, {}, void 0, false, {
       fileName: "/app/applet/src/AppRoutes.tsx",
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 29
     }, this), children: /* @__PURE__ */ jsxDEV(Routes, { children: [
       /* @__PURE__ */ jsxDEV(Route, { path: "/", element: /* @__PURE__ */ jsxDEV(Home, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 38
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/services", element: /* @__PURE__ */ jsxDEV(ServicesPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 38,
+        lineNumber: 39,
         columnNumber: 46
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 38,
+        lineNumber: 39,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/services/:serviceId", element: /* @__PURE__ */ jsxDEV(ServicePage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 39,
+        lineNumber: 40,
         columnNumber: 57
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 39,
+        lineNumber: 40,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/commercial-cleaning-kansas-city", element: /* @__PURE__ */ jsxDEV(CommercialCleaningKansasCity, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 40,
+        lineNumber: 41,
         columnNumber: 69
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 40,
+        lineNumber: 41,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/how-it-works", element: /* @__PURE__ */ jsxDEV(HowItWorksPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 41,
+        lineNumber: 42,
         columnNumber: 50
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 41,
+        lineNumber: 42,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/about", element: /* @__PURE__ */ jsxDEV(AboutPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 43
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/contact", element: /* @__PURE__ */ jsxDEV(ContactPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 45
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/booking", element: /* @__PURE__ */ jsxDEV(BookingPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 44,
+        lineNumber: 45,
         columnNumber: 45
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 44,
+        lineNumber: 45,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/faq", element: /* @__PURE__ */ jsxDEV(FaqPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/locations", element: /* @__PURE__ */ jsxDEV(LocationsPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 47
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/payment", element: /* @__PURE__ */ jsxDEV(PaymentPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 47,
+        lineNumber: 48,
         columnNumber: 45
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 47,
+        lineNumber: 48,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/blog", element: /* @__PURE__ */ jsxDEV(BlogPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 42
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/blog/:postId", element: /* @__PURE__ */ jsxDEV(BlogPostPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 50
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/privacy", element: /* @__PURE__ */ jsxDEV(PrivacyPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 45
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV(Route, { path: "/terms", element: /* @__PURE__ */ jsxDEV(TermsPage, {}, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 51,
+        lineNumber: 52,
         columnNumber: 43
       }, this) }, void 0, false, {
         fileName: "/app/applet/src/AppRoutes.tsx",
-        lineNumber: 51,
+        lineNumber: 52,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "*", element: /* @__PURE__ */ jsxDEV(NotFoundPage, {}, void 0, false, {
+        fileName: "/app/applet/src/AppRoutes.tsx",
+        lineNumber: 53,
+        columnNumber: 38
+      }, this) }, void 0, false, {
+        fileName: "/app/applet/src/AppRoutes.tsx",
+        lineNumber: 53,
         columnNumber: 13
       }, this)
     ] }, void 0, true, {
       fileName: "/app/applet/src/AppRoutes.tsx",
-      lineNumber: 36,
+      lineNumber: 37,
       columnNumber: 11
     }, this) }, void 0, false, {
       fileName: "/app/applet/src/AppRoutes.tsx",
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "/app/applet/src/AppRoutes.tsx",
-      lineNumber: 34,
+      lineNumber: 35,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "/app/applet/src/AppRoutes.tsx",
-    lineNumber: 32,
+    lineNumber: 33,
     columnNumber: 5
   }, this);
 }

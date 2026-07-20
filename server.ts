@@ -82,6 +82,17 @@ async function startServer() {
     "/blog/deep-cleaning-kansas-city/": "/services/deep-dives",
     "/blog/regular-house-cleaning-kansas-city": "/services/routine-housekeeping",
     "/blog/regular-house-cleaning-kansas-city/": "/services/routine-housekeeping",
+    "/our-story": "/about",
+    "/our-story/": "/about",
+    "/our-team": "/about",
+    "/our-team/": "/about",
+    "/story": "/about",
+    "/story/": "/about",
+    "/company": "/about",
+    "/company/": "/about",
+    "/home": "/",
+    "/home/": "/",
+    "/index.html": "/",
   };
 
   app.use((req, res, next) => {
@@ -167,10 +178,12 @@ async function startServer() {
       const cleanPath = req.path.endsWith('/') && req.path !== '/' ? req.path.slice(0, -1) : req.path;
       const staticHtmlPath = path.join(distPath, cleanPath, 'index.html');
       
-      if (cleanPath && cleanPath !== '/' && fs.existsSync(staticHtmlPath)) {
+      if (cleanPath === '/' || cleanPath === '') {
+        res.sendFile(path.join(distPath, 'index.html'));
+      } else if (cleanPath && fs.existsSync(staticHtmlPath)) {
         res.sendFile(staticHtmlPath);
       } else {
-        res.sendFile(path.join(distPath, 'index.html'));
+        res.status(404).sendFile(path.join(distPath, 'index.html'));
       }
     });
   }
