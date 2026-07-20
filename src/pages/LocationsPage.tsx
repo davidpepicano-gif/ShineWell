@@ -107,7 +107,7 @@ export default function LocationsPage() {
           viewport={{ once: true }}
           className="mt-24 bg-white p-10 rounded-3xl shadow-sm border border-[#e8e5df] text-center max-w-2xl mx-auto"
         >
-          <h3 className="text-2xl font-serif text-[#2C302E] mb-4">Don't see your city?</h3>
+          <h2 className="text-2xl font-serif text-[#2C302E] mb-4">Don't see your city?</h2>
           <p className="text-[#5c635f] mb-8 font-light">
             We are constantly expanding our service area. Contact us to see if we can accommodate your location.
           </p>

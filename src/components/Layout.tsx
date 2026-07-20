@@ -402,7 +402,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
             
             <div>
-              <h4 className="font-medium mb-6 tracking-wide">Contact</h4>
+              <h2 className="font-medium mb-6 tracking-wide">Contact</h2>
               <ul className="space-y-4 text-[#a3aba6] font-light">
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#607564]" />
@@ -443,7 +443,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
             
             <div>
-              <h4 className="font-medium mb-6 tracking-wide">Links</h4>
+              <h2 className="font-medium mb-6 tracking-wide">Links</h2>
               <ul className="space-y-3 text-[#a3aba6] font-light">
                 <li><Link to="/services" className="hover:text-white transition-colors">Services</Link></li>
                 <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>

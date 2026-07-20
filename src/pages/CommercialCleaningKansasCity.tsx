@@ -312,9 +312,9 @@ export default function CommercialCleaningKansasCity() {
                 <div className="w-12 h-12 rounded-full bg-[#C86B53]/10 flex items-center justify-center shrink-0">
                   <DollarSign className="w-6 h-6 text-[#C86B53]" />
                 </div>
-                <h3 className="text-2xl font-serif text-[#2C302E]">
+                <h2 className="text-2xl font-serif text-[#2C302E]">
                   How Commercial Cleaning Pricing Works
-                </h3>
+                </h2>
               </div>
               <p className="text-[#5c635f] font-light leading-relaxed">
                 Commercial cleaning is priced after a quick free walkthrough, based on your square footage, the type of space, the scope, and how often you need service. 
@@ -344,7 +344,7 @@ export default function CommercialCleaningKansasCity() {
                   {badge.icon}
                 </div>
                 <div>
-                  <h4 className="text-lg font-serif text-[#2C302E] mb-2">{badge.title}</h4>
+                  <h3 className="text-lg font-serif text-[#2C302E] mb-2">{badge.title}</h3>
                   <p className="text-sm text-[#5c635f] font-light leading-relaxed">{badge.desc}</p>
                 </div>
               </div>
@@ -356,7 +356,7 @@ export default function CommercialCleaningKansasCity() {
         <section className="mb-20 bg-[#CAD4CD]/10 p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df]/60 text-center">
           <div className="max-w-2xl mx-auto">
             <MapPin className="w-10 h-10 text-[#607564] mx-auto mb-4" />
-            <h3 className="text-2xl font-serif text-[#2C302E] mb-4">Serving the Kansas City Metro</h3>
+            <h2 className="text-2xl font-serif text-[#2C302E] mb-4">Serving the Kansas City Metro</h2>
             <p className="text-[#5c635f] font-light leading-relaxed mb-6">
               We proudly clean businesses across <strong>Overland Park, Corporate Woods, Leawood, Prairie Village, the Crossroads, Lee's Summit,</strong> and the greater KC metro on both the Kansas and Missouri sides.
             </p>
@@ -369,9 +369,9 @@ export default function CommercialCleaningKansasCity() {
           <div className="absolute bottom-0 left-0 transform -translate-x-12 translate-y-12 w-64 h-64 rounded-full bg-white/5 pointer-events-none"></div>
           
           <div className="relative z-10 max-w-2xl mx-auto">
-            <h3 className="text-3xl md:text-4xl font-serif mb-4 text-[#2C302E]">
+            <h2 className="text-3xl md:text-4xl font-serif mb-4 text-[#2C302E]">
               Get a Free Walkthrough & Quote
-            </h3>
+            </h2>
             <p className="text-lg text-[#2C302E]/90 font-light mb-8 max-w-xl mx-auto leading-relaxed">
               Ready for a cleaner, healthier, and more productive workplace? Request your custom commercial estimate walkthrough with our vetted teams.
             </p>

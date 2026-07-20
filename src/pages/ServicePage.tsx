@@ -496,13 +496,13 @@ export default function ServicePage() {
               </p>
               
               <div className="mb-16">
-                <h3 className="text-3xl font-serif text-[#2C302E] mb-8">What is included in this service?</h3>
+                <h2 className="text-3xl font-serif text-[#2C302E] mb-8">What is included in this service?</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {service.checklist.map((section, idx) => (
                     <div key={idx} className="bg-[#F9F8F6] p-8 rounded-3xl border border-[#e8e5df] shadow-sm">
-                      <h4 className="text-xl font-serif text-[#4A5D4E] mb-6 pb-4 border-b border-[#e8e5df]">
+                      <h3 className="text-xl font-serif text-[#4A5D4E] mb-6 pb-4 border-b border-[#e8e5df]">
                         {section.section}
-                      </h4>
+                      </h3>
                       <ul className="space-y-4">
                         {section.items.map((item, itemIdx) => (
                           <li key={itemIdx} className="flex items-start gap-3">
@@ -518,7 +518,7 @@ export default function ServicePage() {
 
               {service.scheduleOptions && (
                 <div className="mb-16">
-                  <h3 className="text-3xl font-serif text-[#2C302E] mb-8">What schedule options do we offer?</h3>
+                  <h2 className="text-3xl font-serif text-[#2C302E] mb-8">What schedule options do we offer?</h2>
                   <div className="grid gap-4">
                     {service.scheduleOptions.map((opt: any, idx: number) => (
                       <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm flex flex-col md:flex-row gap-4 items-start">
@@ -534,7 +534,7 @@ export default function ServicePage() {
 
               {service.whyChooseUs && (
                 <div className="mb-16">
-                  <h3 className="text-3xl font-serif text-[#2C302E] mb-8">Why choose ShineWell for your space?</h3>
+                  <h2 className="text-3xl font-serif text-[#2C302E] mb-8">Why choose ShineWell for your space?</h2>
                   <ul className="grid md:grid-cols-2 gap-4">
                     {service.whyChooseUs.map((reason: string, idx: number) => (
                       <li key={idx} className="flex items-start gap-3 bg-[#F9F8F6] p-4 rounded-xl border border-[#e8e5df]">
@@ -548,11 +548,11 @@ export default function ServicePage() {
 
               {service.faqs && service.faqs.length > 0 && (
                 <div className="mt-12">
-                  <h3 className="text-2xl font-serif text-[#2C302E] mb-6">What questions do our clients frequently ask?</h3>
+                  <h2 className="text-2xl font-serif text-[#2C302E] mb-6">What questions do our clients frequently ask?</h2>
                   <div className="space-y-6">
                     {service.faqs.map((faq: any, idx: number) => (
                       <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm">
-                        <h4 className="text-lg font-medium text-[#2C302E] mb-2">{faq.q}</h4>
+                        <h3 className="text-lg font-medium text-[#2C302E] mb-2">{faq.q}</h3>
                         <p className="text-[#5c635f] font-light leading-relaxed">{faq.a}</p>
                       </div>
                     ))}
@@ -562,7 +562,7 @@ export default function ServicePage() {
 
               {/* Blog Link Section */}
               <div className="mt-16 bg-[#F9F8F6] p-8 rounded-3xl border border-[#e8e5df] text-center">
-                <h3 className="text-2xl font-serif text-[#2C302E] mb-4">Are you looking for professional cleaning tips?</h3>
+                <h2 className="text-2xl font-serif text-[#2C302E] mb-4">Are you looking for professional cleaning tips?</h2>
                 <p className="text-[#5c635f] font-light mb-6 max-w-lg mx-auto">
                   Check out our blog for expert advice, local Kansas City updates, and insights from the ShineWell team to help keep your home fresh between visits.
                 </p>
@@ -584,7 +584,7 @@ export default function ServicePage() {
               className="md:col-span-5 lg:col-span-4"
             >
               <div className="bg-[#2C302E] text-[#F9F8F6] p-8 rounded-3xl sticky top-32">
-                <h3 className="text-2xl font-serif mb-4">Are you ready for a spotless space?</h3>
+                <h2 className="text-2xl font-serif mb-4">Are you ready for a spotless space?</h2>
                 <p className="text-[#a3aba6] font-light mb-8">
                   Get a free, no obligation estimate tailored to your specific needs and space.
                 </p>

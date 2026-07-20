@@ -67,7 +67,7 @@ export default function Home() {
                 {/* GHL Booking Widget */}
                 <div className="bg-white p-6 rounded-3xl shadow-xl border border-[#e8e5df] relative overflow-hidden max-w-[600px] w-full">
                   <div className="flex justify-between items-center mb-4">
-                    <h3 className="text-2xl font-serif text-[#2C302E]">Book Your Cleaning</h3>
+                    <h2 className="text-2xl font-serif text-[#2C302E]">Book Your Cleaning</h2>
                   </div>
                   <div className="w-full min-h-[500px] rounded-xl overflow-hidden border border-[#e8e5df] bg-[#F9F8F6] relative">
                     <LazyGHLEmbed

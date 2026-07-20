@@ -202,7 +202,7 @@ export default function AboutPage() {
         {/* Bottom Card / Outro Sign-off */}
         <div className="bg-[#f0ede6] border border-[#e8e5df] rounded-2xl p-8 text-center space-y-4 max-w-2xl mx-auto shadow-sm">
           <Heart className="w-6 h-6 text-[#C86B53] mx-auto animate-pulse" />
-          <h3 className="text-2xl font-serif text-[#2C302E]">ShineWell Commercial &amp; Home Cleaning</h3>
+          <p className="text-2xl font-serif text-[#2C302E]">ShineWell Commercial &amp; Home Cleaning</p>
           <p className="text-[#607564] font-medium tracking-wide text-sm font-mono">EST. 2004 • OVERLAND PARK &amp; GREATER KC METRO</p>
           <p className="italic text-[#5c635f] text-base md:text-lg">
             "We treat your property as our own, protecting what matters most to you with background-checked crews and eco-friendly standards."
