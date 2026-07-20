@@ -344,7 +344,7 @@ export default function CommercialCleaningKansasCity() {
                   {badge.icon}
                 </div>
                 <div>
-                  <h3 className="text-lg font-serif text-[#2C302E] mb-2">{badge.title}</h3>
+                  <h4 className="text-lg font-serif text-[#2C302E] mb-2">{badge.title}</h4>
                   <p className="text-sm text-[#5c635f] font-light leading-relaxed">{badge.desc}</p>
                 </div>
               </div>
@@ -413,25 +413,20 @@ export default function CommercialCleaningKansasCity() {
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full text-left p-6 md:p-8 flex justify-between items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C86B53] focus-visible:ring-offset-2"
-                    aria-expanded={isOpen}
-                    aria-controls={`cc-faq-answer-${idx}`}
+                    className="w-full text-left p-6 md:p-8 flex justify-between items-center gap-4 focus:outline-none"
                   >
                     <span className="font-serif text-lg md:text-xl text-[#2C302E] font-medium leading-snug">
                       {faq.q}
                     </span>
-                    <ChevronDown className={`w-5 h-5 text-[#5c635f] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#C86B53]' : ''}`} aria-hidden="true" />
+                    <ChevronDown className={`w-5 h-5 text-[#5c635f] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#C86B53]' : ''}`} />
                   </button>
                   <AnimatePresence initial={false}>
                     {isOpen && (
                       <motion.div
-                        id={`cc-faq-answer-${idx}`}
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        role="region"
-                        aria-label={`Answer for: ${faq.q}`}
                       >
                         <div className="px-6 pb-6 md:px-8 md:pb-8 pt-0 text-[#5c635f] font-light leading-relaxed border-t border-gray-50">
                           {faq.a}

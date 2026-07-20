@@ -37,18 +37,18 @@ User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
-Allow: /
-
 # --- Everything else: allowed, but keep admin/checkout out of the index ---
 User-agent: *
 Allow: /
-Allow: /commercial-cleaning-kansas-city
-Allow: /blog/how-to-choose-commercial-cleaning-company-kansas-city
-Allow: /blog/how-to-keep-your-office-clean-and-healthy
 Disallow: /admin
 Disallow: /cart
 Disallow: /checkout
 Disallow: /*?*utm_
+
+# --- LLM specifications ---
+# AI agents can read our structured site context files at:
+# https://shinewellcleaning.com/llms.txt
+# https://shinewellcleaning.com/llm.txt
 
 # --- Sitemap (update if your sitemap path differs) ---
 Sitemap: https://shinewellcleaning.com/sitemap.xml

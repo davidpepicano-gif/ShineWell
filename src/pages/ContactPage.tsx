@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import DeferredIframe from '../components/DeferredIframe';
 
 export default function ContactPage() {
   return (
@@ -31,9 +30,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <Phone className="w-6 h-6" aria-hidden="true" />
+              <Phone className="w-6 h-6" />
             </div>
-            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Phone</h2>
+            <h3 className="font-medium text-[#2C302E] mb-2">Phone</h3>
             <a href="tel:9133251400" className="text-[#C86B53] hover:underline font-semibold text-lg">(913) 325-1400</a>
             <p className="text-sm text-[#a3aba6] mt-2">Mon to Sat, 8am to 6pm</p>
           </motion.div>
@@ -45,9 +44,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <Mail className="w-6 h-6" aria-hidden="true" />
+              <Mail className="w-6 h-6" />
             </div>
-            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Email</h2>
+            <h3 className="font-medium text-[#2C302E] mb-2">Email</h3>
             <a href="mailto:lina.swcleaning@gmail.com" className="text-[#C86B53] hover:underline font-light">lina.swcleaning@gmail.com</a>
             <p className="text-sm text-[#a3aba6] mt-2">24/7 Support</p>
           </motion.div>
@@ -59,9 +58,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <MapPin className="w-6 h-6" aria-hidden="true" />
+              <MapPin className="w-6 h-6" />
             </div>
-            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Service Area</h2>
+            <h3 className="font-medium text-[#2C302E] mb-2">Service Area</h3>
             <p className="text-[#5c635f] font-light text-sm">Overland Park & Greater KC Metro</p>
             <p className="text-sm text-[#a3aba6] mt-2">Service-Area Business (No Public Lobby)</p>
           </motion.div>
@@ -73,9 +72,9 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df] flex flex-col items-center text-center"
           >
             <div className="w-14 h-14 bg-[#F9F8F6] rounded-full flex items-center justify-center text-[#4A5D4E] mb-6">
-              <Clock className="w-6 h-6" aria-hidden="true" />
+              <Clock className="w-6 h-6" />
             </div>
-            <h2 className="font-medium text-[#2C302E] mb-2 text-base">Hours</h2>
+            <h3 className="font-medium text-[#2C302E] mb-2">Hours</h3>
             <p className="text-[#5c635f] font-light">Mon to Sat: 8am to 6pm</p>
             <p className="text-sm text-[#a3aba6] mt-2">Sunday: Closed</p>
           </motion.div>
@@ -100,9 +99,9 @@ export default function ContactPage() {
           </div>
           
           <div className="w-full min-h-[500px] rounded-2xl overflow-hidden border border-[#e8e5df] bg-white flex items-center justify-center">
-            <DeferredIframe
+            <iframe
               src="https://links.somosoverflow.com/widget/form/wCd628Bbw6Kdx6T546Nk"
-              minHeight="500px"
+              style={{ width: '100%', height: '100%', minHeight: '500px', border: 'none', overflow: 'hidden' }}
               scrolling="no"
               id="inline-wCd628Bbw6Kdx6T546Nk_contact" 
               data-layout="{'id':'INLINE'}"
@@ -117,7 +116,9 @@ export default function ContactPage() {
               data-layout-iframe-id="inline-wCd628Bbw6Kdx6T546Nk_contact"
               data-form-id="wCd628Bbw6Kdx6T546Nk"
               title="Request a Free Estimate"
-            />
+            >
+            </iframe>
+            <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
           </div>
         </motion.div>
       </div>

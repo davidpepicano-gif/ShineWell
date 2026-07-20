@@ -149,7 +149,7 @@ export default function FaqPage() {
               transition={{ delay: idx * 0.05 }}
               className="bg-white p-8 rounded-3xl shadow-sm border border-[#e8e5df]"
             >
-              <h2 className="text-xl font-medium text-[#2C302E] mb-4">{faq.q}</h2>
+              <h3 className="text-xl font-medium text-[#2C302E] mb-4">{faq.q}</h3>
               <p className="text-[#5c635f] font-light leading-relaxed">
                 {faq.a}
               </p>

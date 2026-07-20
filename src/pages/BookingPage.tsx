@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import DeferredIframe from '../components/DeferredIframe';
 
 export default function BookingPage() {
   return (
@@ -28,14 +27,14 @@ export default function BookingPage() {
           className="bg-white rounded-[2.5rem] p-4 md:p-8 shadow-sm border border-[#e8e5df] min-h-[800px] flex items-center justify-center relative overflow-hidden"
         >
           <div className="w-full h-full min-h-[800px]">
-            <DeferredIframe
+            <iframe
               src="https://links.somosoverflow.com/widget/service-menu/6a07b8ccd950f271fd495202"
-              minHeight="800px"
+              style={{ width: '100%', height: '100%', minHeight: '800px', border: 'none', overflow: 'auto' }}
               scrolling="auto"
               id="6a07b8ccd950f271fd495202_service_menu"
               title="Book Your Cleaning"
-              sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
-            />
+            ></iframe>
+            <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
           </div>
         </motion.div>
       </div>
