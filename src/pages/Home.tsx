@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import LazyGHLEmbed from '../components/LazyGHLEmbed';
 
 import heroHomeImg from '../assets/images/regenerated_image_1783362481160.png';
 import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919.png';
@@ -68,27 +69,15 @@ export default function Home() {
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="text-2xl font-serif text-[#2C302E]">Book Your Cleaning</h3>
                   </div>
-                  <div className="w-full min-h-[500px] rounded-xl overflow-hidden border border-[#e8e5df] bg-[#F9F8F6] flex items-center justify-center relative">
-                    <iframe
+                  <div className="w-full min-h-[500px] rounded-xl overflow-hidden border border-[#e8e5df] bg-[#F9F8F6] relative">
+                    <LazyGHLEmbed
                       src="https://links.somosoverflow.com/widget/form/wCd628Bbw6Kdx6T546Nk"
-                      style={{ width: '100%', height: '100%', minHeight: '500px', border: 'none', overflow: 'hidden' }}
-                      scrolling="no"
-                      id="inline-wCd628Bbw6Kdx6T546Nk" 
-                      data-layout="{'id':'INLINE'}"
-                      data-trigger-type="alwaysShow"
-                      data-trigger-value=""
-                      data-activation-type="alwaysActivated"
-                      data-activation-value=""
-                      data-deactivation-type="neverDeactivate"
-                      data-deactivation-value=""
-                      data-form-name="Book Your Cleaning"
-                      data-height="500"
-                      data-layout-iframe-id="inline-wCd628Bbw6Kdx6T546Nk"
-                      data-form-id="wCd628Bbw6Kdx6T546Nk"
+                      id="inline-wCd628Bbw6Kdx6T546Nk"
                       title="Book Your Cleaning"
-                    >
-                    </iframe>
-                    <script src="https://links.somosoverflow.com/js/form_embed.js" type="text/javascript"></script>
+                      minHeight="500px"
+                      formId="wCd628Bbw6Kdx6T546Nk"
+                      formName="Book Your Cleaning"
+                    />
                   </div>
                 </div>
 

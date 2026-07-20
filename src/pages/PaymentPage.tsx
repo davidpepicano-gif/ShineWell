@@ -7,7 +7,16 @@ import { CheckCircle2 } from "lucide-react";
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
-const stripePromise = loadStripe((import.meta as any).env?.VITE_STRIPE_PUBLISHABLE_KEY || "pk_test_TYooMQauvdEDq54NiTphI7jx");
+let stripePromise: Promise<any> | null = null;
+const getStripe = () => {
+  if (typeof window === 'undefined' || typeof document === 'undefined' || !document.body) {
+    return null;
+  }
+  if (!stripePromise) {
+    stripePromise = loadStripe((import.meta as any).env?.VITE_STRIPE_PUBLISHABLE_KEY || "pk_test_TYooMQauvdEDq54NiTphI7jx");
+  }
+  return stripePromise;
+};
 
 function CheckoutForm() {
   const stripe = useStripe();
@@ -205,7 +214,7 @@ export default function PaymentPage() {
               <p className="text-sm opacity-80">Note: This requires a valid Stripe Secret Key in the environment variables. Please add it via the Secrets menu.</p>
             </div>
           ) : clientSecret ? (
-            <Elements options={options} stripe={stripePromise}>
+            <Elements options={options} stripe={getStripe()}>
               <CheckoutForm />
             </Elements>
           ) : (

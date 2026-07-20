@@ -29,11 +29,21 @@ if (typeof window === 'undefined') {
       userAgent: 'node',
     },
     document: {
+      body: {
+        appendChild: () => {},
+        removeChild: () => {},
+      },
       getElementById: () => null,
       querySelector: () => null,
       querySelectorAll: () => [],
-      createElement: () => ({
+      createElement: (tagName: string) => ({
         style: {},
+        setAttribute: () => {},
+        removeAttribute: () => {},
+        addEventListener: () => {},
+        removeEventListener: () => {},
+        appendChild: () => {},
+        tagName: (tagName || '').toUpperCase(),
       }),
     },
     requestAnimationFrame: (cb: any) => setTimeout(cb, 0),

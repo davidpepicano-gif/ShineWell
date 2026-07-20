@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { MapPin, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import LazyMap from '../components/LazyMap';
 
 export default function LocationsPage() {
   const locationData = [
@@ -64,18 +65,12 @@ export default function LocationsPage() {
                 viewport={{ once: true }}
                 className={`lg:col-span-7 bg-white p-4 rounded-[2.5rem] shadow-sm border border-[#e8e5df] overflow-hidden ${idx % 2 === 0 ? '' : 'lg:order-2'}`}
               >
-                <div className="w-full h-[400px] rounded-[2rem] overflow-hidden bg-[#e8e5df]">
-                  <iframe 
-                    width="100%" 
-                    height="100%" 
-                    frameBorder="0" 
-                    scrolling="no" 
-                    marginHeight={0} 
-                    marginWidth={0} 
+                <div className="w-full h-[400px] rounded-[2rem] overflow-hidden bg-[#e8e5df] relative">
+                  <LazyMap
                     src={`https://maps.google.com/maps?q=${region.mapQuery}&t=&z=9&ie=UTF8&iwloc=&output=embed`}
                     title={`${region.state} Service Area`}
                     className="grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
-                  ></iframe>
+                  />
                 </div>
               </motion.div>
 

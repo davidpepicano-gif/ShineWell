@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
 import logoImg from '../assets/images/regenerated_image_1780271530148.png';
+import LazyMap from './LazyMap';
 import { 
   Sparkles, 
   Phone, 
@@ -53,6 +54,73 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     setIsMobileMenuOpen(false);
     setIsServicesOpen(false);
   }, [location.pathname]);
+
+  // Lazy load GHL chat widget and Google Tag Manager (gtag)
+  useEffect(() => {
+    // 1. GHL Chat Widget lazy-loading
+    let chatLoaded = false;
+    const loadChatWidget = () => {
+      if (chatLoaded) return;
+      chatLoaded = true;
+
+      chatEvents.forEach(e => window.removeEventListener(e, loadChatWidget));
+      clearTimeout(chatTimer);
+
+      // Create container if not exists
+      if (!document.querySelector('[data-chat-widget]')) {
+        const div = document.createElement('div');
+        div.setAttribute('data-chat-widget', '');
+        div.setAttribute('data-widget-id', '6a4bed7e665c2f21034131f0');
+        div.setAttribute('data-location-id', 'cw0LTb1KMpv0suzij9FZ');
+        document.body.appendChild(div);
+      }
+
+      // Load script
+      const script = document.createElement('script');
+      script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+      script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+      script.setAttribute('data-widget-id', '6a4bed7e665c2f21034131f0');
+      script.async = true;
+      document.body.appendChild(script);
+    };
+
+    const chatEvents = ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'];
+    chatEvents.forEach(e => window.addEventListener(e, loadChatWidget, { passive: true }));
+    const chatTimer = setTimeout(loadChatWidget, 4000); // 4s fallback
+
+    // 2. GTM / Google Tag Manager lazy-loading
+    let gtmLoaded = false;
+    const loadGtm = () => {
+      if (gtmLoaded || (window as any).gtagInitialized) return;
+      gtmLoaded = true;
+      (window as any).gtagInitialized = true;
+
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18330417032';
+      script.async = true;
+      document.head.appendChild(script);
+
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      (window as any).gtag = function() {
+        (window as any).dataLayer.push(arguments);
+      };
+      (window as any).gtag('js', new Date());
+      (window as any).gtag('config', 'AW-18330417032');
+    };
+
+    if (document.readyState === 'complete') {
+      setTimeout(loadGtm, 1500);
+    } else {
+      window.addEventListener('load', () => {
+        setTimeout(loadGtm, 1500);
+      });
+    }
+
+    return () => {
+      chatEvents.forEach(e => window.removeEventListener(e, loadChatWidget));
+      clearTimeout(chatTimer);
+    };
+  }, []);
 
   const scrollToSection = (id: string) => {
     if (location.pathname !== '/') {
@@ -348,18 +416,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <MapPin className="w-4 h-4 text-[#607564] mt-1 shrink-0" />
                   <div className="w-full">
                     <span className="block mb-3">Serving Overland Park & the greater Kansas City metro</span>
-                    <div className="w-full h-32 rounded-lg overflow-hidden border border-[#3a3f3c] bg-[#3a3f3c] mb-3">
-                      <iframe 
-                        width="100%" 
-                        height="100%" 
-                        frameBorder="0" 
-                        scrolling="no" 
-                        marginHeight={0} 
-                        marginWidth={0} 
+                    <div className="w-full h-32 rounded-lg overflow-hidden border border-[#3a3f3c] bg-[#3a3f3c] mb-3 relative">
+                      <LazyMap
                         src="https://maps.google.com/maps?q=Overland+Park,KS&t=&z=10&ie=UTF8&iwloc=&output=embed"
                         title="Service Area Map"
                         className="grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
-                      ></iframe>
+                      />
                     </div>
                     <a 
                       href="https://share.google/3oMRqAPyjGZaUcAO6" 
