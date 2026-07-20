@@ -161,7 +161,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <span className={`uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1 transition-all duration-500 ${
                   isScrolled ? 'text-[7px] sm:text-[9px] md:text-[10px]' : 'text-[8px] sm:text-[10px] md:text-[11px]'
                 }`}>
-                  Commercial & Home Cleaning Services
+                  Commercial and Home Cleaning Services
                 </span>
               </div>
             </Link>
@@ -377,7 +377,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     ShineWell
                   </span>
                   <span className="text-[8px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-[#a3aba6] group-hover:text-white transition-colors font-medium leading-none pl-0.5">
-                    Commercial & Home Cleaning Services
+                    Commercial and Home Cleaning Services
                   </span>
                 </div>
               </Link>
@@ -458,7 +458,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
           
           <div className="pt-8 border-t border-[#3a3f3c] text-sm text-[#a3aba6] font-light flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>&copy; {new Date().getFullYear()} ShineWell Cleaning Services. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} ShineWell Commercial and Home Cleaning Services. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <p className="text-[10px] uppercase tracking-widest opacity-50">
                 Crafted by <a href="https://www.cerrana.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-4">Cerrana</a>

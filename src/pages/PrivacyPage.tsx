@@ -28,7 +28,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-[#5c635f] font-light">
-            Last Updated: July 1, 2026 • ShineWell Commercial &amp; Home Cleaning Services
+            Last Updated: July 1, 2026 • ShineWell Commercial and Home Cleaning Services
           </p>
         </motion.div>
 
