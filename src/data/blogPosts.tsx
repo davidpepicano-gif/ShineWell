@@ -1343,5 +1343,162 @@ export const blogPosts: BlogPost[] = [
         `}} />
       </>
     )
+  },
+  {
+    id: 'move-out-cleaning-cost-kansas-city',
+    title: 'How Much Does Move-Out Cleaning Cost in the Kansas City Area?',
+    excerpt: 'How much does move-out cleaning cost in the KC area in 2026? Real price ranges by home size, what\'s included, and when it pays for itself in deposit.',
+    date: 'August 5, 2026',
+    author: 'Lina Silva',
+    image: cleanersWorkImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> In the Kansas City metro in 2026, a professional <Link to="/services/move-in-move-out" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">move-out cleaning service</Link> typically costs $250–$700, depending on the size and condition of the home. A small apartment usually falls at the lower end ($150–$300), while a larger house with heavy buildup runs higher ($400–$700+). Because it's a detailed, empty-home deep clean, it costs more than a standard clean — but it often pays for itself in deposit recovered.
+          </p>
+        </div>
+
+        <h2>Move-out cleaning prices by home size</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-left border-collapse bg-white rounded-xl overflow-hidden border border-[#e8e5df] shadow-sm">
+            <thead>
+              <tr className="bg-[#8BA192]/20 border-b border-[#e8e5df]">
+                <th className="p-4 font-serif text-[#2C302E]">Home size</th>
+                <th className="p-4 font-serif text-[#2C302E]">Typical KC price (2026)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#e8e5df] text-[#5c635f] text-sm md:text-base">
+              <tr>
+                <td className="p-4 font-medium">Studio / 1-bed apartment</td>
+                <td className="p-4">$150–$300</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">2-bed apartment / small home</td>
+                <td className="p-4">$250–$400</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">3-bed house</td>
+                <td className="p-4">$350–$550</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">4+ bed house</td>
+                <td className="p-4">$450–$700+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Ranges are for the Overland Park and greater KC metro area. Final price depends on condition and any add-ons (carpet cleaning, interior windows, wall washing).
+        </p>
+
+        <h2>Why move-out cleaning costs more than a regular clean</h2>
+        <p>
+          Move-out cleaning is an "empty home" deep clean, and it targets exactly what landlords inspect: inside all appliances, inside cabinets and drawers, baseboards, window tracks, scrubbed grout, and detailed floors. It takes more time and detail than a standard visit, which is why it's priced closer to a deep clean than a routine one.
+        </p>
+
+        <h2>What affects your quote</h2>
+        <ul>
+          <li><strong>Home size:</strong> More square footage and bathrooms means more time.</li>
+          <li><strong>Condition:</strong> A well-kept unit costs less than one with heavy buildup or grease.</li>
+          <li><strong>Carpet cleaning:</strong> If your lease requires professional carpet cleaning with a receipt, that's usually a separate line item.</li>
+          <li><strong>Add-ons:</strong> Interior windows, wall washing, and garage cleaning may be extra.</li>
+        </ul>
+
+        <h2>When it pays for itself</h2>
+        <p>
+          Here's the math renters care about: if your deposit is $800 and a move-out clean costs $350, you only need the clean to protect a bit under half your deposit to come out ahead — and cleaning is the single most common deduction landlords make. When your lease requires a professional clean with a receipt, or your deposit is well above the cost of the clean, hiring it out is usually the smart call. For the full checklist of what landlords inspect, see our guide on <Link to="/blog/get-your-deposit-back-move-out-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">getting your deposit back when moving out</Link>. You can also review <Link to="/blog/house-cleaning-cost-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">general house cleaning costs in Kansas City</Link>.
+        </p>
+
+        <h2>Get a move-out quote</h2>
+        <p>
+          ShineWell provides thorough <Link to="/services/move-in-move-out" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">move-out cleaning</Link> across Overland Park and the KC metro, built around what landlords actually check, and backed by a 24-hour re-clean guarantee. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a free move-out estimate »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How much does move-out cleaning cost in Kansas City?</h3>
+              <p className="text-[#5c635f] font-light">In 2026, professional move-out cleaning in the KC metro typically costs $250–$700, depending on home size and condition — roughly $150–$300 for a small apartment and $450–$700+ for a large house.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Why does move-out cleaning cost more than regular cleaning?</h3>
+              <p className="text-[#5c635f] font-light">It's a detailed empty-home deep clean covering inside appliances, cabinets, baseboards, window tracks, and grout — far more than a standard visit — so it's priced closer to a deep clean.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Is professional move-out cleaning worth the cost?</h3>
+              <p className="text-[#5c635f] font-light">Often yes. Cleaning is the most common deposit deduction, so when your lease requires a professional clean or your deposit exceeds the cost, it typically pays for itself.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'small-office-cleaning-overland-park',
+    title: 'Cleaning Services for Small Offices in Overland Park: What to Look For',
+    excerpt: 'Looking for office cleaning in Overland Park? What small offices should look for in a commercial cleaner, how scheduling works, and what it costs.',
+    date: 'August 5, 2026',
+    author: 'Lina Silva',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> For a small office in Overland Park, the best fit is usually a local, fully insured commercial cleaner that background-checks staff, works after hours or early morning, gives you a clear written scope, and offers flexible recurring schedules — rather than a national franchise with overhead you don't need. Look for consistency (the same crew), real local reviews, and a satisfaction guarantee.
+          </p>
+        </div>
+
+        <h2>Why small offices are better served by a local company</h2>
+        <p>
+          A small professional office — a law firm, dental practice, agency, or clinic — doesn't need the overhead of a national chain. What it needs is reliability: the same trusted crew showing up on schedule, someone who answers the phone when you need a change, and flexibility to work around your hours. Local, family-owned companies tend to deliver that better than franchises, and they're more accountable because their reputation is local.
+        </p>
+
+        <h2>What to look for</h2>
+        <ul>
+          <li><strong>Fully insured and bonded</strong> — they're in your office, often after hours and unsupervised.</li>
+          <li><strong>Background-checked staff</strong> — confirm every cleaner is vetted before building access.</li>
+          <li><strong>After-hours or early-morning scheduling</strong> — so your team is never interrupted.</li>
+          <li><strong>A clear written scope</strong> — exactly what's cleaned and how often, in writing.</li>
+          <li><strong>Consistent crews</strong> — the same team learns your space and keeps quality steady.</li>
+          <li><strong>Real local reviews</strong> — from actual KC-area businesses, not stock testimonials.</li>
+          <li><strong>A satisfaction guarantee</strong> — they make any miss right, no argument.</li>
+        </ul>
+
+        <h2>How scheduling works for a small office</h2>
+        <p>
+          Most small offices do well with once- or twice-weekly recurring service, plus periodic deep cleans. A good provider walks your space, recommends a frequency based on your foot traffic and needs, and schedules around your hours. Restrooms, break rooms, trash, high-touch surfaces, and floors are the core of every visit.
+        </p>
+
+        <h2>What it costs</h2>
+        <p>
+          Small-office cleaning is quoted after a quick walkthrough, based on square footage, scope, and frequency. Recurring service lowers the per-visit cost versus one-time cleans. Read our guides on <Link to="/blog/recurring-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring office cleaning</Link> and <Link to="/dental-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">dental & medical office cleaning in KC</Link> for more details. Ask for a walkthrough-based quote rather than a number over the phone — it's the only way to get an accurate price.
+        </p>
+
+        <h2>A local option in Overland Park</h2>
+        <p>
+          ShineWell is a family-owned, fully insured company based in Overland Park, serving small offices and businesses across the KC metro for over 20 years. We specialize in light commercial and janitorial service — offices, medical and dental suites, salons, and retail — with after-hours scheduling, background-checked crews, and a satisfaction guarantee. Learn more about our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial cleaning in Kansas City</Link>, <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">request a free walkthrough »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">What should a small office look for in a commercial cleaner?</h3>
+              <p className="text-[#5c635f] font-light">Full insurance and bonding, background-checked staff, after-hours scheduling, a clear written scope, consistent crews, real local reviews, and a satisfaction guarantee.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Is a local cleaner or a national franchise better for a small office?</h3>
+              <p className="text-[#5c635f] font-light">For small offices, a local company is usually more flexible, more accountable, and easier to reach, without franchise overhead.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How often should a small office be cleaned?</h3>
+              <p className="text-[#5c635f] font-light">Most small offices do well with once- or twice-weekly recurring service plus periodic deep cleans, scaled to foot traffic.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
   }
 ];

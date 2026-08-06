@@ -29,6 +29,8 @@ export default function BlogPostPage() {
         'house-cleaning-cost-kansas-city': "How Much Does House Cleaning Cost in Kansas City? (2026)",
         'get-your-deposit-back-move-out-cleaning-kansas-city': "How to Get Your Full Deposit Back When Moving Out (KC)",
         'recurring-office-cleaning-kansas-city': "Recurring Office Cleaning in Kansas City: What to Know",
+        'move-out-cleaning-cost-kansas-city': "How Much Does Move-Out Cleaning Cost in Kansas City?",
+        'small-office-cleaning-overland-park': "Cleaning Services for Small Offices in Overland Park",
         'how-often-professional-house-cleaning-kansas-city': "How Often Should You Get Your House Cleaned? | KC Guide",
         'is-hiring-a-house-cleaning-service-worth-it': "Is Hiring a House Cleaning Service Worth It? (KC 2026)",
         'standard-clean-vs-deep-clean-difference': "Standard Clean vs. Deep Clean: What's the Difference?",
@@ -45,6 +47,8 @@ export default function BlogPostPage() {
         'house-cleaning-cost-kansas-city': "How much does house cleaning cost in Kansas City in 2026? Real price ranges for standard, deep, and move-out cleaning, plus what affects your quote.",
         'get-your-deposit-back-move-out-cleaning-kansas-city': "Moving out in Kansas City? Here's exactly what to clean to get your full security deposit back, plus a room-by-room checklist landlords actually check.",
         'recurring-office-cleaning-kansas-city': "Looking for reliable recurring office cleaning in the KC metro? How janitorial scheduling, scope, and pricing work, and what to look for in a provider.",
+        'move-out-cleaning-cost-kansas-city': "How much does move-out cleaning cost in the KC area in 2026? Real price ranges by home size, what's included, and when it pays for itself in deposit.",
+        'small-office-cleaning-overland-park': "Looking for office cleaning in Overland Park? What small offices should look for in a commercial cleaner, how scheduling works, and what it costs.",
         'how-often-professional-house-cleaning-kansas-city': "How often should you have your house professionally cleaned in Kansas City? Weekly, biweekly, or monthly — here's how to choose the right frequency.",
         'is-hiring-a-house-cleaning-service-worth-it': "Is a house cleaning service worth the money? Here's an honest look at the cost, time saved, and how to decide — for Kansas City homeowners.",
         'standard-clean-vs-deep-clean-difference': "Standard clean vs. deep clean — what's the difference, what's included in each, and which one you need? A simple guide for Kansas City homeowners.",
@@ -212,6 +216,66 @@ export default function BlogPostPage() {
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "After a free walkthrough, based on square footage, type of space, scope, and frequency. Recurring contracts lower the per-visit cost compared to one-time cleaning."
+              }
+            }
+          ]
+        },
+        'move-out-cleaning-cost-kansas-city': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does move-out cleaning cost in Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In 2026, professional move-out cleaning in the KC metro typically costs $250 to $700, depending on home size and condition, roughly $150 to $300 for a small apartment and $450 to $700 or more for a large house."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does move-out cleaning cost more than regular cleaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is a detailed empty-home deep clean covering inside appliances, cabinets, baseboards, window tracks, and grout, far more than a standard visit, so it is priced closer to a deep clean."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is professional move-out cleaning worth the cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Often yes. Cleaning is the most common deposit deduction, so when your lease requires a professional clean or your deposit exceeds the cost, it typically pays for itself."
+              }
+            }
+          ]
+        },
+        'small-office-cleaning-overland-park': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What should a small office look for in a commercial cleaning company?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Full insurance and bonding, background-checked staff, after-hours scheduling, a clear written scope, consistent crews, real local reviews, and a satisfaction guarantee."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is a local cleaner or a national franchise better for a small office?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For small offices, a local company is usually more flexible, more accountable, and easier to reach, without the overhead of a national franchise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often should a small office be professionally cleaned?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most small offices do well with once- or twice-weekly recurring service plus periodic deep cleans, scaled to foot traffic."
               }
             }
           ]

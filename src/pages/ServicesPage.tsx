@@ -73,6 +73,12 @@ export default function ServicesPage() {
       path: "/commercial-cleaning-kansas-city"
     },
     {
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop",
+      title: "Dental & Medical Office Cleaning",
+      desc: "Health-conscious sanitation for dental practices, clinics, and medical suites in Overland Park and KC metro with after-hours scheduling.",
+      path: "/dental-office-cleaning-kansas-city"
+    },
+    {
       image: junkRemovalImg,
       title: "Junk Removal with Dumpster",
       desc: "Full service removal of unwanted items with dumpster logistics handled. Perfect for office clear outs or large home projects.",

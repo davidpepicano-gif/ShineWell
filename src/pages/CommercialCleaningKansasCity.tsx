@@ -41,7 +41,8 @@ export default function CommercialCleaningKansasCity() {
     {
       icon: <Activity className="w-6 h-6 text-[#607564]" />,
       title: "Medical & Dental Offices",
-      desc: "Sanitation-focused cleaning with extreme attention to clinical-level cleanliness and disinfecting high-touch surfaces."
+      desc: "Sanitation-focused cleaning with extreme attention to clinical cleanliness and high-touch surfaces.",
+      path: "/dental-office-cleaning-kansas-city"
     },
     {
       icon: <ShoppingBag className="w-6 h-6 text-[#607564]" />,
@@ -249,7 +250,12 @@ export default function CommercialCleaningKansasCity() {
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-serif text-[#2C302E] mb-3">{item.title}</h3>
-                <p className="text-[#5c635f] font-light leading-relaxed">{item.desc}</p>
+                <p className="text-[#5c635f] font-light leading-relaxed mb-4">{item.desc}</p>
+                {item.path && (
+                  <Link to={item.path} className="inline-flex items-center gap-1.5 text-sm font-medium text-[#607564] hover:text-[#2C302E] underline">
+                    Learn more &raquo;
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>
