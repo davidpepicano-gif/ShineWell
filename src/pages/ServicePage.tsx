@@ -607,18 +607,109 @@ export default function ServicePage() {
               )}
 
               {/* Blog Link Section */}
-              <div className="mt-16 bg-[#F9F8F6] p-8 rounded-3xl border border-[#e8e5df] text-center">
-                <h2 className="text-2xl font-serif text-[#2C302E] mb-4">Are you looking for professional cleaning tips?</h2>
-                <p className="text-[#5c635f] font-light mb-6 max-w-lg mx-auto">
-                  Check out our blog for expert advice, local Kansas City updates, and insights from the ShineWell team to help keep your home fresh between visits.
+              <div className="mt-16 bg-[#F9F8F6] p-8 rounded-3xl border border-[#e8e5df]">
+                <h2 className="text-2xl font-serif text-[#2C302E] mb-2 text-center">Related Cleaning Guides & Insights</h2>
+                <p className="text-[#5c635f] font-light mb-6 text-center max-w-lg mx-auto">
+                  Learn more from our expert cleaning team with these helpful Kansas City guides:
                 </p>
-                <Link 
-                  to="/blog"
-                  className="inline-flex items-center gap-2 bg-white border border-[#e8e5df] text-[#4A5D4E] px-6 py-3 rounded-full font-medium transition-all hover:bg-[#4A5D4E] hover:text-white hover:border-[#4A5D4E]"
-                >
-                  Read Our Blog
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="grid sm:grid-cols-2 gap-4 text-left">
+                  {serviceId === 'routine-housekeeping' && (
+                    <>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/how-often-professional-house-cleaning-kansas-city" className="hover:text-[#C86B53] transition-colors">
+                            How Often Should You Have Your House Cleaned?
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Compare weekly, bi-weekly, and monthly recurring plans for KC homes.</p>
+                        <Link to="/blog/how-often-professional-house-cleaning-kansas-city" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/house-cleaning-cost-kansas-city" className="hover:text-[#C86B53] transition-colors">
+                            House Cleaning Cost in Kansas City
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">2026 price guide for recurring housekeeping and estimates.</p>
+                        <Link to="/blog/house-cleaning-cost-kansas-city" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                    </>
+                  )}
+                  {serviceId === 'deep-dives' && (
+                    <>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/standard-clean-vs-deep-clean-difference" className="hover:text-[#C86B53] transition-colors">
+                            Standard Clean vs. Deep Clean Differences
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Learn what is included in a deep clean reset and why to start with one.</p>
+                        <Link to="/blog/standard-clean-vs-deep-clean-difference" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/is-hiring-a-house-cleaning-service-worth-it" className="hover:text-[#C86B53] transition-colors">
+                            Is Hiring a House Cleaning Service Worth It?
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Calculate the real value of your time vs. professional deep cleaning.</p>
+                        <Link to="/blog/is-hiring-a-house-cleaning-service-worth-it" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                    </>
+                  )}
+                  {serviceId === 'move-in-move-out' && (
+                    <>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/get-your-deposit-back-move-out-cleaning" className="hover:text-[#C86B53] transition-colors">
+                            Get Your Deposit Back: Move-Out Guide
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">A complete checklist for renters and home sellers moving out in KC.</p>
+                        <Link to="/blog/get-your-deposit-back-move-out-cleaning" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/house-cleaning-cost-kansas-city" className="hover:text-[#C86B53] transition-colors">
+                            House Cleaning Cost in Kansas City
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Average rates for move-in and move-out deep cleanings.</p>
+                        <Link to="/blog/house-cleaning-cost-kansas-city" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                    </>
+                  )}
+                  {serviceId !== 'routine-housekeeping' && serviceId !== 'deep-dives' && serviceId !== 'move-in-move-out' && (
+                    <>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/house-cleaning-cost-kansas-city" className="hover:text-[#C86B53] transition-colors">
+                            House Cleaning Cost in Kansas City
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Learn about pricing for specialized, deep, and routine cleanings.</p>
+                        <Link to="/blog/house-cleaning-cost-kansas-city" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/is-hiring-a-house-cleaning-service-worth-it" className="hover:text-[#C86B53] transition-colors">
+                            Is Hiring a House Cleaning Service Worth It?
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Discover the benefits of hiring trusted local professional cleaners.</p>
+                        <Link to="/blog/is-hiring-a-house-cleaning-service-worth-it" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                    </>
+                  )}
+                </div>
+                <div className="mt-6 text-center">
+                  <Link 
+                    to="/blog"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#607564] hover:text-[#C86B53] transition-colors"
+                  >
+                    View All Blog Articles <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
             </motion.div>
             

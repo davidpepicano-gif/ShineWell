@@ -392,6 +392,58 @@ export default function CommercialCleaningKansasCity() {
           </div>
         </section>
 
+        {/* Commercial Cleaning Guides & Resources Section */}
+        <section className="mb-20 bg-white p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
+          <div className="max-w-3xl mx-auto text-center mb-8">
+            <span className="text-xs font-bold text-[#607564] uppercase tracking-wider mb-2 block">Office Insights</span>
+            <h2 className="text-3xl font-serif text-[#2C302E] mb-3">Commercial Cleaning Guides for KC Office Managers</h2>
+            <p className="text-[#5c635f] font-light leading-relaxed">
+              Learn more about maintaining a healthy, high-standard workplace and choosing the right commercial cleaning partner:
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
+              <h3 className="font-serif text-xl text-[#2C302E] mb-2">
+                <Link to="/blog/recurring-office-cleaning-kansas-city" className="hover:text-[#C86B53] transition-colors">
+                  Recurring Office Cleaning in KC
+                </Link>
+              </h3>
+              <p className="text-sm text-[#5c635f] font-light mb-4">
+                Discover ideal schedules, customized scopes, and benefits of ongoing commercial service.
+              </p>
+              <Link to="/blog/recurring-office-cleaning-kansas-city" className="inline-flex items-center text-sm font-medium text-[#607564] hover:text-[#C86B53] transition-colors">
+                Read guide <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </div>
+            <div className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
+              <h3 className="font-serif text-xl text-[#2C302E] mb-2">
+                <Link to="/blog/how-to-choose-commercial-cleaning-company-kansas-city" className="hover:text-[#C86B53] transition-colors">
+                  How to Choose a Cleaner
+                </Link>
+              </h3>
+              <p className="text-sm text-[#5c635f] font-light mb-4">
+                What office managers should look for: insurance, background checks, and walkthrough quotes.
+              </p>
+              <Link to="/blog/how-to-choose-commercial-cleaning-company-kansas-city" className="inline-flex items-center text-sm font-medium text-[#607564] hover:text-[#C86B53] transition-colors">
+                Read buyer's guide <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </div>
+            <div className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
+              <h3 className="font-serif text-xl text-[#2C302E] mb-2">
+                <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="hover:text-[#C86B53] transition-colors">
+                  Keep Your Office Healthy
+                </Link>
+              </h3>
+              <p className="text-sm text-[#5c635f] font-light mb-4">
+                High-touch point sanitization routines, restroom care, and seasonal germ prevention.
+              </p>
+              <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="inline-flex items-center text-sm font-medium text-[#607564] hover:text-[#C86B53] transition-colors">
+                Read health guide <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Interactive FAQ Accordion */}
         <section className="max-w-4xl mx-auto mb-10">
           <div className="text-center mb-10">

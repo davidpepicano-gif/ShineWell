@@ -17,6 +17,266 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'house-cleaning-cost-kansas-city',
+    title: 'How Much Does House Cleaning Cost in Kansas City? (2026 Price Guide)',
+    excerpt: 'How much does house cleaning cost in Kansas City in 2026? Real price ranges for standard, deep, and move-out cleaning, plus what affects your quote.',
+    date: 'August 5, 2026',
+    author: 'Lina Silva',
+    image: routineHousekeepingImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> In the Kansas City metro in 2026, a standard <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring house cleaning</Link> typically runs about $120–$250 per visit, a one-time <Link to="/services/deep-dives" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">deep clean</Link> about $200–$450+, and <Link to="/services/move-in-move-out" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">move-in/move-out cleaning</Link> about $250–$700, depending on your home's size, condition, and how often you schedule. Recurring plans cost less per visit than one-time cleans. The only way to get an exact number is a free estimate, but these ranges will tell you what to expect.
+          </p>
+        </div>
+
+        <h2>Kansas City cleaning prices at a glance</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-left border-collapse bg-white rounded-xl overflow-hidden border border-[#e8e5df] shadow-sm">
+            <thead>
+              <tr className="bg-[#8BA192]/20 border-b border-[#e8e5df]">
+                <th className="p-4 font-serif text-[#2C302E]">Service</th>
+                <th className="p-4 font-serif text-[#2C302E]">Typical KC price (2026)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#e8e5df] text-[#5c635f] text-sm md:text-base">
+              <tr>
+                <td className="p-4 font-medium">Standard recurring clean (weekly/biweekly/monthly)</td>
+                <td className="p-4">$120–$250 per visit</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">One-time standard clean</td>
+                <td className="p-4">$150–$300</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">Deep clean (one-time)</td>
+                <td className="p-4">$200–$450+</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">Move-in / move-out clean</td>
+                <td className="p-4">$250–$700</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">Hourly rate (per cleaner)</td>
+                <td className="p-4">$25–$50 / hour</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          These are typical ranges for the Overland Park and greater KC metro area. Your actual price depends on the factors below.
+        </p>
+
+        <h2>What affects your price</h2>
+        <ul>
+          <li><strong>Home size:</strong> More square footage and more bathrooms take more time. Most companies price partly on beds/baths or square footage.</li>
+          <li><strong>Standard vs. deep:</strong> A deep clean reaches built-up grime (baseboards, inside appliances, grout, vents) and takes far longer, so it costs 50–100% more than a standard clean. Knowing the <Link to="/blog/standard-clean-vs-deep-clean-difference" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">difference between a standard and deep clean</Link> helps you pick the right baseline.</li>
+          <li><strong>Condition:</strong> A home that hasn't been professionally cleaned in a while usually needs a deep clean first to reach a baseline.</li>
+          <li><strong>Frequency:</strong> Recurring service costs less per visit, because the home stays in better shape between cleans. Weekly is cheapest per visit, monthly the most.</li>
+          <li><strong>Add-ons:</strong> Inside the fridge or oven, interior windows, laundry, and organizing are often extra.</li>
+        </ul>
+
+        <h2>Why recurring cleaning is the best value</h2>
+        <p>
+          If you want a consistently clean home, a recurring plan almost always beats repeated one-time cleans. You pay less per visit, and because grime never rebuilds to "deep clean" levels, you avoid paying for a full reset again. Most KC homeowners start with one deep clean to set a baseline, then maintain it with biweekly standard visits. You can also evaluate <Link to="/blog/is-hiring-a-house-cleaning-service-worth-it" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">whether a cleaning service is worth it</Link> based on time saved and peace of mind.
+        </p>
+
+        <h2>How ShineWell prices cleaning</h2>
+        <p>
+          ShineWell provides a free, no-obligation estimate based on your home and how often you'd like service — no guessing over the phone. We're a family-owned, fully insured company serving Overland Park and the KC metro, with recurring plans that lower your per-visit cost and a 100% satisfaction guarantee. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get your free estimate »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How much does house cleaning cost in Kansas City?</h3>
+              <p className="text-[#5c635f] font-light">In 2026, standard recurring cleans typically run $120–$250 per visit, one-time deep cleans $200–$450+, and move-in/move-out cleans $250–$700, depending on home size and condition.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Is recurring cleaning cheaper than one-time cleaning?</h3>
+              <p className="text-[#5c635f] font-light">Yes. Weekly and biweekly visits are priced lower per visit than one-time cleans, because the home stays in better condition between appointments.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Why is a deep clean more expensive than a standard clean?</h3>
+              <p className="text-[#5c635f] font-light">A deep clean covers detailed, built-up areas a standard visit skips — baseboards, inside appliances, grout, and vents — so it takes more time and typically costs 50–100% more.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do cleaning companies charge by the hour or a flat rate?</h3>
+              <p className="text-[#5c635f] font-light">Both exist. Many companies quote a flat rate per visit after assessing your home; hourly rates in KC commonly run $25–$50 per cleaner.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'get-your-deposit-back-move-out-cleaning-kansas-city',
+    title: 'How to Get Your Full Deposit Back When Moving Out (Kansas City Guide)',
+    excerpt: 'Moving out in Kansas City? Here\'s exactly what to clean to get your full security deposit back, plus a room-by-room checklist landlords actually check.',
+    date: 'August 5, 2026',
+    author: 'Lina Silva',
+    image: cleanersWorkImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> To get your full security deposit back, leave the rental as clean as it was when you moved in — which usually means a <Link to="/services/move-in-move-out" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">move-out cleaning service</Link>: inside all appliances, cabinets and drawers, baseboards, window tracks, bathrooms scrubbed (including grout), floors done, and all trash removed. Landlords most often deduct for cleaning, so a thorough top-to-bottom clean is the single biggest thing you control. Take dated photos after cleaning as proof.
+          </p>
+        </div>
+
+        <h2>Why cleaning is where deposits are won or lost</h2>
+        <p>
+          Normal wear and tear can't be deducted, but dirtiness can — and cleaning charges are one of the most common deductions landlords make. Unlike a scuffed wall or worn carpet, cleanliness is entirely in your control. Nail this and you remove the easiest reason a landlord has to keep your money.
+        </p>
+
+        <h2>The move-out cleaning checklist landlords actually check</h2>
+        
+        <h3>Kitchen</h3>
+        <ul>
+          <li>Inside and outside of the oven, stovetop, and range hood</li>
+          <li>Inside the refrigerator and freezer (and pull it out to clean behind/under)</li>
+          <li>Inside the microwave, dishwasher, and all cabinets and drawers</li>
+          <li>Countertops, backsplash, sink, and faucet</li>
+          <li>Floors mopped, including corners and edges</li>
+        </ul>
+
+        <h3>Bathrooms</h3>
+        <ul>
+          <li>Toilet, tub, and shower scrubbed — including grout and any buildup</li>
+          <li>Sink, vanity, mirror, and fixtures</li>
+          <li>Inside cabinets and drawers</li>
+          <li>Exhaust fan dusted; floors mopped</li>
+        </ul>
+
+        <h3>All rooms</h3>
+        <ul>
+          <li>Baseboards, door frames, and light switches wiped</li>
+          <li>Window tracks, sills, and interior glass</li>
+          <li>Closets emptied and wiped down</li>
+          <li>Ceiling fans and light fixtures dusted</li>
+          <li>Walls spot-cleaned; cobwebs removed</li>
+          <li>Carpets vacuumed (or professionally cleaned if required by your lease)</li>
+        </ul>
+
+        <h3>Final steps</h3>
+        <ul>
+          <li>All personal items and trash removed</li>
+          <li>Nail holes filled if your lease requires it</li>
+          <li>Take dated photos of every room after cleaning — your proof if there's a dispute</li>
+        </ul>
+
+        <h2>Read your lease first</h2>
+        <p>
+          Some leases require professional carpet cleaning or a professional move-out clean and ask for a receipt. Check your move-out clause before you start, so you don't lose your deposit on a technicality.
+        </p>
+
+        <h2>When to hire a move-out cleaning service</h2>
+        <p>
+          Move-out cleaning is more demanding than regular cleaning, and you're often doing it while juggling an actual move. Check <Link to="/blog/house-cleaning-cost-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how much move-out cleaning costs</Link> compared to your deposit amount. A professional move-out clean is worth it when your lease requires a receipt, when you're short on time, or when the deposit at stake is more than the cost of the clean. Also review <Link to="/blog/standard-clean-vs-deep-clean-difference" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">what a deep clean includes</Link> to ensure no detail is skipped. Many renters find a $250–$400 move-out clean easily pays for itself in deposit recovered.
+        </p>
+
+        <p className="mt-8 font-light text-lg">
+          ShineWell provides thorough move-out cleaning across Overland Park and the KC metro, built around exactly what landlords inspect, and backed by a 24-hour re-clean guarantee. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a free move-out estimate »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">What should I clean to get my deposit back?</h3>
+              <p className="text-[#5c635f] font-light">Leave the unit as clean as move-in: inside all appliances, cabinets, baseboards, window tracks, scrubbed bathrooms including grout, and mopped floors, with all trash removed. Take dated photos as proof.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Can a landlord charge me for cleaning?</h3>
+              <p className="text-[#5c635f] font-light">Yes, landlords can deduct for cleaning beyond normal wear and tear. A thorough move-out clean removes the most common reason for deductions.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Is professional move-out cleaning worth it?</h3>
+              <p className="text-[#5c635f] font-light">Often yes — when your lease requires a receipt, you're short on time, or the deposit at stake exceeds the cost of the clean, a professional move-out clean typically pays for itself.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'recurring-office-cleaning-kansas-city',
+    title: 'Recurring Office Cleaning in the Kansas City Metro: What to Know',
+    excerpt: 'Looking for reliable recurring office cleaning in the KC metro? How janitorial scheduling, scope, and pricing work, and what to look for in a provider.',
+    date: 'August 5, 2026',
+    author: 'Lina Silva',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Reliable recurring office cleaning in the KC metro means a consistent, scheduled janitorial service — nightly, several times a week, or weekly — handled by an insured, background-checked crew that works after hours or early morning so your team is never interrupted. Look for a provider with a clear written scope, consistent crews, and a satisfaction guarantee. ShineWell provides recurring office and <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial cleaning in Kansas City</Link> across Overland Park, Corporate Woods, and the greater KC metro.
+          </p>
+        </div>
+
+        <h2>What "recurring office cleaning" actually covers</h2>
+        <p>A typical recurring janitorial visit includes:</p>
+        <ul>
+          <li>Trash removal and liner replacement</li>
+          <li>Restrooms cleaned, sanitized, and restocked</li>
+          <li>Break rooms and kitchens wiped down and floors done</li>
+          <li>All high-touch points disinfected — door handles, light switches, shared equipment</li>
+          <li>Desks, reception, and common-area surfaces dusted and wiped</li>
+          <li>Floors vacuumed and mopped throughout</li>
+          <li>Interior glass and entry doors spot-cleaned</li>
+        </ul>
+        <p>
+          Frequency is built around your space — a small professional office might need weekly service, while a busy or client-facing space benefits from several visits a week. You may also schedule periodic <Link to="/services/commercial-deep-cleaning" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial deep cleaning</Link> for detailed quarterly maintenance.
+        </p>
+
+        <h2>Why scheduling matters most for offices</h2>
+        <p>
+          The best office cleaning is the kind you never see happen. Reliable providers work after hours or early morning, so your team walks into a fresh space and cleaning never disrupts the workday. When you evaluate a provider, ask how they handle scheduling, access, and security for after-hours work.
+        </p>
+
+        <h2>What to look for in a recurring provider</h2>
+        <ul>
+          <li><strong>Fully insured and bonded</strong> — they're in your space, often unsupervised after hours</li>
+          <li><strong>Background-checked staff</strong> — confirm every cleaner is vetted</li>
+          <li><strong>Consistent crews</strong> — the same trained team learns your space and keeps quality steady</li>
+          <li><strong>A clear written scope</strong> — exactly what's cleaned and how often, so nothing is assumed</li>
+          <li><strong>Responsiveness</strong> — someone who answers when you need a change or flag an issue</li>
+          <li><strong>A satisfaction guarantee</strong> — they make any miss right</li>
+        </ul>
+
+        <h2>How recurring office cleaning is priced</h2>
+        <p>
+          Commercial cleaning is quoted after a quick walkthrough, based on your square footage, the type of space, the scope, and how often you need service. Recurring contracts lower the per-visit cost compared to one-time cleans. Read our guide on <Link to="/blog/how-to-choose-commercial-cleaning-company-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how to choose a commercial cleaning company</Link> and best practices for <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">keeping your office clean and healthy</Link>.
+        </p>
+
+        <h2>A local option for KC offices</h2>
+        <p>
+          ShineWell is a family-owned, fully insured company that has cleaned Overland Park and KC metro spaces for over 20 years. We specialize in light commercial and janitorial service — offices, medical and dental suites, salons, daycares, and retail — with flexible after-hours scheduling, background-checked crews, and a satisfaction guarantee. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Request a free walkthrough »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Who offers reliable recurring office cleaning in the Kansas City metro?</h3>
+              <p className="text-[#5c635f] font-light">ShineWell provides recurring office and light commercial cleaning across Overland Park, Corporate Woods, and the greater KC metro, with flexible nightly, weekly, or biweekly schedules, insured and background-checked crews, and a satisfaction guarantee.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Can office cleaning be done after business hours?</h3>
+              <p className="text-[#5c635f] font-light">Yes. Most recurring commercial clients schedule after-hours or early-morning cleaning so their team is never disrupted during the workday.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How is recurring office cleaning priced?</h3>
+              <p className="text-[#5c635f] font-light">After a free walkthrough, based on square footage, type of space, scope, and frequency. Recurring contracts lower the per-visit cost compared to one-time cleaning.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
     id: 'commercial-cleaning-kansas-city',
     title: 'Why Kansas City Businesses Are Rethinking What a Clean Workplace Really Means',
     excerpt: 'ShineWell offers professional commercial cleaning services across Kansas City, from Crossroads to Corporate Woods, rooted in Brazilian attention to warmth, detail, and the human experience of space.',
@@ -408,7 +668,7 @@ export const blogPosts: BlogPost[] = [
         </p>
 
         <p className="mt-8 font-light text-lg">
-          Not sure what\'s right for your home? Shine Well offers flexible weekly, biweekly, and monthly plans across Overland Park and the greater Kansas City metro — and you can change your frequency any time. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a fast, free estimate »</Link>
+          Not sure what's right for your home? Shine Well offers flexible weekly, biweekly, and monthly <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring cleaning plans</Link> across Overland Park and the greater Kansas City metro — and you can check <Link to="/blog/house-cleaning-cost-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">what house cleaning costs in KC</Link> before booking. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a fast, free estimate »</Link>
         </p>
 
         <h2 className="mt-12">Frequently asked questions</h2>
@@ -526,7 +786,7 @@ export const blogPosts: BlogPost[] = [
         </p>
 
         <p className="mt-8 font-light text-lg">
-          See what a clean home would cost you — <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">free estimate »</Link>
+          Check average <Link to="/blog/house-cleaning-cost-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">cleaning prices in Kansas City</Link> and see what a clean home would cost you — <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">get a free estimate »</Link>
         </p>
 
         <h2 className="mt-12">Frequently asked questions</h2>
@@ -661,7 +921,7 @@ export const blogPosts: BlogPost[] = [
         </p>
 
         <p className="mt-8 font-light text-lg">
-          Shine Well offers both, and can recommend the right starting point when you book. Every clean is backed by a 24-hour re-clean guarantee — if any corner is missed, we come back and make it right, free. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get your free estimate »</Link>
+          Shine Well offers <Link to="/services/deep-dives" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">our deep cleaning service</Link> and standard maintenance, and we can help you decide <Link to="/blog/how-often-professional-house-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how often to schedule cleaning</Link> when you book. Every clean is backed by a 24-hour re-clean guarantee — if any corner is missed, we come back and make it right, free. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get your free estimate »</Link>
         </p>
 
         <h2 className="mt-12">Frequently asked questions</h2>
@@ -915,10 +1175,10 @@ export const blogPosts: BlogPost[] = [
 
         <h2>A local option</h2>
         <p>
-          ShineWell is a fully insured, family-owned company that has cleaned Overland Park and greater KC metro businesses for over 20 years, with background-checked crews, after-hours scheduling, a 24-hour re-clean guarantee, and a 5.0 Google rating. 
+          ShineWell is a fully insured, family-owned company that has cleaned Overland Park and greater KC metro businesses for over 20 years, offering <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">our commercial cleaning service</Link> with background-checked crews, after-hours scheduling, a 24-hour re-clean guarantee, and a 5.0 Google rating. 
         </p>
         <p>
-          If you're comparing options for your office, <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">request a free walkthrough</Link> or read our guide on <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how to keep your office clean and healthy</Link> to learn how often professional cleaning is ideal for your team.
+          If you're comparing options for your office, <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">request a free walkthrough</Link> or read our guides on <Link to="/blog/recurring-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring office cleaning</Link> and <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how to keep your office clean and healthy</Link> to learn how often professional cleaning is ideal for your team.
         </p>
 
         <div className="border-t border-[#e8e5df] pt-8 mt-12">
@@ -1036,7 +1296,7 @@ export const blogPosts: BlogPost[] = [
         </p>
 
         <p>
-          ShineWell provides flexible commercial cleaning across Overland Park and the KC metro, scheduled around your business hours. 
+          ShineWell provides flexible <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial cleaning in the KC metro</Link> and Overland Park, scheduled around your business hours. Read more about establishing <Link to="/blog/recurring-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring office cleaning</Link> for your business.
         </p>
         <p>
           Ready to experience the difference? Learn about our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Commercial Cleaning Services in Kansas City</Link> or <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a Free Estimate</Link> walkthrough.

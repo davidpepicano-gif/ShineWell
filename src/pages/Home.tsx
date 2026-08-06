@@ -413,6 +413,79 @@ export default function Home() {
         </div>
       </section>
 
+      {/* From Our Blog Section */}
+      <section className="py-14 bg-white border-t border-[#e8e5df]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div>
+              <span className="text-xs font-bold text-[#607564] uppercase tracking-wider mb-2 block">Latest Insights & Guides</span>
+              <h2 className="text-4xl md:text-5xl font-serif text-[#2C302E]">From Our Blog</h2>
+              <p className="text-lg text-[#5c635f] max-w-2xl font-light mt-2">
+                Expert cleaning advice, pricing breakdowns, and workplace maintenance tips for Kansas City homeowners and businesses.
+              </p>
+            </div>
+            <Link 
+              to="/blog"
+              className="inline-flex items-center gap-2 text-[#607564] font-medium hover:text-[#C86B53] transition-colors whitespace-nowrap"
+            >
+              View All Cleaning Articles <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                id: 'house-cleaning-cost-kansas-city',
+                title: 'House Cleaning Cost in Kansas City (2026 Price Guide)',
+                excerpt: 'Average costs for recurring housekeeping, deep cleans, move-out cleans, and hourly rates in KC.',
+                path: '/blog/house-cleaning-cost-kansas-city'
+              },
+              {
+                id: 'recurring-office-cleaning-kansas-city',
+                title: 'Recurring Office Cleaning in Kansas City',
+                excerpt: 'How custom schedules and commercial cleaning keep KC workplaces healthy and productive.',
+                path: '/blog/recurring-office-cleaning-kansas-city'
+              },
+              {
+                id: 'get-your-deposit-back-move-out-cleaning-kansas-city',
+                title: 'Get Your Deposit Back: Move-Out Guide',
+                excerpt: 'A complete move-out cleaning checklist for Kansas City renters and property sellers.',
+                path: '/blog/get-your-deposit-back-move-out-cleaning-kansas-city'
+              },
+              {
+                id: 'standard-clean-vs-deep-clean-difference',
+                title: 'Standard Clean vs. Deep Clean: Differences',
+                excerpt: 'What is included in a standard clean vs. a deep clean reset, and which one you need.',
+                path: '/blog/standard-clean-vs-deep-clean-difference'
+              }
+            ].map((post) => (
+              <motion.div 
+                key={post.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-[#F9F8F6] p-6 rounded-3xl border border-[#e8e5df] flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div>
+                  <h3 className="text-xl font-serif text-[#2C302E] mb-3 hover:text-[#C86B53] transition-colors">
+                    <Link to={post.path}>{post.title}</Link>
+                  </h3>
+                  <p className="text-[#5c635f] text-sm font-light leading-relaxed mb-4">
+                    {post.excerpt}
+                  </p>
+                </div>
+                <Link 
+                  to={post.path}
+                  className="inline-flex items-center text-[#607564] font-medium text-sm hover:text-[#C86B53] transition-colors mt-auto"
+                >
+                  Read article <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-14 bg-[#8BA192] text-[#2C302E]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
