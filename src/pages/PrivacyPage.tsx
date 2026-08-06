@@ -118,7 +118,7 @@ export default function PrivacyPage() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#C86B53]" />
-                <a href="tel:9133251400" className="hover:underline text-[#2C302E]">(913) 325-1400</a>
+                <a href="tel:9132204748" className="hover:underline text-[#2C302E]">(913) 220-4748</a>
               </div>
               <div className="flex items-center gap-3 sm:col-span-2">
                 <MapPin className="w-5 h-5 text-[#C86B53]" />

@@ -153,8 +153,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 }`} />
               </div>
               <div className="flex flex-col justify-center">
-                <span className={`font-script font-bold tracking-tight text-[#2C302E] leading-none mb-1 transition-all duration-500 ${
-                  isScrolled ? 'text-xl md:text-2xl lg:text-3xl' : 'text-2xl md:text-3xl lg:text-4xl'
+                <span className={`font-serif font-bold tracking-tight text-[#2C302E] leading-none mb-1 transition-all duration-500 ${
+                  isScrolled ? 'text-lg md:text-xl lg:text-2xl' : 'text-xl md:text-2xl lg:text-3xl'
                 }`}>
                   ShineWell
                 </span>
@@ -235,23 +235,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Get a Free Estimate
               </Link>
               <a 
-                href="tel:9133251400"
+                href="tel:9132204748"
                 className="hidden lg:flex items-center gap-2 border border-[#607564] text-[#607564] hover:bg-[#607564] hover:text-white px-5 py-2.5 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 shrink-0"
               >
                 <Phone className="w-4 h-4 shrink-0" />
-                <span>Call ShineWell: (913) 325-1400</span>
+                <span>Call ShineWell: (913) 220-4748</span>
               </a>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-2">
               <a 
-                href="tel:9133251400"
+                href="tel:9132204748"
                 className="flex items-center gap-1.5 bg-[#607564] text-white px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-[#b55e47] transition-all shrink-0"
-                aria-label="Call ShineWell at (913) 325-1400"
+                aria-label="Call ShineWell at (913) 220-4748"
               >
                 <Phone className="w-3.5 h-3.5 shrink-0" />
-                <span>(913) 325-1400</span>
+                <span>(913) 220-4748</span>
               </a>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -347,11 +347,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Get a Free Estimate
               </Link>
               <a 
-                href="tel:9133251400"
+                href="tel:9132204748"
                 className="bg-[#607564] text-white px-6 py-4 rounded-xl font-medium mt-2 w-full text-center flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5 shrink-0" />
-                <span>Call (913) 325-1400</span>
+                <span>Call (913) 220-4748</span>
               </a>
             </motion.div>
           )}
@@ -373,7 +373,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Logo className="h-20 w-20 md:h-24 md:w-24" />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <span className="text-2xl md:text-3xl lg:text-4xl font-script tracking-tight leading-none mb-1 text-[#F9F8F6]">
+                  <span className="text-xl md:text-2xl lg:text-3xl font-serif font-bold tracking-tight leading-none mb-1 text-[#F9F8F6]">
                     ShineWell
                   </span>
                   <span className="text-[8px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-[#a3aba6] group-hover:text-white transition-colors font-medium leading-none pl-0.5">
@@ -387,7 +387,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <div className="mb-6 space-y-1 text-sm text-[#a3aba6] font-light">
                 <p className="font-semibold text-[#F9F8F6]">ShineWell Commercial and Home Cleaning Services</p>
                 <p className="text-[#a3aba6]">Serving Overland Park & the greater Kansas City metro</p>
-                <p>Phone: <a href="tel:9133251400" className="hover:text-white transition-colors underline decoration-[#607564] underline-offset-4">(913) 325-1400</a></p>
+                <p>Phone: <a href="tel:9132204748" className="hover:text-white transition-colors underline decoration-[#607564] underline-offset-4">(913) 220-4748</a></p>
               </div>
               <div className="flex gap-4">
                 <a href="https://www.facebook.com/shinewellcleaning/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#3a3f3c] flex items-center justify-center hover:bg-[#C86B53] transition-colors" aria-label="Visit our Facebook Page">
@@ -406,7 +406,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-4 text-[#a3aba6] font-light">
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#607564]" />
-                  <a href="tel:9133251400" className="hover:text-white transition-colors">(913) 325-1400</a>
+                  <a href="tel:9132204748" className="hover:text-white transition-colors">(913) 220-4748</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#607564]" />
@@ -473,7 +473,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </footer>
       {/* Sticky Mobile Call Button */}
       <a
-        href="tel:9133251400"
+        href="tel:9132204748"
         className="fixed bottom-6 left-6 z-50 md:hidden bg-[#C86B53] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center hover:shadow-[#C86B53]/30"
         aria-label="Call ShineWell"
       >

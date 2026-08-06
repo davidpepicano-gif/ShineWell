@@ -179,10 +179,10 @@ export default function CommercialCleaningKansasCity() {
                 <ArrowRight aria-hidden="true" focusable="false" className="w-5 h-5" />
               </Link>
               <a 
-                href="tel:9133251400" 
+                href="tel:9132204748" 
                 className="border border-[#e8e5df] text-[#2C302E] bg-white px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-50 transition-all text-center"
               >
-                Call (913) 325-1400
+                Call (913) 220-4748
               </a>
             </div>
           </motion.div>
@@ -383,10 +383,10 @@ export default function CommercialCleaningKansasCity() {
                 Request Free Commercial Walkthrough »
               </Link>
               <a 
-                href="tel:9133251400" 
+                href="tel:9132204748" 
                 className="bg-white text-[#2C302E] px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-50 transition-all hover:-translate-y-0.5 hover:shadow-lg"
               >
-                Call ShineWell: (913) 325-1400
+                Call ShineWell: (913) 220-4748
               </a>
             </div>
           </div>
@@ -450,7 +450,7 @@ export default function CommercialCleaningKansasCity() {
           "provider": {
             "@type": "LocalBusiness",
             "name": "ShineWell Cleaning Services",
-            "telephone": "+1-913-325-1400",
+            "telephone": "+1-913-220-4748",
             "areaServed": "Kansas City metro (Overland Park, KS & MO)",
             "url": "https://shinewellcleaning.com/commercial-cleaning-kansas-city"
           },

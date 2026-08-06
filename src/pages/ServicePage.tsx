@@ -642,9 +642,9 @@ export default function ServicePage() {
                 </Link>
                 <div className="mt-6 pt-6 border-t border-[#3a3f3c] text-center">
                   <p className="text-sm text-[#a3aba6] mb-2">Or call us directly:</p>
-                  <a href="tel:9133251400" className="text-xl font-serif text-white hover:text-[#C86B53] transition-colors flex items-center justify-center gap-2">
+                  <a href="tel:9132204748" className="text-xl font-serif text-white hover:text-[#C86B53] transition-colors flex items-center justify-center gap-2">
                     <Phone className="w-4 h-4 shrink-0 text-[#CAD4CD]" />
-                    <span>913-325-1400</span>
+                    <span>913-220-4748</span>
                   </a>
                 </div>
               </div>
