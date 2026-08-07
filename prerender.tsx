@@ -68,10 +68,11 @@ if (typeof window === 'undefined') {
   }
 }
 
-// Now import our routes after standard mocks are established
+// Now import our routes and blog data after standard mocks are established
 import AppRoutes from './src/AppRoutes';
+import { blogPosts } from './src/data/blogPosts';
 
-const routes = [
+const staticRoutes = [
   '/',
   '/services',
   '/services/routine-housekeeping',
@@ -91,17 +92,15 @@ const routes = [
   '/locations',
   '/payment',
   '/blog',
-  '/blog/office-cleaning-reception',
-  '/blog/how-often-professional-house-cleaning-kansas-city',
-  '/blog/is-hiring-a-house-cleaning-service-worth-it',
-  '/blog/standard-clean-vs-deep-clean-difference',
-  '/blog/kansas-city-restoration-pros-recommendation',
-  '/blog/how-to-choose-commercial-cleaning-company-kansas-city',
-  '/blog/how-to-keep-your-office-clean-and-healthy',
   '/commercial-cleaning-kansas-city',
+  '/dental-office-cleaning-kansas-city',
   '/privacy',
   '/terms',
 ];
+
+const blogRoutes = blogPosts.map(post => `/blog/${post.id}`);
+
+const routes = [...staticRoutes, ...blogRoutes];
 
 const routeMetadata: Record<string, { title: string; description: string }> = {
   "/": {
@@ -180,37 +179,13 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
     title: "Expert Cleaning Tips, News & Local Updates | ShineWell Blog",
     description: "Professional cleaning advice, localized Overland Park and KC maintenance tips, and guides from our expert team to keep your space healthy and spotless.",
   },
-  "/blog/office-cleaning-reception": {
-    title: "How Reception Cleanliness Boosts Client Trust | ShineWell Blog",
-    description: "Expert advice on managing the physical first impression of your corporate lobby, reception desks, and waiting rooms to build immediate professional trust.",
-  },
-  "/blog/how-often-professional-house-cleaning-kansas-city": {
-    title: "How Often Should You Get Your House Cleaned? | KC Guide",
-    description: "How often should you have your house professionally cleaned in Kansas City? Weekly, biweekly, or monthly — here's how to choose the right frequency.",
-  },
-  "/blog/is-hiring-a-house-cleaning-service-worth-it": {
-    title: "Is Hiring a House Cleaning Service Worth It? (KC 2026)",
-    description: "Is a house cleaning service worth the money? Here's an honest look at the cost, time saved, and how to decide — for Kansas City homeowners.",
-  },
-  "/blog/standard-clean-vs-deep-clean-difference": {
-    title: "Standard Clean vs. Deep Clean: What's the Difference?",
-    description: "Standard clean vs. deep clean — what's the difference, what's included in each, and which one you need? A simple guide for Kansas City homeowners.",
-  },
-  "/blog/kansas-city-restoration-pros-recommendation": {
-    title: "Trusted Property Restoration in KC | ShineWell Recommends",
-    description: "ShineWell Cleaning Services proudly recommends Jason and the team at Kansas City Restoration Pros for water, fire, mold, and storm damage restoration.",
-  },
-  "/blog/how-to-choose-commercial-cleaning-company-kansas-city": {
-    title: "How to Choose a Commercial Cleaning Company in KC",
-    description: "What to look for in a commercial cleaning company in Overland Park or KC: insurance, background checks, scope, and questions to ask before you sign.",
-  },
-  "/blog/how-to-keep-your-office-clean-and-healthy": {
-    title: "How Keep Your Office Clean and Healthy | KC Guide",
-    description: "How to keep your office clean and healthy for staff and clients: high-touch points, restroom and break-room routines, and how often to bring in pros.",
-  },
   "/commercial-cleaning-kansas-city": {
     title: "Commercial Cleaning Services in Kansas City | ShineWell",
     description: "Reliable commercial & office cleaning across the Kansas City metro. Fully insured, background-checked crews, flexible schedules, free walkthrough.",
+  },
+  "/dental-office-cleaning-kansas-city": {
+    title: "Dental & Medical Office Cleaning in Kansas City | ShineWell",
+    description: "Health-conscious sanitation for dental practices, clinics, and medical suites in Overland Park and KC metro with after-hours scheduling.",
   },
   "/privacy": {
     title: "Privacy Policy | ShineWell Commercial & Home Cleaning Services",
@@ -221,6 +196,14 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
     description: "Review the Terms of Service for ShineWell Commercial & Home Cleaning Services, including our 24-hour cancellation policy, satisfaction guarantee, and general liabilities.",
   },
 };
+
+// Dynamically populate metadata for all blog posts
+blogPosts.forEach(post => {
+  routeMetadata[`/blog/${post.id}`] = {
+    title: `${post.title} | ShineWell Blog`,
+    description: post.excerpt,
+  };
+});
 
 function prerender() {
   const distDir = path.join(process.cwd(), 'dist');
