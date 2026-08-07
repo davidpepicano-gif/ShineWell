@@ -157,7 +157,7 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
   },
   "/contact": {
     title: "Contact Us & Request a Free Estimate | ShineWell",
-    description: "Get in touch with Overland Park and the greater KC metro's premier commercial and home cleaning team. Call us at (913) 325-1400 or fill out our online form for an immediate free estimate.",
+    description: "Get in touch with Overland Park and the greater KC metro's premier commercial and home cleaning team. Call us at (913) 220-4748 or fill out our online form for an immediate free estimate.",
   },
   "/booking": {
     title: "Request a Free Estimate & Book Your Clean | ShineWell",
@@ -169,7 +169,7 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
   },
   "/locations": {
     title: "Service Areas & Locations Served | ShineWell Cleaning",
-    description: "Explore our broad service footprint across Overland Park, the greater Kansas City metropolitan area, and North Carolina. See our active locations and zip codes.",
+    description: "Explore our service footprint across Overland Park and the greater Kansas City metropolitan area. See our active locations and zip codes.",
   },
   "/payment": {
     title: "Secure Online Payment Portal | ShineWell Cleaning",
@@ -493,7 +493,7 @@ function prerender() {
               "@type": "LocalBusiness",
               "@id": "https://shinewellcleaning.com/#business",
               "name": "ShineWell Commercial & Home Cleaning Services",
-              "telephone": "+1-913-325-1400",
+              "telephone": "+1-913-220-4748",
               "url": "https://shinewellcleaning.com"
             },
             "areaServed": [
@@ -533,7 +533,7 @@ function prerender() {
           "provider": {
             "@type": "LocalBusiness",
             "name": "ShineWell Commercial & Home Cleaning Services",
-            "telephone": "+1-913-325-1400",
+            "telephone": "+1-913-220-4748",
             "url": "https://shinewellcleaning.com/commercial-cleaning-kansas-city"
           },
           "areaServed": [

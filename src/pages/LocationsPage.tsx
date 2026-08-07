@@ -36,12 +36,25 @@ export default function LocationsPage() {
         >
           <h1 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Areas We Serve</h1>
           <div className="bg-white p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
-            <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
-              <strong>ShineWell</strong> serves a broad geographical footprint, providing premier home and commercial office cleaning services across the greater Kansas City metropolitan area (including both Missouri and Kansas municipalities). Check our map below or contact us to verify if our fully insured cleaning professionals cover your specific zip code.
+            <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light mb-4">
+              <strong>ShineWell</strong> provides premier home and commercial office cleaning services across an Overland Park-focused radius covering key Kansas and Missouri communities:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 text-sm md:text-base text-[#2C302E] font-light">
+              <div className="bg-[#F9F8F6] p-4 rounded-xl border border-[#e8e5df]">
+                <strong className="block text-[#607564] font-medium mb-1">Kansas:</strong>
+                Overland Park, Leawood, Prairie Village, Lenexa, Olathe, Shawnee, Mission, Merriam, Fairway, Roeland Park, Stilwell.
+              </div>
+              <div className="bg-[#F9F8F6] p-4 rounded-xl border border-[#e8e5df]">
+                <strong className="block text-[#607564] font-medium mb-1">Missouri:</strong>
+                Brookside and the Country Club Plaza area.
+              </div>
+            </div>
+            <p className="mt-4 text-sm md:text-base text-[#5c635f] font-light">
+              Check our map below or contact us to verify if our fully insured cleaning professionals cover your specific zip code.
             </p>
           </div>
           <p className="text-lg text-[#5c635f] font-light">
-            ShineWell provides premium cleaning services across the greater Kansas City metropolitan area.
+            ShineWell provides premium cleaning services across Overland Park &amp; the greater Kansas City metropolitan area.
           </p>
         </motion.div>
 
