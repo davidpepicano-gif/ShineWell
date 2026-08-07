@@ -8,6 +8,10 @@ import routineHousekeepingImg from '../assets/images/regenerated_image_178336382
 import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
 import junkRemovalImg from '../assets/images/regenerated_image_1783363101031.png';
 import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
+import carpetDeepCleanImg from '../assets/images/carpet_deep_cleaned_1786068869326.jpg';
+import medicalOfficeCleanerImg from '../assets/images/medical_office_cleaner_1786068880525.jpg';
+import postConstructionKitchenImg from '../assets/images/post_construction_kitchen_1786068891678.jpg';
+import deepHomeCleaningImg from '../assets/images/deep_home_cleaning_1786068903297.jpg';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -91,7 +95,7 @@ const serviceData = {
   'deep-dives': {
     title: 'Deep Cleaning Services in Kansas City: Spotless, Top to Bottom',
     icon: <Sparkles className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: deepCleaningImg,
+    heroImage: deepHomeCleaningImg,
     altText: 'Deep cleaning service kitchen Kansas City Missouri',
     description: 'For when things have gotten a little out of hand. We get into the forgotten corners, baseboards, and behind the appliances.',
     introAnswer: 'ShineWell offers comprehensive, top-to-bottom deep cleaning services in Kansas City, Missouri. This premium, detailed package targets hard-to-reach areas, hand-wipes baseboards, sanitizes tile grout, scrubs window sills, and eliminates deep-seated dirt from kitchens and bathrooms to establish an immaculate, fresh, and healthy baseline for your home.',
@@ -133,7 +137,7 @@ const serviceData = {
   'move-in-move-out': {
     title: 'Move In & Move Out Cleaning Service in Kansas City',
     icon: <Briefcase className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    heroImage: postConstructionKitchenImg,
     altText: 'Move out cleaning service apartment Kansas City',
     description: 'Start fresh or leave a blank slate. We make transitions seamless with a meticulous, top to bottom clean.',
     introAnswer: 'ShineWell delivers meticulous move-in and move-out cleaning services in Kansas City to ensure a seamless residential transition. We handle everything from deep-cleaning empty cabinets and scrubbing appliances to detailing baseboards, helping renters secure their security deposits and homeowners prepare their properties for prospective buyers.',
@@ -225,7 +229,7 @@ const serviceData = {
   'specialized-treatments': {
     title: 'Specialized Cleaning Treatments in Kansas City',
     icon: <Droplets className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: specializedImg,
+    heroImage: carpetDeepCleanImg,
     altText: 'Specialized cleaning services Kansas City',
     description: 'Targeted care for specific needs, including upholstery, carpet spot treatments, and eco friendly sanitization for sensitive spaces.',
     introAnswer: 'ShineWell offers specialized cleaning treatments in Kansas City, including expert upholstery care, leather conditioning, and hardwood floor polishing. We use advanced, eco-friendly sanitization techniques and allergen-safe green products to revive sensitive high-end surfaces, ensuring your home remains beautiful, protected, and healthy without using harsh chemicals.',
@@ -361,7 +365,7 @@ const serviceData = {
   'post-construction': {
     title: 'Post Construction Cleaning Services in Kansas City',
     icon: <Paintbrush className="w-12 h-12 text-[#CAD4CD]" strokeWidth={1.5} />,
-    heroImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop',
+    heroImage: postConstructionKitchenImg,
     altText: 'Post Construction Cleaning Services in Kansas City',
     description: 'We clear the dust and debris after your renovation, leaving your newly updated space sparkling and ready to enjoy.',
     introAnswer: 'ShineWell provides thorough post-construction and post-renovation cleaning services across the greater Kansas City metropolitan area. Our cleaners utilize HEPA-filter vacuums to eliminate airborne drywall dust, scrub paint splatters and adhesive residues from new appliances and fixtures, and wash sills and baseboards to make your space move-in ready.',

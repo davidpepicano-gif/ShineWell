@@ -1,6 +1,11 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
+import deepHomeCleaningImg from '../assets/images/deep_home_cleaning_1786068903297.jpg';
+import medicalOfficeCleanerImg from '../assets/images/medical_office_cleaner_1786068880525.jpg';
+import postConstructionKitchenImg from '../assets/images/post_construction_kitchen_1786068891678.jpg';
+import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919.png';
 
 export default function HowItWorksPage() {
   const steps = [
@@ -8,31 +13,31 @@ export default function HowItWorksPage() {
       step: "01",
       title: "Book Online",
       desc: "Start the process by visiting our secure online booking platform from any device, anytime.",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
+      image: cleanersWorkImg
     },
     {
       step: "02",
       title: "Select Your Service",
       desc: "Choose the cleaning service that fits your needs, whether it's routine housekeeping, a deep dive, or specialized treatment.",
-      image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=2068&auto=format&fit=crop"
+      image: routineHousekeepingImg
     },
     {
       step: "03",
       title: "Pay Booking Fee",
       desc: "Secure your appointment with a fast and easy online booking fee. Your date and time are 100% guaranteed.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop"
+      image: medicalOfficeCleanerImg
     },
     {
       step: "04",
       title: "Get a Custom Plan",
       desc: "We build a personalized cleaning checklist tailored specifically to your home or office priorities.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2026&auto=format&fit=crop"
+      image: postConstructionKitchenImg
     },
     {
       step: "05",
       title: "Enjoy Your Space",
       desc: "Sit back and relax. Our professional team handles the meticulously detailed cleaning so you can enjoy a spotless environment.",
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
+      image: deepHomeCleaningImg
     }
   ];
 

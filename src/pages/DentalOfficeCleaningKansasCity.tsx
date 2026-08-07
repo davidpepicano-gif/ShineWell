@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
+import medicalOfficeCleanerImg from '../assets/images/medical_office_cleaner_1786068880525.jpg';
 import { 
   ShieldCheck, 
   UserCheck, 
@@ -223,9 +224,10 @@ export default function DentalOfficeCleaningKansasCity() {
         {/* High quality imagery */}
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-md mb-16 border border-[#e8e5df]">
           <img 
-            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop" 
-            alt="dental office cleaning overland park medical clinic sanitation"
+            src={medicalOfficeCleanerImg} 
+            alt="dental and medical office cleaning in Overland Park & Kansas City"
             className="w-full h-72 sm:h-96 object-cover"
+            referrerPolicy="no-referrer"
           />
         </div>
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
+import medicalOfficeCleanerImg from '../assets/images/medical_office_cleaner_1786068880525.jpg';
 import { 
   ShieldCheck, 
   UserCheck, 
@@ -196,7 +197,7 @@ export default function CommercialCleaningKansasCity() {
           >
             <div className="relative aspect-[4/3] md:aspect-[16/10] lg:aspect-square rounded-[2rem] overflow-hidden shadow-xl border-4 border-white bg-[#e8e5df]">
               <img 
-                src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop" 
+                src={medicalOfficeCleanerImg} 
                 alt="Commercial and office cleaning in Kansas City" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

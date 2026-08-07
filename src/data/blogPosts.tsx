@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
 import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
 import cleanersWorkImg from '../assets/images/regenerated_image_1783362695919.png';
+import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
+import carpetDeepCleanImg from '../assets/images/carpet_deep_cleaned_1786068869326.jpg';
+import medicalOfficeCleanerImg from '../assets/images/medical_office_cleaner_1786068880525.jpg';
+import postConstructionKitchenImg from '../assets/images/post_construction_kitchen_1786068891678.jpg';
+import deepHomeCleaningImg from '../assets/images/deep_home_cleaning_1786068903297.jpg';
 
 export interface BlogPost {
   id: string;
@@ -207,7 +212,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Looking for reliable recurring office cleaning in the KC metro? How janitorial scheduling, scope, and pricing work, and what to look for in a provider.',
     date: 'August 5, 2026',
     author: 'Lina Silva',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    image: commercialDeepCleaningImg,
     content: (
       <>
         <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
@@ -282,7 +287,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'ShineWell offers professional commercial cleaning services across Kansas City, from Crossroads to Corporate Woods, rooted in Brazilian attention to warmth, detail, and the human experience of space.',
     date: 'April 13, 2026',
     author: 'Lina',
-    image: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop',
+    image: medicalOfficeCleanerImg,
     content: (
       <>
         <p>
@@ -347,7 +352,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'ShineWell\'s recurring home cleaning service in Kansas City is rooted in warmth, trust, and a founder who believes a clean home is the foundation of a confident life.',
     date: 'April 10, 2026',
     author: 'Lina',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop',
+    image: deepHomeCleaningImg,
     content: (
       <>
         <p>
@@ -440,7 +445,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'ShineWell\'s deep cleaning service in Kansas City tackles what regular cleanings can\'t, built on a founder\'s Brazilian philosophy that a truly clean space transforms how you feel and function.',
     date: 'April 5, 2026',
     author: 'Lina',
-    image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop',
+    image: deepCleaningImg,
     content: (
       <>
         <p>
@@ -528,7 +533,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'First impressions happen at reception. ShineWell\'s office cleaning services in Kansas City, founded by a Brazilian entrepreneur with a philosophy of confident, energized spaces, start where your clients do.',
     date: 'March 28, 2026',
     author: 'Lina',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    image: medicalOfficeCleanerImg,
     content: (
       <>
         <p>
@@ -985,7 +990,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Lina Silva, Owner of Shine Well Cleaning Services, explains why she proudly recommends Jason and the team at Kansas City Restoration Pros for water, mold, fire, and storm damage restoration.',
     date: 'July 17, 2026',
     author: 'Lina Silva',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop',
+    image: postConstructionKitchenImg,
     content: (
       <>
         <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
@@ -1105,7 +1110,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "What to look for in a commercial cleaning company in Overland Park or KC: insurance, background checks, scope, and questions to ask before you sign.",
     date: 'July 17, 2026',
     author: 'Lina Silva',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop',
+    image: commercialDeepCleaningImg,
     content: (
       <>
         <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
@@ -1229,7 +1234,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "How to keep your office clean and healthy for staff and clients: high-touch points, restroom and break-room routines, and how often to bring in pros.",
     date: 'July 17, 2026',
     author: 'Lina Silva',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    image: medicalOfficeCleanerImg,
     content: (
       <>
         <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
@@ -1441,7 +1446,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Looking for office cleaning in Overland Park? What small offices should look for in a commercial cleaner, how scheduling works, and what it costs.',
     date: 'August 5, 2026',
     author: 'Lina Silva',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    image: commercialDeepCleaningImg,
     content: (
       <>
         <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
@@ -1601,7 +1606,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Complete guide to post-construction cleaning in Overland Park & KC metro. Detailed checklist, fine drywall dust removal, window detailing, and safety.',
     date: 'August 6, 2026',
     author: 'Lina Silva',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop',
+    image: postConstructionKitchenImg,
     content: (
       <>
         <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
@@ -1670,7 +1675,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Expert Airbnb turnover cleaning in Kansas City, Brookside, Plaza & Overland Park. Linens, restocks, 5-star checklists, and quick host turnarounds.',
     date: 'August 6, 2026',
     author: 'Lina Silva',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2070&auto=format&fit=crop',
+    image: postConstructionKitchenImg,
     content: (
       <>
         <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
@@ -1730,6 +1735,110 @@ export const blogPosts: BlogPost[] = [
             <div>
               <h3 className="text-xl font-serif text-[#2C302E] mb-2">What happens if a guest leaves an Airbnb extremely messy or damaged in Kansas City?</h3>
               <p className="text-[#5c635f] font-light">Our cleaning team documents the property condition with timestamped photos immediately upon arrival and alerts you so you can submit reimbursement claims through Airbnb AirCover before the next guest arrives.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'carpet-deep-cleaning-kansas-city-overland-park',
+    title: 'Carpet Deep Cleaning in Kansas City & Overland Park: A Homeowner\'s Guide',
+    excerpt: 'How professional carpet deep cleaning works, how often carpets need it, and what it costs in Overland Park & the KC area. A local guide from ShineWell.',
+    date: 'August 6, 2026',
+    author: 'Lina Silva',
+    image: carpetDeepCleanImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Carpets should be professionally deep cleaned every 12 to 18 months — more often with kids, pets, or allergies. Regular vacuuming only lifts surface dirt; a professional hot-water extraction (steam) clean pulls out the ground-in dirt, allergens, and residue settled deep in the fibers, extends the life of your carpet, and leaves it genuinely refreshed. ShineWell provides professional carpet deep cleaning across Overland Park and the greater Kansas City area.
+          </p>
+        </div>
+
+        <h2>Carpet Deep Cleaning in Kansas City & Overland Park: A Homeowner's Guide</h2>
+        <p>
+          Carpets add warmth, comfort, and noise insulation to homes across Overland Park, Leawood, Prairie Village, and the KC metro. However, carpet fibers also act as a massive magnet for airborne dust, outdoor dirt tracked in from suburban yards, pet dander, and liquid spills. Over time, surface vacuuming alone isn't enough to maintain a healthy home environment.
+        </p>
+
+        <h2>Why Vacuuming Isn't Enough</h2>
+        <p>
+          Vacuuming is essential for weekly upkeep, but it only removes particles sitting near the surface. Over time, fine dirt, dust mites, pet dander, and body oils work their way deep into the base of the carpet pile where household vacuums simply can't reach. That embedded grit acts like sandpaper, cutting carpet fibers every time you walk across the room. This causes traffic lanes to look matted, dull, and prematurely worn out. Professional deep cleaning is what actually removes that deep-seated debris.
+        </p>
+
+        <h2>What Professional Carpet Deep Cleaning Involves</h2>
+        <p>
+          Professional carpet cleaning uses industrial-grade hot-water extraction (commonly referred to as steam cleaning):
+        </p>
+        <ul>
+          <li><strong>Pre-treatment:</strong> High-traffic areas, spots, and pet stains are treated with targeted solutions to break down embedded oils and soil.</li>
+          <li><strong>Hot-water extraction:</strong> High-temperature water and mild cleaning solutions are injected deep into the carpet pile, instantly emulsifying dirt and bacteria.</li>
+          <li><strong>High-powered extraction:</strong> Powerful vacuum suction extracts the moisture, dissolved dirt, and allergens out of the carpet and into our recovery system.</li>
+          <li><strong>Spot treatment & grooming:</strong> Stubborn marks are detailed by hand, and fibers are groomed to promote even, rapid drying.</li>
+        </ul>
+
+        <h2>How Often Should You Deep Clean Your Carpets?</h2>
+        <ul>
+          <li><strong>Every 12–18 months:</strong> Standard guideline for moderate-traffic homes without pets or allergies.</li>
+          <li><strong>Every 6–12 months:</strong> Recommended for homes with shedding pets, toddlers, or family members with asthma or seasonal allergies.</li>
+          <li><strong>As needed:</strong> High-traffic hallway carpet runners, entryways, and staircases may benefit from semi-annual touch-ups.</li>
+        </ul>
+        <p>
+          <em>Note: Many major carpet manufacturers require professional hot-water extraction every 12 to 18 months to keep their stain and wear warranties valid!</em>
+        </p>
+
+        <h2>Signs Your Carpet Needs a Deep Clean</h2>
+        <ul>
+          <li>Carpet fibers look matted, dark, or flat in high-use hallway and living room paths</li>
+          <li>Vacuuming no longer restores the fluffy texture or vibrant color</li>
+          <li>Musty or pet odors persist even after vacuuming and baking soda treatments</li>
+          <li>Indoor allergy symptoms (sneezing, watery eyes) increase when spending time in carpeted rooms</li>
+          <li>It has been more than a year since your last professional steam extraction</li>
+        </ul>
+
+        <h2>Keeping Carpets Fresh Between Deep Cleans</h2>
+        <p>
+          To protect your investment between professional appointments:
+        </p>
+        <ul>
+          <li>Vacuum high-traffic areas 2 to 3 times per week using slow, deliberate passes.</li>
+          <li>Blot liquid spills immediately with a clean microfiber towel — never scrub aggressively, which frays carpet fibers.</li>
+          <li>Place quality doormats at all exterior entrances and enforce a strict no-shoes policy inside.</li>
+          <li>Pair your routine floor care with our <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">bi-weekly house cleaning service</Link> or <Link to="/services/deep-dives" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">deep home cleaning reset</Link>.</li>
+        </ul>
+
+        <h2>What Carpet Deep Cleaning Costs in the KC Area</h2>
+        <p>
+          Professional carpet cleaning in Overland Park and the KC metro is typically priced by the room or square footage. Combining carpet deep cleaning with your <Link to="/services/specialized-treatments" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">specialized surface treatment</Link> or recurring house cleaning session provides the best value. Check our <Link to="/blog/house-cleaning-cost-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Kansas City cleaning cost guide</Link> for detailed pricing insights.
+        </p>
+
+        <h2>Professional Carpet Cleaning Across Overland Park & the KC Area</h2>
+        <p>
+          ShineWell provides professional hot-water-extraction carpet deep cleaning throughout Overland Park, Leawood, Prairie Village, Lenexa, Olathe, Shawnee, Mission, Merriam, Fairway, Roeland Park, Stilwell, Brookside, and the Country Club Plaza area. Family-owned, fully insured, and background-checked — we ensure your carpets are clean, fresh, and safe for kids and pets.
+        </p>
+
+        <p className="mt-6">
+          Ready to refresh your carpets? Request a <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">free online estimate</Link> with ShineWell or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a> today.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How often should carpets be professionally deep cleaned?</h3>
+              <p className="text-[#5c635f] font-light">Every 12 to 18 months for most homes, and every 6 to 12 months with pets, young children, or allergies. High-traffic areas may need it more often.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">What is the difference between vacuuming and professional carpet cleaning?</h3>
+              <p className="text-[#5c635f] font-light">Vacuuming removes surface dirt. Professional hot-water extraction reaches the ground-in dirt, allergens, and residue deep in the fibers that vacuuming cannot lift.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Does professional carpet cleaning use steam?</h3>
+              <p className="text-[#5c635f] font-light">Yes. Most professional carpet cleaning uses hot-water extraction, where hot water and cleaning solution are injected into the fibers and then extracted along with the loosened dirt.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do you offer carpet cleaning in Overland Park and Kansas City?</h3>
+              <p className="text-[#5c635f] font-light">Yes. ShineWell provides professional carpet deep cleaning across Overland Park and the surrounding Kansas City area, and can pair it with a deep clean or recurring service.</p>
             </div>
           </div>
         </div>

@@ -8,6 +8,10 @@ import junkRemovalImg from '../assets/images/regenerated_image_1783363101031.png
 import commercialDeepCleaningImg from '../assets/images/regenerated_image_1783363406981.png';
 import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
 import deepCleaningImg from '../assets/images/regenerated_image_1783364438283.png';
+import carpetDeepCleanImg from '../assets/images/carpet_deep_cleaned_1786068869326.jpg';
+import medicalOfficeCleanerImg from '../assets/images/medical_office_cleaner_1786068880525.jpg';
+import postConstructionKitchenImg from '../assets/images/post_construction_kitchen_1786068891678.jpg';
+import deepHomeCleaningImg from '../assets/images/deep_home_cleaning_1786068903297.jpg';
 import { 
   Home as HomeIcon, 
   Sparkles, 
@@ -37,7 +41,7 @@ export default function ServicesPage() {
       path: "/services/deep-dives"
     },
     {
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      image: postConstructionKitchenImg,
       title: "Move In / Move Out",
       desc: "Start fresh or leave a blank slate. We make transitions seamless with a meticulous, top to bottom clean.",
       path: "/services/move-in-move-out"
@@ -73,7 +77,7 @@ export default function ServicesPage() {
       path: "/commercial-cleaning-kansas-city"
     },
     {
-      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop",
+      image: medicalOfficeCleanerImg,
       title: "Dental & Medical Office Cleaning",
       desc: "Health-conscious sanitation for dental practices, clinics, and medical suites in Overland Park and KC metro with after-hours scheduling.",
       path: "/dental-office-cleaning-kansas-city"
@@ -85,7 +89,7 @@ export default function ServicesPage() {
       path: "/services/junk-removal"
     },
     {
-      image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=2070&auto=format&fit=crop",
+      image: postConstructionKitchenImg,
       title: "Post Construction",
       desc: "We clear the dust and debris after your renovation, leaving your newly updated space sparkling and ready to enjoy.",
       path: "/services/post-construction"
@@ -275,7 +279,7 @@ export default function ServicesPage() {
         >
           <div className="relative p-12 md:p-16 text-center text-white overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop" 
+              src={medicalOfficeCleanerImg} 
               alt="Commercial cleaning service"
               className="absolute inset-0 w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -319,7 +323,7 @@ export default function ServicesPage() {
         >
           <div className="relative p-12 md:p-16 text-center text-white overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" 
+              src={postConstructionKitchenImg} 
               alt="Post construction cleaning"
               className="absolute inset-0 w-full h-full object-cover"
               referrerPolicy="no-referrer"

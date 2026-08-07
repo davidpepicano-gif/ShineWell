@@ -23,17 +23,6 @@ export default function LocationsPage() {
         "Country Club Plaza (Kansas City, MO)"
       ],
       mapQuery: "Overland+Park+KS"
-    },
-    {
-      state: "North Carolina",
-      cities: [
-        "Wilmington, NC",
-        "Raleigh, NC",
-        "Charlotte, NC",
-        "Durham, NC",
-        "Greensboro, NC"
-      ],
-      mapQuery: "North+Carolina"
     }
   ];
 
@@ -48,11 +37,11 @@ export default function LocationsPage() {
           <h1 className="text-4xl md:text-5xl font-serif text-[#2C302E] mb-6">Areas We Serve</h1>
           <div className="bg-white p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
             <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
-              <strong>ShineWell</strong> serves a broad geographical footprint, providing premier home and commercial office cleaning services across the greater Kansas City metropolitan area (including both Missouri and Kansas municipalities) as well as key regions in North Carolina. Check our maps below or contact us to verify if our fully insured cleaning professionals cover your specific zip code.
+              <strong>ShineWell</strong> serves a broad geographical footprint, providing premier home and commercial office cleaning services across the greater Kansas City metropolitan area (including both Missouri and Kansas municipalities). Check our map below or contact us to verify if our fully insured cleaning professionals cover your specific zip code.
             </p>
           </div>
           <p className="text-lg text-[#5c635f] font-light">
-            ShineWell provides premium cleaning services across the greater Kansas City metropolitan area and major cities in North Carolina.
+            ShineWell provides premium cleaning services across the greater Kansas City metropolitan area.
           </p>
         </motion.div>
 
