@@ -8,20 +8,21 @@ export default function LocationsPage() {
     {
       state: "Kansas City Metro",
       cities: [
-        "Kansas City (KS/MO)",
         "Overland Park, KS",
-        "Olathe, KS",
-        "Independence, MO",
-        "Lee's Summit, MO",
-        "Shawnee, KS",
-        "Blue Springs, MO",
-        "Lenexa, KS",
-        "Leavenworth, KS",
         "Leawood, KS",
-        "Liberty, MO",
-        "Raytown, MO"
+        "Prairie Village, KS",
+        "Lenexa, KS",
+        "Olathe, KS",
+        "Shawnee, KS",
+        "Mission, KS",
+        "Merriam, KS",
+        "Fairway, KS",
+        "Roeland Park, KS",
+        "Stilwell, KS",
+        "Brookside (Kansas City, MO)",
+        "Country Club Plaza (Kansas City, MO)"
       ],
-      mapQuery: "Kansas+City+Metro"
+      mapQuery: "Overland+Park+KS"
     },
     {
       state: "North Carolina",

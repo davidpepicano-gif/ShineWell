@@ -1500,5 +1500,240 @@ export const blogPosts: BlogPost[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'weekly-vs-biweekly-vs-monthly-cleaning',
+    title: 'Weekly vs. Bi-Weekly vs. Monthly Cleaning: Which Is Right for Your KC Home?',
+    excerpt: 'Compare weekly, bi-weekly, and monthly house cleaning in Overland Park & KC. Learn cost, pros/cons, and how to choose the right schedule for your home.',
+    date: 'August 6, 2026',
+    author: 'Lina Silva',
+    image: routineHousekeepingImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Bi-weekly cleaning is the sweet spot for 70%+ of Kansas City homeowners — it balances freshness and budget without letting grime accumulate. Choose weekly if you have multiple pets, toddlers, or high-traffic entertainment spaces; choose monthly if you live alone, travel frequently, or maintain your home daily between deep resets.
+          </p>
+        </div>
+
+        <h2>Weekly vs. Bi-Weekly vs. Monthly Cleaning: Which Schedule Fits Your Kansas City Home?</h2>
+        <p>
+          Maintaining a clean home in the Kansas City area isn't just about appearances — it directly impacts your daily health, stress levels, and free time. But choosing how often to have a professional cleaning crew visit can feel confusing. Should you book a weekly reset, a popular <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">bi-weekly cleaning</Link>, or a monthly deep maintenance visit?
+        </p>
+
+        <h2>The Case for Bi-Weekly Cleaning in Kansas City</h2>
+        <p>
+          For busy homeowners in Overland Park, Leawood, and Prairie Village, bi-weekly house cleaning is by far the most requested schedule. A visit every two weeks prevents kitchen grease buildup, keeps shower tile grout scrubbed, moppes high-traffic hardwood floors, and dusts baseboards before allergens take hold. It offers the ideal balance of continuous cleanliness and household budget efficiency.
+        </p>
+
+        <h2>When Weekly Cleaning Is Worth It</h2>
+        <p>
+          Weekly cleaning is recommended for high-activity households. If you have multiple pets shedding during humid Kansas City summers, toddlers tracking in outdoor dirt from suburban yards, or frequently host weekend social gatherings, weekly service ensures your home remains continuously guest-ready without you ever lifting a broom.
+        </p>
+
+        <h2>When Monthly Cleaning Is Enough</h2>
+        <p>
+          Monthly house cleaning works best for solo dwellers, busy professionals who travel frequently, or retirees who maintain daily tidying routines. A monthly professional visit serves as a comprehensive reset to tackle heavy dusting, deep bathroom sanitization, and thorough floor care that daily tidying misses.
+        </p>
+
+        <h2>Comparison Table: Weekly vs. Bi-Weekly vs. Monthly</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-left border-collapse bg-white rounded-xl overflow-hidden border border-[#e8e5df] shadow-sm">
+            <thead>
+              <tr className="bg-[#8BA192]/20 border-b border-[#e8e5df]">
+                <th className="p-4 font-serif text-[#2C302E]">Frequency</th>
+                <th className="p-4 font-serif text-[#2C302E]">Best For</th>
+                <th className="p-4 font-serif text-[#2C302E]">Major Benefit</th>
+                <th className="p-4 font-serif text-[#2C302E]">Relative Cost</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#e8e5df] text-[#5c635f] text-sm md:text-base">
+              <tr>
+                <td className="p-4 font-medium">Weekly</td>
+                <td className="p-4">Pets, kids, active hosts</td>
+                <td className="p-4">Zero effort required, always spotless</td>
+                <td className="p-4">Lowest cost per visit (Frequency discount)</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">Bi-Weekly</td>
+                <td className="p-4">Busy families, working professionals</td>
+                <td className="p-4">Best value & overall sweetness balance</td>
+                <td className="p-4">Moderate per visit rate</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-medium">Monthly</td>
+                <td className="p-4">Low-traffic, solo dwellers, travelers</td>
+                <td className="p-4">Thorough monthly baseline reset</td>
+                <td className="p-4">Higher per-visit labor requirement</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Local KC Pricing Considerations</h2>
+        <p>
+          In Overland Park and the KC metro, bi-weekly cleaning averages $150–$260 per visit depending on home square footage and layout. Weekly visits receive a frequency discount per appointment, whereas monthly visits require more intensive labor per session due to four weeks of accumulated dust and surface oils. Review our full <Link to="/blog/house-cleaning-cost-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Kansas City house cleaning cost guide</Link> for exact breakdown figures.
+        </p>
+
+        <p className="mt-6">
+          Ready to discover the perfect frequency for your space? Request a <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">free online estimate</Link> with ShineWell or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a> today.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Is bi-weekly cleaning enough for a house with dogs in Overland Park?</h3>
+              <p className="text-[#5c635f] font-light">For one short-haired dog, yes — bi-weekly handles dander and hair buildup nicely. If you have multiple heavy-shedding breeds (like Golden Retrievers or Huskies) or dogs that track muddy paws from suburban KC yards, weekly cleaning keeps floors and furniture significantly cleaner.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Can I switch frequencies with ShineWell as my schedule changes?</h3>
+              <p className="text-[#5c635f] font-light">Yes. You can start with weekly cleaning during busy seasons or post-renovations, switch to bi-weekly for routine care, or add a deep clean reset anytime with no long-term contracts.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'post-construction-cleaning-kansas-city',
+    title: 'Post-Construction Cleaning in Kansas City: What\'s Included & Checklist',
+    excerpt: 'Complete guide to post-construction cleaning in Overland Park & KC metro. Detailed checklist, fine drywall dust removal, window detailing, and safety.',
+    date: 'August 6, 2026',
+    author: 'Lina Silva',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop',
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Post-construction cleaning removes fine drywall dust, sawdust, paint splatters, and adhesive residues left behind after a remodel or new build. Unlike standard cleaning, it requires HEPA-filtration vacuums, multi-stage wipe downs, and specialized cleaning agents to make new spaces safe, allergen-free, and move-in ready across the Kansas City metro.
+          </p>
+        </div>
+
+        <h2>Post-Construction Cleaning in Kansas City: Checklist & What to Expect</h2>
+        <p>
+          Finishing a kitchen renovation, bathroom overhaul, or new home build in Overland Park or Kansas City is an exciting milestone. However, the fine, persistent dust left behind by contractor sanding can quickly dampen that excitement. Professional <Link to="/services/post-construction" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">post-construction cleanup service</Link> ensures your newly renovated space is spotless and safe for your family.
+        </p>
+
+        <h2>Why Remodel Dust Isn't Like Regular Household Dust</h2>
+        <p>
+          Drywall and silica particles created during construction sanding are airborne micro-particles. Unlike normal organic household dust, construction dust settles deep inside HVAC returns, window sills, light fixtures, and cabinet drawer tracks. If not eliminated with industrial HEPA-filtration equipment, this fine dust recirculates through your heating and cooling system for months, causing respiratory irritation and scratching delicate new finishes.
+        </p>
+
+        <h2>The 3 Stages of Post-Construction Cleaning</h2>
+        <ul>
+          <li><strong>Phase 1: Rough Clean</strong> — Trash, stickers, protective films, and large debris are removed so surfaces can be inspected.</li>
+          <li><strong>Phase 2: Deep Detail Clean</strong> — HEPA vacuuming of all surfaces, detailed drywall dust removal from walls and sills, scrubbing fixtures, wiping inside all cabinetry, and washing windows.</li>
+          <li><strong>Phase 3: Touch-Up Clean</strong> — Performed a few days later after remaining airborne particles settle, ensuring flawless move-in condition.</li>
+        </ul>
+
+        <h2>Room-by-Room Post-Construction Checklist</h2>
+        <h3>Kitchen & Bathrooms</h3>
+        <ul>
+          <li>Vacuuming and wiping inside all new drawers, cabinets, and shelving units</li>
+          <li>Removing protective film and stickers from new stainless appliances and porcelain fixtures</li>
+          <li>Polishing faucets, showerheads, and glass enclosures to remove water spots and mortar residue</li>
+          <li>Mopping tile floors multiple times to remove grout haze</li>
+        </ul>
+
+        <h3>Living Spaces & Bedrooms</h3>
+        <ul>
+          <li>Wiping down baseboards, door frames, window sills, and window tracks</li>
+          <li>HEPA-vacuuming supply and return air vents to stop dust recirculation</li>
+          <li>Cleaning light switch plates, electrical outlets, and ceiling fan blades</li>
+          <li>Vacuuming and mopping floors edge-to-edge</li>
+        </ul>
+
+        <p className="mt-6">
+          Unsure how post-renovation cleanup differs from standard deep cleaning? Check our <Link to="/blog/standard-clean-vs-deep-clean-difference" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">standard vs deep cleaning breakdown</Link> or <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">get a custom quote</Link> for your project with ShineWell today.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How long after contractors finish should I schedule post-construction cleaning in Overland Park?</h3>
+              <p className="text-[#5c635f] font-light">Schedule post-construction cleaning 24 to 48 hours after all heavy contractor work and sanding are complete. This allows airborne drywall micro-dust to settle completely onto surfaces so our HEPA-filtration equipment can capture it in one thorough visit.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do you clean inside newly installed cabinets and drawers during post-construction cleaning?</h3>
+              <p className="text-[#5c635f] font-light">Yes. Construction dust settles heavily inside closed cabinetry during installation. We vacuum and hand-wipe every interior shelf, drawer, and hinge before you stock your kitchen or bathroom.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'airbnb-turnover-cleaning-kansas-city',
+    title: 'Airbnb & Short-Term Rental Cleaning in Kansas City: Host Turnover Guide',
+    excerpt: 'Expert Airbnb turnover cleaning in Kansas City, Brookside, Plaza & Overland Park. Linens, restocks, 5-star checklists, and quick host turnarounds.',
+    date: 'August 6, 2026',
+    author: 'Lina Silva',
+    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2070&auto=format&fit=crop',
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Professional Airbnb turnover cleaning in Kansas City combines hotel-grade sanitization with rapid turnaround times. It covers guest linen resets, restocking essentials, hair-free bathroom detailing, fridge clears, and property condition checks to guarantee 5-star cleanliness reviews for hosts in Brookside, the Plaza, and Overland Park.
+          </p>
+        </div>
+
+        <h2>Airbnb Turnover Cleaning in Kansas City: The Host's Guide to 5-Star Reviews</h2>
+        <p>
+          Managing a successful short-term rental in Kansas City — whether near the Country Club Plaza, Brookside, Downtown Crossroads, or Overland Park — requires pristine cleanliness standards. Superhost status and high occupancy rates depend directly on sparkling guest reviews. Partnering with a reliable turnover team ensures your property is flawless for every single guest arrival.
+        </p>
+
+        <h2>Why Cleanliness Is the #1 Factor in Airbnb Reviews</h2>
+        <p>
+          Airbnb algorithms heavily favor properties with consistent 5-star cleanliness ratings. Guests visiting Kansas City for Chiefs games, Plaza shopping events, or corporate conventions expect hotel-level standards. A single stray hair in the shower or leftover food in the microwave can drop your overall rating and impact future booking revenue.
+        </p>
+
+        <h2>The Ultimate Airbnb Turnover Checklist</h2>
+        <h3>Bedrooms & Linens</h3>
+        <ul>
+          <li>Stripping used bedding and washing/replacing with fresh, high-thread-count linens</li>
+          <li>Inspecting mattress protectors and pillows for stains</li>
+          <li>Dusting nightstands, lamps, and vacuuming under the bed</li>
+        </ul>
+
+        <h3>Bathrooms</h3>
+        <ul>
+          <li>Deep sanitizing toilet, sink, mirror, and shower enclosures</li>
+          <li>Ensuring 100% hair-free surfaces across floors and tub edges</li>
+          <li>Restocking guest toiletries, hand soaps, and fresh plush towels</li>
+        </ul>
+
+        <h3>Kitchen & Living Spaces</h3>
+        <ul>
+          <li>Clearing all leftover guest food from the refrigerator and freezer</li>
+          <li>Wiping microwave, coffee maker, stovetop, and toaster</li>
+          <li>Fluffing couch cushions, sanitizing TV remotes, and sweeping entryways</li>
+        </ul>
+
+        <h2>Handling Same-Day Turnarounds in KC</h2>
+        <p>
+          With a standard 10 AM checkout and 3 PM check-in window, hosts have just 5 hours to reset their property. ShineWell provides dedicated <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial cleaning services</Link> and turnover teams equipped to handle tight scheduling windows. Review our <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">sanitization best practices</Link> for additional guest safety insights.
+        </p>
+
+        <p className="mt-6">
+          Ready to elevate your rental's reviews? <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Schedule turnover cleaning</Link> with ShineWell or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a> today.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do you handle Airbnb turnover cleaning in Brookside, the Country Club Plaza, and Overland Park?</h3>
+              <p className="text-[#5c635f] font-light">Yes! ShineWell provides dedicated short-term rental turnover cleaning across Brookside, Country Club Plaza, Overland Park, Leawood, and the greater Kansas City metro area.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">What happens if a guest leaves an Airbnb extremely messy or damaged in Kansas City?</h3>
+              <p className="text-[#5c635f] font-light">Our cleaning team documents the property condition with timestamped photos immediately upon arrival and alerts you so you can submit reimbursement claims through Airbnb AirCover before the next guest arrives.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
   }
 ];

@@ -40,7 +40,10 @@ export default function BlogPostPage() {
         'office-cleaning-reception': "How Reception Cleanliness Boosts Client Trust | ShineWell Blog",
         'kansas-city-restoration-pros-recommendation': "Trusted Property Restoration in KC | ShineWell Recommends",
         'how-to-choose-commercial-cleaning-company-kansas-city': "How to Choose a Commercial Cleaning Company in KC",
-        'how-to-keep-your-office-clean-and-healthy': "How Keep Your Office Clean and Healthy | KC Guide"
+        'how-to-keep-your-office-clean-and-healthy': "How Keep Your Office Clean and Healthy | KC Guide",
+        'weekly-vs-biweekly-vs-monthly-cleaning': "Weekly vs. Bi-Weekly vs. Monthly Cleaning: Which Is Right for Your KC Home?",
+        'post-construction-cleaning-kansas-city': "Post-Construction Cleaning in Kansas City: What's Included & Checklist",
+        'airbnb-turnover-cleaning-kansas-city': "Airbnb & Short-Term Rental Cleaning in Kansas City: Host Turnover Guide"
       };
 
       const metaDescriptions: Record<string, string> = {
@@ -58,7 +61,10 @@ export default function BlogPostPage() {
         'office-cleaning-reception': "Expert advice on managing the physical first impression of your corporate lobby, reception desks, and waiting rooms to build immediate professional trust.",
         'kansas-city-restoration-pros-recommendation': "ShineWell Cleaning Services proudly recommends Jason and the team at Kansas City Restoration Pros for water, fire, mold, and storm damage restoration.",
         'how-to-choose-commercial-cleaning-company-kansas-city': "What to look for in a commercial cleaning company in Overland Park or KC: insurance, background checks, scope, and questions to ask before you sign.",
-        'how-to-keep-your-office-clean-and-healthy': "How to keep your office clean and healthy for staff and clients: high-touch points, restroom and break-room routines, and how often to bring in pros."
+        'how-to-keep-your-office-clean-and-healthy': "How to keep your office clean and healthy for staff and clients: high-touch points, restroom and break-room routines, and how often to bring in pros.",
+        'weekly-vs-biweekly-vs-monthly-cleaning': "Compare weekly, bi-weekly, and monthly house cleaning in Overland Park & KC. Learn cost, pros/cons, and how to choose the right schedule for your home.",
+        'post-construction-cleaning-kansas-city': "Complete guide to post-construction cleaning in Overland Park & KC metro. Detailed checklist, fine drywall dust removal, window detailing, and safety.",
+        'airbnb-turnover-cleaning-kansas-city': "Expert Airbnb turnover cleaning in Kansas City, Brookside, Plaza & Overland Park. Linens, restocks, 5-star checklists, and quick host turnarounds."
       };
 
       const pageTitle = seoTitles[post.id] || `${post.title} | ShineWell Blog`;
@@ -276,6 +282,72 @@ export default function BlogPostPage() {
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Most small offices do well with once- or twice-weekly recurring service plus periodic deep cleans, scaled to foot traffic."
+              }
+            }
+          ]
+        },
+        'weekly-vs-biweekly-vs-monthly-cleaning': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is bi-weekly cleaning enough for a house with dogs in Overland Park?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For one short-haired dog, yes — bi-weekly handles dander and hair buildup nicely. If you have multiple heavy-shedding breeds (like Golden Retrievers or Huskies) or dogs that track muddy paws from suburban KC yards, weekly cleaning keeps floors and furniture significantly cleaner."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I switch frequencies with ShineWell as my schedule changes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can start with weekly cleaning during busy seasons or post-renovations, switch to bi-weekly for routine care, or add a deep clean reset anytime with no long-term contracts."
+              }
+            }
+          ]
+        },
+        'post-construction-cleaning-kansas-city': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How long after contractors finish should I schedule post-construction cleaning in Overland Park?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Schedule post-construction cleaning 24 to 48 hours after all heavy contractor work and sanding are complete. This allows airborne drywall micro-dust to settle completely onto surfaces so our HEPA-filtration equipment can capture it in one thorough visit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you clean inside newly installed cabinets and drawers during post-construction cleaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Construction dust settles heavily inside closed cabinetry during installation. We vacuum and hand-wipe every interior shelf, drawer, and hinge before you stock your kitchen or bathroom."
+              }
+            }
+          ]
+        },
+        'airbnb-turnover-cleaning-kansas-city': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you handle Airbnb turnover cleaning in Brookside, the Country Club Plaza, and Overland Park?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! ShineWell provides dedicated short-term rental turnover cleaning across Brookside, Country Club Plaza, Overland Park, Leawood, and the greater Kansas City metro area."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if a guest leaves an Airbnb extremely messy or damaged in Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our cleaning team documents the property condition with timestamped photos immediately upon arrival and alerts you so you can submit reimbursement claims through Airbnb AirCover before the next guest arrives."
               }
             }
           ]

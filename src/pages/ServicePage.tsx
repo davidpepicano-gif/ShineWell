@@ -617,12 +617,12 @@ export default function ServicePage() {
                     <>
                       <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
                         <h3 className="font-serif text-lg text-[#2C302E] mb-2">
-                          <Link to="/blog/how-often-professional-house-cleaning-kansas-city" className="hover:text-[#C86B53] transition-colors">
-                            How Often Should You Have Your House Cleaned?
+                          <Link to="/blog/weekly-vs-biweekly-vs-monthly-cleaning" className="hover:text-[#C86B53] transition-colors">
+                            Weekly vs. Bi-Weekly vs. Monthly Cleaning
                           </Link>
                         </h3>
-                        <p className="text-sm text-[#5c635f] font-light mb-3">Compare weekly, bi-weekly, and monthly recurring plans for KC homes.</p>
-                        <Link to="/blog/how-often-professional-house-cleaning-kansas-city" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Compare frequencies and find out why bi-weekly cleaning fits most KC homes.</p>
+                        <Link to="/blog/weekly-vs-biweekly-vs-monthly-cleaning" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
                       </div>
                       <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
                         <h3 className="font-serif text-lg text-[#2C302E] mb-2">
@@ -632,6 +632,28 @@ export default function ServicePage() {
                         </h3>
                         <p className="text-sm text-[#5c635f] font-light mb-3">2026 price guide for recurring housekeeping and estimates.</p>
                         <Link to="/blog/house-cleaning-cost-kansas-city" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                    </>
+                  )}
+                  {serviceId === 'post-construction' && (
+                    <>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/post-construction-cleaning-kansas-city" className="hover:text-[#C86B53] transition-colors">
+                            Post-Construction Cleaning Checklist & Guide
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">What is included in remodel cleanup, fine drywall dust removal, and timelines.</p>
+                        <Link to="/blog/post-construction-cleaning-kansas-city" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
+                      </div>
+                      <div className="bg-white p-5 rounded-2xl border border-[#e8e5df]">
+                        <h3 className="font-serif text-lg text-[#2C302E] mb-2">
+                          <Link to="/blog/standard-clean-vs-deep-clean-difference" className="hover:text-[#C86B53] transition-colors">
+                            Standard Clean vs. Deep Clean Differences
+                          </Link>
+                        </h3>
+                        <p className="text-sm text-[#5c635f] font-light mb-3">Compare standard, deep, and post-construction service levels.</p>
+                        <Link to="/blog/standard-clean-vs-deep-clean-difference" className="inline-flex items-center text-xs font-medium text-[#607564] hover:text-[#C86B53]">Read guide <ArrowRight className="w-3.5 h-3.5 ml-1" /></Link>
                       </div>
                     </>
                   )}
