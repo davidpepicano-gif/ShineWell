@@ -89,13 +89,13 @@ export default function ContactPage() {
           className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-[#e8e5df]"
         >
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-serif text-[#2C302E] mb-4">How can you request a free estimate?</h2>
+            <h2 className="text-3xl font-serif text-[#2C302E] mb-4">How can you contact us?</h2>
             <p className="text-[#5c635f] font-light">
               Fill out the form below or call us directly at{' '}
               <a href="tel:9132204748" className="text-[#C86B53] hover:underline font-semibold">
                 (913) 220-4748
               </a>{' '}
-              to get a free estimate immediately.
+              to call us immediately.
             </p>
           </div>
           

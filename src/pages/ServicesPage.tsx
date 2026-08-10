@@ -21,7 +21,8 @@ import {
   Paintbrush,
   ArrowRight,
   Check,
-  Minus
+  Minus,
+  Phone
 } from 'lucide-react';
 
 export default function ServicesPage() {
@@ -529,13 +530,13 @@ export default function ServicesPage() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <Link 
-            to="/booking"
+          <a 
+            href="tel:9132204748"
             className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
           >
-            Get a Free Estimate
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+            <Phone className="w-5 h-5" />
+            Call Us Now: (913) 220-4748
+          </a>
         </motion.div>
       </div>
     </div>

@@ -144,27 +144,45 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             : 'bg-[#F9F8F6]/60 backdrop-blur-sm border-b border-transparent py-4'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex justify-between items-center">
-            <Link to="/" className="flex items-center gap-3 cursor-pointer group">
-              <div className="group-hover:scale-105 transition-transform duration-300 shrink-0">
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <Link to="/" className="hover:scale-105 transition-transform duration-300 shrink-0">
                 <Logo className={`transition-all duration-500 ${
-                  isScrolled ? 'h-16 w-16 md:h-[80px] md:w-[80px]' : 'h-24 w-24 md:h-[112px] md:w-[112px]'
+                  isScrolled 
+                    ? 'h-11 w-11 sm:h-16 sm:w-16 md:h-[80px] md:w-[80px]' 
+                    : 'h-13 w-13 sm:h-20 sm:w-20 md:h-[112px] md:w-[112px]'
                 }`} />
+              </Link>
+              <div className="flex flex-col justify-center min-w-0">
+                <Link to="/" className="block group">
+                  <span className={`font-serif font-bold tracking-tight text-[#2C302E] leading-none mb-1 block transition-all duration-500 ${
+                    isScrolled 
+                      ? 'text-base sm:text-lg md:text-xl lg:text-2xl' 
+                      : 'text-lg sm:text-xl md:text-2xl lg:text-3xl'
+                  }`}>
+                    ShineWell
+                  </span>
+                  <span className={`uppercase tracking-[0.08em] sm:tracking-[0.25em] text-[#607564] font-semibold leading-tight pl-0.5 block transition-all duration-500 ${
+                    isScrolled 
+                      ? 'text-[7px] sm:text-[9px] md:text-[10px]' 
+                      : 'text-[8px] sm:text-[10px] md:text-[11px]'
+                  }`}>
+                    Commercial and Home Cleaning
+                  </span>
+                </Link>
+
+                {/* Mobile Call Now Button directly below the name */}
+                <a 
+                  href="tel:9132204748"
+                  className="md:hidden inline-flex items-center gap-1.5 bg-[#C86B53] hover:bg-[#b55e47] text-white px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-semibold mt-1 transition-all shadow-sm active:scale-95 w-fit shrink-0"
+                  aria-label="Call ShineWell at (913) 220-4748"
+                >
+                  <Phone className="w-3 h-3 shrink-0" />
+                  <span>Call Us Now: (913) 220-4748</span>
+                </a>
               </div>
-              <div className="flex flex-col justify-center">
-                <span className={`font-serif font-bold tracking-tight text-[#2C302E] leading-none mb-1 transition-all duration-500 ${
-                  isScrolled ? 'text-lg md:text-xl lg:text-2xl' : 'text-xl md:text-2xl lg:text-3xl'
-                }`}>
-                  ShineWell
-                </span>
-                <span className={`uppercase tracking-[0.25em] text-[#607564] font-semibold leading-none pl-1 transition-all duration-500 ${
-                  isScrolled ? 'text-[7px] sm:text-[9px] md:text-[10px]' : 'text-[8px] sm:text-[10px] md:text-[11px]'
-                }`}>
-                  Commercial and Home Cleaning Services
-                </span>
-              </div>
-            </Link>
+            </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-10">
@@ -228,34 +246,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               >
                 Blog
               </Link>
-              <Link 
-                to="/booking"
-                className="bg-[#C86B53] hover:bg-[#b55e47] text-white px-7 py-3 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5"
-              >
-                Get a Free Estimate
-              </Link>
               <a 
                 href="tel:9132204748"
-                className="hidden lg:flex items-center gap-2 border border-[#607564] text-[#607564] hover:bg-[#607564] hover:text-white px-5 py-2.5 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 shrink-0"
+                className="bg-[#C86B53] hover:bg-[#b55e47] text-white px-6 py-3 rounded-full text-[15px] font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2 shrink-0"
               >
                 <Phone className="w-4 h-4 shrink-0" />
-                <span>Call ShineWell: (913) 220-4748</span>
+                <span>Call Us Now: (913) 220-4748</span>
               </a>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-2">
-              <a 
-                href="tel:9132204748"
-                className="flex items-center gap-1.5 bg-[#607564] text-white px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-[#b55e47] transition-all shrink-0"
-                aria-label="Call ShineWell at (913) 220-4748"
-              >
-                <Phone className="w-3.5 h-3.5 shrink-0" />
-                <span>(913) 220-4748</span>
-              </a>
+            <div className="md:hidden flex items-center shrink-0 ml-2">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 text-[#2C302E] shrink-0"
+                className="p-2 text-[#2C302E] shrink-0 bg-white/80 hover:bg-white rounded-xl border border-[#e8e5df] shadow-sm transition-colors"
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? (
@@ -340,18 +344,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               >
                 Blog
               </Link>
-              <Link 
-                to="/booking"
-                className="bg-[#C86B53] text-white px-6 py-4 rounded-xl font-medium mt-4 w-full text-center block"
-              >
-                Get a Free Estimate
-              </Link>
               <a 
                 href="tel:9132204748"
-                className="bg-[#607564] text-white px-6 py-4 rounded-xl font-medium mt-2 w-full text-center flex items-center justify-center gap-2"
+                className="bg-[#C86B53] text-white px-6 py-4 rounded-xl font-medium mt-4 w-full text-center flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5 shrink-0" />
-                <span>Call (913) 220-4748</span>
+                <span>Call Us Now: (913) 220-4748</span>
               </a>
             </motion.div>
           )}
@@ -451,7 +449,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link to="/locations" className="hover:text-white transition-colors">Locations</Link></li>
                 <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                 <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link to="/booking" className="hover:text-white transition-colors font-medium text-[#FBBC05]">Get a Free Estimate</Link></li>
+                <li><a href="tel:9132204748" className="hover:text-white transition-colors font-medium text-[#FBBC05]">Call Us Now: (913) 220-4748</a></li>
                 <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
@@ -475,7 +473,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <a
         href="tel:9132204748"
         className="fixed bottom-6 left-6 z-50 md:hidden bg-[#C86B53] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center hover:shadow-[#C86B53]/30"
-        aria-label="Call ShineWell"
+        aria-label="Call Us Now: (913) 220-4748"
+        title="Call Us Now: (913) 220-4748"
       >
         <Phone aria-hidden="true" focusable="false" className="w-8 h-8 shrink-0" />
       </a>

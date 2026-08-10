@@ -85,10 +85,10 @@ export default function Home() {
                 <div className="flex items-center">
                   <a 
                     href="tel:9132204748" 
-                    className="text-[#607564] hover:text-[#C86B53] font-medium text-lg transition-colors flex items-center gap-2"
+                    className="w-full bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-2xl font-medium text-lg transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-3"
                   >
-                    <Phone aria-hidden="true" focusable="false" className="w-5 h-5" />
-                    Or call us directly: 913-220-4748
+                    <Phone aria-hidden="true" focusable="false" className="w-5 h-5 shrink-0" />
+                    <span>Call Us Now: (913) 220-4748</span>
                   </a>
                 </div>
               </div>
@@ -554,19 +554,12 @@ export default function Home() {
               You can experience the ShineWell difference by calling us at (913) 220-4748 or booking online to request a free estimate. We will coordinate a tailored weekly, bi-weekly, or monthly cleaning plan that restores your free time while keeping your Overland Park or Kansas City property exceptionally fresh and clean.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <Link 
-                to="/booking"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:bg-[#b55e47] hover:shadow-xl hover:-translate-y-1"
-              >
-                Get a Free Estimate
-                <ArrowRight aria-hidden="true" focusable="false" className="w-5 h-5" />
-              </Link>
               <a 
                 href="tel:9132204748"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-[#2C302E] border border-[#e8e5df] px-8 py-4 rounded-full font-medium text-lg transition-all hover:bg-[#F9F8F6] hover:shadow-xl hover:-translate-y-1"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:bg-[#b55e47] hover:shadow-xl hover:-translate-y-1"
               >
-                <Phone aria-hidden="true" focusable="false" className="w-5 h-5 text-[#607564]" />
-                Call 913-220-4748
+                <Phone aria-hidden="true" focusable="false" className="w-5 h-5" />
+                Call Us Now: (913) 220-4748
               </a>
             </div>
           </motion.div>

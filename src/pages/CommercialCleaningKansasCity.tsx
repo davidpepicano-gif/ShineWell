@@ -19,7 +19,8 @@ import {
   Scissors, 
   Compass, 
   Hammer,
-  DollarSign
+  DollarSign,
+  Phone
 } from 'lucide-react';
 
 export default function CommercialCleaningKansasCity() {
@@ -173,18 +174,12 @@ export default function CommercialCleaningKansasCity() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Link 
-                to="/booking" 
-                className="bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#b55e47] transition-all text-center flex items-center justify-center gap-2 hover:shadow-lg"
-              >
-                Request a Free Walkthrough
-                <ArrowRight aria-hidden="true" focusable="false" className="w-5 h-5" />
-              </Link>
               <a 
                 href="tel:9132204748" 
-                className="border border-[#e8e5df] text-[#2C302E] bg-white px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-50 transition-all text-center"
+                className="bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#b55e47] transition-all text-center flex items-center justify-center gap-2 hover:shadow-lg"
               >
-                Call (913) 220-4748
+                <Phone aria-hidden="true" focusable="false" className="w-5 h-5 shrink-0" />
+                Call Us Now: (913) 220-4748
               </a>
             </div>
           </motion.div>
@@ -222,6 +217,13 @@ export default function CommercialCleaningKansasCity() {
               className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E] transition-colors"
             >
               Office Guide: Keep Your Workplace Clean & Healthy
+            </Link>
+            <span className="text-gray-300 hidden md:inline">|</span>
+            <Link 
+              to="/blog/bank-cleaning-kansas-city-overland-park" 
+              className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E] transition-colors"
+            >
+              Niche Guide: Bank & Financial Office Cleaning
             </Link>
           </div>
         </div>
@@ -383,17 +385,12 @@ export default function CommercialCleaningKansasCity() {
               Ready for a cleaner, healthier, and more productive workplace? Request your custom commercial estimate walkthrough with our vetted teams.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link 
-                to="/booking" 
-                className="bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#b55e47] transition-all hover:-translate-y-0.5 hover:shadow-lg"
-              >
-                Request Free Commercial Walkthrough »
-              </Link>
               <a 
                 href="tel:9132204748" 
-                className="bg-white text-[#2C302E] px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-50 transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                className="bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#b55e47] transition-all hover:-translate-y-0.5 hover:shadow-lg inline-flex items-center justify-center gap-2"
               >
-                Call ShineWell: (913) 220-4748
+                <Phone className="w-5 h-5" />
+                Call Us Now: (913) 220-4748
               </a>
             </div>
           </div>

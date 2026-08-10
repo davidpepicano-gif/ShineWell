@@ -1844,5 +1844,284 @@ export const blogPosts: BlogPost[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'how-to-prepare-for-a-house-cleaning-visit',
+    title: 'How to Prepare for a House Cleaning Visit (Simple Guide)',
+    excerpt: 'How should you prepare before your house cleaner arrives? A simple checklist to get the most out of every visit — from ShineWell in the KC area.',
+    date: 'August 10, 2026',
+    author: 'Lina Silva',
+    image: routineHousekeepingImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> To get the most out of a professional cleaning, do a few quick things before your cleaner arrives: pick up clutter and personal items, secure valuables and important papers, clear countertops and floors, contain pets, and leave a note about any priority areas. You don't need to clean beforehand — that's our job — but a few minutes of tidying lets the team spend their time deep-cleaning instead of organizing.
+          </p>
+        </div>
+
+        <h2>A simple pre-clean checklist</h2>
+        <ul>
+          <li><strong>Pick up clutter:</strong> Clear toys, laundry, and loose items from floors and surfaces so we can clean them properly.</li>
+          <li><strong>Clear countertops:</strong> A clear kitchen and bathroom counter means every inch gets cleaned, not cleaned around.</li>
+          <li><strong>Secure valuables and documents:</strong> Put away jewelry, cash, and important papers for your own peace of mind.</li>
+          <li><strong>Contain pets:</strong> A closed room or crate keeps pets calm and safe while the team works.</li>
+          <li><strong>Note your priorities:</strong> Leave a quick note (or tell us) if a room or task matters most this visit.</li>
+          <li><strong>Clear access:</strong> Make sure we can reach the areas you want cleaned; move small obstacles if you can.</li>
+        </ul>
+
+        <h2>What you do NOT need to do</h2>
+        <p>
+          You don't need to clean before we come — cleaning is exactly what you're paying for. There's no need to scrub anything or apologize for the mess. A quick tidy of clutter is helpful only because it lets our team spend their time on actual cleaning rather than moving your belongings.
+        </p>
+
+        <h2>Communicate special requests up front</h2>
+        <p>
+          If you have preferences — products you'd like us to use or avoid, a fragile item to handle carefully, or an area that needs extra attention — tell us before the visit. Clear communication is how you get a clean that matches exactly what you had in mind.
+        </p>
+
+        <h2>Book a cleaning across Overland Park & the KC area</h2>
+        <p>
+          ShineWell serves Overland Park, Leawood, Prairie Village, Lenexa, Olathe, Shawnee, Mission, Merriam, Fairway, Roeland Park, Stilwell, Brookside, and the Country Club Plaza area. Family-owned, fully insured, background-checked, and backed by a satisfaction guarantee. Learn more about our <Link to="/services/routine-housekeeping" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">routine house cleaning service</Link> or get a free estimate.
+        </p>
+        <p className="mt-4">
+          <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a free estimate »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do I need to clean before the cleaners arrive?</h3>
+              <p className="text-[#5c635f] font-light">No. A quick tidy of clutter helps the team focus on cleaning, but you never need to clean beforehand — that's the service you're paying for.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Should I be home during the cleaning?</h3>
+              <p className="text-[#5c635f] font-light">It's up to you. Many clients provide access and go about their day; others prefer to be home, especially for the first visit.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">What should I do with pets?</h3>
+              <p className="text-[#5c635f] font-light">Keeping pets in a closed room or crate keeps them calm and safe and lets the team work efficiently.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'are-eco-friendly-cleaning-products-effective',
+    title: 'Are Eco-Friendly Cleaning Products Actually Effective?',
+    excerpt: "Do eco-friendly cleaning products really work? What green cleaning can and can't do, and why it's a smart choice for homes with kids and pets in KC.",
+    date: 'August 10, 2026',
+    author: 'Lina Silva',
+    image: cleanersWorkImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Yes — modern eco-friendly cleaning products are effective for the vast majority of everyday cleaning, from kitchens and bathrooms to floors and surfaces. Today's plant-based and green formulas clean and cut grease well without the harsh chemical fumes, making them an especially smart choice for homes with kids, pets, or allergies. For a few heavy-duty disinfection situations, targeted products may still be used, but for routine cleaning, green works.
+          </p>
+        </div>
+
+        <h2>What eco-friendly cleaning does well</h2>
+        <p>
+          Modern green cleaning products have come a long way. They effectively handle the everyday jobs that make up most of any cleaning: cutting kitchen grease, cleaning glass and mirrors streak-free, wiping down counters and surfaces, and keeping bathrooms fresh. For routine and recurring cleaning, they perform right alongside conventional products — without the strong chemical smell.
+        </p>
+
+        <h2>Why it matters for your home</h2>
+        <p>
+          The real advantage is what you're not breathing in. Harsh cleaning chemicals leave fumes and residue behind on the surfaces your family touches and the air they breathe. Eco-friendly products reduce that exposure, which matters most for:
+        </p>
+        <ul>
+          <li>Homes with young children who touch everything and are close to the floor</li>
+          <li>Pets who walk on and lick cleaned surfaces</li>
+          <li>Anyone with allergies, asthma, or sensitivities to strong chemical scents</li>
+        </ul>
+
+        <h2>The honest nuance</h2>
+        <p>
+          We'll be straight with you: for a small number of heavy-duty disinfection or sanitizing needs, a targeted product may still be the right tool. Good cleaning is about using the right approach for each job. But for the everyday cleaning that makes up most of your home's needs, eco-friendly products are both effective and the healthier choice.
+        </p>
+
+        <h2>Eco-friendly cleaning across the KC area</h2>
+        <p>
+          ShineWell offers eco-friendly cleaning options across Overland Park, Leawood, Prairie Village, Lenexa, Olathe, Shawnee, Mission, Merriam, Fairway, Roeland Park, Stilwell, Brookside, Plaza, and the surrounding KC area — a great fit for families with kids, pets, or sensitivities. Just let us know your preference when reviewing our <Link to="/services" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">house cleaning services</Link>.
+        </p>
+        <p className="mt-4">
+          <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a free estimate »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do eco-friendly cleaning products actually work?</h3>
+              <p className="text-[#5c635f] font-light">Yes, for the vast majority of everyday cleaning — kitchens, bathrooms, floors, and surfaces — modern green products clean effectively without harsh fumes.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Are green cleaning products safe for kids and pets?</h3>
+              <p className="text-[#5c635f] font-light">Yes. Reducing harsh chemical residue and fumes makes eco-friendly products a smart choice for homes with children, pets, or allergies.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Can eco-friendly products disinfect?</h3>
+              <p className="text-[#5c635f] font-light">For most routine needs, yes. For a few heavy-duty disinfection situations, a targeted product may be used — good cleaning matches the method to the job.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'how-to-choose-a-trustworthy-cleaning-service',
+    title: 'How to Choose a Trustworthy Cleaning Service in KC',
+    excerpt: 'How do you know a cleaning service is insured, trustworthy, and background-checks its staff? What to look for before you let anyone into your home.',
+    date: 'August 10, 2026',
+    author: 'Lina Silva',
+    image: deepHomeCleaningImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> Before you let anyone into your home, confirm the cleaning company is fully insured and bonded, background-checks every cleaner, has real local reviews, offers a clear scope and a satisfaction guarantee, and communicates well. Ask directly for proof of insurance and whether staff are vetted — a reputable company answers without hesitation. These are the signals that separate a trustworthy service from a risky one.
+          </p>
+        </div>
+
+        <h2>The trust checklist</h2>
+        <ul>
+          <li><strong>Fully insured and bonded:</strong> Protects you if anything is damaged or goes missing. Ask to see proof.</li>
+          <li><strong>Background-checked cleaners:</strong> You're granting access to your home. Confirm every cleaner is vetted before hire.</li>
+          <li><strong>Employees, not anonymous subcontractors:</strong> You want to know who's actually coming into your private space.</li>
+          <li><strong>Real local reviews:</strong> Look for reviews from actual KC-area customers, and a consistent high rating.</li>
+          <li><strong>A clear scope:</strong> Exactly what's included in writing, so there are no surprises on clean day.</li>
+          <li><strong>A satisfaction guarantee:</strong> A company that stands behind its work will fix any miss within 24 hours.</li>
+          <li><strong>Good communication:</strong> Responsive, clear, and easy to reach when you need them.</li>
+        </ul>
+
+        <h2>Questions worth asking before you hire</h2>
+        <ul>
+          <li>Are you insured and bonded, and can I see proof?</li>
+          <li>Do you background-check your cleaners?</li>
+          <li>Will I have the same cleaner or team each visit?</li>
+          <li>What exactly is included, and what costs extra?</li>
+          <li>What happens if I'm not happy with a clean?</li>
+        </ul>
+        <p>
+          A trustworthy company welcomes these questions. Hesitation or vague answers is a signal to keep looking.
+        </p>
+
+        <h2>Why "same team" matters</h2>
+        <p>
+          Consistency isn't just about quality — it's about trust. When the same vetted team cleans your home each visit, they learn your space and your preferences, and you get familiar faces rather than a rotating cast of strangers. That continuity is one of the most underrated signs of a service you can rely on long-term.
+        </p>
+
+        <h2>Why KC families trust ShineWell</h2>
+        <p>
+          ShineWell is a family-owned company serving Overland Park, Leawood, Prairie Village, Lenexa, Olathe, Shawnee, Mission, Merriam, Fairway, Roeland Park, Stilwell, Brookside, Plaza, and the KC area for over 20 years. We're fully insured and bonded, every cleaner is background-checked before hire, and we stand behind our work with a 24-hour re-clean guarantee. Read more <Link to="/about" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">about ShineWell</Link>.
+        </p>
+        <p className="mt-4">
+          <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a free estimate »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How do I know if a cleaning service is trustworthy?</h3>
+              <p className="text-[#5c635f] font-light">Confirm they're fully insured and bonded, background-check their staff, have real local reviews, offer a clear scope and satisfaction guarantee, and communicate clearly. Ask for proof of insurance directly.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do cleaning companies background-check their staff?</h3>
+              <p className="text-[#5c635f] font-light">Reputable ones do. Always confirm that every cleaner is background-checked before they enter your home. ShineWell background-checks every cleaner before hire.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">What should I look for in a cleaning company?</h3>
+              <p className="text-[#5c635f] font-light">Insurance and bonding, background-checked staff, real reviews, a clear scope, consistent teams, a satisfaction guarantee, and good communication.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  },
+  {
+    id: 'bank-cleaning-kansas-city-overland-park',
+    title: 'Bank Cleaning in Kansas City & Overland Park | ShineWell',
+    excerpt: 'Professional bank & financial office cleaning in KC and Overland Park. High-touch disinfection, chair care, streak-free glass, and monthly deep cleaning.',
+    date: 'August 10, 2026',
+    author: 'Lina Silva',
+    image: commercialDeepCleaningImg,
+    content: (
+      <>
+        <div className="bg-[#CAD4CD]/10 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-8">
+          <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
+            <strong>Quick answer:</strong> A bank branch needs more than a standard office clean — because so many people touch so many surfaces every day, it needs thorough disinfection of high-touch points, specialized care for lobby seating, streak-free treatment for glass and screens so they don't fog or smudge, and a monthly deep clean of floors (disinfected and degreased) to keep the branch spotless and professional. ShineWell provides specialized bank and financial office cleaning across Overland Park and the greater KC area.
+          </p>
+        </div>
+
+        <h2>Why banks need specialized cleaning</h2>
+        <p>
+          A bank is one of the highest-traffic, most-touched commercial spaces there is. Customers and staff handle door handles, counters, pens, keypads, teller windows, and seating all day long. That constant contact makes disinfection the priority — not just wiping surfaces, but properly sanitizing the high-touch points where germs spread. A clean, well-kept branch also signals trust and professionalism to every customer who walks in, which matters for a financial institution more than almost any other business.
+        </p>
+
+        <h2>What professional bank cleaning includes</h2>
+        <ul>
+          <li><strong>High-touch point disinfection:</strong> Door handles, counters, teller windows, keypads, pens, elevator buttons, and shared surfaces, sanitized thoroughly because of how heavily they're used.</li>
+          <li><strong>Lobby and waiting-area seating care:</strong> Chairs are cleaned with the right products and methods for their material, so seating stays clean and lasts, not just wiped down.</li>
+          <li><strong>Streak-free glass and screens:</strong> Teller glass, entry doors, partitions, and monitors are treated with a specialized solution so they stay clear and don't fog, smudge, or streak.</li>
+          <li><strong>Restrooms:</strong> Fully cleaned, sanitized, and restocked.</li>
+          <li><strong>Break rooms and staff areas:</strong> Surfaces, appliances, and floors kept clean.</li>
+          <li><strong>General office cleaning:</strong> Desks, offices, and common areas dusted and detailed.</li>
+        </ul>
+
+        <h2>The monthly deep clean — the key to keeping a branch spotless</h2>
+        <p>
+          For banks, we recommend a monthly deep clean on top of regular service. The centerpiece is the floors: a full deep clean where floors are disinfected and degreased, which is what keeps a high-traffic branch looking consistently professional rather than slowly wearing down between visits. This monthly reset reaches the buildup that routine cleaning can't, and it's essential for maintaining the polished look a financial institution needs. ShineWell offers this monthly deep-clean service — just ask for it when you set up your schedule.
+        </p>
+
+        <h2>Scheduled around your branch hours</h2>
+        <p>
+          We clean after hours or before opening, so your branch is always fresh for customers and staff, and cleaning never interrupts business. Recurring schedules are built around your hours, with the flexibility banks need.
+        </p>
+
+        <h2>Why banks in the KC area choose ShineWell</h2>
+        <ul>
+          <li><strong>Fully insured and bonded:</strong> $2M general liability; essential for a financial institution</li>
+          <li><strong>Background-checked crews:</strong> Every cleaner is vetted, which matters especially in a bank</li>
+          <li><strong>Over 20 years, locally owned:</strong> A trusted, consistent KC team</li>
+          <li><strong>Disinfection-focused:</strong> Built around the high-touch reality of a bank</li>
+          <li><strong>Monthly deep-clean option:</strong> Disinfected, degreased floors to keep the branch spotless</li>
+          <li><strong>Satisfaction guarantee:</strong> Any miss made right</li>
+        </ul>
+
+        <h2>Bank cleaning across Overland Park & the KC area</h2>
+        <p>
+          ShineWell provides bank and financial office cleaning throughout Overland Park, Leawood, Prairie Village, Lenexa, Olathe, Shawnee, Mission, Merriam, Fairway, Roeland Park, Stilwell, Brookside, and the Country Club Plaza area. Compare our specialized services with our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Kansas City commercial cleaning service</Link> and our <Link to="/dental-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">dental & medical office cleaning</Link>.
+        </p>
+        <p className="mt-4">
+          <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Request a free walkthrough »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+        </p>
+
+        <div className="border-t border-[#e8e5df] pt-8 mt-12">
+          <h2 className="mb-6">Frequently asked questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">What does professional bank cleaning include?</h3>
+              <p className="text-[#5c635f] font-light">Thorough disinfection of high-touch points, specialized cleaning and care for lobby seating, streak-free treatment for glass and screens, restrooms, break rooms, and general office cleaning — plus an optional monthly deep clean of floors.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Why do banks need more than standard office cleaning?</h3>
+              <p className="text-[#5c635f] font-light">Banks are extremely high-touch, high-traffic spaces, so disinfection is the priority. A spotless branch also signals trust and professionalism to every customer.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">How often should a bank be deep cleaned?</h3>
+              <p className="text-[#5c635f] font-light">We recommend a monthly deep clean on top of regular service, focused on disinfecting and degreasing the floors, to keep a high-traffic branch consistently spotless.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-serif text-[#2C302E] mb-2">Do you clean outside of banking hours?</h3>
+              <p className="text-[#5c635f] font-light">Yes. We clean after hours or before opening so the branch is always ready for customers and cleaning never interrupts business.</p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
   }
 ];

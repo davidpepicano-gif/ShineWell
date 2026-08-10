@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Phone } from 'lucide-react';
 import routineHousekeepingImg from '../assets/images/regenerated_image_1783363824272.png';
 import deepHomeCleaningImg from '../assets/images/deep_home_cleaning_1786068903297.jpg';
 import medicalOfficeCleanerImg from '../assets/images/medical_office_cleaner_1786068880525.jpg';
@@ -116,13 +116,13 @@ export default function HowItWorksPage() {
           <p className="text-[#e8ede9] font-light text-lg mb-10 max-w-2xl mx-auto">
             Take the first step towards a spotless home or office. Request your custom rate today.
           </p>
-          <Link 
-            to="/booking"
+          <a 
+            href="tel:9132204748"
             className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full font-medium text-lg transition-all hover:shadow-xl hover:-translate-y-1"
           >
-            Get a Free Estimate
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+            <Phone className="w-5 h-5" />
+            Call Us Now: (913) 220-4748
+          </a>
         </motion.div>
       </div>
     </div>

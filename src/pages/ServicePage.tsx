@@ -487,13 +487,13 @@ export default function ServicePage() {
                 </p>
               </div>
             )}
-            <Link 
-              to="/booking"
+            <a 
+              href="tel:9132204748"
               className="inline-flex items-center gap-2 bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium transition-all hover:bg-[#b55e47] hover:shadow-lg hover:-translate-y-0.5"
             >
-              Get a Free Estimate
-              <ArrowRight className="w-5 h-5" />
-            </Link>
+              <Phone className="w-5 h-5" />
+              Call Us Now: (913) 220-4748
+            </a>
           </motion.div>
           
           <motion.div 
@@ -751,19 +751,13 @@ export default function ServicePage() {
                 <p className="text-[#a3aba6] font-light mb-8">
                   Get a free, no obligation estimate tailored to your specific needs and space.
                 </p>
-                <Link 
-                  to="/booking"
-                  className="block w-full text-center bg-[#C86B53] text-white px-6 py-4 rounded-xl font-medium transition-colors hover:bg-[#b55e47]"
+                <a 
+                  href="tel:9132204748"
+                  className="flex items-center justify-center gap-2 w-full text-center bg-[#C86B53] text-white px-6 py-4 rounded-xl font-medium transition-colors hover:bg-[#b55e47]"
                 >
-                  Get a Free Estimate
-                </Link>
-                <div className="mt-6 pt-6 border-t border-[#3a3f3c] text-center">
-                  <p className="text-sm text-[#a3aba6] mb-2">Or call us directly:</p>
-                  <a href="tel:9132204748" className="text-xl font-serif text-white hover:text-[#C86B53] transition-colors flex items-center justify-center gap-2">
-                    <Phone className="w-4 h-4 shrink-0 text-[#CAD4CD]" />
-                    <span>913-220-4748</span>
-                  </a>
-                </div>
+                  <Phone className="w-5 h-5 shrink-0" />
+                  <span>Call Us Now: (913) 220-4748</span>
+                </a>
               </div>
             </motion.div>
           </div>

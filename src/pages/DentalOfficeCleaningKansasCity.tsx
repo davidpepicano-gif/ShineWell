@@ -206,17 +206,11 @@ export default function DentalOfficeCleaningKansasCity() {
             <strong>Quick answer:</strong> ShineWell provides dental and medical office cleaning across the Kansas City metro — dental practices, clinics, labs, and healthcare offices in Overland Park, Corporate Woods, and beyond. We're fully insured, our crews are background-checked, and we schedule after hours or early morning so patient care is never disrupted, with health-conscious sanitation focused on high-touch surfaces, restrooms, and waiting areas. Free walkthrough and quote.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 items-center pt-4 border-t border-[#CAD4CD]/40">
-            <Link 
-              to="/booking" 
-              className="inline-flex items-center gap-2 bg-[#4A5D4E] hover:bg-[#3B4A3E] text-white px-6 py-3 rounded-full text-sm font-medium transition-all shadow-sm"
-            >
-              Request Free Walkthrough <ArrowRight className="w-4 h-4" />
-            </Link>
             <a 
               href="tel:9132204748" 
-              className="inline-flex items-center gap-2 border border-[#4A5D4E] text-[#4A5D4E] hover:bg-[#4A5D4E]/10 px-6 py-3 rounded-full text-sm font-medium transition-all"
+              className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-6 py-3 rounded-full text-sm font-medium transition-all shadow-sm"
             >
-              <Phone className="w-4 h-4" /> Call (913) 220-4748
+              <Phone className="w-4 h-4" /> Call Us Now: (913) 220-4748
             </a>
           </div>
         </div>
@@ -381,17 +375,11 @@ export default function DentalOfficeCleaningKansasCity() {
               Ready for a cleaner, healthier practice? Request your free walkthrough and custom quote, or contact our team directly.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-4">
-              <Link 
-                to="/booking" 
-                className="bg-[#8BA192] hover:bg-[#7A9081] text-white px-8 py-4 rounded-full text-base font-medium transition-all shadow-md inline-flex items-center gap-2"
-              >
-                Request Free Walkthrough <ArrowRight className="w-5 h-5" />
-              </Link>
               <a 
                 href="tel:9132204748" 
-                className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-full text-base font-medium transition-all inline-flex items-center gap-2"
+                className="bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full text-base font-medium transition-all shadow-md inline-flex items-center gap-2"
               >
-                <Phone className="w-5 h-5" /> (913) 220-4748
+                <Phone className="w-5 h-5" /> Call Us Now: (913) 220-4748
               </a>
             </div>
             <div className="mt-6 flex justify-center items-center gap-4 text-xs text-gray-400">

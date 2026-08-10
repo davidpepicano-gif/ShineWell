@@ -44,7 +44,11 @@ export default function BlogPostPage() {
         'weekly-vs-biweekly-vs-monthly-cleaning': "Weekly vs. Bi-Weekly vs. Monthly Cleaning: Which Is Right for Your KC Home?",
         'post-construction-cleaning-kansas-city': "Post-Construction Cleaning in Kansas City: What's Included & Checklist",
         'airbnb-turnover-cleaning-kansas-city': "Airbnb & Short-Term Rental Cleaning in Kansas City: Host Turnover Guide",
-        'carpet-deep-cleaning-kansas-city-overland-park': "Carpet Deep Cleaning in Kansas City & Overland Park"
+        'carpet-deep-cleaning-kansas-city-overland-park': "Carpet Deep Cleaning in Kansas City & Overland Park",
+        'how-to-prepare-for-a-house-cleaning-visit': "How to Prepare for a House Cleaning Visit (Simple Guide)",
+        'are-eco-friendly-cleaning-products-effective': "Are Eco-Friendly Cleaning Products Actually Effective?",
+        'how-to-choose-a-trustworthy-cleaning-service': "How to Choose a Trustworthy Cleaning Service in KC",
+        'bank-cleaning-kansas-city-overland-park': "Bank Cleaning in Kansas City & Overland Park | ShineWell"
       };
 
       const metaDescriptions: Record<string, string> = {
@@ -66,7 +70,11 @@ export default function BlogPostPage() {
         'weekly-vs-biweekly-vs-monthly-cleaning': "Compare weekly, bi-weekly, and monthly house cleaning in Overland Park & KC. Learn cost, pros/cons, and how to choose the right schedule for your home.",
         'post-construction-cleaning-kansas-city': "Complete guide to post-construction cleaning in Overland Park & KC metro. Detailed checklist, fine drywall dust removal, window detailing, and safety.",
         'airbnb-turnover-cleaning-kansas-city': "Expert Airbnb turnover cleaning in Kansas City, Brookside, Plaza & Overland Park. Linens, restocks, 5-star checklists, and quick host turnarounds.",
-        'carpet-deep-cleaning-kansas-city-overland-park': "How professional carpet deep cleaning works, how often carpets need it, and what it costs in Overland Park & the KC area. A local guide from ShineWell."
+        'carpet-deep-cleaning-kansas-city-overland-park': "How professional carpet deep cleaning works, how often carpets need it, and what it costs in Overland Park & the KC area. A local guide from ShineWell.",
+        'how-to-prepare-for-a-house-cleaning-visit': "How should you prepare before your house cleaner arrives? A simple checklist to get the most out of every visit — from ShineWell in the KC area.",
+        'are-eco-friendly-cleaning-products-effective': "Do eco-friendly cleaning products really work? What green cleaning can and can't do, and why it's a smart choice for homes with kids and pets in KC.",
+        'how-to-choose-a-trustworthy-cleaning-service': "How do you know a cleaning service is insured, trustworthy, and background-checks its staff? What to look for before you let anyone into your home.",
+        'bank-cleaning-kansas-city-overland-park': "Professional bank & financial office cleaning in KC and Overland Park. High-touch disinfection, chair care, streak-free glass, and monthly deep cleaning."
       };
 
       const pageTitle = seoTitles[post.id] || `${post.title} | ShineWell Blog`;
@@ -391,6 +399,134 @@ export default function BlogPostPage() {
               }
             }
           ]
+        },
+        'how-to-prepare-for-a-house-cleaning-visit': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do I need to clean before the cleaners arrive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. A quick tidy of clutter helps the team focus on cleaning, but you never need to clean beforehand, that is the service you are paying for."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should I be home during the cleaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is up to you. Many clients provide access and go about their day; others prefer to be home, especially for the first visit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I do with pets during a cleaning visit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Keeping pets in a closed room or crate keeps them calm and safe and lets the team work efficiently."
+              }
+            }
+          ]
+        },
+        'are-eco-friendly-cleaning-products-effective': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do eco-friendly cleaning products actually work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, for the vast majority of everyday cleaning, including kitchens, bathrooms, floors, and surfaces. Modern green products clean effectively without harsh fumes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are green cleaning products safe for kids and pets?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Reducing harsh chemical residue and fumes makes eco-friendly products a smart choice for homes with children, pets, or allergies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can eco-friendly products disinfect?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For most routine needs, yes. For a few heavy-duty disinfection situations a targeted product may be used, matching the method to the job."
+              }
+            }
+          ]
+        },
+        'how-to-choose-a-trustworthy-cleaning-service': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How do I know if a cleaning service is trustworthy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Confirm they are fully insured and bonded, background-check their staff, have real local reviews, offer a clear scope and satisfaction guarantee, and communicate clearly. Ask for proof of insurance directly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do cleaning companies background-check their staff?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Reputable ones do. Always confirm every cleaner is background-checked before they enter your home. ShineWell background-checks every cleaner before hire."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I look for in a cleaning company?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Insurance and bonding, background-checked staff, real reviews, a clear scope, consistent teams, a satisfaction guarantee, and good communication."
+              }
+            }
+          ]
+        },
+        'bank-cleaning-kansas-city-overland-park': {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does professional bank cleaning include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Thorough disinfection of high-touch points, specialized care for lobby seating, streak-free treatment for glass and screens, restrooms, break rooms, and general office cleaning, plus an optional monthly deep clean of floors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do banks need more than standard office cleaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Banks are extremely high-touch, high-traffic spaces, so disinfection is the priority. A spotless branch also signals trust and professionalism to every customer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often should a bank be deep cleaned?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We recommend a monthly deep clean on top of regular service, focused on disinfecting and degreasing the floors, to keep a high-traffic branch consistently spotless."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you clean outside of banking hours?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We clean after hours or before opening so the branch is always ready for customers and cleaning never interrupts business."
+              }
+            }
+          ]
         }
       };
 
@@ -407,6 +543,35 @@ export default function BlogPostPage() {
         faqScriptTag.remove();
       }
 
+      // Inject Service Schema if present
+      const serviceSchemas: Record<string, any> = {
+        'bank-cleaning-kansas-city-overland-park': {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Bank and financial office cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "ShineWell Cleaning Services",
+            "telephone": "+1-913-220-4748",
+            "areaServed": "Kansas City metro (Overland Park, KS & MO)",
+            "url": "https://shinewellcleaning.com/blog/bank-cleaning-kansas-city-overland-park"
+          }
+        }
+      };
+
+      let serviceScriptTag = document.getElementById('json-ld-service-post') as HTMLScriptElement | null;
+      if (serviceSchemas[post.id]) {
+        if (!serviceScriptTag) {
+          serviceScriptTag = document.createElement('script');
+          serviceScriptTag.id = 'json-ld-service-post';
+          serviceScriptTag.type = 'application/ld+json';
+          document.head.appendChild(serviceScriptTag);
+        }
+        serviceScriptTag.textContent = JSON.stringify(serviceSchemas[post.id]);
+      } else if (serviceScriptTag) {
+        serviceScriptTag.remove();
+      }
+
       return () => {
         const existingScript = document.getElementById('json-ld-blog-post');
         if (existingScript) {
@@ -415,6 +580,10 @@ export default function BlogPostPage() {
         const existingFaqScript = document.getElementById('json-ld-faq-post');
         if (existingFaqScript) {
           existingFaqScript.remove();
+        }
+        const existingServiceScript = document.getElementById('json-ld-service-post');
+        if (existingServiceScript) {
+          existingServiceScript.remove();
         }
       };
     }
