@@ -73,15 +73,39 @@ export default function ServicesPage() {
   const commercialServices = [
     {
       image: commercialDeepCleaningImg,
-      title: "Light Commercial Cleaning",
-      desc: "Elevate your workspace. We provide thorough, professional cleaning for offices and commercial spaces to ensure a healthy environment.",
+      title: "Commercial Cleaning Overview",
+      desc: "Comprehensive janitorial and building maintenance across the Kansas City metro with flexible recurring schedules.",
       path: "/commercial-cleaning-kansas-city"
+    },
+    {
+      image: commercialDeepCleaningImg,
+      title: "Office & Corporate Cleaning",
+      desc: "From small professional offices to multi-suite corporate floors in Corporate Woods, Overland Park, and the Crossroads.",
+      path: "/office-cleaning-kansas-city"
     },
     {
       image: medicalOfficeCleanerImg,
       title: "Dental & Medical Office Cleaning",
       desc: "Health-conscious sanitation for dental practices, clinics, and medical suites in Overland Park and KC metro with after-hours scheduling.",
       path: "/dental-office-cleaning-kansas-city"
+    },
+    {
+      image: commercialDeepCleaningImg,
+      title: "Retail & Showroom Cleaning",
+      desc: "Spotless floors, streak-free glass, display cases, and welcoming entryways scheduled around your store hours.",
+      path: "/retail-cleaning-kansas-city"
+    },
+    {
+      image: specializedImg,
+      title: "Salon, Studio & Gym Cleaning",
+      desc: "Hygiene-focused cleaning and fresh environments for salons, spas, yoga studios, and fitness facilities.",
+      path: "/salon-fitness-cleaning-kansas-city"
+    },
+    {
+      image: carpetDeepCleanImg,
+      title: "Property & Common Area Cleaning",
+      desc: "Reliable maintenance for apartment buildings, lobbies, corridors, clubhouses, and shared residential amenities.",
+      path: "/property-management-cleaning-kansas-city"
     },
     {
       image: junkRemovalImg,

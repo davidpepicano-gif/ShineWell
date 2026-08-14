@@ -20,7 +20,10 @@ import {
   Compass, 
   Hammer,
   DollarSign,
-  Phone
+  Phone,
+  Star,
+  Quote,
+  ExternalLink
 } from 'lucide-react';
 
 export default function CommercialCleaningKansasCity() {
@@ -38,7 +41,8 @@ export default function CommercialCleaningKansasCity() {
     {
       icon: <Building2 className="w-6 h-6 text-[#607564]" />,
       title: "Offices & Corporate Suites",
-      desc: "From small professional offices to multi-suite corporate floors in areas like Corporate Woods, Overland Park, and the Crossroads."
+      desc: "From small professional offices to multi-suite corporate floors in areas like Corporate Woods, Overland Park, and the Crossroads.",
+      path: "/office-cleaning-kansas-city"
     },
     {
       icon: <Activity className="w-6 h-6 text-[#607564]" />,
@@ -49,22 +53,26 @@ export default function CommercialCleaningKansasCity() {
     {
       icon: <ShoppingBag className="w-6 h-6 text-[#607564]" />,
       title: "Retail & Showrooms",
-      desc: "Spotless customer-facing spaces, bright floors, clean glass, and pristine entryways that welcome visitors."
+      desc: "Spotless customer-facing spaces, bright floors, clean glass, and pristine entryways that welcome visitors.",
+      path: "/retail-cleaning-kansas-city"
     },
     {
       icon: <Scissors className="w-6 h-6 text-[#607564]" />,
       title: "Salons, Studios & Fitness",
-      desc: "High-standard hygiene and fresh environments for wellness and boutique lifestyle spaces."
+      desc: "High-standard hygiene and fresh environments for wellness and boutique lifestyle spaces.",
+      path: "/salon-fitness-cleaning-kansas-city"
     },
     {
       icon: <Compass className="w-6 h-6 text-[#607564]" />,
       title: "Property Management Areas",
-      desc: "Keeping apartment common areas, residential lobbies, corridors, and clubhouses immaculate."
+      desc: "Keeping apartment common areas, residential lobbies, corridors, and clubhouses immaculate.",
+      path: "/property-management-cleaning-kansas-city"
     },
     {
       icon: <Hammer className="w-6 h-6 text-[#607564]" />,
       title: "Post-Construction Cleanup",
-      desc: "Detailed dust removal and deep clean for newly built or renovated commercial environments."
+      desc: "Detailed dust removal and deep clean for newly built or renovated commercial environments.",
+      path: "/services/post-construction"
     }
   ];
 
@@ -106,8 +114,29 @@ export default function CommercialCleaningKansasCity() {
     },
     {
       icon: <Briefcase className="w-8 h-8 text-[#C86B53]" />,
-      title: "Rated 5.0 on Google",
-      desc: "Trusted by top local homeowners and businesses in the Kansas City metro for precision and reliability."
+      title: "Rated 5.0 on Google (28 Reviews)",
+      desc: "Trusted by top local homeowners and businesses across the KC metro with 28 verified 5.0-star reviews."
+    }
+  ];
+
+  const realReviews = [
+    {
+      name: "David Swaters",
+      role: "Commercial Client in Kansas City",
+      text: "ShineWell Commercial Cleaning Services were top notch ! On time , service and professionalism are second to none! They go out of their way to make sure everything is done right ! Came early and stayed late to get the job done. I couldn't be happier. Thanks",
+      rating: 5
+    },
+    {
+      name: "Ariana Goodridge",
+      role: "Verified Client in Overland Park",
+      text: "They came right out and did absolutely amazing!! Everything smelled and looked amazing. I will definitely be using their service again!! They cleaned every single detail.",
+      rating: 5
+    },
+    {
+      name: "Jessica Gilmore",
+      role: "Verified Client in KC Metro",
+      text: "ShineWell cleaning did an amazing job deep cleaning. I am a busy working mother of 3. I would recommend their work! Everything is sparkling clean! I will be using them going forward.",
+      rating: 5
     }
   ];
 
@@ -138,6 +167,8 @@ export default function CommercialCleaningKansasCity() {
     setActiveFaq(activeFaq === idx ? null : idx);
   };
 
+  const googleReviewUrl = "https://share.google/3oMRqAPyjGZaUcAO6";
+
   return (
     <div className="pt-24 pb-16 bg-[#F9F8F6] min-h-screen text-[#2C302E]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -152,16 +183,40 @@ export default function CommercialCleaningKansasCity() {
         </div>
 
         {/* Hero Section */}
-        <div className="grid lg:grid-cols-12 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-12 gap-12 items-center mb-12">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="lg:col-span-7"
           >
-            <span className="inline-block bg-[#607564]/10 text-[#607564] px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
-              Premium Commercial Services
-            </span>
+            {/* Top Google Trust Badge */}
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <span className="inline-block bg-[#607564]/10 text-[#607564] px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase">
+                Premium Commercial Services
+              </span>
+              <a 
+                href={googleReviewUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white px-3.5 py-1.5 rounded-full border border-[#e8e5df] shadow-sm hover:shadow-md hover:border-[#CAD4CD] transition-all group"
+                id="hero-google-trust-badge"
+              >
+                <svg aria-hidden="true" focusable="false" className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                <div className="flex text-[#FBBC05]">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} aria-hidden="true" focusable="false" className="w-3.5 h-3.5 fill-current" />
+                  ))}
+                </div>
+                <span className="text-xs font-medium text-[#2C302E]">5.0 (28 reviews on Google)</span>
+              </a>
+            </div>
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2C302E] mb-6 leading-tight">
               Commercial Cleaning Services in Kansas City
             </h1>
@@ -177,9 +232,21 @@ export default function CommercialCleaningKansasCity() {
               <a 
                 href="tel:9132204748" 
                 className="bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#b55e47] transition-all text-center flex items-center justify-center gap-2 hover:shadow-lg"
+                id="hero-call-button"
               >
                 <Phone aria-hidden="true" focusable="false" className="w-5 h-5 shrink-0" />
                 Call Us Now: (913) 220-4748
+              </a>
+              <a 
+                href={googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#2C302E] border border-[#e8e5df] px-6 py-4 rounded-full font-medium text-base hover:bg-[#F2F0EA] hover:border-[#CAD4CD] transition-all text-center flex items-center justify-center gap-2 shadow-sm"
+                id="hero-review-button"
+              >
+                <span className="text-[#FBBC05]">★★★★★</span>
+                <span>Leave us a Google Review</span>
+                <ExternalLink className="w-4 h-4 text-[#5c635f]" />
               </a>
             </div>
           </motion.div>
@@ -197,6 +264,36 @@ export default function CommercialCleaningKansasCity() {
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
+              {/* Floating Social Proof Badge on Image */}
+              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-[#e8e5df]/80 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <svg aria-hidden="true" focusable="false" className="w-6 h-6 shrink-0" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                  </svg>
+                  <div>
+                    <div className="flex items-center gap-1">
+                      <span className="font-bold text-sm text-[#2C302E]">5.0</span>
+                      <div className="flex text-[#FBBC05]">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} aria-hidden="true" focusable="false" className="w-3.5 h-3.5 fill-current" />
+                        ))}
+                      </div>
+                    </div>
+                    <p className="text-xs text-[#5c635f]">28 Reviews on Google</p>
+                  </div>
+                </div>
+                <a 
+                  href={googleReviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-[#607564] hover:text-[#C86B53] underline flex items-center gap-1"
+                >
+                  View Profile &raquo;
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -247,17 +344,21 @@ export default function CommercialCleaningKansasCity() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.05 }}
-                className="bg-white p-8 rounded-3xl border border-[#e8e5df] shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white p-8 rounded-3xl border border-[#e8e5df] shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
               >
-                <div className="w-12 h-12 rounded-full bg-[#607564]/10 flex items-center justify-center mb-6">
-                  {item.icon}
+                <div>
+                  <div className="w-12 h-12 rounded-full bg-[#607564]/10 flex items-center justify-center mb-6">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-serif text-[#2C302E] mb-3">{item.title}</h3>
+                  <p className="text-[#5c635f] font-light leading-relaxed mb-6">{item.desc}</p>
                 </div>
-                <h3 className="text-xl font-serif text-[#2C302E] mb-3">{item.title}</h3>
-                <p className="text-[#5c635f] font-light leading-relaxed mb-4">{item.desc}</p>
                 {item.path && (
-                  <Link to={item.path} className="inline-flex items-center gap-1.5 text-sm font-medium text-[#607564] hover:text-[#2C302E] underline">
-                    Learn more &raquo;
-                  </Link>
+                  <div>
+                    <Link to={item.path} className="inline-flex items-center gap-1.5 text-sm font-medium text-[#607564] hover:text-[#2C302E] underline">
+                      Learn more &raquo;
+                    </Link>
+                  </div>
                 )}
               </motion.div>
             ))}
@@ -361,6 +462,100 @@ export default function CommercialCleaningKansasCity() {
           </div>
         </section>
 
+        {/* Featured Google Reviews Social Proof Section */}
+        <section className="mb-20 bg-[#F9F8F6] p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div>
+              <div className="inline-flex items-center gap-2.5 bg-white px-4 py-2 rounded-full border border-[#e8e5df] shadow-xs mb-3">
+                <svg aria-hidden="true" focusable="false" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                <div className="flex text-[#FBBC05]">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} aria-hidden="true" focusable="false" className="w-4 h-4 fill-current" />
+                  ))}
+                </div>
+                <span className="text-sm font-semibold text-[#2C302E]">5.0 · 28 reviews on Google</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-2">
+                What Kansas City Businesses & Clients Say
+              </h2>
+              <p className="text-lg text-[#5c635f] font-light max-w-2xl">
+                We're proud to hold a perfect 5.0 rating on Google across 28 client reviews throughout the Kansas City metro.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <a 
+                href={googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-6 py-3 rounded-full font-medium text-sm transition-all shadow-sm hover:shadow-md"
+                id="social-proof-leave-review-btn"
+              >
+                <span>Leave us a Google Review ⭐</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+              <a 
+                href={googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white hover:bg-[#F2F0EA] text-[#2C302E] border border-[#e8e5df] px-6 py-3 rounded-full font-medium text-sm transition-all shadow-sm"
+                id="social-proof-read-reviews-btn"
+              >
+                <span>Read our 28 reviews</span>
+                <ExternalLink className="w-4 h-4 text-[#5c635f]" />
+              </a>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {realReviews.map((rev, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: idx * 0.1 }}
+                className="bg-white p-7 rounded-3xl border border-[#e8e5df] shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex text-[#FBBC05]">
+                      {[...Array(rev.rating)].map((_, i) => (
+                        <Star key={i} aria-hidden="true" focusable="false" className="w-4 h-4 fill-current" />
+                      ))}
+                    </div>
+                    <div className="flex items-center gap-1.5 text-xs text-[#5c635f] bg-[#F9F8F6] px-2.5 py-1 rounded-full border border-[#e8e5df]">
+                      <svg aria-hidden="true" focusable="false" className="w-3.5 h-3.5" viewBox="0 0 24 24">
+                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                      </svg>
+                      <span>Google</span>
+                    </div>
+                  </div>
+                  <p className="text-[#2C302E] font-light leading-relaxed text-sm mb-6 italic">
+                    "{rev.text}"
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 pt-4 border-t border-[#e8e5df]">
+                  <div className="w-10 h-10 rounded-full bg-[#607564] text-white flex items-center justify-center font-serif font-bold text-sm">
+                    {rev.name.charAt(0)}
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-medium text-[#2C302E] leading-tight">{rev.name}</h3>
+                    <p className="text-xs text-[#5c635f] font-light">{rev.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
         {/* Service area list */}
         <section className="mb-20 bg-[#CAD4CD]/10 p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df]/60 text-center">
           <div className="max-w-2xl mx-auto">
@@ -378,6 +573,12 @@ export default function CommercialCleaningKansasCity() {
           <div className="absolute bottom-0 left-0 transform -translate-x-12 translate-y-12 w-64 h-64 rounded-full bg-white/5 pointer-events-none"></div>
           
           <div className="relative z-10 max-w-2xl mx-auto">
+            {/* Google Rating Snippet inside CTA */}
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-xs px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-[#2C302E] mb-4">
+              <span className="text-[#FBBC05]">★★★★★</span>
+              <span>5.0 Star Rating · 28 Google Reviews</span>
+            </div>
+
             <h2 className="text-3xl md:text-4xl font-serif mb-4 text-[#2C302E]">
               Get a Free Walkthrough & Quote
             </h2>
@@ -388,9 +589,20 @@ export default function CommercialCleaningKansasCity() {
               <a 
                 href="tel:9132204748" 
                 className="bg-[#C86B53] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#b55e47] transition-all hover:-translate-y-0.5 hover:shadow-lg inline-flex items-center justify-center gap-2"
+                id="cta-call-button"
               >
                 <Phone className="w-5 h-5" />
                 Call Us Now: (913) 220-4748
+              </a>
+              <a 
+                href={googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#2C302E] px-8 py-4 rounded-full font-medium text-base hover:bg-[#F9F8F6] transition-all hover:-translate-y-0.5 hover:shadow-lg inline-flex items-center justify-center gap-2"
+                id="cta-rate-us-button"
+              >
+                <span>Rate Us on Google</span>
+                <ExternalLink className="w-4 h-4 text-[#5c635f]" />
               </a>
             </div>
           </div>
@@ -510,7 +722,13 @@ export default function CommercialCleaningKansasCity() {
             "areaServed": "Kansas City metro (Overland Park, KS & MO)",
             "url": "https://shinewellcleaning.com/commercial-cleaning-kansas-city"
           },
-          "areaServed": { "@type": "Place", "name": "Kansas City Metro" }
+          "areaServed": { "@type": "Place", "name": "Kansas City Metro" },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "28",
+            "bestRating": "5"
+          }
         }
         `}} />
 

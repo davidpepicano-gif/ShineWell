@@ -8,7 +8,11 @@ const Home = lazy(() => import('./pages/Home'));
 const ServicePage = lazy(() => import('./pages/ServicePage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const CommercialCleaningKansasCity = lazy(() => import('./pages/CommercialCleaningKansasCity'));
+const OfficeCleaningKansasCity = lazy(() => import('./pages/OfficeCleaningKansasCity'));
 const DentalOfficeCleaningKansasCity = lazy(() => import('./pages/DentalOfficeCleaningKansasCity'));
+const RetailCleaningKansasCity = lazy(() => import('./pages/RetailCleaningKansasCity'));
+const SalonFitnessCleaningKansasCity = lazy(() => import('./pages/SalonFitnessCleaningKansasCity'));
+const PropertyManagementCleaningKansasCity = lazy(() => import('./pages/PropertyManagementCleaningKansasCity'));
 const HowItWorksPage = lazy(() => import('./pages/HowItWorksPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
@@ -39,7 +43,11 @@ export default function AppRoutes() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/services/:serviceId" element={<ServicePage />} />
             <Route path="/commercial-cleaning-kansas-city" element={<CommercialCleaningKansasCity />} />
+            <Route path="/office-cleaning-kansas-city" element={<OfficeCleaningKansasCity />} />
             <Route path="/dental-office-cleaning-kansas-city" element={<DentalOfficeCleaningKansasCity />} />
+            <Route path="/retail-cleaning-kansas-city" element={<RetailCleaningKansasCity />} />
+            <Route path="/salon-fitness-cleaning-kansas-city" element={<SalonFitnessCleaningKansasCity />} />
+            <Route path="/property-management-cleaning-kansas-city" element={<PropertyManagementCleaningKansasCity />} />
             <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
