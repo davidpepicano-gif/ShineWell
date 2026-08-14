@@ -10,7 +10,8 @@ import {
   MapPin, 
   Menu, 
   X,
-  ChevronDown
+  ChevronDown,
+  Star
 } from 'lucide-react';
 
 const services = [
@@ -136,14 +137,47 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen bg-[#F9F8F6] font-sans text-[#2C302E] selection:bg-[#CAD4CD] selection:text-white flex flex-col">
-      {/* Navigation */}
-      <nav
-        className={`fixed w-full z-50 transition-all duration-500 ${
-          isScrolled 
-            ? 'bg-[#F9F8F6]/98 backdrop-blur-md shadow-md border-b border-[#e8e5df]/60 py-2' 
-            : 'bg-[#F9F8F6]/60 backdrop-blur-sm border-b border-transparent py-4'
-        }`}
-      >
+      {/* Header with Top Google Review Banner & Navigation */}
+      <header className="fixed top-0 w-full z-50">
+        {/* Top Google Review Bar */}
+        <aside aria-label="Google Rating Notice" className="bg-[#2C302E] text-white text-xs py-1.5 px-4 text-center border-b border-white/10 shadow-xs">
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 text-[11px] sm:text-xs">
+            <div className="hidden sm:flex items-center gap-2 text-gray-300">
+              <span>Overland Park &amp; Kansas City Metro</span>
+            </div>
+            <a
+              href="https://share.google/3oMRqAPyjGZaUcAO6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto sm:mx-0 inline-flex items-center gap-1.5 hover:text-[#CAD4CD] transition-colors group"
+              id="top-bar-google-reviews-link"
+            >
+              <span className="text-[#FBBC05] flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} aria-hidden="true" focusable="false" className="w-3 h-3 fill-current" />
+                ))}
+              </span>
+              <span className="font-semibold underline underline-offset-2">5-Star Rated on Google by Our Clients</span>
+              <span className="text-[#CAD4CD] font-light hidden sm:inline">(5.0 ★ · 28 Reviews)</span>
+              <span className="text-white group-hover:underline text-[10px] sm:text-[11px]">· See Reviews &raquo;</span>
+            </a>
+            <a 
+              href="tel:9132204748"
+              className="hidden md:inline-flex items-center gap-1.5 text-[#CAD4CD] hover:text-white font-medium transition-colors"
+            >
+              <Phone aria-hidden="true" focusable="false" className="w-3 h-3" /> (913) 220-4748
+            </a>
+          </div>
+        </aside>
+
+        {/* Navigation */}
+        <nav
+          className={`w-full transition-all duration-500 ${
+            isScrolled 
+              ? 'bg-[#F9F8F6]/98 backdrop-blur-md shadow-md border-b border-[#e8e5df]/60 py-2' 
+              : 'bg-[#F9F8F6]/85 backdrop-blur-sm border-b border-[#e8e5df]/30 py-3'
+          }`}
+        >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2.5 sm:gap-3">
@@ -355,6 +389,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           )}
         </AnimatePresence>
       </nav>
+      </header>
 
       {/* Main Content */}
       <main className="flex-grow">

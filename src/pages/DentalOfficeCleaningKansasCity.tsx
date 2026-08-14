@@ -187,21 +187,51 @@ export default function DentalOfficeCleaningKansasCity() {
     }
   ];
 
+  const googleReviewUrl = "https://share.google/3oMRqAPyjGZaUcAO6";
+
   return (
-    <div className="bg-[#F9F8F6] min-h-screen pt-24 pb-16">
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#CAD4CD]/30 text-[#4A5D4E] uppercase tracking-wider mb-4 border border-[#CAD4CD]/50">
-            <Activity className="w-3.5 h-3.5" /> Healthcare & Dental Facility Cleaning
-          </span>
+    <main id="main-content" className="bg-[#F9F8F6] min-h-screen pt-24 pb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
+        {/* Breadcrumb Navigation */}
+        <nav aria-label="Breadcrumb" className="mb-6 flex gap-2 text-sm text-[#5c635f] font-light">
+          <ol className="flex items-center gap-2 list-none p-0 m-0">
+            <li><Link to="/" className="hover:text-[#4A5D4E] transition-colors">Home</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><Link to="/commercial-cleaning-kansas-city" className="hover:text-[#4A5D4E] transition-colors">Commercial Cleaning</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><span className="text-[#2C302E] font-normal" aria-current="page">Dental &amp; Medical Office Cleaning</span></li>
+          </ol>
+        </nav>
+
+        {/* Hero Section */}
+        <header className="text-center max-w-3xl mx-auto mb-10">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#CAD4CD]/30 text-[#4A5D4E] uppercase tracking-wider border border-[#CAD4CD]/50">
+              <Activity aria-hidden="true" focusable="false" className="w-3.5 h-3.5" /> Healthcare &amp; Dental Facility Cleaning
+            </span>
+            <a 
+              href={googleReviewUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white px-3.5 py-1 rounded-full border border-[#e8e5df] shadow-xs hover:shadow-md hover:border-[#CAD4CD] transition-all group"
+              id="dental-top-google-badge"
+            >
+              <div className="flex text-[#FBBC05]">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} aria-hidden="true" focusable="false" className="w-3.5 h-3.5 fill-current" />
+                ))}
+              </div>
+              <span className="text-xs font-medium text-[#2C302E]">5.0 (28 Google Reviews)</span>
+            </a>
+          </div>
+
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#2C302E] font-medium leading-tight mb-6">
             Dental &amp; Medical Office Cleaning in Kansas City
           </h1>
-        </div>
+        </header>
 
         {/* Quick Answer Box */}
-        <div className="bg-[#CAD4CD]/15 p-6 sm:p-8 rounded-2xl border border-[#CAD4CD]/40 max-w-4xl mx-auto shadow-sm mb-12">
+        <aside aria-label="Quick Overview" className="bg-[#CAD4CD]/15 p-6 sm:p-8 rounded-2xl border border-[#CAD4CD]/40 max-w-4xl mx-auto shadow-sm mb-12">
           <p className="text-base sm:text-lg text-[#2C302E] leading-relaxed font-light">
             <strong>Quick answer:</strong> ShineWell provides dental and medical office cleaning across the Kansas City metro — dental practices, clinics, labs, and healthcare offices in Overland Park, Corporate Woods, and beyond. We're fully insured, our crews are background-checked, and we schedule after hours or early morning so patient care is never disrupted, with health-conscious sanitation focused on high-touch surfaces, restrooms, and waiting areas. Free walkthrough and quote.
           </p>
@@ -209,25 +239,36 @@ export default function DentalOfficeCleaningKansasCity() {
             <a 
               href="tel:9132204748" 
               className="inline-flex items-center gap-2 bg-[#C86B53] hover:bg-[#b55e47] text-white px-6 py-3 rounded-full text-sm font-medium transition-all shadow-sm"
+              id="dental-quick-call-button"
             >
-              <Phone className="w-4 h-4" /> Call Us Now: (913) 220-4748
+              <Phone aria-hidden="true" focusable="false" className="w-4 h-4" /> Call Us Now: (913) 220-4748
+            </a>
+            <a 
+              href={googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-[#2C302E] border border-[#e8e5df] px-5 py-3 rounded-full text-sm font-medium hover:bg-[#F2F0EA] transition-all shadow-xs"
+              id="dental-quick-review-button"
+            >
+              <span className="text-[#FBBC05]">★★★★★</span>
+              <span>Google 5-Star Reviews</span>
             </a>
           </div>
-        </div>
+        </aside>
 
         {/* High quality imagery */}
-        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-md mb-16 border border-[#e8e5df]">
+        <figure className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-md mb-16 border border-[#e8e5df] m-0">
           <img 
             src={medicalOfficeCleanerImg} 
             alt="dental and medical office cleaning in Overland Park & Kansas City"
             className="w-full h-72 sm:h-96 object-cover"
             referrerPolicy="no-referrer"
           />
-        </div>
+        </figure>
 
         {/* Section: Why healthcare spaces need a specialized approach */}
-        <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16">
-          <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-4">
+        <article aria-labelledby="healthcare-approach-heading" className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16">
+          <h2 id="healthcare-approach-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-4">
             Why healthcare spaces need a specialized cleaning approach
           </h2>
           <p className="text-[#5c635f] text-base sm:text-lg leading-relaxed mb-6 font-light">
@@ -236,139 +277,141 @@ export default function DentalOfficeCleaningKansasCity() {
           <div className="p-4 bg-[#F9F8F6] rounded-xl border border-[#e8e5df] text-sm text-[#5c635f]">
             <strong>Note:</strong> ShineWell provides general and high-touch cleaning and sanitation. Clinical/biohazard sterilization of instruments and treatment surfaces is handled by your clinical staff per your protocols.
           </div>
-        </div>
+        </article>
 
         {/* What We Clean Grid */}
-        <div className="max-w-5xl mx-auto mb-16">
+        <section aria-labelledby="dental-scope-heading" className="max-w-5xl mx-auto mb-16">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
+            <h2 id="dental-scope-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
               What we clean in dental &amp; medical offices
             </h2>
-            <p className="text-[#5c635f] text-base max-w-2xl mx-auto">
+            <p className="text-[#5c635f] text-base max-w-2xl mx-auto font-light">
               From patient reception lobbies to non-clinical exam room surfaces and staff lounges.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {whatWeClean.map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm hover:shadow-md transition-shadow">
+              <article key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 rounded-full bg-[#CAD4CD]/30 flex items-center justify-center shrink-0 mt-1">
-                    <Check className="w-4 h-4 text-[#4A5D4E]" />
+                    <Check aria-hidden="true" focusable="false" className="w-4 h-4 text-[#4A5D4E]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-serif text-[#2C302E] font-medium mb-1">{item.title}</h3>
                     <p className="text-[#5c635f] text-sm leading-relaxed font-light">{item.desc}</p>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Scheduling Built Around Your Practice */}
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#8BA192]/10 via-[#CAD4CD]/20 to-[#8BA192]/10 p-8 sm:p-10 rounded-2xl border border-[#CAD4CD]/50 mb-16">
+        <section aria-labelledby="scheduling-heading" className="max-w-4xl mx-auto bg-gradient-to-r from-[#8BA192]/10 via-[#CAD4CD]/20 to-[#8BA192]/10 p-8 sm:p-10 rounded-2xl border border-[#CAD4CD]/50 mb-16">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-sm border border-[#e8e5df]">
-              <Clock className="w-7 h-7 text-[#4A5D4E]" />
+              <Clock aria-hidden="true" focusable="false" className="w-7 h-7 text-[#4A5D4E]" />
             </div>
             <div>
-              <h2 className="text-2xl font-serif text-[#2C302E] mb-2">Scheduling built around your practice</h2>
+              <h2 id="scheduling-heading" className="text-2xl font-serif text-[#2C302E] mb-2">Scheduling built around your practice</h2>
               <p className="text-[#5c635f] text-base leading-relaxed font-light">
                 We work after hours or early morning, so your team arrives to a fresh, ready space and cleaning never interrupts appointments. Recurring schedules — nightly, several times a week, or weekly — are built around your hours and patient flow.
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Why KC Practices Choose ShineWell */}
-        <div className="max-w-5xl mx-auto mb-16">
+        <section aria-labelledby="why-kc-practices-heading" className="max-w-5xl mx-auto mb-16">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
+            <h2 id="why-kc-practices-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
               Why KC practices choose ShineWell
             </h2>
-            <p className="text-[#5c635f] text-base max-w-2xl mx-auto">
+            <p className="text-[#5c635f] text-base max-w-2xl mx-auto font-light">
               Over 20 years of family-owned, trusted commercial cleaning experience across Kansas City.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-0 m-0 list-none">
             {valueProps.map((prop, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm flex flex-col items-start">
+              <li key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm flex flex-col items-start">
                 <div className="w-12 h-12 rounded-xl bg-[#CAD4CD]/20 flex items-center justify-center mb-4">
                   {prop.icon}
                 </div>
                 <h3 className="text-lg font-serif text-[#2C302E] font-medium mb-2">{prop.title}</h3>
                 <p className="text-[#5c635f] text-sm leading-relaxed font-light">{prop.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
-        </div>
+          </ul>
+        </section>
 
         {/* Service Area */}
-        <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16 text-center">
+        <section aria-labelledby="service-coverage-heading" className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#CAD4CD]/30 text-[#4A5D4E] uppercase tracking-wider mb-3">
-            <MapPin className="w-3.5 h-3.5" /> Metro KC Coverage
+            <MapPin aria-hidden="true" focusable="false" className="w-3.5 h-3.5" /> Metro KC Coverage
           </div>
-          <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
+          <h2 id="service-coverage-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
             Serving healthcare offices across the KC metro
           </h2>
           <p className="text-[#5c635f] text-base leading-relaxed font-light max-w-2xl mx-auto mb-6">
             Overland Park, Corporate Woods, Leawood, Prairie Village, the College Boulevard corridor, and the greater Kansas City metro on both the Kansas and Missouri sides.
           </p>
-          <div className="flex flex-wrap justify-center gap-2 text-xs font-medium text-[#4A5D4E]">
-            <span className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Overland Park</span>
-            <span className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Corporate Woods</span>
-            <span className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Leawood</span>
-            <span className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Prairie Village</span>
-            <span className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">College Blvd Corridor</span>
-            <span className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Kansas City Metro</span>
-          </div>
-        </div>
+          <ul role="list" className="flex flex-wrap justify-center gap-2 text-xs font-medium text-[#4A5D4E] p-0 list-none">
+            <li className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Overland Park</li>
+            <li className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Corporate Woods</li>
+            <li className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Leawood</li>
+            <li className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Prairie Village</li>
+            <li className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">College Blvd Corridor</li>
+            <li className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">Kansas City Metro</li>
+          </ul>
+        </section>
 
         {/* FAQ Accordion */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] text-center mb-8">
+        <section aria-labelledby="faq-heading" className="max-w-4xl mx-auto mb-16">
+          <h2 id="faq-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] text-center mb-8">
             Frequently asked questions
           </h2>
-          <div className="space-y-4">
+          <dl className="space-y-4">
             {faqs.map((faq, idx) => (
               <div 
                 key={idx}
                 className="bg-white rounded-xl border border-[#e8e5df] overflow-hidden shadow-sm transition-all"
               >
-                <button
-                  onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
-                  className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-[#F9F8F6]/50 transition-colors"
-                  aria-expanded={activeFaq === idx}
-                >
-                  <span className="font-serif text-lg text-[#2C302E] font-medium">{faq.q}</span>
-                  <ChevronDown className={`w-5 h-5 text-[#4A5D4E] transition-transform duration-200 shrink-0 ${activeFaq === idx ? 'rotate-180' : ''}`} />
-                </button>
+                <dt>
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
+                    className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-[#F9F8F6]/50 transition-colors"
+                    aria-expanded={activeFaq === idx}
+                  >
+                    <span className="font-serif text-lg text-[#2C302E] font-medium">{faq.q}</span>
+                    <ChevronDown aria-hidden="true" focusable="false" className={`w-5 h-5 text-[#4A5D4E] transition-transform duration-200 shrink-0 ${activeFaq === idx ? 'rotate-180' : ''}`} />
+                  </button>
+                </dt>
                 <AnimatePresence>
                   {activeFaq === idx && (
-                    <motion.div
+                    <motion.dd
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.2 }}
-                      className="overflow-hidden"
+                      className="overflow-hidden m-0"
                     >
                       <div className="p-6 pt-0 border-t border-[#e8e5df]/50 text-[#5c635f] leading-relaxed font-light">
                         {faq.a}
                       </div>
-                    </motion.div>
+                    </motion.dd>
                   )}
                 </AnimatePresence>
               </div>
             ))}
-          </div>
-        </div>
+          </dl>
+        </section>
 
         {/* CTA Banner */}
-        <div className="max-w-4xl mx-auto bg-[#2C302E] text-white p-8 sm:p-12 rounded-3xl shadow-xl text-center relative overflow-hidden">
+        <section aria-labelledby="dental-cta-heading" className="max-w-4xl mx-auto bg-[#2C302E] text-white p-8 sm:p-12 rounded-3xl shadow-xl text-center relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium mb-4">
+            <h2 id="dental-cta-heading" className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium mb-4">
               Get a free walkthrough for your practice
             </h2>
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 font-light">
@@ -378,8 +421,18 @@ export default function DentalOfficeCleaningKansasCity() {
               <a 
                 href="tel:9132204748" 
                 className="bg-[#C86B53] hover:bg-[#b55e47] text-white px-8 py-4 rounded-full text-base font-medium transition-all shadow-md inline-flex items-center gap-2"
+                id="dental-cta-call-button"
               >
-                <Phone className="w-5 h-5" /> Call Us Now: (913) 220-4748
+                <Phone aria-hidden="true" focusable="false" className="w-5 h-5" /> Call Us Now: (913) 220-4748
+              </a>
+              <a 
+                href={googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#2C302E] px-8 py-4 rounded-full text-base font-medium transition-all shadow-md inline-flex items-center gap-2 hover:bg-[#F9F8F6]"
+                id="dental-cta-review-button"
+              >
+                <Star aria-hidden="true" focusable="false" className="w-4 h-4 text-[#FBBC05] fill-current" /> Google 5-Star Reviews
               </a>
             </div>
             <div className="mt-6 flex justify-center items-center gap-4 text-xs text-gray-400">
@@ -389,8 +442,8 @@ export default function DentalOfficeCleaningKansasCity() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </main>
   );
 }

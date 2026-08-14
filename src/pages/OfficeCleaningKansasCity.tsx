@@ -200,20 +200,22 @@ export default function OfficeCleaningKansasCity() {
   ];
 
   return (
-    <div className="bg-[#F9F8F6] min-h-screen pt-24 pb-16 text-[#2C302E]">
+    <main id="main-content" className="bg-[#F9F8F6] min-h-screen pt-24 pb-16 text-[#2C302E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
         
         {/* Breadcrumb Navigation */}
-        <div className="text-sm text-[#5c635f] mb-6 flex items-center gap-2">
-          <Link to="/" className="hover:text-[#607564] transition-colors">Home</Link>
-          <span>/</span>
-          <Link to="/commercial-cleaning-kansas-city" className="hover:text-[#607564] transition-colors">Commercial Cleaning</Link>
-          <span>/</span>
-          <span className="text-[#2C302E] font-medium">Office &amp; Corporate Cleaning</span>
-        </div>
+        <nav aria-label="Breadcrumb" className="text-sm text-[#5c635f] mb-6 flex items-center gap-2">
+          <ol className="flex items-center gap-2 list-none p-0 m-0">
+            <li><Link to="/" className="hover:text-[#607564] transition-colors">Home</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><Link to="/commercial-cleaning-kansas-city" className="hover:text-[#607564] transition-colors">Commercial Cleaning</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><span className="text-[#2C302E] font-medium" aria-current="page">Office &amp; Corporate Cleaning</span></li>
+          </ol>
+        </nav>
 
-        {/* Hero Section */}
-        <section className="text-center max-w-4xl mx-auto mb-10">
+        {/* Hero Header Section */}
+        <header className="text-center max-w-4xl mx-auto mb-10">
           <div className="flex flex-wrap items-center justify-center gap-3 mb-4">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#CAD4CD]/30 text-[#4A5D4E] uppercase tracking-wider border border-[#CAD4CD]/50">
               <Building2 className="w-3.5 h-3.5" /> Corporate Janitorial Services
@@ -233,10 +235,10 @@ export default function OfficeCleaningKansasCity() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-[#2C302E] font-medium leading-tight mb-6">
             Office &amp; Corporate Cleaning in Kansas City &amp; Overland Park
           </h1>
-        </section>
+        </header>
 
         {/* Quick Answer Box */}
-        <div className="bg-[#CAD4CD]/15 p-6 sm:p-8 rounded-2xl border border-[#CAD4CD]/40 max-w-4xl mx-auto shadow-sm mb-12">
+        <aside aria-label="Quick Overview" className="bg-[#CAD4CD]/15 p-6 sm:p-8 rounded-2xl border border-[#CAD4CD]/40 max-w-4xl mx-auto shadow-sm mb-12">
           <p className="text-base sm:text-lg text-[#2C302E] leading-relaxed font-light">
             <strong>Quick answer:</strong> ShineWell provides professional office and corporate cleaning across the Kansas City metro — from small professional offices to multi-suite corporate floors in areas like Corporate Woods, Overland Park, and the Crossroads. We're fully insured, our crews are background-checked, and we schedule after hours or early morning so your team is never interrupted. Flexible recurring janitorial service, a clear scope, and a satisfaction guarantee.
           </p>
@@ -260,20 +262,21 @@ export default function OfficeCleaningKansasCity() {
               <ExternalLink className="w-3.5 h-3.5 text-[#5c635f]" />
             </a>
           </div>
-        </div>
+        </aside>
 
         {/* Featured Image */}
-        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-md mb-16 border border-[#e8e5df]">
+        <figure className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-md mb-16 border border-[#e8e5df]">
           <img 
             src={commercialOfficeImg} 
             alt="Office cleaning in Corporate Woods Overland Park and Kansas City"
             className="w-full h-72 sm:h-96 object-cover"
             referrerPolicy="no-referrer"
           />
-        </div>
+          <figcaption className="sr-only">Professional office cleaning and janitorial team in Overland Park and Kansas City</figcaption>
+        </figure>
 
         {/* From Small Offices to Corporate Floors Section */}
-        <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16">
+        <article className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16">
           <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-4">
             From small offices to corporate floors
           </h2>
@@ -283,12 +286,12 @@ export default function OfficeCleaningKansasCity() {
           <p className="text-[#5c635f] text-base leading-relaxed font-light">
             Our teams operate with strict respect for confidential documents, sensitive technology, and building security codes, ensuring seamless operations day in and day out.
           </p>
-        </div>
+        </article>
 
         {/* What's Included in Office Cleaning */}
-        <div className="max-w-5xl mx-auto mb-16">
+        <section aria-labelledby="included-heading" className="max-w-5xl mx-auto mb-16">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
+            <h2 id="included-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
               What's included in office cleaning
             </h2>
             <p className="text-[#5c635f] text-base max-w-2xl mx-auto">
@@ -296,9 +299,9 @@ export default function OfficeCleaningKansasCity() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-6 p-0 m-0 list-none">
             {whatIsIncluded.map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm hover:shadow-md transition-shadow">
+              <li key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 rounded-full bg-[#CAD4CD]/30 flex items-center justify-center shrink-0 mt-1">
                     <Check className="w-4 h-4 text-[#4A5D4E]" />
@@ -308,13 +311,13 @@ export default function OfficeCleaningKansasCity() {
                     <p className="text-[#5c635f] text-sm leading-relaxed font-light">{item.desc}</p>
                   </div>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
-        </div>
+          </ul>
+        </section>
 
         {/* After-Hours Scheduling Box */}
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#8BA192]/10 via-[#CAD4CD]/20 to-[#8BA192]/10 p-8 sm:p-10 rounded-2xl border border-[#CAD4CD]/50 mb-16">
+        <section aria-label="After-Hours Scheduling" className="max-w-4xl mx-auto bg-gradient-to-r from-[#8BA192]/10 via-[#CAD4CD]/20 to-[#8BA192]/10 p-8 sm:p-10 rounded-2xl border border-[#CAD4CD]/50 mb-16">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-sm border border-[#e8e5df]">
               <Clock className="w-7 h-7 text-[#4A5D4E]" />
@@ -326,12 +329,12 @@ export default function OfficeCleaningKansasCity() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Why KC Businesses Choose ShineWell */}
-        <div className="max-w-5xl mx-auto mb-16">
+        <section aria-labelledby="why-choose-heading" className="max-w-5xl mx-auto mb-16">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
+            <h2 id="why-choose-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
               Why KC businesses choose ShineWell
             </h2>
             <p className="text-[#5c635f] text-base max-w-2xl mx-auto">
@@ -339,21 +342,21 @@ export default function OfficeCleaningKansasCity() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-0 m-0 list-none">
             {whyChooseUs.map((prop, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm flex flex-col items-start">
+              <li key={idx} className="bg-white p-6 rounded-2xl border border-[#e8e5df] shadow-sm flex flex-col items-start">
                 <div className="w-12 h-12 rounded-xl bg-[#CAD4CD]/20 flex items-center justify-center mb-4">
                   {prop.icon}
                 </div>
                 <h3 className="text-lg font-serif text-[#2C302E] font-medium mb-2">{prop.title}</h3>
                 <p className="text-[#5c635f] text-sm leading-relaxed font-light">{prop.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
-        </div>
+          </ul>
+        </section>
 
         {/* How Office Cleaning is Priced */}
-        <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16">
+        <article className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16">
           <div className="flex items-start gap-4 mb-4">
             <div className="w-12 h-12 rounded-xl bg-[#C86B53]/10 flex items-center justify-center shrink-0">
               <DollarSign className="w-6 h-6 text-[#C86B53]" />
@@ -382,26 +385,26 @@ export default function OfficeCleaningKansasCity() {
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
         {/* Service Area */}
-        <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16 text-center">
+        <section aria-labelledby="service-areas-heading" className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl border border-[#e8e5df] shadow-sm mb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#CAD4CD]/30 text-[#4A5D4E] uppercase tracking-wider mb-3">
             <MapPin className="w-3.5 h-3.5" /> Metro KC Coverage
           </div>
-          <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
+          <h2 id="service-areas-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] mb-3">
             Serving offices across Overland Park &amp; the KC metro
           </h2>
           <p className="text-[#5c635f] text-base leading-relaxed font-light max-w-2xl mx-auto mb-6">
             Overland Park, Corporate Woods, Leawood, Prairie Village, Lenexa, Olathe, the College Boulevard corridor, the Crossroads, and the greater KC area on both the Kansas and Missouri sides.
           </p>
-          <div className="flex flex-wrap justify-center gap-2 text-xs font-medium text-[#4A5D4E] mb-6">
+          <ul role="list" className="flex flex-wrap justify-center gap-2 text-xs font-medium text-[#4A5D4E] mb-6 p-0 list-none">
             {serviceAreas.map((area, i) => (
-              <span key={i} className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">
+              <li key={i} className="bg-[#F9F8F6] px-3 py-1.5 rounded-lg border border-[#e8e5df]">
                 {area}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
           <div className="flex justify-center">
             <a 
               href="tel:9132204748" 
@@ -410,55 +413,57 @@ export default function OfficeCleaningKansasCity() {
               Request a free walkthrough &raquo; or call (913) 220-4748
             </a>
           </div>
-        </div>
+        </section>
 
         {/* FAQ Accordion */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-2xl sm:text-3xl font-serif text-[#2C302E] text-center mb-8">
+        <section aria-labelledby="faq-heading" className="max-w-4xl mx-auto mb-16">
+          <h2 id="faq-heading" className="text-2xl sm:text-3xl font-serif text-[#2C302E] text-center mb-8">
             Frequently asked questions
           </h2>
-          <div className="space-y-4">
+          <dl className="space-y-4">
             {faqs.map((faq, idx) => (
               <div 
                 key={idx}
                 className="bg-white rounded-xl border border-[#e8e5df] overflow-hidden shadow-sm transition-all"
               >
-                <button
-                  onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
-                  className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-[#F9F8F6]/50 transition-colors"
-                  aria-expanded={activeFaq === idx}
-                >
-                  <span className="font-serif text-lg text-[#2C302E] font-medium">{faq.q}</span>
-                  <ChevronDown className={`w-5 h-5 text-[#4A5D4E] transition-transform duration-200 shrink-0 ${activeFaq === idx ? 'rotate-180' : ''}`} />
-                </button>
+                <dt>
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
+                    className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-[#F9F8F6]/50 transition-colors"
+                    aria-expanded={activeFaq === idx}
+                  >
+                    <span className="font-serif text-lg text-[#2C302E] font-medium">{faq.q}</span>
+                    <ChevronDown className={`w-5 h-5 text-[#4A5D4E] transition-transform duration-200 shrink-0 ${activeFaq === idx ? 'rotate-180' : ''}`} />
+                  </button>
+                </dt>
                 <AnimatePresence>
                   {activeFaq === idx && (
-                    <motion.div
+                    <motion.dd
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.2 }}
-                      className="overflow-hidden"
+                      className="overflow-hidden m-0"
                     >
                       <div className="p-6 pt-0 border-t border-[#e8e5df]/50 text-[#5c635f] leading-relaxed font-light">
                         {faq.a}
                       </div>
-                    </motion.div>
+                    </motion.dd>
                   )}
                 </AnimatePresence>
               </div>
             ))}
-          </div>
-        </div>
+          </dl>
+        </section>
 
         {/* CTA Banner */}
-        <div className="max-w-4xl mx-auto bg-[#2C302E] text-white p-8 sm:p-12 rounded-3xl shadow-xl text-center relative overflow-hidden">
+        <section aria-labelledby="cta-heading" className="max-w-4xl mx-auto bg-[#2C302E] text-white p-8 sm:p-12 rounded-3xl shadow-xl text-center relative overflow-hidden">
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full text-xs font-medium text-[#CAD4CD] mb-4">
               <span className="text-[#FBBC05]">★★★★★</span>
               <span>Rated 5.0 on Google · 28 Verified Reviews</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium mb-4">
+            <h2 id="cta-heading" className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium mb-4">
               Get a free walkthrough &amp; quote for your office
             </h2>
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 font-light">
@@ -490,9 +495,9 @@ export default function OfficeCleaningKansasCity() {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
       </div>
-    </div>
+    </main>
   );
 }

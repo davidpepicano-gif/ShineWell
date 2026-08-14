@@ -170,20 +170,22 @@ export default function CommercialCleaningKansasCity() {
   const googleReviewUrl = "https://share.google/3oMRqAPyjGZaUcAO6";
 
   return (
-    <div className="pt-24 pb-16 bg-[#F9F8F6] min-h-screen text-[#2C302E]">
+    <main id="main-content" className="pt-24 pb-16 bg-[#F9F8F6] min-h-screen text-[#2C302E]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
-        {/* Breadcrumb */}
-        <div className="mb-6 flex gap-2 text-sm text-[#5c635f] font-light">
-          <Link to="/" className="hover:text-[#607564] transition-colors">Home</Link>
-          <span>/</span>
-          <Link to="/services" className="hover:text-[#607564] transition-colors">Services</Link>
-          <span>/</span>
-          <span className="text-[#2C302E] font-normal">Commercial Cleaning</span>
-        </div>
+        {/* Breadcrumb Navigation */}
+        <nav aria-label="Breadcrumb" className="mb-6 flex gap-2 text-sm text-[#5c635f] font-light">
+          <ol className="flex items-center gap-2 list-none p-0 m-0">
+            <li><Link to="/" className="hover:text-[#607564] transition-colors">Home</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><Link to="/services" className="hover:text-[#607564] transition-colors">Services</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><span className="text-[#2C302E] font-normal" aria-current="page">Commercial Cleaning</span></li>
+          </ol>
+        </nav>
 
         {/* Hero Section */}
-        <div className="grid lg:grid-cols-12 gap-12 items-center mb-12">
+        <header className="grid lg:grid-cols-12 gap-12 items-center mb-12">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -222,11 +224,11 @@ export default function CommercialCleaningKansasCity() {
             </h1>
             
             {/* Quick Answer Block */}
-            <div className="bg-[#CAD4CD]/20 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
+            <aside aria-label="Quick Overview" className="bg-[#CAD4CD]/20 p-6 md:p-8 rounded-2xl border border-[#e8e5df] text-left shadow-sm mb-6">
               <p className="text-base md:text-lg text-[#2C302E] leading-relaxed font-light">
                 <strong>Quick answer:</strong> ShineWell provides reliable commercial and office cleaning across the Kansas City metro — offices, medical and dental suites, retail, salons, and property-management spaces. We're fully insured, our crews are background-checked, and we build flexible recurring schedules (nightly, weekly, or biweekly) around your business hours, all backed by a 100% satisfaction guarantee. We serve Overland Park, Corporate Woods, the Crossroads, and the greater KC metro.
               </p>
-            </div>
+            </aside>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a 
@@ -257,7 +259,7 @@ export default function CommercialCleaningKansasCity() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="lg:col-span-5"
           >
-            <div className="relative aspect-[4/3] md:aspect-[16/10] lg:aspect-square rounded-[2rem] overflow-hidden shadow-xl border-4 border-white bg-[#e8e5df]">
+            <figure className="relative aspect-[4/3] md:aspect-[16/10] lg:aspect-square rounded-[2rem] overflow-hidden shadow-xl border-4 border-white bg-[#e8e5df] m-0">
               <img 
                 src={medicalOfficeCleanerImg} 
                 alt="Commercial and office cleaning in Kansas City" 
@@ -265,7 +267,7 @@ export default function CommercialCleaningKansasCity() {
                 referrerPolicy="no-referrer"
               />
               {/* Floating Social Proof Badge on Image */}
-              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-[#e8e5df]/80 flex items-center justify-between gap-3">
+              <figcaption className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-[#e8e5df]/80 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
                   <svg aria-hidden="true" focusable="false" className="w-6 h-6 shrink-0" viewBox="0 0 24 24">
                     <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -293,13 +295,13 @@ export default function CommercialCleaningKansasCity() {
                 >
                   View Profile &raquo;
                 </a>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
           </motion.div>
-        </div>
+        </header>
 
         {/* Link Interlinking Hub */}
-        <div className="bg-[#CAD4CD]/10 py-4 px-6 rounded-2xl border border-[#e8e5df]/60 mb-16 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-sm">
+        <nav aria-label="Commercial Sub-specialties" className="bg-[#CAD4CD]/10 py-4 px-6 rounded-2xl border border-[#e8e5df]/60 mb-16 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-sm">
           <span className="font-medium text-[#5c635f]">Related Commercial Resources:</span>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
@@ -323,12 +325,12 @@ export default function CommercialCleaningKansasCity() {
               Niche Guide: Bank & Financial Office Cleaning
             </Link>
           </div>
-        </div>
+        </nav>
 
         {/* What We Clean Grid */}
-        <section className="mb-20">
+        <section aria-labelledby="commercial-types-heading" className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">
+            <h2 id="commercial-types-heading" className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">
               What We Clean
             </h2>
             <p className="text-lg text-[#5c635f] font-light max-w-2xl mx-auto">
@@ -338,7 +340,7 @@ export default function CommercialCleaningKansasCity() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whatWeClean.map((item, idx) => (
-              <motion.div 
+              <motion.article 
                 key={idx}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -360,7 +362,7 @@ export default function CommercialCleaningKansasCity() {
                     </Link>
                   </div>
                 )}
-              </motion.div>
+              </motion.article>
             ))}
           </div>
         </section>
@@ -369,14 +371,14 @@ export default function CommercialCleaningKansasCity() {
         <section className="grid lg:grid-cols-12 gap-12 items-start mb-20">
           
           {/* Scope details */}
-          <div className="lg:col-span-6 bg-white p-8 md:p-12 rounded-[2rem] border border-[#e8e5df] shadow-sm">
+          <article className="lg:col-span-6 bg-white p-8 md:p-12 rounded-[2rem] border border-[#e8e5df] shadow-sm">
             <h2 className="text-3xl font-serif text-[#2C302E] mb-6">
               What's Included in a Commercial Clean
             </h2>
             <p className="text-[#5c635f] font-light mb-8 leading-relaxed">
               Every commercial cleaning plan is completely customized after an initial walkthrough, but a typical regular scope covers:
             </p>
-            <ul className="space-y-4">
+            <ul role="list" className="space-y-4 p-0 list-none">
               {typicalScope.map((scope, idx) => (
                 <li key={idx} className="flex gap-3 items-start text-left">
                   <div className="w-6 h-6 rounded-full bg-[#607564]/10 flex items-center justify-center shrink-0 mt-0.5">
@@ -386,11 +388,11 @@ export default function CommercialCleaningKansasCity() {
                 </li>
               ))}
             </ul>
-          </div>
+          </article>
 
           {/* Schedulers */}
           <div className="lg:col-span-6 space-y-8">
-            <div className="bg-[#CAD4CD]/20 p-8 md:p-12 rounded-[2rem] border border-[#e8e5df]">
+            <article className="bg-[#CAD4CD]/20 p-8 md:p-12 rounded-[2rem] border border-[#e8e5df]">
               <h2 className="text-3xl font-serif text-[#2C302E] mb-4">
                 Flexible Recurring Schedules
               </h2>
@@ -414,10 +416,10 @@ export default function CommercialCleaningKansasCity() {
               <p className="text-sm text-[#5c635f] font-light mt-6 italic">
                 * We also offer flexible one-time deep cleaning and custom post-construction detailing.
               </p>
-            </div>
+            </article>
 
             {/* Pricing works */}
-            <div className="bg-white p-8 md:p-12 rounded-[2rem] border border-[#e8e5df] shadow-sm">
+            <article className="bg-white p-8 md:p-12 rounded-[2rem] border border-[#e8e5df] shadow-sm">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-[#C86B53]/10 flex items-center justify-center shrink-0">
                   <DollarSign className="w-6 h-6 text-[#C86B53]" />
@@ -432,14 +434,14 @@ export default function CommercialCleaningKansasCity() {
               <p className="text-[#5c635f] font-light leading-relaxed mt-4">
                 Recurring office cleaning in the KC area commonly runs in the range of about <strong>$0.08–$0.20 per square foot per visit</strong>, but the honest answer is that it depends on your space — a walkthrough gives you an accurate, no-obligation number. Recurring plans lower your per-visit cost.
               </p>
-            </div>
+            </article>
           </div>
         </section>
 
         {/* Why KC Businesses Choose ShineWell */}
-        <section className="mb-20 bg-white p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
+        <section aria-labelledby="why-kc-choose-heading" className="mb-20 bg-white p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">
+            <h2 id="why-kc-choose-heading" className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-4">
               Why Kansas City Businesses Choose ShineWell
             </h2>
             <p className="text-lg text-[#5c635f] font-light">
@@ -447,9 +449,9 @@ export default function CommercialCleaningKansasCity() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ul role="list" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-0 m-0 list-none">
             {whyChooseUs.map((badge, idx) => (
-              <div key={idx} className="flex gap-4 items-start">
+              <li key={idx} className="flex gap-4 items-start">
                 <div className="shrink-0 p-2 rounded-xl bg-[#C86B53]/10">
                   {badge.icon}
                 </div>
@@ -457,13 +459,13 @@ export default function CommercialCleaningKansasCity() {
                   <h3 className="text-lg font-serif text-[#2C302E] mb-2">{badge.title}</h3>
                   <p className="text-sm text-[#5c635f] font-light leading-relaxed">{badge.desc}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         {/* Featured Google Reviews Social Proof Section */}
-        <section className="mb-20 bg-[#F9F8F6] p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
+        <section aria-labelledby="client-reviews-heading" className="mb-20 bg-[#F9F8F6] p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
             <div>
               <div className="inline-flex items-center gap-2.5 bg-white px-4 py-2 rounded-full border border-[#e8e5df] shadow-xs mb-3">
@@ -480,8 +482,8 @@ export default function CommercialCleaningKansasCity() {
                 </div>
                 <span className="text-sm font-semibold text-[#2C302E]">5.0 · 28 reviews on Google</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-2">
-                What Kansas City Businesses & Clients Say
+              <h2 id="client-reviews-heading" className="text-3xl md:text-4xl font-serif text-[#2C302E] mb-2">
+                What Kansas City Businesses &amp; Clients Say
               </h2>
               <p className="text-lg text-[#5c635f] font-light max-w-2xl">
                 We're proud to hold a perfect 5.0 rating on Google across 28 client reviews throughout the Kansas City metro.
@@ -513,7 +515,7 @@ export default function CommercialCleaningKansasCity() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {realReviews.map((rev, idx) => (
-              <motion.div 
+              <motion.article 
                 key={idx}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -551,16 +553,16 @@ export default function CommercialCleaningKansasCity() {
                     <p className="text-xs text-[#5c635f] font-light">{rev.role}</p>
                   </div>
                 </div>
-              </motion.div>
+              </motion.article>
             ))}
           </div>
         </section>
 
         {/* Service area list */}
-        <section className="mb-20 bg-[#CAD4CD]/10 p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df]/60 text-center">
+        <section aria-labelledby="service-area-heading" className="mb-20 bg-[#CAD4CD]/10 p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df]/60 text-center">
           <div className="max-w-2xl mx-auto">
             <MapPin className="w-10 h-10 text-[#607564] mx-auto mb-4" />
-            <h2 className="text-2xl font-serif text-[#2C302E] mb-4">Serving the Kansas City Metro</h2>
+            <h2 id="service-area-heading" className="text-2xl font-serif text-[#2C302E] mb-4">Serving the Kansas City Metro</h2>
             <p className="text-[#5c635f] font-light leading-relaxed mb-6">
               We proudly clean businesses across <strong>Overland Park, Corporate Woods, Leawood, Prairie Village, the Crossroads, Lee's Summit,</strong> and the greater KC metro on both the Kansas and Missouri sides.
             </p>
@@ -568,7 +570,7 @@ export default function CommercialCleaningKansasCity() {
         </section>
 
         {/* Get a Free Walkthrough CTA Box */}
-        <section className="mb-20 bg-[#8BA192] text-white p-8 md:p-12 rounded-[2.5rem] shadow-xl text-center relative overflow-hidden">
+        <section aria-labelledby="walkthrough-cta-heading" className="mb-20 bg-[#8BA192] text-white p-8 md:p-12 rounded-[2.5rem] shadow-xl text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 transform translate-x-12 -translate-y-12 w-64 h-64 rounded-full bg-white/5 pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 transform -translate-x-12 translate-y-12 w-64 h-64 rounded-full bg-white/5 pointer-events-none"></div>
           
@@ -579,8 +581,8 @@ export default function CommercialCleaningKansasCity() {
               <span>5.0 Star Rating · 28 Google Reviews</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-serif mb-4 text-[#2C302E]">
-              Get a Free Walkthrough & Quote
+            <h2 id="walkthrough-cta-heading" className="text-3xl md:text-4xl font-serif mb-4 text-[#2C302E]">
+              Get a Free Walkthrough &amp; Quote
             </h2>
             <p className="text-lg text-[#2C302E]/90 font-light mb-8 max-w-xl mx-auto leading-relaxed">
               Ready for a cleaner, healthier, and more productive workplace? Request your custom commercial estimate walkthrough with our vetted teams.
@@ -609,16 +611,16 @@ export default function CommercialCleaningKansasCity() {
         </section>
 
         {/* Commercial Cleaning Guides & Resources Section */}
-        <section className="mb-20 bg-white p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
+        <section aria-labelledby="insights-heading" className="mb-20 bg-white p-8 md:p-12 rounded-[2.5rem] border border-[#e8e5df] shadow-sm">
           <div className="max-w-3xl mx-auto text-center mb-8">
             <span className="text-xs font-bold text-[#607564] uppercase tracking-wider mb-2 block">Office Insights</span>
-            <h2 className="text-3xl font-serif text-[#2C302E] mb-3">Commercial Cleaning Guides for KC Office Managers</h2>
+            <h2 id="insights-heading" className="text-3xl font-serif text-[#2C302E] mb-3">Commercial Cleaning Guides for KC Office Managers</h2>
             <p className="text-[#5c635f] font-light leading-relaxed">
               Learn more about maintaining a healthy, high-standard workplace and choosing the right commercial cleaning partner:
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
+            <article className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
               <h3 className="font-serif text-xl text-[#2C302E] mb-2">
                 <Link to="/blog/recurring-office-cleaning-kansas-city" className="hover:text-[#C86B53] transition-colors">
                   Recurring Office Cleaning in KC
@@ -630,8 +632,8 @@ export default function CommercialCleaningKansasCity() {
               <Link to="/blog/recurring-office-cleaning-kansas-city" className="inline-flex items-center text-sm font-medium text-[#607564] hover:text-[#C86B53] transition-colors">
                 Read guide <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
-            </div>
-            <div className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
+            </article>
+            <article className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
               <h3 className="font-serif text-xl text-[#2C302E] mb-2">
                 <Link to="/blog/how-to-choose-commercial-cleaning-company-kansas-city" className="hover:text-[#C86B53] transition-colors">
                   How to Choose a Cleaner
@@ -643,8 +645,8 @@ export default function CommercialCleaningKansasCity() {
               <Link to="/blog/how-to-choose-commercial-cleaning-company-kansas-city" className="inline-flex items-center text-sm font-medium text-[#607564] hover:text-[#C86B53] transition-colors">
                 Read buyer's guide <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
-            </div>
-            <div className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
+            </article>
+            <article className="bg-[#F9F8F6] p-6 rounded-2xl border border-[#e8e5df]">
               <h3 className="font-serif text-xl text-[#2C302E] mb-2">
                 <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="hover:text-[#C86B53] transition-colors">
                   Keep Your Office Healthy
@@ -656,14 +658,14 @@ export default function CommercialCleaningKansasCity() {
               <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="inline-flex items-center text-sm font-medium text-[#607564] hover:text-[#C86B53] transition-colors">
                 Read health guide <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
-            </div>
+            </article>
           </div>
         </section>
 
         {/* Interactive FAQ Accordion */}
-        <section className="max-w-4xl mx-auto mb-10">
+        <section aria-labelledby="faq-section-heading" className="max-w-4xl mx-auto mb-10">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-serif text-[#2C302E] mb-4">
+            <h2 id="faq-section-heading" className="text-3xl font-serif text-[#2C302E] mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-[#5c635f] font-light">
@@ -671,7 +673,7 @@ export default function CommercialCleaningKansasCity() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <dl className="space-y-4">
             {faqs.map((faq, idx) => {
               const isOpen = activeFaq === idx;
               return (
@@ -679,34 +681,37 @@ export default function CommercialCleaningKansasCity() {
                   key={idx} 
                   className="bg-white rounded-2xl border border-[#e8e5df] shadow-sm overflow-hidden transition-all duration-300"
                 >
-                  <button
-                    onClick={() => toggleFaq(idx)}
-                    className="w-full text-left p-6 md:p-8 flex justify-between items-center gap-4 focus:outline-none"
-                    aria-expanded={isOpen}
-                  >
-                    <span className="font-serif text-lg md:text-xl text-[#2C302E] font-medium leading-snug">
-                      {faq.q}
-                    </span>
-                    <ChevronDown aria-hidden="true" focusable="false" className={`w-5 h-5 text-[#5c635f] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#C86B53]' : ''}`} />
-                  </button>
+                  <dt>
+                    <button
+                      onClick={() => toggleFaq(idx)}
+                      className="w-full text-left p-6 md:p-8 flex justify-between items-center gap-4 focus:outline-none"
+                      aria-expanded={isOpen}
+                    >
+                      <span className="font-serif text-lg md:text-xl text-[#2C302E] font-medium leading-snug">
+                        {faq.q}
+                      </span>
+                      <ChevronDown aria-hidden="true" focusable="false" className={`w-5 h-5 text-[#5c635f] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#C86B53]' : ''}`} />
+                    </button>
+                  </dt>
                   <AnimatePresence initial={false}>
                     {isOpen && (
-                      <motion.div
+                      <motion.dd
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="m-0"
                       >
                         <div className="px-6 pb-6 md:px-8 md:pb-8 pt-0 text-[#5c635f] font-light leading-relaxed border-t border-gray-50">
                           {faq.a}
                         </div>
-                      </motion.div>
+                      </motion.dd>
                     )}
                   </AnimatePresence>
                 </div>
               );
             })}
-          </div>
+          </dl>
         </section>
 
         {/* Schema markup tags directly rendered inside page context */}
@@ -766,6 +771,6 @@ export default function CommercialCleaningKansasCity() {
         `}} />
 
       </div>
-    </div>
+    </main>
   );
 }
