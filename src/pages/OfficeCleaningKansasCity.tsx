@@ -16,8 +16,7 @@ import {
   Sparkles,
   ExternalLink,
   DollarSign,
-  Users,
-  Calendar
+  Users
 } from 'lucide-react';
 
 export default function OfficeCleaningKansasCity() {
@@ -249,13 +248,6 @@ export default function OfficeCleaningKansasCity() {
             >
               <Phone className="w-4 h-4" /> Call Us Now: (913) 220-4748
             </a>
-            <Link 
-              to="/booking"
-              className="inline-flex items-center gap-2 bg-[#607564] hover:bg-[#4A5D4E] text-white px-6 py-3 rounded-full text-sm font-medium transition-all shadow-sm"
-              id="office-quick-answer-quote-btn"
-            >
-              <Calendar className="w-4 h-4" /> Request Walkthrough Quote
-            </Link>
             <a 
               href={googleReviewUrl}
               target="_blank"
@@ -480,13 +472,6 @@ export default function OfficeCleaningKansasCity() {
               >
                 <Phone className="w-5 h-5" /> Call Us Now: (913) 220-4748
               </a>
-              <Link 
-                to="/booking"
-                className="bg-[#607564] hover:bg-[#4A5D4E] text-white px-8 py-4 rounded-full text-base font-medium transition-all shadow-md inline-flex items-center gap-2"
-                id="office-cta-book-btn"
-              >
-                <Calendar className="w-5 h-5" /> Request a Quote
-              </Link>
               <a 
                 href={googleReviewUrl}
                 target="_blank"

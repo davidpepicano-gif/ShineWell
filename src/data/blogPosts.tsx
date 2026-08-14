@@ -258,7 +258,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>A local option for KC offices</h2>
         <p>
-          ShineWell is a family-owned, fully insured company that has cleaned Overland Park and KC metro spaces for over 20 years. We specialize in light commercial and janitorial service — offices, medical and dental suites, salons, daycares, and retail — with flexible after-hours scheduling, background-checked crews, and a satisfaction guarantee. <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Request a free walkthrough »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+          ShineWell is a family-owned, fully insured company that has cleaned Overland Park and KC metro spaces for over 20 years. We specialize in light commercial and janitorial service — offices, medical and dental suites, salons, daycares, and retail — with flexible after-hours scheduling, background-checked crews, and a satisfaction guarantee. Call us directly at <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a> to schedule a free walkthrough.
         </p>
 
         <div className="border-t border-[#e8e5df] pt-8 mt-12">
@@ -1183,7 +1183,7 @@ export const blogPosts: BlogPost[] = [
           ShineWell is a fully insured, family-owned company that has cleaned Overland Park and greater KC metro businesses for over 20 years, offering <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">our commercial cleaning service</Link> with background-checked crews, after-hours scheduling, a 24-hour re-clean guarantee, and a 5.0 Google rating. 
         </p>
         <p>
-          If you're comparing options for your office, <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">request a free walkthrough</Link> or read our guides on <Link to="/blog/recurring-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring office cleaning</Link> and <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how to keep your office clean and healthy</Link> to learn how often professional cleaning is ideal for your team.
+          If you're comparing options for your office, call us directly at <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a> to schedule a free walkthrough, or read our guides on <Link to="/blog/recurring-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring office cleaning</Link> and <Link to="/blog/how-to-keep-your-office-clean-and-healthy" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">how to keep your office clean and healthy</Link> to learn how often professional cleaning is ideal for your team.
         </p>
 
         <div className="border-t border-[#e8e5df] pt-8 mt-12">
@@ -1304,7 +1304,7 @@ export const blogPosts: BlogPost[] = [
           ShineWell provides flexible <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial cleaning in the KC metro</Link> and Overland Park, scheduled around your business hours. Read more about establishing <Link to="/blog/recurring-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">recurring office cleaning</Link> for your business.
         </p>
         <p>
-          Ready to experience the difference? Learn about our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Commercial Cleaning Services in Kansas City</Link> or <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Get a Free Estimate</Link> walkthrough.
+          Ready to experience the difference? Learn about our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Commercial Cleaning Services in Kansas City</Link> or call us at <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a> to schedule a free walkthrough.
         </p>
 
         <div className="border-t border-[#e8e5df] pt-8 mt-12">
@@ -1483,7 +1483,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>A local option in Overland Park</h2>
         <p>
-          ShineWell is a family-owned, fully insured company based in Overland Park, serving small offices and businesses across the KC metro for over 20 years. We specialize in light commercial and janitorial service — offices, medical and dental suites, salons, and retail — with after-hours scheduling, background-checked crews, and a satisfaction guarantee. Learn more about our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial cleaning in Kansas City</Link>, <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">request a free walkthrough »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+          ShineWell is a family-owned, fully insured company based in Overland Park, serving small offices and businesses across the KC metro for over 20 years. We specialize in light commercial and janitorial service — offices, medical and dental suites, salons, and retail — with after-hours scheduling, background-checked crews, and a satisfaction guarantee. Learn more about our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">commercial cleaning in Kansas City</Link> or call us directly at <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a> to schedule a free walkthrough.
         </p>
 
         <div className="border-t border-[#e8e5df] pt-8 mt-12">
@@ -2097,7 +2097,7 @@ export const blogPosts: BlogPost[] = [
           ShineWell provides bank and financial office cleaning throughout Overland Park, Leawood, Prairie Village, Lenexa, Olathe, Shawnee, Mission, Merriam, Fairway, Roeland Park, Stilwell, Brookside, and the Country Club Plaza area. Compare our specialized services with our <Link to="/commercial-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Kansas City commercial cleaning service</Link> and our <Link to="/dental-office-cleaning-kansas-city" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">dental & medical office cleaning</Link>.
         </p>
         <p className="mt-4">
-          <Link to="/booking" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Request a free walkthrough »</Link> or call <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">(913) 220-4748</a>.
+          <a href="tel:9132204748" className="text-[#C86B53] font-medium underline hover:text-[#4A5D4E]">Call us now at (913) 220-4748 to schedule a free walkthrough »</a>
         </p>
 
         <div className="border-t border-[#e8e5df] pt-8 mt-12">
